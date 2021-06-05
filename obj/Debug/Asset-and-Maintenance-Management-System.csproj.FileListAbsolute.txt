@@ -1,9 +1,7 @@
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\bin\Debug\Asset-and-Maintenance-Management-System.exe.config
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\bin\Debug\Asset-and-Maintenance-Management-System.exe
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\bin\Debug\Asset-and-Maintenance-Management-System.pdb
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.csproj.AssemblyReference.cache
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.assetTypes.resources
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.depreciationMethod.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.startup_main.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.Properties.Resources.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.uc_compName.resources

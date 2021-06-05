@@ -33,9 +33,13 @@ namespace Asset_and_Maintenance_Management_System.src
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt_assetTypes = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.assetType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.depreMethod = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.accDepr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,7 +68,7 @@ namespace Asset_and_Maintenance_Management_System.src
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(24, 152);
+            this.label2.Location = new System.Drawing.Point(24, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(918, 29);
             this.label2.TabIndex = 3;
@@ -75,38 +79,68 @@ namespace Asset_and_Maintenance_Management_System.src
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(24, 195);
+            this.label3.Location = new System.Drawing.Point(24, 178);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(534, 29);
             this.label3.TabIndex = 4;
             this.label3.Text = "*You can change this information at any time.";
             // 
-            // label4
+            // dataGridView1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(24, 263);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(576, 29);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Enter the types of assets seperated by a comma:";
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.assetType,
+            this.totCost,
+            this.depreMethod,
+            this.accDepr});
+            this.dataGridView1.Location = new System.Drawing.Point(280, 229);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(554, 287);
+            this.dataGridView1.TabIndex = 5;
             // 
-            // txt_assetTypes
+            // assetType
             // 
-            this.txt_assetTypes.Location = new System.Drawing.Point(238, 324);
-            this.txt_assetTypes.Multiline = true;
-            this.txt_assetTypes.Name = "txt_assetTypes";
-            this.txt_assetTypes.Size = new System.Drawing.Size(680, 197);
-            this.txt_assetTypes.TabIndex = 6;
+            this.assetType.HeaderText = "Asset Type";
+            this.assetType.MinimumWidth = 6;
+            this.assetType.Name = "assetType";
+            this.assetType.ReadOnly = true;
+            this.assetType.Width = 125;
+            // 
+            // totCost
+            // 
+            this.totCost.HeaderText = "Total Cost";
+            this.totCost.MinimumWidth = 6;
+            this.totCost.Name = "totCost";
+            this.totCost.ReadOnly = true;
+            this.totCost.Width = 125;
+            // 
+            // depreMethod
+            // 
+            this.depreMethod.HeaderText = "Depreciation Method";
+            this.depreMethod.Items.AddRange(new object[] {
+            "Reducing Balance",
+            "Straight Line"});
+            this.depreMethod.MinimumWidth = 6;
+            this.depreMethod.Name = "depreMethod";
+            this.depreMethod.ReadOnly = true;
+            this.depreMethod.Width = 125;
+            // 
+            // accDepr
+            // 
+            this.accDepr.HeaderText = "Accumulated Depreciation";
+            this.accDepr.MinimumWidth = 6;
+            this.accDepr.Name = "accDepr";
+            this.accDepr.ReadOnly = true;
+            this.accDepr.Width = 125;
             // 
             // assetTypes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
-            this.Controls.Add(this.txt_assetTypes);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
@@ -114,6 +148,7 @@ namespace Asset_and_Maintenance_Management_System.src
             this.Size = new System.Drawing.Size(1136, 636);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,7 +160,10 @@ namespace Asset_and_Maintenance_Management_System.src
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt_assetTypes;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn assetType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totCost;
+        private System.Windows.Forms.DataGridViewComboBoxColumn depreMethod;
+        private System.Windows.Forms.DataGridViewTextBoxColumn accDepr;
     }
 }
