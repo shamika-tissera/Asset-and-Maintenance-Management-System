@@ -16,5 +16,33 @@ namespace Asset_and_Maintenance_Management_System.src
         {
             InitializeComponent();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        //Use this function to get the data from the table
+        public string[,] getData()
+        {
+            string[,] data = new string[dataGridView1.RowCount - 1, dataGridView1.ColumnCount];
+            try
+            {
+                for (int i = 0; i < dataGridView1.RowCount - 1; i++)
+                {
+                    for (int j = 0; j < dataGridView1.ColumnCount; j++)
+                    {
+                        data[i, j] = dataGridView1.Rows[i].Cells[j].Value.ToString();
+                    }
+                }
+                return data;
+            }
+            catch (NullReferenceException ex)
+            {
+                Console.WriteLine(ex);
+                throw;
+            }
+            
+        }
     }
 }

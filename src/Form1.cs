@@ -49,6 +49,13 @@ namespace Asset_and_Maintenance_Management_System
                 uc_compName1.Visible = false;
                 assetTypes1.Visible = true;
             }
+            else
+            {
+                string[,] assetData = assetTypes1.getData();
+                /**
+                 **
+                 */
+            }
         }
 
         private bool Validation(string[] info)

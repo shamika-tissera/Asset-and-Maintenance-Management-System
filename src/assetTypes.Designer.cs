@@ -37,6 +37,7 @@ namespace Asset_and_Maintenance_Management_System.src
             this.assetType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.depreMethod = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.deprRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.accDepr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -92,29 +93,29 @@ namespace Asset_and_Maintenance_Management_System.src
             this.assetType,
             this.totCost,
             this.depreMethod,
+            this.deprRate,
             this.accDepr});
-            this.dataGridView1.Location = new System.Drawing.Point(280, 229);
+            this.dataGridView1.Location = new System.Drawing.Point(34, 233);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(554, 287);
+            this.dataGridView1.Size = new System.Drawing.Size(1054, 349);
             this.dataGridView1.TabIndex = 5;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // assetType
             // 
             this.assetType.HeaderText = "Asset Type";
             this.assetType.MinimumWidth = 6;
             this.assetType.Name = "assetType";
-            this.assetType.ReadOnly = true;
-            this.assetType.Width = 125;
+            this.assetType.Width = 200;
             // 
             // totCost
             // 
             this.totCost.HeaderText = "Total Cost";
             this.totCost.MinimumWidth = 6;
             this.totCost.Name = "totCost";
-            this.totCost.ReadOnly = true;
-            this.totCost.Width = 125;
+            this.totCost.Width = 200;
             // 
             // depreMethod
             // 
@@ -124,16 +125,21 @@ namespace Asset_and_Maintenance_Management_System.src
             "Straight Line"});
             this.depreMethod.MinimumWidth = 6;
             this.depreMethod.Name = "depreMethod";
-            this.depreMethod.ReadOnly = true;
-            this.depreMethod.Width = 125;
+            this.depreMethod.Width = 200;
+            // 
+            // deprRate
+            // 
+            this.deprRate.HeaderText = "Depreciation Rate";
+            this.deprRate.MinimumWidth = 6;
+            this.deprRate.Name = "deprRate";
+            this.deprRate.Width = 200;
             // 
             // accDepr
             // 
             this.accDepr.HeaderText = "Accumulated Depreciation";
             this.accDepr.MinimumWidth = 6;
             this.accDepr.Name = "accDepr";
-            this.accDepr.ReadOnly = true;
-            this.accDepr.Width = 125;
+            this.accDepr.Width = 200;
             // 
             // assetTypes
             // 
@@ -164,6 +170,7 @@ namespace Asset_and_Maintenance_Management_System.src
         private System.Windows.Forms.DataGridViewTextBoxColumn assetType;
         private System.Windows.Forms.DataGridViewTextBoxColumn totCost;
         private System.Windows.Forms.DataGridViewComboBoxColumn depreMethod;
+        private System.Windows.Forms.DataGridViewTextBoxColumn deprRate;
         private System.Windows.Forms.DataGridViewTextBoxColumn accDepr;
     }
 }
