@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Asset_and_Maintenance_Management_System
 {
-    public partial class uc_welcome_1 : UserControl
+    public partial class uc_compName : UserControl
     {
-        public uc_welcome_1()
+        public uc_compName()
         {
             InitializeComponent();
-        }
-
-        private void uc_welcome_1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -63,6 +63,7 @@ namespace Asset_and_Maintenance_Management_System
             this.Controls.Add(this.panel1);
             this.Name = "uc_welcome_1";
             this.Size = new System.Drawing.Size(1136, 636);
+            this.Load += new System.EventHandler(this.uc_welcome_1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
