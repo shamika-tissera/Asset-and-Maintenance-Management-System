@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,6 +56,12 @@ namespace Asset_and_Maintenance_Management_System
                 /**
                  **
                  */
+
+                //TODO validation
+
+                //When the startup wizard has been run for the first time
+                string fileRelPath = "../../prog_settings/startup.txt";
+                File.WriteAllText(fileRelPath, "true");
             }
         }
 
