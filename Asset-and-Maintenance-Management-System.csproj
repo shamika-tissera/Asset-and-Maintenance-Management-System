@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\assetTypes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\assetTypes.Designer.cs">
+      <DependentUpon>assetTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\depreciationMethod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\depreciationMethod.Designer.cs">
+      <DependentUpon>depreciationMethod.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +78,12 @@
     <Compile Include="src\uc_welcome_1.Designer.cs">
       <DependentUpon>uc_welcome_1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="src\assetTypes.resx">
+      <DependentUpon>assetTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\depreciationMethod.resx">
+      <DependentUpon>depreciationMethod.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

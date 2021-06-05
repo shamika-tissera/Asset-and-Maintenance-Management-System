@@ -8,18 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Asset_and_Maintenance_Management_System
+namespace Asset_and_Maintenance_Management_System.src
 {
-    public partial class startup_main : Form
+    public partial class depreciationMethod : UserControl
     {
-        public startup_main()
+        public depreciationMethod()
         {
             InitializeComponent();
-            uc_welcome_11.Visible = true;
-            uc_compName1.Visible = false;
         }
-
-        private void btn_continue_Click(object sender, EventArgs e)
+        
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

@@ -31,6 +31,8 @@ namespace Asset_and_Maintenance_Management_System
         {
             this.btn_continue = new System.Windows.Forms.Button();
             this.btn_cancel = new System.Windows.Forms.Button();
+            this.uc_welcome_11 = new Asset_and_Maintenance_Management_System.uc_welcome_1();
+            this.uc_compName1 = new Asset_and_Maintenance_Management_System.uc_compName();
             this.SuspendLayout();
             // 
             // btn_continue
@@ -43,6 +45,7 @@ namespace Asset_and_Maintenance_Management_System
             this.btn_continue.TabIndex = 0;
             this.btn_continue.Text = "Continue";
             this.btn_continue.UseVisualStyleBackColor = false;
+            this.btn_continue.Click += new System.EventHandler(this.btn_continue_Click);
             // 
             // btn_cancel
             // 
@@ -55,12 +58,31 @@ namespace Asset_and_Maintenance_Management_System
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = false;
             // 
+            // uc_welcome_11
+            // 
+            this.uc_welcome_11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
+            this.uc_welcome_11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.uc_welcome_11.Location = new System.Drawing.Point(0, 0);
+            this.uc_welcome_11.Name = "uc_welcome_11";
+            this.uc_welcome_11.Size = new System.Drawing.Size(1136, 636);
+            this.uc_welcome_11.TabIndex = 1;
+            // 
+            // uc_compName1
+            // 
+            this.uc_compName1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
+            this.uc_compName1.Location = new System.Drawing.Point(0, 0);
+            this.uc_compName1.Name = "uc_compName1";
+            this.uc_compName1.Size = new System.Drawing.Size(1136, 636);
+            this.uc_compName1.TabIndex = 2;
+            // 
             // startup_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1136, 708);
+            this.Controls.Add(this.uc_compName1);
+            this.Controls.Add(this.uc_welcome_11);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_continue);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -75,6 +97,8 @@ namespace Asset_and_Maintenance_Management_System
 
         private System.Windows.Forms.Button btn_continue;
         private System.Windows.Forms.Button btn_cancel;
+        private uc_welcome_1 uc_welcome_11;
+        private uc_compName uc_compName1;
     }
 }
 
