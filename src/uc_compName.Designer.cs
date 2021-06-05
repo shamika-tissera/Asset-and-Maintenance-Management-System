@@ -88,6 +88,7 @@ namespace Asset_and_Maintenance_Management_System
             this.txt_compName.Name = "txt_compName";
             this.txt_compName.Size = new System.Drawing.Size(437, 22);
             this.txt_compName.TabIndex = 3;
+            this.txt_compName.TextChanged += new System.EventHandler(this.txt_compName_TextChanged);
             // 
             // label4
             // 

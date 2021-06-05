@@ -31,9 +31,9 @@ namespace Asset_and_Maintenance_Management_System
         {
             this.btn_continue = new System.Windows.Forms.Button();
             this.btn_cancel = new System.Windows.Forms.Button();
+            this.assetTypes1 = new Asset_and_Maintenance_Management_System.src.assetTypes();
             this.uc_compName1 = new Asset_and_Maintenance_Management_System.uc_compName();
             this.uc_welcome_11 = new Asset_and_Maintenance_Management_System.uc_welcome_1();
-            this.assetTypes1 = new Asset_and_Maintenance_Management_System.src.assetTypes();
             this.SuspendLayout();
             // 
             // btn_continue
@@ -59,6 +59,14 @@ namespace Asset_and_Maintenance_Management_System
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = false;
             // 
+            // assetTypes1
+            // 
+            this.assetTypes1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
+            this.assetTypes1.Location = new System.Drawing.Point(0, 0);
+            this.assetTypes1.Name = "assetTypes1";
+            this.assetTypes1.Size = new System.Drawing.Size(1136, 636);
+            this.assetTypes1.TabIndex = 3;
+            // 
             // uc_compName1
             // 
             this.uc_compName1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
@@ -76,28 +84,21 @@ namespace Asset_and_Maintenance_Management_System
             this.uc_welcome_11.Size = new System.Drawing.Size(1136, 636);
             this.uc_welcome_11.TabIndex = 1;
             // 
-            // assetTypes1
-            // 
-            this.assetTypes1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
-            this.assetTypes1.Location = new System.Drawing.Point(0, 0);
-            this.assetTypes1.Name = "assetTypes1";
-            this.assetTypes1.Size = new System.Drawing.Size(1136, 636);
-            this.assetTypes1.TabIndex = 3;
-            // 
             // startup_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1136, 708);
-            this.Controls.Add(this.assetTypes1);
             this.Controls.Add(this.uc_compName1);
             this.Controls.Add(this.uc_welcome_11);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_continue);
+            this.Controls.Add(this.assetTypes1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "startup_main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
 

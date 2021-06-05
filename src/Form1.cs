@@ -17,11 +17,55 @@ namespace Asset_and_Maintenance_Management_System
             InitializeComponent();
             uc_welcome_11.Visible = true;
             uc_compName1.Visible = false;
+            assetTypes1.Visible = false;
         }
 
         private void btn_continue_Click(object sender, EventArgs e)
         {
+            if (uc_welcome_11.Visible)
+            {
+                uc_welcome_11.Visible = false;
+                uc_compName1.Visible = true;
+                assetTypes1.Visible = false;
+            }
+            else if (uc_compName1.Visible)
+            {
+                string[] info = uc_compName1.getTxtInfo();
+                bool isValid;
+                
+                isValid = Validation(info);
+                if (!isValid)
+                {
+                    MessageBox.Show("Please check the details entered again...");
+                    uc_compName1.Visible = false;
+                    uc_compName1.resetTxt();
+                    uc_compName1.Visible = true;
+                    info = uc_compName1.getTxtInfo();
+                    isValid = Validation(info);
+                }
 
+                
+                uc_welcome_11.Visible = false;
+                uc_compName1.Visible = false;
+                assetTypes1.Visible = true;
+            }
         }
+
+        private bool Validation(string[] info)
+        {
+            try
+            {
+                if (info[0] == "")
+                {
+                    return false;
+                }
+            }
+            catch (System.FormatException ex)
+            {
+                return false;
+            }
+
+            return true;
+        } 
     }
 }

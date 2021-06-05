@@ -16,5 +16,22 @@ namespace Asset_and_Maintenance_Management_System
         {
             InitializeComponent();
         }
+
+        private void txt_compName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        public string[] getTxtInfo()
+        {
+            string[] info = {txt_compName.Text, txt_fascilCount.Text};
+            return info;
+        }
+
+        public void resetTxt()
+        {
+            txt_compName.ResetText();
+            txt_fascilCount.ResetText();
+        }
     }
 }
