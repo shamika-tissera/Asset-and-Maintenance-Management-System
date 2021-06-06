@@ -58,11 +58,41 @@
     <Compile Include="src\Dashboard\uc_assets_1.Designer.cs">
       <DependentUpon>uc_assets_1.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Dashboard\uc_calendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Dashboard\uc_calendar.Designer.cs">
+      <DependentUpon>uc_calendar.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Dashboard\uc_dash_main.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="src\Dashboard\uc_dash_main.Designer.cs">
       <DependentUpon>uc_dash_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\add_item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\add_item.Designer.cs">
+      <DependentUpon>add_item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\main_window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\main_window.Designer.cs">
+      <DependentUpon>main_window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_asset_general.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_asset_general.Designer.cs">
+      <DependentUpon>uc_asset_general.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_general_common.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_general_common.Designer.cs">
+      <DependentUpon>uc_general_common.cs</DependentUpon>
     </Compile>
     <Compile Include="src\Startup Wizard\assetTypes.cs">
       <SubType>UserControl</SubType>
@@ -96,8 +126,23 @@
     <EmbeddedResource Include="src\Dashboard\uc_assets_1.resx">
       <DependentUpon>uc_assets_1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\Dashboard\uc_calendar.resx">
+      <DependentUpon>uc_calendar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Dashboard\uc_dash_main.resx">
       <DependentUpon>uc_dash_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\Assets\add_item.resx">
+      <DependentUpon>add_item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\Assets\main_window.resx">
+      <DependentUpon>main_window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_asset_general.resx">
+      <DependentUpon>uc_asset_general.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_general_common.resx">
+      <DependentUpon>uc_general_common.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Startup Wizard\assetTypes.resx">
       <DependentUpon>assetTypes.cs</DependentUpon>
@@ -155,5 +200,6 @@
   <ItemGroup>
     <None Include="Resources\building %28Custom%29.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

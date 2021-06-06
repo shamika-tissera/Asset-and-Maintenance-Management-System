@@ -13,3 +13,4 @@ F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-Syst
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.Dashboard.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.uc_assets_1.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.uc_dash_main.resources
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.uc_calendar.resources
