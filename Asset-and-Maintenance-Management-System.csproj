@@ -52,6 +52,18 @@
     <Compile Include="src\Dashboard\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Dashboard\uc_assets_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Dashboard\uc_assets_1.Designer.cs">
+      <DependentUpon>uc_assets_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Dashboard\uc_dash_main.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Dashboard\uc_dash_main.Designer.cs">
+      <DependentUpon>uc_dash_main.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Startup Wizard\assetTypes.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -80,6 +92,12 @@
     </Compile>
     <EmbeddedResource Include="src\Dashboard\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Dashboard\uc_assets_1.resx">
+      <DependentUpon>uc_assets_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Dashboard\uc_dash_main.resx">
+      <DependentUpon>uc_dash_main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Startup Wizard\assetTypes.resx">
       <DependentUpon>assetTypes.cs</DependentUpon>
