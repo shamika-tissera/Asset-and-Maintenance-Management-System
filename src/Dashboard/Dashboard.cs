@@ -26,5 +26,10 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         {
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

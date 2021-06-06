@@ -119,5 +119,23 @@
   <ItemGroup>
     <None Include="Resources\User_with_smile.svg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backbutton %28Custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backbutton %28Custom%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backbutton %28Custom%29 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\land %28Custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building %28Custom%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

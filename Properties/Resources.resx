@@ -121,4 +121,22 @@
   <data name="User_with_smile.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\User_with_smile.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="backbutton (Custom) (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backbutton (Custom) (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backbutton (Custom)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backbutton (Custom).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backbutton (Custom) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backbutton (Custom) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="land (Custom)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\land (Custom).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="building (Custom)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\building (Custom).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
