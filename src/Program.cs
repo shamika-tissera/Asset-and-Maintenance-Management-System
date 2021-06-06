@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Asset_and_Maintenance_Management_System.src.Dashboard;
 
 namespace Asset_and_Maintenance_Management_System
 {
@@ -37,7 +38,9 @@ namespace Asset_and_Maintenance_Management_System
 
             if (status == true)
             {
-                // startup wizard has been run already
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new Dashboard());
             }
             else
             {
