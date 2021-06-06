@@ -17,8 +17,10 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             InitializeComponent();
             uc_dash_main1.setDashboardInstance(this);
             uc_assets_11.setDashboardInstance(this);
+            uc_navPanel_assets1.setDashboardInstance(this);
             uc_dash_main1.Visible = true;
             uc_assets_11.Visible = false;
+            uc_navPanel_assets1.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,6 +44,18 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_dash_main1.Visible = true;
         }
 
+        public void clickedAssetsConfig()
+        {
+            uc_assets_11.Visible = false;
+            uc_navPanel_assets1.Visible = true;
+        }
+
+        public void clickedAssetNavBack()
+        {
+            uc_navPanel_assets1.Visible = false;
+            uc_assets_11.Visible = true;
+        }
+
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
@@ -53,6 +67,11 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         }
 
         private void uc_assets_11_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uc_dash_main1_Load(object sender, EventArgs e)
         {
 
         }

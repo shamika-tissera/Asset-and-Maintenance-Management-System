@@ -118,6 +118,12 @@
     <Compile Include="src\Master Data Capturing\Assets\uc_maintenance_common.Designer.cs">
       <DependentUpon>uc_maintenance_common.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_navPanel_assets.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_navPanel_assets.Designer.cs">
+      <DependentUpon>uc_navPanel_assets.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Master Data Capturing\Assets\uc_warranty_common.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_maintenance_common.resx">
       <DependentUpon>uc_maintenance_common.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_navPanel_assets.resx">
+      <DependentUpon>uc_navPanel_assets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_warranty_common.resx">
       <DependentUpon>uc_warranty_common.cs</DependentUpon>

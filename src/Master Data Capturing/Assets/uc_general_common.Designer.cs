@@ -73,7 +73,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.combo_general_supplier.Location = new System.Drawing.Point(39, 173);
             this.combo_general_supplier.Name = "combo_general_supplier";
             this.combo_general_supplier.Size = new System.Drawing.Size(406, 24);
-            this.combo_general_supplier.TabIndex = 2;
+            this.combo_general_supplier.TabIndex = 5;
             // 
             // combo_general_state
             // 
@@ -81,7 +81,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.combo_general_state.Location = new System.Drawing.Point(498, 173);
             this.combo_general_state.Name = "combo_general_state";
             this.combo_general_state.Size = new System.Drawing.Size(406, 24);
-            this.combo_general_state.TabIndex = 2;
+            this.combo_general_state.TabIndex = 6;
             // 
             // combo_general_manu
             // 
@@ -89,7 +89,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.combo_general_manu.Location = new System.Drawing.Point(498, 112);
             this.combo_general_manu.Name = "combo_general_manu";
             this.combo_general_manu.Size = new System.Drawing.Size(406, 24);
-            this.combo_general_manu.TabIndex = 2;
+            this.combo_general_manu.TabIndex = 4;
             // 
             // label2
             // 
@@ -150,21 +150,21 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.txt_general_name.Location = new System.Drawing.Point(498, 52);
             this.txt_general_name.Name = "txt_general_name";
             this.txt_general_name.Size = new System.Drawing.Size(406, 22);
-            this.txt_general_name.TabIndex = 0;
+            this.txt_general_name.TabIndex = 2;
             // 
             // txt_general_serial
             // 
             this.txt_general_serial.Location = new System.Drawing.Point(39, 112);
             this.txt_general_serial.Name = "txt_general_serial";
             this.txt_general_serial.Size = new System.Drawing.Size(406, 22);
-            this.txt_general_serial.TabIndex = 0;
+            this.txt_general_serial.TabIndex = 3;
             // 
             // txt_general_code
             // 
             this.txt_general_code.Location = new System.Drawing.Point(39, 52);
             this.txt_general_code.Name = "txt_general_code";
             this.txt_general_code.Size = new System.Drawing.Size(406, 22);
-            this.txt_general_code.TabIndex = 0;
+            this.txt_general_code.TabIndex = 1;
             // 
             // uc_general_common
             // 

@@ -30,14 +30,14 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dateLastChecked = new System.Windows.Forms.DateTimePicker();
             this.comboCriticality = new System.Windows.Forms.ComboBox();
+            this.comboCondition = new System.Windows.Forms.ComboBox();
             this.comboMaintainedBy = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateLastChecked = new System.Windows.Forms.DateTimePicker();
-            this.comboCondition = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,11 +53,21 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(941, 235);
+            this.groupBox1.Size = new System.Drawing.Size(941, 170);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Maintenance";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // dateLastChecked
+            // 
+            this.dateLastChecked.Location = new System.Drawing.Point(498, 124);
+            this.dateLastChecked.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            this.dateLastChecked.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
+            this.dateLastChecked.Name = "dateLastChecked";
+            this.dateLastChecked.Size = new System.Drawing.Size(406, 22);
+            this.dateLastChecked.TabIndex = 3;
+            this.dateLastChecked.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
             // 
             // comboCriticality
             // 
@@ -66,6 +76,14 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.comboCriticality.Name = "comboCriticality";
             this.comboCriticality.Size = new System.Drawing.Size(406, 24);
             this.comboCriticality.TabIndex = 2;
+            // 
+            // comboCondition
+            // 
+            this.comboCondition.FormattingEnabled = true;
+            this.comboCondition.Location = new System.Drawing.Point(498, 52);
+            this.comboCondition.Name = "comboCondition";
+            this.comboCondition.Size = new System.Drawing.Size(406, 24);
+            this.comboCondition.TabIndex = 2;
             // 
             // comboMaintainedBy
             // 
@@ -111,31 +129,13 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label1.TabIndex = 1;
             this.label1.Text = "Maintained by";
             // 
-            // dateLastChecked
-            // 
-            this.dateLastChecked.Location = new System.Drawing.Point(498, 124);
-            this.dateLastChecked.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
-            this.dateLastChecked.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
-            this.dateLastChecked.Name = "dateLastChecked";
-            this.dateLastChecked.Size = new System.Drawing.Size(406, 22);
-            this.dateLastChecked.TabIndex = 3;
-            this.dateLastChecked.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
-            // 
-            // comboCondition
-            // 
-            this.comboCondition.FormattingEnabled = true;
-            this.comboCondition.Location = new System.Drawing.Point(498, 52);
-            this.comboCondition.Name = "comboCondition";
-            this.comboCondition.Size = new System.Drawing.Size(406, 24);
-            this.comboCondition.TabIndex = 2;
-            // 
             // uc_maintenance_common
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox1);
             this.Name = "uc_maintenance_common";
-            this.Size = new System.Drawing.Size(952, 242);
+            this.Size = new System.Drawing.Size(952, 183);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

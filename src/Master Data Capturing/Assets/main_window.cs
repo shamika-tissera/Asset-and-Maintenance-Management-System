@@ -16,5 +16,16 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
             InitializeComponent();
         }
+
+        private void btnAddItem_Click(object sender, EventArgs e)
+        {
+            add_item form = new add_item();
+            form.ShowDialog();
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

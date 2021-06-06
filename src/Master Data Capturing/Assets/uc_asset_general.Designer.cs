@@ -294,7 +294,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(311, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1356, 69);
+            this.panel3.Size = new System.Drawing.Size(1045, 69);
             this.panel3.TabIndex = 1;
             // 
             // label1
@@ -326,7 +326,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1356, 757);
+            this.dataGridView2.Size = new System.Drawing.Size(1045, 757);
             this.dataGridView2.TabIndex = 3;
             // 
             // uc_asset_general
@@ -338,7 +338,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "uc_asset_general";
-            this.Size = new System.Drawing.Size(1667, 826);
+            this.Size = new System.Drawing.Size(1356, 826);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

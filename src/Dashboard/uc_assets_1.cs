@@ -27,5 +27,10 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         {
             this.inst = inst;
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            inst.clickedAssetsConfig();
+        }
     }
 }

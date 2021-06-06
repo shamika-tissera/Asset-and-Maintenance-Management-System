@@ -31,5 +31,20 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
 
         }
+
+        private void add_item_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uc_administrative_common1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uc_installInfo_common1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

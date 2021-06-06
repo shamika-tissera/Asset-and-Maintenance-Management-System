@@ -31,13 +31,13 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboFloor = new System.Windows.Forms.ComboBox();
+            this.comboRoom = new System.Windows.Forms.ComboBox();
             this.comboBuilding = new System.Windows.Forms.ComboBox();
             this.comboBranch = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboRoom = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +53,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(927, 163);
+            this.groupBox1.Size = new System.Drawing.Size(963, 165);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Location";
@@ -66,6 +66,14 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.comboFloor.Name = "comboFloor";
             this.comboFloor.Size = new System.Drawing.Size(406, 24);
             this.comboFloor.TabIndex = 2;
+            // 
+            // comboRoom
+            // 
+            this.comboRoom.FormattingEnabled = true;
+            this.comboRoom.Location = new System.Drawing.Point(498, 122);
+            this.comboRoom.Name = "comboRoom";
+            this.comboRoom.Size = new System.Drawing.Size(406, 24);
+            this.comboRoom.TabIndex = 2;
             // 
             // comboBuilding
             // 
@@ -118,14 +126,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label1.Size = new System.Drawing.Size(53, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Branch";
-            // 
-            // comboRoom
-            // 
-            this.comboRoom.FormattingEnabled = true;
-            this.comboRoom.Location = new System.Drawing.Point(498, 122);
-            this.comboRoom.Name = "comboRoom";
-            this.comboRoom.Size = new System.Drawing.Size(406, 24);
-            this.comboRoom.TabIndex = 2;
             // 
             // uc_location_common
             // 
