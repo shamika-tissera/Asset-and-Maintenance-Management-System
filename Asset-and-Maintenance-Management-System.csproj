@@ -82,6 +82,12 @@
     <Compile Include="src\Master Data Capturing\Assets\main_window.Designer.cs">
       <DependentUpon>main_window.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_administrative_common.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_administrative_common.Designer.cs">
+      <DependentUpon>uc_administrative_common.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Master Data Capturing\Assets\uc_asset_general.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -93,6 +99,30 @@
     </Compile>
     <Compile Include="src\Master Data Capturing\Assets\uc_general_common.Designer.cs">
       <DependentUpon>uc_general_common.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_installInfo_common.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_installInfo_common.Designer.cs">
+      <DependentUpon>uc_installInfo_common.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_location_common.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_location_common.Designer.cs">
+      <DependentUpon>uc_location_common.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_maintenance_common.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_maintenance_common.Designer.cs">
+      <DependentUpon>uc_maintenance_common.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_warranty_common.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_warranty_common.Designer.cs">
+      <DependentUpon>uc_warranty_common.cs</DependentUpon>
     </Compile>
     <Compile Include="src\Startup Wizard\assetTypes.cs">
       <SubType>UserControl</SubType>
@@ -138,11 +168,26 @@
     <EmbeddedResource Include="src\Master Data Capturing\Assets\main_window.resx">
       <DependentUpon>main_window.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_administrative_common.resx">
+      <DependentUpon>uc_administrative_common.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_asset_general.resx">
       <DependentUpon>uc_asset_general.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_general_common.resx">
       <DependentUpon>uc_general_common.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_installInfo_common.resx">
+      <DependentUpon>uc_installInfo_common.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_location_common.resx">
+      <DependentUpon>uc_location_common.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_maintenance_common.resx">
+      <DependentUpon>uc_maintenance_common.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_warranty_common.resx">
+      <DependentUpon>uc_warranty_common.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Startup Wizard\assetTypes.resx">
       <DependentUpon>assetTypes.cs</DependentUpon>

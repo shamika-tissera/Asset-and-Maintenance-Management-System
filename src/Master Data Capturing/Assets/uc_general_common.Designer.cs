@@ -30,65 +30,66 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.combo_general_supplier = new System.Windows.Forms.ComboBox();
+            this.combo_general_state = new System.Windows.Forms.ComboBox();
+            this.combo_general_manu = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_general_name = new System.Windows.Forms.TextBox();
+            this.txt_general_serial = new System.Windows.Forms.TextBox();
+            this.txt_general_code = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.combo_general_supplier);
+            this.groupBox1.Controls.Add(this.combo_general_state);
+            this.groupBox1.Controls.Add(this.combo_general_manu);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txt_general_name);
+            this.groupBox1.Controls.Add(this.txt_general_serial);
+            this.groupBox1.Controls.Add(this.txt_general_code);
             this.groupBox1.Location = new System.Drawing.Point(10, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(941, 235);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "General";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // comboBox3
+            // combo_general_supplier
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(39, 173);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(406, 24);
-            this.comboBox3.TabIndex = 2;
+            this.combo_general_supplier.FormattingEnabled = true;
+            this.combo_general_supplier.Location = new System.Drawing.Point(39, 173);
+            this.combo_general_supplier.Name = "combo_general_supplier";
+            this.combo_general_supplier.Size = new System.Drawing.Size(406, 24);
+            this.combo_general_supplier.TabIndex = 2;
             // 
-            // comboBox2
+            // combo_general_state
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(498, 173);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(406, 24);
-            this.comboBox2.TabIndex = 2;
+            this.combo_general_state.FormattingEnabled = true;
+            this.combo_general_state.Location = new System.Drawing.Point(498, 173);
+            this.combo_general_state.Name = "combo_general_state";
+            this.combo_general_state.Size = new System.Drawing.Size(406, 24);
+            this.combo_general_state.TabIndex = 2;
             // 
-            // comboBox1
+            // combo_general_manu
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(498, 112);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(406, 24);
-            this.comboBox1.TabIndex = 2;
+            this.combo_general_manu.FormattingEnabled = true;
+            this.combo_general_manu.Location = new System.Drawing.Point(498, 112);
+            this.combo_general_manu.Name = "combo_general_manu";
+            this.combo_general_manu.Size = new System.Drawing.Size(406, 24);
+            this.combo_general_manu.TabIndex = 2;
             // 
             // label2
             // 
@@ -144,26 +145,26 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label1.TabIndex = 1;
             this.label1.Text = "Code";
             // 
-            // textBox2
+            // txt_general_name
             // 
-            this.textBox2.Location = new System.Drawing.Point(498, 52);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(406, 22);
-            this.textBox2.TabIndex = 0;
+            this.txt_general_name.Location = new System.Drawing.Point(498, 52);
+            this.txt_general_name.Name = "txt_general_name";
+            this.txt_general_name.Size = new System.Drawing.Size(406, 22);
+            this.txt_general_name.TabIndex = 0;
             // 
-            // textBox3
+            // txt_general_serial
             // 
-            this.textBox3.Location = new System.Drawing.Point(39, 112);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(406, 22);
-            this.textBox3.TabIndex = 0;
+            this.txt_general_serial.Location = new System.Drawing.Point(39, 112);
+            this.txt_general_serial.Name = "txt_general_serial";
+            this.txt_general_serial.Size = new System.Drawing.Size(406, 22);
+            this.txt_general_serial.TabIndex = 0;
             // 
-            // textBox1
+            // txt_general_code
             // 
-            this.textBox1.Location = new System.Drawing.Point(39, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(406, 22);
-            this.textBox1.TabIndex = 0;
+            this.txt_general_code.Location = new System.Drawing.Point(39, 52);
+            this.txt_general_code.Name = "txt_general_code";
+            this.txt_general_code.Size = new System.Drawing.Size(406, 22);
+            this.txt_general_code.TabIndex = 0;
             // 
             // uc_general_common
             // 
@@ -181,17 +182,17 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox combo_general_supplier;
+        private System.Windows.Forms.ComboBox combo_general_state;
+        private System.Windows.Forms.ComboBox combo_general_manu;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_general_name;
+        private System.Windows.Forms.TextBox txt_general_serial;
+        private System.Windows.Forms.TextBox txt_general_code;
     }
 }
