@@ -12,9 +12,15 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
 {
     public partial class add_item : Form
     {
+        private uc_navPanel_assets inst;
         public add_item()
         {
             InitializeComponent();
+        }
+        public add_item(uc_navPanel_assets asset)
+        {
+            InitializeComponent();
+            this.inst = asset;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -45,6 +51,16 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private void uc_installInfo_common1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            inst.clickedAddItemOK();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            inst.clickedAddItemCancel();
         }
     }
 }

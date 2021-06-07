@@ -22,6 +22,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         {
             this.Visible = false;
             inst.clickedAssets();
+            inst.clickedAssets();
         }
 
         private void uc_dash_main_Load(object sender, EventArgs e)
@@ -32,6 +33,26 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         public void setDashboardInstance(Dashboard inst)
         {
             this.inst = inst;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

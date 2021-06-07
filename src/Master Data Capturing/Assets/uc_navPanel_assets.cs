@@ -13,6 +13,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
     public partial class uc_navPanel_assets : UserControl
     {
         private Dashboard.Dashboard inst;
+        private add_item item;
         public uc_navPanel_assets()
         {
             InitializeComponent();
@@ -39,8 +40,19 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
 
         private void btnAddItem_Click(object sender, EventArgs e)
         {
-            add_item item = new add_item();
+            item = new add_item(this);
             item.ShowDialog();
+        }
+
+        public void clickedAddItemOK()
+        {
+            inst.clickedAssetAddItemOK();
+            item.Hide();
+        }
+
+        public void clickedAddItemCancel()
+        {
+            
         }
     }
 }

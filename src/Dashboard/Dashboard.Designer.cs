@@ -32,16 +32,16 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.navPanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_uname = new System.Windows.Forms.Label();
+            this.dataGridAssets = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.uc_calendar1 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_calendar();
+            this.uc_navPanel_assets1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_navPanel_assets();
             this.uc_assets_11 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_assets_1();
             this.uc_dash_main1 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_dash_main();
-            this.uc_navPanel_assets1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_navPanel_assets();
             this.navPanel.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridAssets)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // navPanel
@@ -67,6 +67,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(311, 204);
             this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // lbl_uname
             // 
@@ -79,6 +80,18 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.lbl_uname.TabIndex = 2;
             this.lbl_uname.Text = "Username";
             // 
+            // dataGridAssets
+            // 
+            this.dataGridAssets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridAssets.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridAssets.Location = new System.Drawing.Point(311, 0);
+            this.dataGridAssets.Name = "dataGridAssets";
+            this.dataGridAssets.RowHeadersWidth = 51;
+            this.dataGridAssets.RowTemplate.Height = 24;
+            this.dataGridAssets.Size = new System.Drawing.Size(1356, 826);
+            this.dataGridAssets.TabIndex = 5;
+            this.dataGridAssets.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.User_with_smile_svg;
@@ -89,17 +102,6 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(311, 0);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1356, 826);
-            this.dataGridView2.TabIndex = 5;
-            // 
             // uc_calendar1
             // 
             this.uc_calendar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
@@ -108,6 +110,14 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.uc_calendar1.Name = "uc_calendar1";
             this.uc_calendar1.Size = new System.Drawing.Size(1356, 826);
             this.uc_calendar1.TabIndex = 2;
+            // 
+            // uc_navPanel_assets1
+            // 
+            this.uc_navPanel_assets1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.uc_navPanel_assets1.Location = new System.Drawing.Point(20, 204);
+            this.uc_navPanel_assets1.Name = "uc_navPanel_assets1";
+            this.uc_navPanel_assets1.Size = new System.Drawing.Size(267, 616);
+            this.uc_navPanel_assets1.TabIndex = 4;
             // 
             // uc_assets_11
             // 
@@ -127,21 +137,13 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.uc_dash_main1.TabIndex = 3;
             this.uc_dash_main1.Load += new System.EventHandler(this.uc_dash_main1_Load);
             // 
-            // uc_navPanel_assets1
-            // 
-            this.uc_navPanel_assets1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.uc_navPanel_assets1.Location = new System.Drawing.Point(20, 204);
-            this.uc_navPanel_assets1.Name = "uc_navPanel_assets1";
-            this.uc_navPanel_assets1.Size = new System.Drawing.Size(267, 616);
-            this.uc_navPanel_assets1.TabIndex = 4;
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1667, 826);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridAssets);
             this.Controls.Add(this.uc_calendar1);
             this.Controls.Add(this.navPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -152,8 +154,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.navPanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridAssets)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -167,7 +169,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         private uc_dash_main uc_dash_main1;
         private uc_assets_1 uc_assets_11;
         private uc_calendar uc_calendar1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridAssets;
         private Master_Data_Capturing.Assets.uc_navPanel_assets uc_navPanel_assets1;
     }
 }

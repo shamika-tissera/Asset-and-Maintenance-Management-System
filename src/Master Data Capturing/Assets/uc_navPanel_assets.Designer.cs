@@ -29,7 +29,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAddItem = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -41,26 +40,11 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.btn_back = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAddItem = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnAddItem
-            // 
-            this.btnAddItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.btnAddItem.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnAddItem.FlatAppearance.BorderSize = 0;
-            this.btnAddItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddItem.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnAddItem.Location = new System.Drawing.Point(0, 576);
-            this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.Size = new System.Drawing.Size(267, 40);
-            this.btnAddItem.TabIndex = 8;
-            this.btnAddItem.Text = "Add item";
-            this.btnAddItem.UseVisualStyleBackColor = false;
-            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
             // 
             // button11
             // 
@@ -75,6 +59,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.button11.Size = new System.Drawing.Size(264, 40);
             this.button11.TabIndex = 9;
             this.button11.Text = "Sink";
+            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
@@ -91,6 +76,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.button13.Size = new System.Drawing.Size(264, 40);
             this.button13.TabIndex = 10;
             this.button13.Text = "Computer";
+            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button13.UseVisualStyleBackColor = false;
             // 
             // button3
@@ -106,6 +92,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.button3.Size = new System.Drawing.Size(264, 40);
             this.button3.TabIndex = 11;
             this.button3.Text = "Lift";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button10
@@ -121,6 +108,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.button10.Size = new System.Drawing.Size(264, 40);
             this.button10.TabIndex = 12;
             this.button10.Text = "Sanitation Device";
+            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -136,6 +124,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.button2.Size = new System.Drawing.Size(264, 40);
             this.button2.TabIndex = 13;
             this.button2.Text = "Heater";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
             // 
             // button5
@@ -151,6 +140,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.button5.Size = new System.Drawing.Size(264, 40);
             this.button5.TabIndex = 14;
             this.button5.Text = "Network Device";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -167,6 +157,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.button8.Size = new System.Drawing.Size(264, 40);
             this.button8.TabIndex = 15;
             this.button8.Text = "Printer/Scanner";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = false;
             // 
             // button1
@@ -182,6 +173,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.button1.Size = new System.Drawing.Size(264, 40);
             this.button1.TabIndex = 16;
             this.button1.Text = "Fire extinguisher";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
             // 
             // button6
@@ -197,6 +189,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.button6.Size = new System.Drawing.Size(264, 40);
             this.button6.TabIndex = 17;
             this.button6.Text = "Plumbing device";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = false;
             // 
             // button7
@@ -212,6 +205,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.button7.Size = new System.Drawing.Size(264, 40);
             this.button7.TabIndex = 18;
             this.button7.Text = "Phone";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = false;
             // 
             // button4
@@ -227,24 +221,8 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.button4.Size = new System.Drawing.Size(264, 40);
             this.button4.TabIndex = 19;
             this.button4.Text = "Lighting";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = false;
-            // 
-            // btn_back
-            // 
-            this.btn_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.btn_back.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_back.FlatAppearance.BorderSize = 0;
-            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_back.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(216)))), ((int)(((byte)(93)))));
-            this.btn_back.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.backbutton__Custom___2_;
-            this.btn_back.Location = new System.Drawing.Point(0, 0);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(267, 53);
-            this.btn_back.TabIndex = 20;
-            this.btn_back.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btn_back.UseVisualStyleBackColor = false;
-            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // panel1
             // 
@@ -263,6 +241,42 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(264, 476);
             this.panel1.TabIndex = 21;
+            // 
+            // btnAddItem
+            // 
+            this.btnAddItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.btnAddItem.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnAddItem.FlatAppearance.BorderSize = 0;
+            this.btnAddItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddItem.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnAddItem.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.addItem__Custom_;
+            this.btnAddItem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddItem.Location = new System.Drawing.Point(0, 576);
+            this.btnAddItem.Name = "btnAddItem";
+            this.btnAddItem.Size = new System.Drawing.Size(267, 40);
+            this.btnAddItem.TabIndex = 8;
+            this.btnAddItem.Text = "Add item";
+            this.btnAddItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddItem.UseVisualStyleBackColor = false;
+            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
+            // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.btn_back.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_back.FlatAppearance.BorderSize = 0;
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(216)))), ((int)(((byte)(93)))));
+            this.btn_back.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.backbutton__Custom___2_;
+            this.btn_back.Location = new System.Drawing.Point(0, 0);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(267, 53);
+            this.btn_back.TabIndex = 20;
+            this.btn_back.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_back.UseVisualStyleBackColor = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // uc_navPanel_assets
             // 

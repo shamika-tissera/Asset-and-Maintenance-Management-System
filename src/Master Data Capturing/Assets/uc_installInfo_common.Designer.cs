@@ -63,7 +63,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             "On-site",
             "Limited",
             "Life-time"});
-            this.comboPlant.Location = new System.Drawing.Point(29, 115);
+            this.comboPlant.Location = new System.Drawing.Point(35, 115);
             this.comboPlant.Name = "comboPlant";
             this.comboPlant.Size = new System.Drawing.Size(406, 28);
             this.comboPlant.TabIndex = 3;
@@ -71,7 +71,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // dateInstallation
             // 
-            this.dateInstallation.Location = new System.Drawing.Point(29, 50);
+            this.dateInstallation.Location = new System.Drawing.Point(35, 50);
             this.dateInstallation.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
             this.dateInstallation.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateInstallation.Name = "dateInstallation";
@@ -82,7 +82,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 93);
+            this.label2.Location = new System.Drawing.Point(30, 93);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 20);
             this.label2.TabIndex = 1;
@@ -91,7 +91,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // dateAcceptance
             // 
-            this.dateAcceptance.Location = new System.Drawing.Point(488, 50);
+            this.dateAcceptance.Location = new System.Drawing.Point(494, 50);
             this.dateAcceptance.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
             this.dateAcceptance.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateAcceptance.Name = "dateAcceptance";
@@ -102,7 +102,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(485, 30);
+            this.label6.Location = new System.Drawing.Point(489, 30);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(122, 20);
             this.label6.TabIndex = 1;
@@ -111,7 +111,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(30, 29);
+            this.label7.Location = new System.Drawing.Point(34, 29);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(118, 20);
             this.label7.TabIndex = 1;
