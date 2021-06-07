@@ -73,7 +73,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.txtWarrantyCode.Location = new System.Drawing.Point(39, 54);
             this.txtWarrantyCode.Name = "txtWarrantyCode";
             this.txtWarrantyCode.Size = new System.Drawing.Size(406, 22);
-            this.txtWarrantyCode.TabIndex = 6;
+            this.txtWarrantyCode.TabIndex = 1;
             // 
             // dateStart
             // 
@@ -82,7 +82,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.dateStart.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateStart.Name = "dateStart";
             this.dateStart.Size = new System.Drawing.Size(406, 22);
-            this.dateStart.TabIndex = 7;
+            this.dateStart.TabIndex = 3;
             this.dateStart.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
             // 
             // comboType
@@ -95,7 +95,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.comboType.Location = new System.Drawing.Point(498, 54);
             this.comboType.Name = "comboType";
             this.comboType.Size = new System.Drawing.Size(406, 24);
-            this.comboType.TabIndex = 8;
+            this.comboType.TabIndex = 2;
             // 
             // groupBox1
             // 
@@ -122,7 +122,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.dateEnd.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateEnd.Name = "dateEnd";
             this.dateEnd.Size = new System.Drawing.Size(406, 22);
-            this.dateEnd.TabIndex = 7;
+            this.dateEnd.TabIndex = 4;
             this.dateEnd.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
             // 
             // label6

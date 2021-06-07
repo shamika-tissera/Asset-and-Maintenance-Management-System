@@ -65,7 +65,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.comboFloor.Location = new System.Drawing.Point(39, 122);
             this.comboFloor.Name = "comboFloor";
             this.comboFloor.Size = new System.Drawing.Size(406, 24);
-            this.comboFloor.TabIndex = 2;
+            this.comboFloor.TabIndex = 3;
             // 
             // comboRoom
             // 
@@ -73,7 +73,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.comboRoom.Location = new System.Drawing.Point(498, 122);
             this.comboRoom.Name = "comboRoom";
             this.comboRoom.Size = new System.Drawing.Size(406, 24);
-            this.comboRoom.TabIndex = 2;
+            this.comboRoom.TabIndex = 4;
             // 
             // comboBuilding
             // 
@@ -89,7 +89,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.comboBranch.Location = new System.Drawing.Point(39, 52);
             this.comboBranch.Name = "comboBranch";
             this.comboBranch.Size = new System.Drawing.Size(406, 24);
-            this.comboBranch.TabIndex = 2;
+            this.comboBranch.TabIndex = 1;
             // 
             // label2
             // 

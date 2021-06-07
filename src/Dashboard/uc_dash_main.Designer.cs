@@ -43,7 +43,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.btn_assets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_assets.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_assets.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btn_assets.Location = new System.Drawing.Point(0, 198);
+            this.btn_assets.Location = new System.Drawing.Point(0, 28);
             this.btn_assets.Name = "btn_assets";
             this.btn_assets.Size = new System.Drawing.Size(264, 53);
             this.btn_assets.TabIndex = 1;
@@ -58,7 +58,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.button3.Location = new System.Drawing.Point(0, 251);
+            this.button3.Location = new System.Drawing.Point(0, 81);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(264, 53);
             this.button3.TabIndex = 2;
@@ -72,7 +72,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.button2.Location = new System.Drawing.Point(0, 304);
+            this.button2.Location = new System.Drawing.Point(0, 134);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(264, 53);
             this.button2.TabIndex = 3;
@@ -86,7 +86,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.button1.Location = new System.Drawing.Point(0, 357);
+            this.button1.Location = new System.Drawing.Point(0, 187);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(264, 53);
             this.button1.TabIndex = 4;

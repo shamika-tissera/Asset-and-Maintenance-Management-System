@@ -38,33 +38,30 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.uc_warranty_common1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_warranty_common();
             this.uc_administrative_common1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_administrative_common();
             this.uc_general_common1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_general_common();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(171, 3);
+            this.button1.Location = new System.Drawing.Point(740, 1329);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 32);
-            this.button1.TabIndex = 7;
+            this.button1.TabIndex = 101;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(575, 1319);
+            this.panel1.Location = new System.Drawing.Point(335, 1376);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(392, 102);
+            this.panel1.Size = new System.Drawing.Size(392, 19);
             this.panel1.TabIndex = 8;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(276, 3);
+            this.button2.Location = new System.Drawing.Point(879, 1329);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 32);
-            this.button2.TabIndex = 7;
+            this.button2.TabIndex = 100;
             this.button2.Text = "OK";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -73,7 +70,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.uc_location_common1.Dock = System.Windows.Forms.DockStyle.Top;
             this.uc_location_common1.Location = new System.Drawing.Point(0, 1139);
             this.uc_location_common1.Name = "uc_location_common1";
-            this.uc_location_common1.Size = new System.Drawing.Size(979, 174);
+            this.uc_location_common1.Size = new System.Drawing.Size(1000, 174);
             this.uc_location_common1.TabIndex = 10;
             // 
             // uc_maintenance_common1
@@ -81,7 +78,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.uc_maintenance_common1.Dock = System.Windows.Forms.DockStyle.Top;
             this.uc_maintenance_common1.Location = new System.Drawing.Point(0, 960);
             this.uc_maintenance_common1.Name = "uc_maintenance_common1";
-            this.uc_maintenance_common1.Size = new System.Drawing.Size(979, 179);
+            this.uc_maintenance_common1.Size = new System.Drawing.Size(1000, 179);
             this.uc_maintenance_common1.TabIndex = 9;
             // 
             // uc_installInfo_common1
@@ -89,7 +86,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.uc_installInfo_common1.Dock = System.Windows.Forms.DockStyle.Top;
             this.uc_installInfo_common1.Location = new System.Drawing.Point(0, 791);
             this.uc_installInfo_common1.Name = "uc_installInfo_common1";
-            this.uc_installInfo_common1.Size = new System.Drawing.Size(979, 169);
+            this.uc_installInfo_common1.Size = new System.Drawing.Size(1000, 169);
             this.uc_installInfo_common1.TabIndex = 6;
             this.uc_installInfo_common1.Load += new System.EventHandler(this.uc_installInfo_common1_Load);
             // 
@@ -98,7 +95,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.uc_warranty_common1.Dock = System.Windows.Forms.DockStyle.Top;
             this.uc_warranty_common1.Location = new System.Drawing.Point(0, 623);
             this.uc_warranty_common1.Name = "uc_warranty_common1";
-            this.uc_warranty_common1.Size = new System.Drawing.Size(979, 168);
+            this.uc_warranty_common1.Size = new System.Drawing.Size(1000, 168);
             this.uc_warranty_common1.TabIndex = 5;
             this.uc_warranty_common1.Load += new System.EventHandler(this.uc_warranty_common1_Load);
             // 
@@ -107,7 +104,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.uc_administrative_common1.Dock = System.Windows.Forms.DockStyle.Top;
             this.uc_administrative_common1.Location = new System.Drawing.Point(0, 248);
             this.uc_administrative_common1.Name = "uc_administrative_common1";
-            this.uc_administrative_common1.Size = new System.Drawing.Size(979, 375);
+            this.uc_administrative_common1.Size = new System.Drawing.Size(1000, 375);
             this.uc_administrative_common1.TabIndex = 3;
             this.uc_administrative_common1.Load += new System.EventHandler(this.uc_administrative_common1_Load);
             // 
@@ -116,7 +113,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.uc_general_common1.Dock = System.Windows.Forms.DockStyle.Top;
             this.uc_general_common1.Location = new System.Drawing.Point(0, 0);
             this.uc_general_common1.Name = "uc_general_common1";
-            this.uc_general_common1.Size = new System.Drawing.Size(979, 248);
+            this.uc_general_common1.Size = new System.Drawing.Size(1000, 248);
             this.uc_general_common1.TabIndex = 0;
             // 
             // add_item
@@ -124,8 +121,10 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1000, 1055);
+            this.ClientSize = new System.Drawing.Size(1021, 1055);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.uc_location_common1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.uc_maintenance_common1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.uc_installInfo_common1);
@@ -136,7 +135,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Item";
             this.Load += new System.EventHandler(this.add_item_Load);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -66,7 +66,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.comboPlant.Location = new System.Drawing.Point(29, 115);
             this.comboPlant.Name = "comboPlant";
             this.comboPlant.Size = new System.Drawing.Size(406, 28);
-            this.comboPlant.TabIndex = 8;
+            this.comboPlant.TabIndex = 3;
             this.comboPlant.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // dateInstallation
@@ -76,7 +76,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.dateInstallation.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateInstallation.Name = "dateInstallation";
             this.dateInstallation.Size = new System.Drawing.Size(406, 27);
-            this.dateInstallation.TabIndex = 7;
+            this.dateInstallation.TabIndex = 1;
             this.dateInstallation.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
             // 
             // label2
@@ -96,7 +96,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.dateAcceptance.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateAcceptance.Name = "dateAcceptance";
             this.dateAcceptance.Size = new System.Drawing.Size(406, 27);
-            this.dateAcceptance.TabIndex = 7;
+            this.dateAcceptance.TabIndex = 2;
             this.dateAcceptance.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
             // 
             // label6

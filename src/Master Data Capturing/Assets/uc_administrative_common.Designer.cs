@@ -30,25 +30,25 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkboxFullyDepreciated = new System.Windows.Forms.CheckBox();
+            this.comboDepreciationMethod = new System.Windows.Forms.ComboBox();
+            this.dateDepreciationEnd = new System.Windows.Forms.DateTimePicker();
+            this.dateDepreciationStart = new System.Windows.Forms.DateTimePicker();
+            this.dateDisposal = new System.Windows.Forms.DateTimePicker();
+            this.txtInvoiceNumber = new System.Windows.Forms.TextBox();
+            this.txtDepreciationRate = new System.Windows.Forms.MaskedTextBox();
+            this.txtYearsOfLife = new System.Windows.Forms.MaskedTextBox();
+            this.txtCurrentVal = new System.Windows.Forms.MaskedTextBox();
+            this.txtPurchasedPrice = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtPurchasedPrice = new System.Windows.Forms.MaskedTextBox();
-            this.txtInvoiceNumber = new System.Windows.Forms.TextBox();
-            this.txtCurrentVal = new System.Windows.Forms.MaskedTextBox();
-            this.dateDisposal = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtYearsOfLife = new System.Windows.Forms.MaskedTextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dateDepreciationStart = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
-            this.dateDepreciationEnd = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
-            this.comboDepreciationMethod = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtDepreciationRate = new System.Windows.Forms.MaskedTextBox();
-            this.checkboxFullyDepreciated = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,6 +81,97 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.groupBox1.Text = "Administrative";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // checkboxFullyDepreciated
+            // 
+            this.checkboxFullyDepreciated.AutoSize = true;
+            this.checkboxFullyDepreciated.Location = new System.Drawing.Point(498, 337);
+            this.checkboxFullyDepreciated.Name = "checkboxFullyDepreciated";
+            this.checkboxFullyDepreciated.Size = new System.Drawing.Size(140, 21);
+            this.checkboxFullyDepreciated.TabIndex = 10;
+            this.checkboxFullyDepreciated.Text = "Fully Depreciated";
+            this.checkboxFullyDepreciated.UseVisualStyleBackColor = true;
+            this.checkboxFullyDepreciated.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // comboDepreciationMethod
+            // 
+            this.comboDepreciationMethod.FormattingEnabled = true;
+            this.comboDepreciationMethod.Items.AddRange(new object[] {
+            "Reducing Balance",
+            "Straight Line"});
+            this.comboDepreciationMethod.Location = new System.Drawing.Point(498, 268);
+            this.comboDepreciationMethod.Name = "comboDepreciationMethod";
+            this.comboDepreciationMethod.Size = new System.Drawing.Size(406, 24);
+            this.comboDepreciationMethod.TabIndex = 8;
+            // 
+            // dateDepreciationEnd
+            // 
+            this.dateDepreciationEnd.Location = new System.Drawing.Point(39, 266);
+            this.dateDepreciationEnd.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            this.dateDepreciationEnd.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
+            this.dateDepreciationEnd.Name = "dateDepreciationEnd";
+            this.dateDepreciationEnd.Size = new System.Drawing.Size(406, 22);
+            this.dateDepreciationEnd.TabIndex = 7;
+            this.dateDepreciationEnd.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            // 
+            // dateDepreciationStart
+            // 
+            this.dateDepreciationStart.Location = new System.Drawing.Point(498, 192);
+            this.dateDepreciationStart.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            this.dateDepreciationStart.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
+            this.dateDepreciationStart.Name = "dateDepreciationStart";
+            this.dateDepreciationStart.Size = new System.Drawing.Size(406, 22);
+            this.dateDepreciationStart.TabIndex = 6;
+            this.dateDepreciationStart.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            // 
+            // dateDisposal
+            // 
+            this.dateDisposal.Location = new System.Drawing.Point(498, 122);
+            this.dateDisposal.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            this.dateDisposal.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
+            this.dateDisposal.Name = "dateDisposal";
+            this.dateDisposal.Size = new System.Drawing.Size(406, 22);
+            this.dateDisposal.TabIndex = 4;
+            this.dateDisposal.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            // 
+            // txtInvoiceNumber
+            // 
+            this.txtInvoiceNumber.Location = new System.Drawing.Point(498, 54);
+            this.txtInvoiceNumber.Name = "txtInvoiceNumber";
+            this.txtInvoiceNumber.Size = new System.Drawing.Size(406, 22);
+            this.txtInvoiceNumber.TabIndex = 2;
+            // 
+            // txtDepreciationRate
+            // 
+            this.txtDepreciationRate.Location = new System.Drawing.Point(39, 335);
+            this.txtDepreciationRate.Mask = "99.099";
+            this.txtDepreciationRate.Name = "txtDepreciationRate";
+            this.txtDepreciationRate.Size = new System.Drawing.Size(406, 22);
+            this.txtDepreciationRate.TabIndex = 9;
+            // 
+            // txtYearsOfLife
+            // 
+            this.txtYearsOfLife.Location = new System.Drawing.Point(39, 192);
+            this.txtYearsOfLife.Mask = "999.099";
+            this.txtYearsOfLife.Name = "txtYearsOfLife";
+            this.txtYearsOfLife.Size = new System.Drawing.Size(406, 22);
+            this.txtYearsOfLife.TabIndex = 5;
+            // 
+            // txtCurrentVal
+            // 
+            this.txtCurrentVal.Location = new System.Drawing.Point(39, 122);
+            this.txtCurrentVal.Mask = "99999999990.99";
+            this.txtCurrentVal.Name = "txtCurrentVal";
+            this.txtCurrentVal.Size = new System.Drawing.Size(406, 22);
+            this.txtCurrentVal.TabIndex = 3;
+            // 
+            // txtPurchasedPrice
+            // 
+            this.txtPurchasedPrice.Location = new System.Drawing.Point(39, 54);
+            this.txtPurchasedPrice.Mask = "99999999990.99";
+            this.txtPurchasedPrice.Name = "txtPurchasedPrice";
+            this.txtPurchasedPrice.Size = new System.Drawing.Size(406, 22);
+            this.txtPurchasedPrice.TabIndex = 1;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -99,6 +190,51 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label6.TabIndex = 1;
             this.label6.Text = "Disposal Date";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(495, 172);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(122, 17);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Depreciation Start";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(40, 315);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(122, 17);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Depreciation Rate";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(495, 243);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(139, 17);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Depreciation Method";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(40, 243);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(117, 17);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Depreciation End";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(40, 172);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 17);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Years of life";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -116,142 +252,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label1.Size = new System.Drawing.Size(104, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Purchase Price";
-            // 
-            // txtPurchasedPrice
-            // 
-            this.txtPurchasedPrice.Location = new System.Drawing.Point(39, 54);
-            this.txtPurchasedPrice.Mask = "99999999990.99";
-            this.txtPurchasedPrice.Name = "txtPurchasedPrice";
-            this.txtPurchasedPrice.Size = new System.Drawing.Size(406, 22);
-            this.txtPurchasedPrice.TabIndex = 5;
-            // 
-            // txtInvoiceNumber
-            // 
-            this.txtInvoiceNumber.Location = new System.Drawing.Point(498, 54);
-            this.txtInvoiceNumber.Name = "txtInvoiceNumber";
-            this.txtInvoiceNumber.Size = new System.Drawing.Size(406, 22);
-            this.txtInvoiceNumber.TabIndex = 6;
-            // 
-            // txtCurrentVal
-            // 
-            this.txtCurrentVal.Location = new System.Drawing.Point(39, 122);
-            this.txtCurrentVal.Mask = "99999999990.99";
-            this.txtCurrentVal.Name = "txtCurrentVal";
-            this.txtCurrentVal.Size = new System.Drawing.Size(406, 22);
-            this.txtCurrentVal.TabIndex = 5;
-            // 
-            // dateDisposal
-            // 
-            this.dateDisposal.Location = new System.Drawing.Point(498, 122);
-            this.dateDisposal.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
-            this.dateDisposal.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
-            this.dateDisposal.Name = "dateDisposal";
-            this.dateDisposal.Size = new System.Drawing.Size(406, 22);
-            this.dateDisposal.TabIndex = 7;
-            this.dateDisposal.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 172);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 17);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Years of life";
-            // 
-            // txtYearsOfLife
-            // 
-            this.txtYearsOfLife.Location = new System.Drawing.Point(39, 192);
-            this.txtYearsOfLife.Mask = "999.099";
-            this.txtYearsOfLife.Name = "txtYearsOfLife";
-            this.txtYearsOfLife.Size = new System.Drawing.Size(406, 22);
-            this.txtYearsOfLife.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(495, 172);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 17);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Depreciation Start";
-            // 
-            // dateDepreciationStart
-            // 
-            this.dateDepreciationStart.Location = new System.Drawing.Point(498, 192);
-            this.dateDepreciationStart.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
-            this.dateDepreciationStart.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
-            this.dateDepreciationStart.Name = "dateDepreciationStart";
-            this.dateDepreciationStart.Size = new System.Drawing.Size(406, 22);
-            this.dateDepreciationStart.TabIndex = 7;
-            this.dateDepreciationStart.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(40, 243);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(117, 17);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Depreciation End";
-            // 
-            // dateDepreciationEnd
-            // 
-            this.dateDepreciationEnd.Location = new System.Drawing.Point(39, 266);
-            this.dateDepreciationEnd.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
-            this.dateDepreciationEnd.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
-            this.dateDepreciationEnd.Name = "dateDepreciationEnd";
-            this.dateDepreciationEnd.Size = new System.Drawing.Size(406, 22);
-            this.dateDepreciationEnd.TabIndex = 7;
-            this.dateDepreciationEnd.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(495, 243);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(139, 17);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Depreciation Method";
-            // 
-            // comboDepreciationMethod
-            // 
-            this.comboDepreciationMethod.FormattingEnabled = true;
-            this.comboDepreciationMethod.Items.AddRange(new object[] {
-            "Reducing Balance",
-            "Straight Line"});
-            this.comboDepreciationMethod.Location = new System.Drawing.Point(498, 268);
-            this.comboDepreciationMethod.Name = "comboDepreciationMethod";
-            this.comboDepreciationMethod.Size = new System.Drawing.Size(406, 24);
-            this.comboDepreciationMethod.TabIndex = 8;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(40, 315);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(122, 17);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Depreciation Rate";
-            // 
-            // txtDepreciationRate
-            // 
-            this.txtDepreciationRate.Location = new System.Drawing.Point(39, 335);
-            this.txtDepreciationRate.Mask = "99.099";
-            this.txtDepreciationRate.Name = "txtDepreciationRate";
-            this.txtDepreciationRate.Size = new System.Drawing.Size(406, 22);
-            this.txtDepreciationRate.TabIndex = 5;
-            // 
-            // checkboxFullyDepreciated
-            // 
-            this.checkboxFullyDepreciated.AutoSize = true;
-            this.checkboxFullyDepreciated.Location = new System.Drawing.Point(498, 337);
-            this.checkboxFullyDepreciated.Name = "checkboxFullyDepreciated";
-            this.checkboxFullyDepreciated.Size = new System.Drawing.Size(140, 21);
-            this.checkboxFullyDepreciated.TabIndex = 9;
-            this.checkboxFullyDepreciated.Text = "Fully Depreciated";
-            this.checkboxFullyDepreciated.UseVisualStyleBackColor = true;
-            this.checkboxFullyDepreciated.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // uc_administrative_common
             // 

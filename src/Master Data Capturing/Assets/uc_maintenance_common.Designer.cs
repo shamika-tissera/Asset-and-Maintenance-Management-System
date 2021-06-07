@@ -66,7 +66,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.dateLastChecked.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateLastChecked.Name = "dateLastChecked";
             this.dateLastChecked.Size = new System.Drawing.Size(406, 22);
-            this.dateLastChecked.TabIndex = 3;
+            this.dateLastChecked.TabIndex = 4;
             this.dateLastChecked.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
             // 
             // comboCriticality
@@ -75,7 +75,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.comboCriticality.Location = new System.Drawing.Point(39, 122);
             this.comboCriticality.Name = "comboCriticality";
             this.comboCriticality.Size = new System.Drawing.Size(406, 24);
-            this.comboCriticality.TabIndex = 2;
+            this.comboCriticality.TabIndex = 3;
             // 
             // comboCondition
             // 
@@ -91,7 +91,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.comboMaintainedBy.Location = new System.Drawing.Point(39, 52);
             this.comboMaintainedBy.Name = "comboMaintainedBy";
             this.comboMaintainedBy.Size = new System.Drawing.Size(406, 24);
-            this.comboMaintainedBy.TabIndex = 2;
+            this.comboMaintainedBy.TabIndex = 1;
             // 
             // label2
             // 
