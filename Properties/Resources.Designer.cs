@@ -253,9 +253,29 @@ namespace Asset_and_Maintenance_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap salute {
+            get {
+                object obj = ResourceManager.GetObject("salute", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap User_with_smile_svg {
             get {
                 object obj = ResourceManager.GetObject("User_with_smile.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap welcomeIcon {
+            get {
+                object obj = ResourceManager.GetObject("welcomeIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

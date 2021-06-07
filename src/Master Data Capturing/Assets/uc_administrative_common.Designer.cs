@@ -31,7 +31,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkboxFullyDepreciated = new System.Windows.Forms.CheckBox();
-            this.comboDepreciationMethod = new System.Windows.Forms.ComboBox();
             this.dateDepreciationEnd = new System.Windows.Forms.DateTimePicker();
             this.dateDepreciationStart = new System.Windows.Forms.DateTimePicker();
             this.dateDisposal = new System.Windows.Forms.DateTimePicker();
@@ -44,18 +43,22 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.groupDepreciationMethod = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
+            this.groupDepreciationMethod.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.groupDepreciationMethod);
             this.groupBox1.Controls.Add(this.checkboxFullyDepreciated);
-            this.groupBox1.Controls.Add(this.comboDepreciationMethod);
             this.groupBox1.Controls.Add(this.dateDepreciationEnd);
             this.groupBox1.Controls.Add(this.dateDepreciationStart);
             this.groupBox1.Controls.Add(this.dateDisposal);
@@ -68,7 +71,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label5);
@@ -91,17 +93,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.checkboxFullyDepreciated.Text = "Fully Depreciated";
             this.checkboxFullyDepreciated.UseVisualStyleBackColor = true;
             this.checkboxFullyDepreciated.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // comboDepreciationMethod
-            // 
-            this.comboDepreciationMethod.FormattingEnabled = true;
-            this.comboDepreciationMethod.Items.AddRange(new object[] {
-            "Reducing Balance",
-            "Straight Line"});
-            this.comboDepreciationMethod.Location = new System.Drawing.Point(498, 268);
-            this.comboDepreciationMethod.Name = "comboDepreciationMethod";
-            this.comboDepreciationMethod.Size = new System.Drawing.Size(406, 24);
-            this.comboDepreciationMethod.TabIndex = 8;
             // 
             // dateDepreciationEnd
             // 
@@ -208,15 +199,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label9.TabIndex = 1;
             this.label9.Text = "Depreciation Rate";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(495, 243);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(139, 17);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Depreciation Method";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -253,6 +235,48 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label1.TabIndex = 1;
             this.label1.Text = "Purchase Price";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(5, 6);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 17);
+            this.label8.TabIndex = 1;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(8, 32);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(110, 21);
+            this.radioButton1.TabIndex = 11;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Straight-Line";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(124, 32);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(144, 21);
+            this.radioButton2.TabIndex = 12;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Reducing Balance";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // groupDepreciationMethod
+            // 
+            this.groupDepreciationMethod.Controls.Add(this.radioButton2);
+            this.groupDepreciationMethod.Controls.Add(this.radioButton1);
+            this.groupDepreciationMethod.Controls.Add(this.label8);
+            this.groupDepreciationMethod.Location = new System.Drawing.Point(491, 243);
+            this.groupDepreciationMethod.Name = "groupDepreciationMethod";
+            this.groupDepreciationMethod.Size = new System.Drawing.Size(272, 66);
+            this.groupDepreciationMethod.TabIndex = 13;
+            this.groupDepreciationMethod.TabStop = false;
+            this.groupDepreciationMethod.Text = "Depreciation Method";
+            // 
             // uc_administrative_common
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -262,6 +286,8 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.Size = new System.Drawing.Size(951, 375);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupDepreciationMethod.ResumeLayout(false);
+            this.groupDepreciationMethod.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -277,7 +303,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private System.Windows.Forms.MaskedTextBox txtCurrentVal;
         private System.Windows.Forms.MaskedTextBox txtPurchasedPrice;
         private System.Windows.Forms.CheckBox checkboxFullyDepreciated;
-        private System.Windows.Forms.ComboBox comboDepreciationMethod;
         private System.Windows.Forms.DateTimePicker dateDepreciationEnd;
         private System.Windows.Forms.DateTimePicker dateDepreciationStart;
         private System.Windows.Forms.DateTimePicker dateDisposal;
@@ -285,8 +310,11 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private System.Windows.Forms.MaskedTextBox txtYearsOfLife;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox groupDepreciationMethod;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label label8;
     }
 }

@@ -53,7 +53,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(963, 165);
+            this.groupBox1.Size = new System.Drawing.Size(941, 165);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Location";
@@ -61,6 +61,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // comboFloor
             // 
+            this.comboFloor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboFloor.FormattingEnabled = true;
             this.comboFloor.Location = new System.Drawing.Point(39, 122);
             this.comboFloor.Name = "comboFloor";
@@ -69,6 +70,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // comboRoom
             // 
+            this.comboRoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboRoom.FormattingEnabled = true;
             this.comboRoom.Location = new System.Drawing.Point(498, 122);
             this.comboRoom.Name = "comboRoom";
@@ -77,6 +79,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // comboBuilding
             // 
+            this.comboBuilding.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBuilding.FormattingEnabled = true;
             this.comboBuilding.Location = new System.Drawing.Point(498, 52);
             this.comboBuilding.Name = "comboBuilding";
@@ -85,6 +88,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // comboBranch
             // 
+            this.comboBranch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBranch.FormattingEnabled = true;
             this.comboBranch.Location = new System.Drawing.Point(39, 52);
             this.comboBranch.Name = "comboBranch";

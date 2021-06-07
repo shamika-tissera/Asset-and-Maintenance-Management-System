@@ -22,7 +22,6 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         {
             this.Visible = false;
             inst.clickedAssets();
-            inst.clickedAssets();
         }
 
         private void uc_dash_main_Load(object sender, EventArgs e)

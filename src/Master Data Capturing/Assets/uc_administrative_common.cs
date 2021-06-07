@@ -64,7 +64,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
 
         public string getDepreciationMethod
         {
-            get => comboDepreciationMethod.Text;
+            get => groupDepreciationMethod.Text;
         }
 
         public string getDepreciationRate

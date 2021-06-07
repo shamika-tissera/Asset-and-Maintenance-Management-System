@@ -50,7 +50,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.groupBox1.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(963, 248);
+            this.groupBox1.Size = new System.Drawing.Size(941, 163);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Installation Information";
@@ -59,10 +59,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // comboPlant
             // 
             this.comboPlant.FormattingEnabled = true;
-            this.comboPlant.Items.AddRange(new object[] {
-            "On-site",
-            "Limited",
-            "Life-time"});
             this.comboPlant.Location = new System.Drawing.Point(35, 115);
             this.comboPlant.Name = "comboPlant";
             this.comboPlant.Size = new System.Drawing.Size(406, 28);

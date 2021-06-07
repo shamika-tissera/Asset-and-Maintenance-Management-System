@@ -71,7 +71,13 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // comboCriticality
             // 
+            this.comboCriticality.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboCriticality.FormattingEnabled = true;
+            this.comboCriticality.Items.AddRange(new object[] {
+            "Low",
+            "Moderate",
+            "High",
+            "Extreme"});
             this.comboCriticality.Location = new System.Drawing.Point(39, 122);
             this.comboCriticality.Name = "comboCriticality";
             this.comboCriticality.Size = new System.Drawing.Size(406, 24);
@@ -79,7 +85,12 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // comboCondition
             // 
+            this.comboCondition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboCondition.FormattingEnabled = true;
+            this.comboCondition.Items.AddRange(new object[] {
+            "Working",
+            "To inspect",
+            "Brocken"});
             this.comboCondition.Location = new System.Drawing.Point(498, 52);
             this.comboCondition.Name = "comboCondition";
             this.comboCondition.Size = new System.Drawing.Size(406, 24);
@@ -87,6 +98,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // comboMaintainedBy
             // 
+            this.comboMaintainedBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboMaintainedBy.FormattingEnabled = true;
             this.comboMaintainedBy.Location = new System.Drawing.Point(39, 52);
             this.comboMaintainedBy.Name = "comboMaintainedBy";

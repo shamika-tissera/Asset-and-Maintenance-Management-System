@@ -69,6 +69,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // combo_general_supplier
             // 
+            this.combo_general_supplier.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_general_supplier.FormattingEnabled = true;
             this.combo_general_supplier.Location = new System.Drawing.Point(39, 173);
             this.combo_general_supplier.Name = "combo_general_supplier";
@@ -77,7 +78,13 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // combo_general_state
             // 
+            this.combo_general_state.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_general_state.FormattingEnabled = true;
+            this.combo_general_state.Items.AddRange(new object[] {
+            "In stock",
+            "Under maintainance",
+            "Disposed",
+            "In use"});
             this.combo_general_state.Location = new System.Drawing.Point(498, 173);
             this.combo_general_state.Name = "combo_general_state";
             this.combo_general_state.Size = new System.Drawing.Size(406, 24);
@@ -85,6 +92,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // combo_general_manu
             // 
+            this.combo_general_manu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_general_manu.FormattingEnabled = true;
             this.combo_general_manu.Location = new System.Drawing.Point(498, 112);
             this.combo_general_manu.Name = "combo_general_manu";

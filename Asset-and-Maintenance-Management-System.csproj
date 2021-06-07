@@ -88,6 +88,12 @@
     <Compile Include="src\Master Data Capturing\Assets\uc_administrative_common.Designer.cs">
       <DependentUpon>uc_administrative_common.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_AllAssets.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_AllAssets.Designer.cs">
+      <DependentUpon>uc_AllAssets.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Master Data Capturing\Assets\uc_asset_general.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -176,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_administrative_common.resx">
       <DependentUpon>uc_administrative_common.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_AllAssets.resx">
+      <DependentUpon>uc_AllAssets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_asset_general.resx">
       <DependentUpon>uc_asset_general.cs</DependentUpon>
@@ -292,6 +301,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\addItem %28Custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcomeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salute.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
