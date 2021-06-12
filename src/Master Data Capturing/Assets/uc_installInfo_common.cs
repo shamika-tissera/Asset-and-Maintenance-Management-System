@@ -46,5 +46,12 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
             return comboPlant.Text;
         }
+
+        public void resetContent()
+        {
+            comboPlant.ResetText();
+            dateAcceptance.ResetText();
+            dateInstallation.ResetText();
+        }
     }
 }

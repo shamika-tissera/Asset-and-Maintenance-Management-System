@@ -70,6 +70,12 @@
     <Compile Include="src\Dashboard\uc_dash_main.Designer.cs">
       <DependentUpon>uc_dash_main.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\addItem_assetCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\addItem_assetCategory.Designer.cs">
+      <DependentUpon>addItem_assetCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Master Data Capturing\Assets\add_item.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,7 @@
     <Compile Include="src\Startup Wizard\uc_welcome_1.Designer.cs">
       <DependentUpon>uc_welcome_1.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\TextWriter.cs" />
     <EmbeddedResource Include="src\Dashboard\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Dashboard\uc_dash_main.resx">
       <DependentUpon>uc_dash_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\Assets\addItem_assetCategory.resx">
+      <DependentUpon>addItem_assetCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\add_item.resx">
       <DependentUpon>add_item.cs</DependentUpon>
@@ -307,6 +317,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\salute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heaterIcon %28Custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heaterIcon %28Custom%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heaterIcon %28Custom%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\networkDeviceIcon %28Custom%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

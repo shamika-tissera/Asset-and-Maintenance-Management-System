@@ -41,18 +41,22 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private void btnAddItem_Click(object sender, EventArgs e)
         {
             item = new add_item(this);
-            item.ShowDialog();
+            addItem_assetCategory selectCat = new addItem_assetCategory(inst, item);
+            selectCat.ShowDialog();
         }
 
         public void clickedAddItemOK()
         {
             inst.clickedAssetAddItemOK();
-            item.Hide();
+            
+            //perform database entry here
+            //if database entry successful, message will display
+            MessageBox.Show("Added record successfully!");
         }
 
         public void clickedAddItemCancel()
         {
-            
+            item.Hide();
         }
     }
 }

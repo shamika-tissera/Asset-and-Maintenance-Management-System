@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,9 +13,22 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
 {
     public partial class Dashboard : Form
     {
+        //use this function to make the edges of the form curved
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+            int nLeftRect,
+            int nTopRect,
+            int nRightRect,
+            int nBottomRect,
+            int nWidthEllipse,
+            int nHeightEllipse
+
+        );
         public Dashboard()
         {
             InitializeComponent();
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             uc_dash_main1.setDashboardInstance(this);
             uc_assets_11.setDashboardInstance(this);
             uc_navPanel_assets1.setDashboardInstance(this);
@@ -90,6 +104,11 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void uc_navPanel_assets1_Load(object sender, EventArgs e)
         {
 
         }

@@ -60,7 +60,7 @@ namespace Asset_and_Maintenance_Management_System
                 //TODO validation
 
                 //When the startup wizard has been run for the first time
-                string fileRelPath = "../../prog_settings/startup.txt";
+                string fileRelPath = "../../prog_logs/startup.txt";
                 File.WriteAllText(fileRelPath, "true");
             }
         }

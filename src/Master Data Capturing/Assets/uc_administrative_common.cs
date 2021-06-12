@@ -15,6 +15,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         public uc_administrative_common()
         {
             InitializeComponent();
+            radBtn_reducingBalance.Checked = true;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -75,6 +76,19 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         public bool getIsFullyDepreciated
         {
             get => checkboxFullyDepreciated.Checked;
+        }
+
+        public void resetContent()
+        {
+            txtCurrentVal.ResetText();
+            txtDepreciationRate.ResetText();
+            txtInvoiceNumber.ResetText();
+            txtYearsOfLife.ResetText();
+            txtPurchasedPrice.ResetText();
+            dateDepreciationStart.ResetText();
+            dateDisposal.ResetText();
+            dateDepreciationEnd.ResetText();
+            checkboxFullyDepreciated.Checked = false;
         }
     }
 }

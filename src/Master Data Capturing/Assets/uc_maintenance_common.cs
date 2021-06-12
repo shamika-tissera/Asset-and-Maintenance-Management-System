@@ -41,5 +41,13 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
             return dateLastChecked.Text;
         }
+
+        public void resetContent()
+        {
+            comboCriticality.ResetText();
+            comboCondition.ResetText();
+            comboMaintainedBy.ResetText();
+            dateLastChecked.ResetText();
+        }
     }
 }

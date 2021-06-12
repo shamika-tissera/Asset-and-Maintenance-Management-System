@@ -30,6 +30,10 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupDepreciationMethod = new System.Windows.Forms.GroupBox();
+            this.radBtn_reducingBalance = new System.Windows.Forms.RadioButton();
+            this.radBtn_straightLine = new System.Windows.Forms.RadioButton();
+            this.label8 = new System.Windows.Forms.Label();
             this.checkboxFullyDepreciated = new System.Windows.Forms.CheckBox();
             this.dateDepreciationEnd = new System.Windows.Forms.DateTimePicker();
             this.dateDepreciationStart = new System.Windows.Forms.DateTimePicker();
@@ -47,10 +51,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.groupDepreciationMethod = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupDepreciationMethod.SuspendLayout();
             this.SuspendLayout();
@@ -82,6 +82,48 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Administrative";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // groupDepreciationMethod
+            // 
+            this.groupDepreciationMethod.Controls.Add(this.radBtn_reducingBalance);
+            this.groupDepreciationMethod.Controls.Add(this.radBtn_straightLine);
+            this.groupDepreciationMethod.Controls.Add(this.label8);
+            this.groupDepreciationMethod.Location = new System.Drawing.Point(491, 243);
+            this.groupDepreciationMethod.Name = "groupDepreciationMethod";
+            this.groupDepreciationMethod.Size = new System.Drawing.Size(272, 66);
+            this.groupDepreciationMethod.TabIndex = 13;
+            this.groupDepreciationMethod.TabStop = false;
+            this.groupDepreciationMethod.Text = "Depreciation Method";
+            // 
+            // radBtn_reducingBalance
+            // 
+            this.radBtn_reducingBalance.AutoSize = true;
+            this.radBtn_reducingBalance.Location = new System.Drawing.Point(124, 32);
+            this.radBtn_reducingBalance.Name = "radBtn_reducingBalance";
+            this.radBtn_reducingBalance.Size = new System.Drawing.Size(144, 21);
+            this.radBtn_reducingBalance.TabIndex = 12;
+            this.radBtn_reducingBalance.TabStop = true;
+            this.radBtn_reducingBalance.Text = "Reducing Balance";
+            this.radBtn_reducingBalance.UseVisualStyleBackColor = true;
+            // 
+            // radBtn_straightLine
+            // 
+            this.radBtn_straightLine.AutoSize = true;
+            this.radBtn_straightLine.Location = new System.Drawing.Point(8, 32);
+            this.radBtn_straightLine.Name = "radBtn_straightLine";
+            this.radBtn_straightLine.Size = new System.Drawing.Size(110, 21);
+            this.radBtn_straightLine.TabIndex = 11;
+            this.radBtn_straightLine.TabStop = true;
+            this.radBtn_straightLine.Text = "Straight-Line";
+            this.radBtn_straightLine.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(5, 6);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 17);
+            this.label8.TabIndex = 1;
             // 
             // checkboxFullyDepreciated
             // 
@@ -235,48 +277,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label1.TabIndex = 1;
             this.label1.Text = "Purchase Price";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(5, 6);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 17);
-            this.label8.TabIndex = 1;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(8, 32);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(110, 21);
-            this.radioButton1.TabIndex = 11;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Straight-Line";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(124, 32);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(144, 21);
-            this.radioButton2.TabIndex = 12;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Reducing Balance";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // groupDepreciationMethod
-            // 
-            this.groupDepreciationMethod.Controls.Add(this.radioButton2);
-            this.groupDepreciationMethod.Controls.Add(this.radioButton1);
-            this.groupDepreciationMethod.Controls.Add(this.label8);
-            this.groupDepreciationMethod.Location = new System.Drawing.Point(491, 243);
-            this.groupDepreciationMethod.Name = "groupDepreciationMethod";
-            this.groupDepreciationMethod.Size = new System.Drawing.Size(272, 66);
-            this.groupDepreciationMethod.TabIndex = 13;
-            this.groupDepreciationMethod.TabStop = false;
-            this.groupDepreciationMethod.Text = "Depreciation Method";
-            // 
             // uc_administrative_common
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -313,8 +313,8 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupDepreciationMethod;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radBtn_reducingBalance;
+        private System.Windows.Forms.RadioButton radBtn_straightLine;
         private System.Windows.Forms.Label label8;
     }
 }

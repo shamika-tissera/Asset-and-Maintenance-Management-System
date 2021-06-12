@@ -16,7 +16,7 @@ namespace Asset_and_Maintenance_Management_System
         [STAThread]
         static void Main()
         {
-            string fileRelPath = "../../prog_settings/startup.txt";
+            string fileRelPath = "../../prog_logs/startup.txt";
             bool status;
             if (File.Exists(fileRelPath))
             {

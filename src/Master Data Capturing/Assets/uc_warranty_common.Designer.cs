@@ -71,6 +71,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // txtWarrantyCode
             // 
             this.txtWarrantyCode.Location = new System.Drawing.Point(39, 54);
+            this.txtWarrantyCode.MaxLength = 100;
             this.txtWarrantyCode.Name = "txtWarrantyCode";
             this.txtWarrantyCode.Size = new System.Drawing.Size(406, 22);
             this.txtWarrantyCode.TabIndex = 1;

@@ -50,5 +50,20 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
             return combo_general_state.Text;
         }
+
+        private void combo_general_supplier_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        public void resetContents()
+        {
+            combo_general_state.ResetText();
+            combo_general_manu.ResetText();
+            combo_general_supplier.ResetText();
+            txt_general_code.ResetText();
+            txt_general_name.ResetText();
+            txt_general_serial.ResetText();
+        }
     }
 }

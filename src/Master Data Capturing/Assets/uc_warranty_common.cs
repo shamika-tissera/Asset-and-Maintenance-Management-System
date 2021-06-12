@@ -40,6 +40,13 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
             get => dateEnd.Text;
         }
-        
-}
+
+        public void resetContent()
+        {
+            txtWarrantyCode.ResetText();
+            comboType.ResetText();
+            dateStart.ResetText();
+            dateEnd.ResetText();
+        }
+    }
 }

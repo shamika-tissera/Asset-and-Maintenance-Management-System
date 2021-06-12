@@ -41,5 +41,13 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
             get => comboRoom.Text;
         }
+
+        public void resetContent()
+        {
+            comboFloor.ResetText();
+            comboBuilding.ResetText();
+            comboBranch.ResetText();
+            comboRoom.ResetText();
+        }
     }
 }

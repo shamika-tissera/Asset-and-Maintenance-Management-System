@@ -163,6 +163,16 @@ namespace Asset_and_Maintenance_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close {
+            get {
+                object obj = ResourceManager.GetObject("close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap configAssets__Custom_ {
             get {
                 object obj = ResourceManager.GetObject("configAssets (Custom)", resourceCulture);
@@ -203,6 +213,36 @@ namespace Asset_and_Maintenance_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap heaterIcon__Custom_ {
+            get {
+                object obj = ResourceManager.GetObject("heaterIcon (Custom)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap heaterIcon__Custom___1_ {
+            get {
+                object obj = ResourceManager.GetObject("heaterIcon (Custom) (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap heaterIcon__Custom_1 {
+            get {
+                object obj = ResourceManager.GetObject("heaterIcon (Custom)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap land__Custom_ {
             get {
                 object obj = ResourceManager.GetObject("land (Custom)", resourceCulture);
@@ -226,6 +266,16 @@ namespace Asset_and_Maintenance_Management_System.Properties {
         internal static System.Drawing.Bitmap maintenance__Custom_ {
             get {
                 object obj = ResourceManager.GetObject("maintenance (Custom)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap networkDeviceIcon__Custom_ {
+            get {
+                object obj = ResourceManager.GetObject("networkDeviceIcon (Custom)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
