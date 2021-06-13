@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,19 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         public addItem_assetCategory()
         {
             InitializeComponent();
+            string[] assetTypes = loadAssetTypes();
+            try
+            {
+                foreach (string type in assetTypes)
+                {
+                    comboAssetCategories.Items.Add(type);
+                }
+            }
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         public addItem_assetCategory(Dashboard.Dashboard dashboardInst, add_item itemFormInstance)
@@ -31,6 +45,22 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.Hide();
         }
 
+        private string[] loadAssetTypes()
+        {
+            string[] assetTypes = null;
+            string fileRelPath = "../../prog_logs/asset_types.txt";
+            try
+            {
+                assetTypes = File.ReadAllLines(fileRelPath);
+            }
+            catch (FileNotFoundException e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            
+            return assetTypes;
+        }
         private void btnOK_Click(object sender, EventArgs e)
         {
             if (comboAssetCategories.Text == "")

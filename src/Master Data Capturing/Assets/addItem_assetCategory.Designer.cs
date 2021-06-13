@@ -59,20 +59,9 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // comboAssetCategories
             // 
+            this.comboAssetCategories.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboAssetCategories.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboAssetCategories.FormattingEnabled = true;
-            this.comboAssetCategories.Items.AddRange(new object[] {
-            "Heater",
-            "Network Device",
-            "Sanitation Device",
-            "Printer/Scanner",
-            "Lift",
-            "Fire Extinguisher",
-            "Computer",
-            "Plumbing Device",
-            "Phone",
-            "Sink",
-            "Lighting"});
             this.comboAssetCategories.Location = new System.Drawing.Point(390, 161);
             this.comboAssetCategories.Name = "comboAssetCategories";
             this.comboAssetCategories.Size = new System.Drawing.Size(347, 28);

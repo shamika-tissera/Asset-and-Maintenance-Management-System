@@ -9,20 +9,20 @@ namespace Asset_and_Maintenance_Management_System.src
 {
     class TextWriter
     {
-        private string fileRelPath = "../../prog_settings/";
-        private string fileName;
+        private static string fileRelPath = "../../prog_logs/";
+        private static string fileName;
         public TextWriter(){}
 
-        public TextWriter(string fileName)
+        public TextWriter(string name)
         {
-            this.fileName = fileName.Trim();
+            fileName = name.Trim();
         }
-        public void setFileName(string fileName)
+        public static void setFileName(string name)
         {
-            this.fileName = fileName.Trim();
+            fileName = name.Trim();
         }
 
-        public void writeContent(string content)
+        public static void writeContent(string fileName, string content)
         {
             if (fileName == null)
             {
@@ -30,7 +30,7 @@ namespace Asset_and_Maintenance_Management_System.src
             }
             else
             {
-                File.WriteAllText(fileRelPath + fileName, content);
+                File.WriteAllText(fileRelPath + fileName, DateTime.Now.ToString() + "   :" + content);
             }
         }
     }
