@@ -6,7 +6,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        protected System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -29,10 +29,10 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         /// </summary>
         private void InitializeComponent()
         {
+            this.btn_reset = new System.Windows.Forms.Button();
+            this.btnOK = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnOK = new System.Windows.Forms.Button();
-            this.btn_reset = new System.Windows.Forms.Button();
             this.uc_location_common1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_location_common();
             this.uc_maintenance_common1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_maintenance_common();
             this.uc_installInfo_common1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_installInfo_common();
@@ -41,49 +41,46 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.uc_general_common1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_general_common();
             this.SuspendLayout();
             // 
-            // btnCancel
+            // btn_reset
             // 
-            this.btnCancel.Location = new System.Drawing.Point(594, 1412);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(99, 32);
-            this.btnCancel.TabIndex = 101;
-            this.btnCancel.Text = "&Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(301, 1505);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(392, 19);
-            this.panel1.TabIndex = 8;
+            this.btn_reset.Location = new System.Drawing.Point(717, 1868);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Size = new System.Drawing.Size(95, 32);
+            this.btn_reset.TabIndex = 109;
+            this.btn_reset.Text = "&Reset";
+            this.btn_reset.UseVisualStyleBackColor = true;
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(857, 1412);
+            this.btnOK.Location = new System.Drawing.Point(845, 1868);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(99, 32);
-            this.btnOK.TabIndex = 100;
+            this.btnOK.TabIndex = 107;
             this.btnOK.Text = "&OK";
             this.btnOK.UseVisualStyleBackColor = true;
-            this.btnOK.Click += new System.EventHandler(this.button2_Click);
             // 
-            // btn_reset
+            // btnCancel
             // 
-            this.btn_reset.Location = new System.Drawing.Point(729, 1412);
-            this.btn_reset.Name = "btn_reset";
-            this.btn_reset.Size = new System.Drawing.Size(95, 32);
-            this.btn_reset.TabIndex = 102;
-            this.btn_reset.Text = "&Reset";
-            this.btn_reset.UseVisualStyleBackColor = true;
-            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
+            this.btnCancel.Location = new System.Drawing.Point(582, 1868);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(99, 32);
+            this.btnCancel.TabIndex = 108;
+            this.btnCancel.Text = "&Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(301, 2112);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(392, 19);
+            this.panel1.TabIndex = 106;
             // 
             // uc_location_common1
             // 
             this.uc_location_common1.Dock = System.Windows.Forms.DockStyle.Top;
             this.uc_location_common1.Location = new System.Drawing.Point(0, 1139);
             this.uc_location_common1.Name = "uc_location_common1";
-            this.uc_location_common1.Size = new System.Drawing.Size(1038, 174);
+            this.uc_location_common1.Size = new System.Drawing.Size(1080, 174);
             this.uc_location_common1.TabIndex = 10;
             // 
             // uc_maintenance_common1
@@ -91,7 +88,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.uc_maintenance_common1.Dock = System.Windows.Forms.DockStyle.Top;
             this.uc_maintenance_common1.Location = new System.Drawing.Point(0, 960);
             this.uc_maintenance_common1.Name = "uc_maintenance_common1";
-            this.uc_maintenance_common1.Size = new System.Drawing.Size(1038, 179);
+            this.uc_maintenance_common1.Size = new System.Drawing.Size(1080, 179);
             this.uc_maintenance_common1.TabIndex = 9;
             // 
             // uc_installInfo_common1
@@ -99,7 +96,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.uc_installInfo_common1.Dock = System.Windows.Forms.DockStyle.Top;
             this.uc_installInfo_common1.Location = new System.Drawing.Point(0, 791);
             this.uc_installInfo_common1.Name = "uc_installInfo_common1";
-            this.uc_installInfo_common1.Size = new System.Drawing.Size(1038, 169);
+            this.uc_installInfo_common1.Size = new System.Drawing.Size(1080, 169);
             this.uc_installInfo_common1.TabIndex = 6;
             this.uc_installInfo_common1.Load += new System.EventHandler(this.uc_installInfo_common1_Load);
             // 
@@ -108,7 +105,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.uc_warranty_common1.Dock = System.Windows.Forms.DockStyle.Top;
             this.uc_warranty_common1.Location = new System.Drawing.Point(0, 623);
             this.uc_warranty_common1.Name = "uc_warranty_common1";
-            this.uc_warranty_common1.Size = new System.Drawing.Size(1038, 168);
+            this.uc_warranty_common1.Size = new System.Drawing.Size(1080, 168);
             this.uc_warranty_common1.TabIndex = 5;
             this.uc_warranty_common1.Load += new System.EventHandler(this.uc_warranty_common1_Load);
             // 
@@ -117,7 +114,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.uc_administrative_common1.Dock = System.Windows.Forms.DockStyle.Top;
             this.uc_administrative_common1.Location = new System.Drawing.Point(0, 248);
             this.uc_administrative_common1.Name = "uc_administrative_common1";
-            this.uc_administrative_common1.Size = new System.Drawing.Size(1038, 375);
+            this.uc_administrative_common1.Size = new System.Drawing.Size(1080, 375);
             this.uc_administrative_common1.TabIndex = 3;
             this.uc_administrative_common1.Load += new System.EventHandler(this.uc_administrative_common1_Load);
             // 
@@ -126,7 +123,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.uc_general_common1.Dock = System.Windows.Forms.DockStyle.Top;
             this.uc_general_common1.Location = new System.Drawing.Point(0, 0);
             this.uc_general_common1.Name = "uc_general_common1";
-            this.uc_general_common1.Size = new System.Drawing.Size(1038, 248);
+            this.uc_general_common1.Size = new System.Drawing.Size(1080, 248);
             this.uc_general_common1.TabIndex = 0;
             // 
             // add_item
@@ -134,13 +131,13 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1059, 1055);
+            this.ClientSize = new System.Drawing.Size(1101, 1055);
             this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.btnOK);
-            this.Controls.Add(this.uc_location_common1);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.uc_maintenance_common1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.uc_location_common1);
+            this.Controls.Add(this.uc_maintenance_common1);
             this.Controls.Add(this.uc_installInfo_common1);
             this.Controls.Add(this.uc_warranty_common1);
             this.Controls.Add(this.uc_administrative_common1);
@@ -159,11 +156,11 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private uc_administrative_common uc_administrative_common1;
         private uc_warranty_common uc_warranty_common1;
         private uc_installInfo_common uc_installInfo_common1;
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnOK;
         private uc_maintenance_common uc_maintenance_common1;
         private uc_location_common uc_location_common1;
-        private System.Windows.Forms.Button btn_reset;
+        protected System.Windows.Forms.Button btn_reset;
+        protected System.Windows.Forms.Button btnOK;
+        protected System.Windows.Forms.Button btnCancel;
+        protected System.Windows.Forms.Panel panel1;
     }
 }

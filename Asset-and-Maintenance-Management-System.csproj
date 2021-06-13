@@ -82,6 +82,12 @@
     <Compile Include="src\Master Data Capturing\Assets\add_item.Designer.cs">
       <DependentUpon>add_item.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\FormHeater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\FormHeater.Designer.cs">
+      <DependentUpon>FormHeater.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Master Data Capturing\Assets\main_window.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,12 @@
     </Compile>
     <Compile Include="src\Master Data Capturing\Assets\uc_general_common.Designer.cs">
       <DependentUpon>uc_general_common.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_HeaterTechnical.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_HeaterTechnical.Designer.cs">
+      <DependentUpon>uc_HeaterTechnical.cs</DependentUpon>
     </Compile>
     <Compile Include="src\Master Data Capturing\Assets\uc_installInfo_common.cs">
       <SubType>UserControl</SubType>
@@ -187,6 +199,9 @@
     <EmbeddedResource Include="src\Master Data Capturing\Assets\add_item.resx">
       <DependentUpon>add_item.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\Assets\FormHeater.resx">
+      <DependentUpon>FormHeater.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\main_window.resx">
       <DependentUpon>main_window.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_general_common.resx">
       <DependentUpon>uc_general_common.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_HeaterTechnical.resx">
+      <DependentUpon>uc_HeaterTechnical.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_installInfo_common.resx">
       <DependentUpon>uc_installInfo_common.cs</DependentUpon>
