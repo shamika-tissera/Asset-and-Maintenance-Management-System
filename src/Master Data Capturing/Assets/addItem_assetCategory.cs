@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -28,7 +29,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             }
             catch (NullReferenceException e)
             {
-                Console.WriteLine(e);
+                TextWriter.writeContent("logs.txt", e.ToString());
                 throw;
             }
         }
@@ -55,7 +56,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             }
             catch (FileNotFoundException e)
             {
-                Console.WriteLine(e);
+                TextWriter.writeContent("logs.txt", e.ToString());
                 throw;
             }
             

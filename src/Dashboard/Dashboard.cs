@@ -35,7 +35,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_dash_main1.Visible = true;
             uc_assets_11.Visible = false;
             uc_navPanel_assets1.Visible = false;
-            uc_AllAssets1.Visible = false;
+            dashboard_info1.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,13 +51,13 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         public void clickedAssets()
         {
             uc_assets_11.Visible = true;
-            uc_AllAssets1.Visible = true;
+            dashboard_info1.Visible = true;
         }
 
         public void clickedAssetsBack()
         {
             uc_assets_11.Visible = false;
-            uc_AllAssets1.Visible = false;
+            dashboard_info1.Visible = false;
             uc_dash_main1.Visible = true;
         }
 
@@ -109,6 +109,16 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         }
 
         private void uc_navPanel_assets1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uc_AllAssets1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dashboard_info1_Load(object sender, EventArgs e)
         {
 
         }

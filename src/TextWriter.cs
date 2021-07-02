@@ -30,7 +30,7 @@ namespace Asset_and_Maintenance_Management_System.src
             }
             else
             {
-                File.WriteAllText(fileRelPath + fileName, DateTime.Now.ToString() + "   :" + content);
+                File.WriteAllText(fileRelPath + fileName, "[" + DateTime.Now.ToString() + "]:\n" + content);
             }
         }
     }

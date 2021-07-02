@@ -32,17 +32,17 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.navPanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_uname = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.uc_AllAssets1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_AllAssets();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dashboard_info1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.dashboard_info();
             this.uc_calendar1 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_calendar();
             this.uc_navPanel_assets1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_navPanel_assets();
             this.uc_assets_11 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_assets_1();
             this.uc_dash_main1 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_dash_main();
             this.navPanel.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // navPanel
@@ -81,16 +81,6 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.lbl_uname.TabIndex = 2;
             this.lbl_uname.Text = "Username";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.User_with_smile_svg;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(264, 148);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.close;
@@ -101,14 +91,25 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // uc_AllAssets1
+            // pictureBox1
             // 
-            this.uc_AllAssets1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
-            this.uc_AllAssets1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uc_AllAssets1.Location = new System.Drawing.Point(311, 0);
-            this.uc_AllAssets1.Name = "uc_AllAssets1";
-            this.uc_AllAssets1.Size = new System.Drawing.Size(1356, 826);
-            this.uc_AllAssets1.TabIndex = 3;
+            this.pictureBox1.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.User_with_smile_svg;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(264, 148);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // dashboard_info1
+            // 
+            this.dashboard_info1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.dashboard_info1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dashboard_info1.Location = new System.Drawing.Point(311, 0);
+            this.dashboard_info1.Name = "dashboard_info1";
+            this.dashboard_info1.Size = new System.Drawing.Size(1356, 826);
+            this.dashboard_info1.TabIndex = 5;
+            this.dashboard_info1.Load += new System.EventHandler(this.dashboard_info1_Load);
             // 
             // uc_calendar1
             // 
@@ -152,8 +153,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1667, 826);
+            this.Controls.Add(this.dashboard_info1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.uc_AllAssets1);
             this.Controls.Add(this.uc_calendar1);
             this.Controls.Add(this.navPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -164,8 +165,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.navPanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -179,8 +180,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         private uc_dash_main uc_dash_main1;
         private uc_assets_1 uc_assets_11;
         private Master_Data_Capturing.Assets.uc_navPanel_assets uc_navPanel_assets1;
-        private Master_Data_Capturing.Assets.uc_AllAssets uc_AllAssets1;
         private uc_calendar uc_calendar1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private Master_Data_Capturing.Assets.dashboard_info dashboard_info1;
     }
 }

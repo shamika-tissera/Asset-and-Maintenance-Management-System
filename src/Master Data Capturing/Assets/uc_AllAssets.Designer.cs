@@ -30,8 +30,8 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_uname = new System.Windows.Forms.Label();
             this.dataGridAssets = new System.Windows.Forms.DataGridView();
+            this.lbl_uname = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridAssets)).BeginInit();
             this.SuspendLayout();
@@ -46,17 +46,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.panel1.Size = new System.Drawing.Size(1356, 100);
             this.panel1.TabIndex = 0;
             // 
-            // lbl_uname
-            // 
-            this.lbl_uname.AutoSize = true;
-            this.lbl_uname.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_uname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lbl_uname.Location = new System.Drawing.Point(548, 38);
-            this.lbl_uname.Name = "lbl_uname";
-            this.lbl_uname.Size = new System.Drawing.Size(125, 32);
-            this.lbl_uname.TabIndex = 4;
-            this.lbl_uname.Text = "All Assets";
-            // 
             // dataGridAssets
             // 
             this.dataGridAssets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -67,6 +56,17 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.dataGridAssets.RowTemplate.Height = 24;
             this.dataGridAssets.Size = new System.Drawing.Size(1356, 726);
             this.dataGridAssets.TabIndex = 1;
+            // 
+            // lbl_uname
+            // 
+            this.lbl_uname.AutoSize = true;
+            this.lbl_uname.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_uname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lbl_uname.Location = new System.Drawing.Point(548, 38);
+            this.lbl_uname.Name = "lbl_uname";
+            this.lbl_uname.Size = new System.Drawing.Size(125, 32);
+            this.lbl_uname.TabIndex = 4;
+            this.lbl_uname.Text = "All Assets";
             // 
             // uc_AllAssets
             // 
@@ -87,7 +87,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lbl_uname;
         private System.Windows.Forms.DataGridView dataGridAssets;
+        private System.Windows.Forms.Label lbl_uname;
     }
 }
