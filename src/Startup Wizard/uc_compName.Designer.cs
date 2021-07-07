@@ -74,38 +74,40 @@ namespace Asset_and_Maintenance_Management_System
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(30, 252);
+            this.label3.Location = new System.Drawing.Point(208, 258);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(200, 29);
+            this.label3.Size = new System.Drawing.Size(170, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Company name:";
             // 
             // txt_compName
             // 
+            this.txt_compName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_compName.Location = new System.Drawing.Point(428, 259);
             this.txt_compName.Name = "txt_compName";
-            this.txt_compName.Size = new System.Drawing.Size(437, 22);
+            this.txt_compName.Size = new System.Drawing.Size(437, 27);
             this.txt_compName.TabIndex = 3;
             this.txt_compName.TextChanged += new System.EventHandler(this.txt_compName_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(30, 319);
+            this.label4.Location = new System.Drawing.Point(90, 325);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(348, 29);
+            this.label4.Size = new System.Drawing.Size(288, 25);
             this.label4.TabIndex = 4;
             this.label4.Text = "Number of fascility locations:";
             // 
             // txt_fascilCount
             // 
+            this.txt_fascilCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_fascilCount.Location = new System.Drawing.Point(428, 326);
             this.txt_fascilCount.Name = "txt_fascilCount";
-            this.txt_fascilCount.Size = new System.Drawing.Size(437, 22);
+            this.txt_fascilCount.Size = new System.Drawing.Size(437, 27);
             this.txt_fascilCount.TabIndex = 5;
             // 
             // uc_compName

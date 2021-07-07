@@ -35,8 +35,10 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_dash_main1.Visible = true;
             uc_assets_11.Visible = false;
             uc_navPanel_assets1.Visible = false;
-
+            uc_analytics_navi_one1.setDashboardInstance(this);
+            uc_analytics_navi_one1.Visible = false;
             dashboard_info1.Visible = false;
+            uc_analytics_intial_dash1.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,6 +55,22 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         {
             uc_assets_11.Visible = true;
             dashboard_info1.Visible = true;
+            uc_calendar1.Visible = false;
+        }
+
+        public void clickedAnalytics()
+        {
+            uc_analytics_navi_one1.Visible = true;
+            uc_dash_main1.Visible = false;
+            uc_analytics_intial_dash1.Visible = true;
+            uc_calendar1.Visible = false;
+        }
+        public void clickedAnalyticsBack()
+        {
+            uc_analytics_navi_one1.Visible = false;
+            uc_dash_main1.Visible = true;
+            uc_analytics_intial_dash1.Visible = false;
+            uc_calendar1.Visible = true;
         }
 
         public void clickedAssetsBack()
@@ -60,6 +78,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_assets_11.Visible = false;
             dashboard_info1.Visible = false;
             uc_dash_main1.Visible = true;
+            uc_calendar1.Visible = true;
         }
 
         public void clickedAssetsConfig()
@@ -72,6 +91,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         {
             uc_navPanel_assets1.Visible = false;
             uc_assets_11.Visible = true;
+            uc_calendar1.Visible = true;
         }
 
         public void clickedAssetAddItemOK()
@@ -120,6 +140,11 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         }
 
         private void dashboard_info1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uc_calendar1_Load(object sender, EventArgs e)
         {
 
         }

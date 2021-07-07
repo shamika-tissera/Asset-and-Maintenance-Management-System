@@ -51,6 +51,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             this.btn_back.TabIndex = 25;
             this.btn_back.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btn_back.UseVisualStyleBackColor = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // btn_backlog
             // 
@@ -69,6 +70,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             this.btn_backlog.Text = "Warranty";
             this.btn_backlog.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_backlog.UseVisualStyleBackColor = false;
+            this.btn_backlog.Click += new System.EventHandler(this.btn_backlog_Click);
             // 
             // btn_preventive
             // 

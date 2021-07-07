@@ -21,5 +21,10 @@ namespace Asset_and_Maintenance_Management_System
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

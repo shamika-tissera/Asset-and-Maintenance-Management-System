@@ -31,14 +31,16 @@ namespace Asset_and_Maintenance_Management_System
         {
             this.btn_continue = new System.Windows.Forms.Button();
             this.btn_cancel = new System.Windows.Forms.Button();
-            this.assetTypes1 = new Asset_and_Maintenance_Management_System.src.assetTypes();
             this.uc_compName1 = new Asset_and_Maintenance_Management_System.uc_compName();
             this.uc_welcome_11 = new Asset_and_Maintenance_Management_System.uc_welcome_1();
+            this.assetTypes1 = new Asset_and_Maintenance_Management_System.src.assetTypes();
             this.SuspendLayout();
             // 
             // btn_continue
             // 
             this.btn_continue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
+            this.btn_continue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_continue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_continue.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_continue.Location = new System.Drawing.Point(973, 642);
             this.btn_continue.Name = "btn_continue";
@@ -51,6 +53,8 @@ namespace Asset_and_Maintenance_Management_System
             // btn_cancel
             // 
             this.btn_cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
+            this.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancel.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btn_cancel.Location = new System.Drawing.Point(830, 642);
             this.btn_cancel.Name = "btn_cancel";
@@ -58,14 +62,6 @@ namespace Asset_and_Maintenance_Management_System
             this.btn_cancel.TabIndex = 0;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = false;
-            // 
-            // assetTypes1
-            // 
-            this.assetTypes1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
-            this.assetTypes1.Location = new System.Drawing.Point(0, 0);
-            this.assetTypes1.Name = "assetTypes1";
-            this.assetTypes1.Size = new System.Drawing.Size(1136, 636);
-            this.assetTypes1.TabIndex = 3;
             // 
             // uc_compName1
             // 
@@ -83,6 +79,14 @@ namespace Asset_and_Maintenance_Management_System
             this.uc_welcome_11.Name = "uc_welcome_11";
             this.uc_welcome_11.Size = new System.Drawing.Size(1136, 636);
             this.uc_welcome_11.TabIndex = 1;
+            // 
+            // assetTypes1
+            // 
+            this.assetTypes1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
+            this.assetTypes1.Location = new System.Drawing.Point(0, 0);
+            this.assetTypes1.Name = "assetTypes1";
+            this.assetTypes1.Size = new System.Drawing.Size(1136, 636);
+            this.assetTypes1.TabIndex = 3;
             // 
             // startup_main
             // 

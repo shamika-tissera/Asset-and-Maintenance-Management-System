@@ -323,6 +323,16 @@ namespace Asset_and_Maintenance_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap welcome_startup {
+            get {
+                object obj = ResourceManager.GetObject("welcome-startup", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap welcomeIcon {
             get {
                 object obj = ResourceManager.GetObject("welcomeIcon", resourceCulture);

@@ -36,7 +36,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            inst.clickedAnalytics();
         }
 
         private void button2_Click(object sender, EventArgs e)
