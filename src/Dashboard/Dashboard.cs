@@ -35,6 +35,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_dash_main1.Visible = true;
             uc_assets_11.Visible = false;
             uc_navPanel_assets1.Visible = false;
+
             dashboard_info1.Visible = false;
         }
 

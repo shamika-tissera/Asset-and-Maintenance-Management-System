@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace Asset_and_Maintenance_Management_System.src.Maintenance
 {
-    public partial class uc_maintenance_navi : UserControl
+    public partial class uc_maintenance_dashboard_info : UserControl
     {
-        private Dashboard.Dashboard inst;
-        public uc_maintenance_navi()
+        public uc_maintenance_dashboard_info()
         {
             InitializeComponent();
-        }
-        
-        private void uc_maintenance_navi_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void setInstance(Dashboard.Dashboard inst)
-        {
-            this.inst = inst;
         }
     }
 }

@@ -32,26 +32,26 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.navPanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_uname = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dashboard_info1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.dashboard_info();
-            this.uc_calendar1 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_calendar();
+            this.uc_dash_main1 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_dash_main();
             this.uc_navPanel_assets1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_navPanel_assets();
             this.uc_assets_11 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_assets_1();
-            this.uc_dash_main1 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_dash_main();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.dashboard_info1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.dashboard_info();
+            this.uc_calendar1 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_calendar();
             this.navPanel.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // navPanel
             // 
             this.navPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.navPanel.Controls.Add(this.uc_navPanel_assets1);
             this.navPanel.Controls.Add(this.panel2);
-            this.navPanel.Controls.Add(this.uc_assets_11);
             this.navPanel.Controls.Add(this.uc_dash_main1);
+            this.navPanel.Controls.Add(this.uc_navPanel_assets1);
+            this.navPanel.Controls.Add(this.uc_assets_11);
             this.navPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.navPanel.Location = new System.Drawing.Point(0, 0);
             this.navPanel.Name = "navPanel";
@@ -81,16 +81,6 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.lbl_uname.TabIndex = 2;
             this.lbl_uname.Text = "Username";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.close;
-            this.pictureBox2.Location = new System.Drawing.Point(1627, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(28, 24);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.User_with_smile_svg;
@@ -100,6 +90,43 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // uc_dash_main1
+            // 
+            this.uc_dash_main1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.uc_dash_main1.Location = new System.Drawing.Point(21, 210);
+            this.uc_dash_main1.Name = "uc_dash_main1";
+            this.uc_dash_main1.Size = new System.Drawing.Size(267, 616);
+            this.uc_dash_main1.TabIndex = 3;
+            this.uc_dash_main1.Load += new System.EventHandler(this.uc_dash_main1_Load);
+            // 
+            // uc_navPanel_assets1
+            // 
+            this.uc_navPanel_assets1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.uc_navPanel_assets1.Location = new System.Drawing.Point(20, 204);
+            this.uc_navPanel_assets1.Name = "uc_navPanel_assets1";
+            this.uc_navPanel_assets1.Size = new System.Drawing.Size(267, 616);
+            this.uc_navPanel_assets1.TabIndex = 4;
+            this.uc_navPanel_assets1.Load += new System.EventHandler(this.uc_navPanel_assets1_Load);
+            // 
+            // uc_assets_11
+            // 
+            this.uc_assets_11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.uc_assets_11.Location = new System.Drawing.Point(20, 207);
+            this.uc_assets_11.Name = "uc_assets_11";
+            this.uc_assets_11.Size = new System.Drawing.Size(267, 616);
+            this.uc_assets_11.TabIndex = 2;
+            this.uc_assets_11.Load += new System.EventHandler(this.uc_assets_11_Load);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.close;
+            this.pictureBox2.Location = new System.Drawing.Point(1627, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(28, 24);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
             // 
             // dashboard_info1
             // 
@@ -120,33 +147,6 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.uc_calendar1.Size = new System.Drawing.Size(1356, 826);
             this.uc_calendar1.TabIndex = 2;
             // 
-            // uc_navPanel_assets1
-            // 
-            this.uc_navPanel_assets1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.uc_navPanel_assets1.Location = new System.Drawing.Point(20, 204);
-            this.uc_navPanel_assets1.Name = "uc_navPanel_assets1";
-            this.uc_navPanel_assets1.Size = new System.Drawing.Size(267, 616);
-            this.uc_navPanel_assets1.TabIndex = 4;
-            this.uc_navPanel_assets1.Load += new System.EventHandler(this.uc_navPanel_assets1_Load);
-            // 
-            // uc_assets_11
-            // 
-            this.uc_assets_11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.uc_assets_11.Location = new System.Drawing.Point(20, 207);
-            this.uc_assets_11.Name = "uc_assets_11";
-            this.uc_assets_11.Size = new System.Drawing.Size(267, 616);
-            this.uc_assets_11.TabIndex = 2;
-            this.uc_assets_11.Load += new System.EventHandler(this.uc_assets_11_Load);
-            // 
-            // uc_dash_main1
-            // 
-            this.uc_dash_main1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.uc_dash_main1.Location = new System.Drawing.Point(21, 210);
-            this.uc_dash_main1.Name = "uc_dash_main1";
-            this.uc_dash_main1.Size = new System.Drawing.Size(267, 616);
-            this.uc_dash_main1.TabIndex = 3;
-            this.uc_dash_main1.Load += new System.EventHandler(this.uc_dash_main1_Load);
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -165,8 +165,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.navPanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
