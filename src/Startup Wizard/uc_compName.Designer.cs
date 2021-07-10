@@ -36,6 +36,8 @@ namespace Asset_and_Maintenance_Management_System
             this.txt_compName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_fascilCount = new System.Windows.Forms.TextBox();
+            this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
+            this.uc_initial_welcome1 = new Asset_and_Maintenance_Management_System.src.Startup_Wizard.uc_initial_welcome();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +50,7 @@ namespace Asset_and_Maintenance_Management_System
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1136, 115);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -110,11 +113,22 @@ namespace Asset_and_Maintenance_Management_System
             this.txt_fascilCount.Size = new System.Drawing.Size(437, 27);
             this.txt_fascilCount.TabIndex = 5;
             // 
+            // elementHost1
+            // 
+            this.elementHost1.Location = new System.Drawing.Point(3, 112);
+            this.elementHost1.Name = "elementHost1";
+            this.elementHost1.Size = new System.Drawing.Size(1083, 473);
+            this.elementHost1.TabIndex = 6;
+            this.elementHost1.Text = "elementHost1";
+            this.elementHost1.ChildChanged += new System.EventHandler<System.Windows.Forms.Integration.ChildChangedEventArgs>(this.elementHost1_ChildChanged);
+            this.elementHost1.Child = this.uc_initial_welcome1;
+            // 
             // uc_compName
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
+            this.Controls.Add(this.elementHost1);
             this.Controls.Add(this.txt_fascilCount);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_compName);
@@ -139,5 +153,7 @@ namespace Asset_and_Maintenance_Management_System
         private System.Windows.Forms.TextBox txt_compName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_fascilCount;
+        private System.Windows.Forms.Integration.ElementHost elementHost1;
+        private src.Startup_Wizard.uc_initial_welcome uc_initial_welcome1;
     }
 }

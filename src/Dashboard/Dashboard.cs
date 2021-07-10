@@ -39,6 +39,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_analytics_navi_one1.Visible = false;
             dashboard_info1.Visible = false;
             uc_analytics_intial_dash1.Visible = false;
+            uc_inventory_dash1.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -83,7 +84,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
 
         public void clickedAssetsConfig()
         {
-            uc_assets_11.Visible = false;
+            uc_assets_11.Visible = true;
             uc_navPanel_assets1.Visible = true;
         }
 
@@ -92,6 +93,12 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_navPanel_assets1.Visible = false;
             uc_assets_11.Visible = true;
             uc_calendar1.Visible = true;
+        }
+        public void clickedInventory()
+        {
+            uc_inventory_dash1.Visible = true;
+            uc_calendar1.Visible = false;
+            uc_dash_main1.Visible = false;
         }
 
         public void clickedAssetAddItemOK()

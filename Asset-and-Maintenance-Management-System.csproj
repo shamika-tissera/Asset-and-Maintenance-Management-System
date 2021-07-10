@@ -48,9 +48,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,6 +63,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\Analytics\uc_analytics_intial_dash.cs">
@@ -97,6 +103,12 @@
     </Compile>
     <Compile Include="src\Dashboard\uc_dash_main.Designer.cs">
       <DependentUpon>uc_dash_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Inventory\uc_inventory_dash.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Inventory\uc_inventory_dash.Designer.cs">
+      <DependentUpon>uc_inventory_dash.cs</DependentUpon>
     </Compile>
     <Compile Include="src\Login\Login.cs">
       <SubType>Form</SubType>
@@ -145,6 +157,9 @@
     </Compile>
     <Compile Include="src\Master Data Capturing\Assets\FormHeater.Designer.cs">
       <DependentUpon>FormHeater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\initialInterfaceAsset.xaml.cs">
+      <DependentUpon>initialInterfaceAsset.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\Master Data Capturing\Assets\main_window.cs">
       <SubType>Form</SubType>
@@ -232,6 +247,9 @@
     <Compile Include="src\Startup Wizard\uc_compName.Designer.cs">
       <DependentUpon>uc_compName.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Startup Wizard\uc_initial_welcome.xaml.cs">
+      <DependentUpon>uc_initial_welcome.xaml</DependentUpon>
+    </Compile>
     <Compile Include="src\Startup Wizard\uc_welcome_1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -256,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Dashboard\uc_dash_main.resx">
       <DependentUpon>uc_dash_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Inventory\uc_inventory_dash.resx">
+      <DependentUpon>uc_inventory_dash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -444,6 +465,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\welcome-startup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="src\Master Data Capturing\Assets\initialInterfaceAsset.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="src\Startup Wizard\uc_initial_welcome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

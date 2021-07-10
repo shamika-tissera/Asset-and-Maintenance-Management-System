@@ -29,6 +29,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_dash_main));
             this.button4 = new System.Windows.Forms.Button();
             this.btn_assets = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -116,13 +117,13 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.button1.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.calendar__Custom___1_;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.Location = new System.Drawing.Point(0, 229);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(267, 53);
             this.button1.TabIndex = 4;
-            this.button1.Text = "&Calendar";
+            this.button1.Text = "&Inventory";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);

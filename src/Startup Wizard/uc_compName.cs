@@ -23,15 +23,24 @@ namespace Asset_and_Maintenance_Management_System
         }
 
         public string[] getTxtInfo()
-        {
-            string[] info = {txt_compName.Text, txt_fascilCount.Text};
+        {            
+            string[] info = uc_initial_welcome1.getTxtInfo();
             return info;
         }
 
         public void resetTxt()
         {
-            txt_compName.ResetText();
-            txt_fascilCount.ResetText();
+            uc_initial_welcome1.resetTxt();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void elementHost1_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
+        {
+
         }
     }
 }

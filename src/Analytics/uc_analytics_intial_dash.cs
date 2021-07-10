@@ -35,5 +35,10 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

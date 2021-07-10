@@ -43,7 +43,7 @@ namespace Asset_and_Maintenance_Management_System
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1136, 115);
+            this.panel1.Size = new System.Drawing.Size(1195, 115);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -51,7 +51,7 @@ namespace Asset_and_Maintenance_Management_System
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(325, 42);
+            this.label1.Location = new System.Drawing.Point(346, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(488, 41);
             this.label1.TabIndex = 0;
@@ -60,7 +60,7 @@ namespace Asset_and_Maintenance_Management_System
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.welcome_startup;
-            this.pictureBox1.Location = new System.Drawing.Point(261, 159);
+            this.pictureBox1.Location = new System.Drawing.Point(266, 224);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(648, 381);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -76,7 +76,7 @@ namespace Asset_and_Maintenance_Management_System
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Name = "uc_welcome_1";
-            this.Size = new System.Drawing.Size(1136, 636);
+            this.Size = new System.Drawing.Size(1195, 703);
             this.Load += new System.EventHandler(this.uc_welcome_1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
