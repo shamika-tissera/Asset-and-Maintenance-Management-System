@@ -15,6 +15,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
         public uc_inventory_dash()
         {
             InitializeComponent();
+            
             chart.Titles.Add("Carriage Outwards");
             chart.Series["Series1"].Points.AddXY("1", "1000");
             chart.Series["Series1"].Points.AddXY("2", "500");

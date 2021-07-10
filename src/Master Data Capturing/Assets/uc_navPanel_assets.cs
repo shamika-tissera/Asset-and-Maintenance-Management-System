@@ -40,9 +40,12 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
 
         private void btnAddItem_Click(object sender, EventArgs e)
         {
-            item = new add_item(this);
-            addItem_assetCategory selectCat = new addItem_assetCategory(inst, item);
-            selectCat.ShowDialog();
+            settingsParent settings = new settingsParent(true);
+            
+
+            //item = new add_item(this);
+            //addItem_assetCategory selectCat = new addItem_assetCategory(inst, item);
+            //selectCat.ShowDialog();
         }
 
         public void clickedAddItemOK()

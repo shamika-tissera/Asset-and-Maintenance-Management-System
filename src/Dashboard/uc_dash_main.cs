@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Asset_and_Maintenance_Management_System.src.Master_Data_Capturing;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -51,7 +52,16 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
 
         private void button4_Click(object sender, EventArgs e)
         {
+            DialogResult response = MessageBox.Show("Are you sure you want to logout?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (response == DialogResult.Yes)
+            {
+                inst.logout();
+            }
+        }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new settingsParent().Show();
         }
     }
 }

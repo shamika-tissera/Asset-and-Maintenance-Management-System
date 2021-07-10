@@ -16,6 +16,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
     {
         private Dashboard.Dashboard dashboardInst;
         private add_item itemFormInstance;
+        private settingsParent mdiParentInstance;
         public addItem_assetCategory()
         {
             InitializeComponent();
@@ -32,6 +33,10 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
                 TextWriter.writeContent("logs.txt", e.ToString());
                 throw;
             }
+        }
+        public addItem_assetCategory(settingsParent mdiParentInstance):this()
+        {
+            this.mdiParentInstance = mdiParentInstance;
         }
 
         public addItem_assetCategory(Dashboard.Dashboard dashboardInst, add_item itemFormInstance)
@@ -66,13 +71,24 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
             if (comboAssetCategories.Text == "")
             {
-                MessageBox.Show("Please select an asset category to proceed.");
+                MessageBox.Show("Please select an asset category to proceed.", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                itemFormInstance.ShowDialog();
-                this.Hide();
+                mdiParentInstance.displayAssetAdditionForm(comboAssetCategories.Text);
+                this.Close();
+                //itemFormInstance.ShowDialog();
+                //string selection = comboAssetCategories.Text;
             }
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Select the type of asset you wish to record. " +
+                "All predefined asset types are been shown in the combo box above.\n" +
+                "If there's any issue regarding the assets displayed above, " +
+                "please contact the system administrator.", 
+                this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -245,6 +245,12 @@
     <Compile Include="src\Master Data Capturing\Assets\uc_warranty_common.Designer.cs">
       <DependentUpon>uc_warranty_common.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Master Data Capturing\settingsParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\settingsParent.Designer.cs">
+      <DependentUpon>settingsParent.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Startup Wizard\assetTypes.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -361,6 +367,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_warranty_common.resx">
       <DependentUpon>uc_warranty_common.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\settingsParent.resx">
+      <DependentUpon>settingsParent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Startup Wizard\assetTypes.resx">
       <DependentUpon>assetTypes.cs</DependentUpon>

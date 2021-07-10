@@ -40,5 +40,10 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
         {
 
         }
+
+        private void uc_analytics_intial_dash_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -15,6 +15,19 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         public uc_calendar()
         {
             InitializeComponent();
+            lbl_date.Text= DateTime.Now.ToString("dd/MMM/yyyy");
+            System.Timers.Timer delay = new System.Timers.Timer();
+            delay.Interval = 1000;
+            delay.Elapsed += setTime;
+            delay.Start();
+        }
+
+        private void setTime(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            Invoke(new MethodInvoker(delegate ()
+            {
+                lbl_time.Text = DateTime.Now.ToString("T");
+            }));
         }
 
         private void uc_calendar_Load(object sender, EventArgs e)
