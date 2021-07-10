@@ -32,14 +32,22 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_dash_main1.setDashboardInstance(this);
             uc_assets_11.setDashboardInstance(this);
             uc_navPanel_assets1.setDashboardInstance(this);
+            uc_inventory_navi1.setDashboardInstance(this);
+            uc_maintenance_navi1.setDashboardInstance(this);
+            uc_maintenance_backlog1.setDashboardInstance(this);
+            uc_analytics_navi_one1.setDashboardInstance(this);
             uc_dash_main1.Visible = true;
+            uc_maintenance_backlog1.Visible = false;
             uc_assets_11.Visible = false;
             uc_navPanel_assets1.Visible = false;
-            uc_analytics_navi_one1.setDashboardInstance(this);
+            uc_maintenance_reccomendations1.Visible = false;
             uc_analytics_navi_one1.Visible = false;
             dashboard_info1.Visible = false;
             uc_analytics_intial_dash1.Visible = false;
             uc_inventory_dash1.Visible = false;
+            uc_inventory_navi1.Visible = false;
+            uc_maintenance_dashboard_info1.Visible = false;
+            uc_maintenance_navi1.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -99,6 +107,58 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_inventory_dash1.Visible = true;
             uc_calendar1.Visible = false;
             uc_dash_main1.Visible = false;
+            uc_inventory_navi1.Visible = true;
+        }
+        public void clickedInventoryBack()
+        {
+            uc_inventory_navi1.Visible = false;
+            uc_inventory_dash1.Visible = false;
+            uc_assets_11.Visible = true;
+            uc_calendar1.Visible = true;
+            uc_dash_main1.Visible = true;
+        }
+        public void clickedMaintenance()
+        {
+            uc_maintenance_dashboard_info1.Visible = true;
+            uc_maintenance_navi1.Visible = true;
+            uc_calendar1.Visible = false;
+            uc_dash_main1.Visible = false;
+        }
+        public void clickedMaintenanceBack()
+        {
+            uc_maintenance_dashboard_info1.Visible = false;
+            uc_maintenance_navi1.Visible = false;
+            uc_maintenance_backlog1.Visible = false;
+            uc_maintenance_reccomendations1.Visible = false;
+            uc_calendar1.Visible = true;
+            uc_dash_main1.Visible = true;
+        }
+
+        public void clickedMaintenanceBacklog()
+        {
+            uc_maintenance_backlog1.Visible = true;
+            uc_maintenance_backlog1.BringToFront();
+            uc_maintenance_dashboard_info1.Visible = false;
+        }
+        public void clickedMaintenanceBacklogBack()
+        {
+            uc_maintenance_backlog1.Visible = false;
+            uc_maintenance_dashboard_info1.Visible = true;
+        }
+
+        public String getInfoForMaintenanceNaviBack()
+        {
+            if (uc_maintenance_backlog1.Visible)
+            {
+                return "backlog";
+            }
+
+            return null;
+        }
+        public void clickedMaintenanceReccomendations()
+        {
+            uc_maintenance_reccomendations1.Visible = true;
+            uc_maintenance_reccomendations1.BringToFront();
         }
 
         public void clickedAssetAddItemOK()

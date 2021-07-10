@@ -219,7 +219,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             this.chart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart.Legends.Add(legend1);
-            this.chart.Location = new System.Drawing.Point(209, 418);
+            this.chart.Location = new System.Drawing.Point(18, 415);
             this.chart.Name = "chart";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -231,7 +231,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             series2.Name = "Series2";
             this.chart.Series.Add(series1);
             this.chart.Series.Add(series2);
-            this.chart.Size = new System.Drawing.Size(921, 374);
+            this.chart.Size = new System.Drawing.Size(1141, 380);
             this.chart.TabIndex = 19;
             this.chart.Text = "chart1";
             // 

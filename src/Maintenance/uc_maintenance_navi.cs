@@ -23,9 +23,47 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
 
         }
 
-        private void setInstance(Dashboard.Dashboard inst)
+        public void setDashboardInstance(Dashboard.Dashboard inst)
         {
             this.inst = inst;
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+
+            inst.clickedMaintenanceBack();
+
+            //switch (inst.getInfoForMaintenanceNaviBack())
+            //{
+            //    case "backlog":
+            //        inst.clickedMaintenanceBacklogBack();
+            //        break;
+            //    case "preventive":
+
+            //        break;
+            //    case "corrective":
+
+            //        break;
+            //    case "recommendations":
+
+            //        break;
+            //    case "notifications":
+
+            //        break;
+            //    default:
+            //        inst.clickedMaintenanceBack();
+            //        break;
+            //}
+        }
+
+        private void btn_backlog_Click(object sender, EventArgs e)
+        {
+            inst.clickedMaintenanceBacklog();
+        }
+
+        private void btn_recommendations_Click(object sender, EventArgs e)
+        {
+            inst.clickedMaintenanceReccomendations();
         }
     }
 }

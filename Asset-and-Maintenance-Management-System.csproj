@@ -110,6 +110,12 @@
     <Compile Include="src\Inventory\uc_inventory_dash.Designer.cs">
       <DependentUpon>uc_inventory_dash.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Inventory\uc_inventory_navi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Inventory\uc_inventory_navi.Designer.cs">
+      <DependentUpon>uc_inventory_navi.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,12 @@
     <Compile Include="src\Login\UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Maintenance\uc_maintenance_backlog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Maintenance\uc_maintenance_backlog.Designer.cs">
+      <DependentUpon>uc_maintenance_backlog.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Maintenance\uc_maintenance_dashboard_info.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -133,6 +145,12 @@
     </Compile>
     <Compile Include="src\Maintenance\uc_maintenance_navi.Designer.cs">
       <DependentUpon>uc_maintenance_navi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Maintenance\uc_maintenance_reccomendations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Maintenance\uc_maintenance_reccomendations.Designer.cs">
+      <DependentUpon>uc_maintenance_reccomendations.cs</DependentUpon>
     </Compile>
     <Compile Include="src\Master Data Capturing\Assets\addItem_assetCategory.cs">
       <SubType>Form</SubType>
@@ -278,17 +296,26 @@
     <EmbeddedResource Include="src\Inventory\uc_inventory_dash.resx">
       <DependentUpon>uc_inventory_dash.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\Inventory\uc_inventory_navi.resx">
+      <DependentUpon>uc_inventory_navi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Login\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\Maintenance\uc_maintenance_backlog.resx">
+      <DependentUpon>uc_maintenance_backlog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Maintenance\uc_maintenance_dashboard_info.resx">
       <DependentUpon>uc_maintenance_dashboard_info.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Maintenance\uc_maintenance_navi.resx">
       <DependentUpon>uc_maintenance_navi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Maintenance\uc_maintenance_reccomendations.resx">
+      <DependentUpon>uc_maintenance_reccomendations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\addItem_assetCategory.resx">
       <DependentUpon>addItem_assetCategory.cs</DependentUpon>

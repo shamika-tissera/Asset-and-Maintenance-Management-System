@@ -41,7 +41,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            inst.clickedMaintenance();
         }
 
         private void button1_Click(object sender, EventArgs e)

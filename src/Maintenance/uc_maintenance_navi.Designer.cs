@@ -29,13 +29,31 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
         /// </summary>
         private void InitializeComponent()
         {
+            this.btn_back = new System.Windows.Forms.Button();
             this.btn_logout = new System.Windows.Forms.Button();
             this.btn_backlog = new System.Windows.Forms.Button();
             this.btn_preventive = new System.Windows.Forms.Button();
             this.btn_corrective = new System.Windows.Forms.Button();
             this.btn_recommendations = new System.Windows.Forms.Button();
-            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_back.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_back.FlatAppearance.BorderSize = 0;
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(216)))), ((int)(((byte)(93)))));
+            this.btn_back.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.backbutton__Custom___2_;
+            this.btn_back.Location = new System.Drawing.Point(0, 0);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(267, 53);
+            this.btn_back.TabIndex = 21;
+            this.btn_back.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_back.UseVisualStyleBackColor = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // btn_logout
             // 
@@ -71,6 +89,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.btn_backlog.Text = "Backlog";
             this.btn_backlog.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_backlog.UseVisualStyleBackColor = false;
+            this.btn_backlog.Click += new System.EventHandler(this.btn_backlog_Click);
             // 
             // btn_preventive
             // 
@@ -122,23 +141,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.btn_recommendations.Text = "Recommendations";
             this.btn_recommendations.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_recommendations.UseVisualStyleBackColor = false;
-            // 
-            // btn_back
-            // 
-            this.btn_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_back.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_back.FlatAppearance.BorderSize = 0;
-            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_back.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(216)))), ((int)(((byte)(93)))));
-            this.btn_back.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.backbutton__Custom___2_;
-            this.btn_back.Location = new System.Drawing.Point(0, 0);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(267, 53);
-            this.btn_back.TabIndex = 21;
-            this.btn_back.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btn_back.UseVisualStyleBackColor = false;
+            this.btn_recommendations.Click += new System.EventHandler(this.btn_recommendations_Click);
             // 
             // uc_maintenance_navi
             // 
