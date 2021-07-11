@@ -50,6 +50,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_inventory_navi1.Visible = false;
             uc_maintenance_dashboard_info1.Visible = false;
             uc_maintenance_navi1.Visible = false;
+            uc_asset_browse1.Visible = false;
 
 
             GraphicsPath gp = new GraphicsPath();
@@ -95,20 +96,25 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             dashboard_info1.Visible = false;
             uc_dash_main1.Visible = true;
             uc_calendar1.Visible = true;
+            //uc_asset_browse1.Visible = true;
         }
 
         public void clickedAssetsConfig()
         {
-            uc_assets_11.Visible = true;
+            uc_assets_11.Visible = false;
+            dashboard_info1.Visible = false;
             uc_navPanel_assets1.Visible = true;
-            uc_navPanel_assets1.BringToFront();
+            uc_asset_browse1.Visible = true;
+            //uc_navPanel_assets1.BringToFront();
         }
 
         public void clickedAssetNavBack()
         {
             uc_navPanel_assets1.Visible = false;
             uc_assets_11.Visible = true;
-            uc_calendar1.Visible = true;
+            uc_calendar1.Visible = false;
+            uc_asset_browse1.Visible = false;
+            dashboard_info1.Visible = true;
         }
         public void clickedInventory()
         {
@@ -168,6 +174,10 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         {
             uc_maintenance_reccomendations1.Visible = true;
             uc_maintenance_reccomendations1.BringToFront();
+        }
+        public void clickedassetsConfigurational()
+        {
+            
         }
         public void logout()
         {

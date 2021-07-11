@@ -31,26 +31,27 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.navPanel = new System.Windows.Forms.Panel();
-            this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
-            this.initialInterfaceAsset1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.initialInterfaceAsset();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_uname = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.uc_navPanel_assets1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_navPanel_assets();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pic_close = new System.Windows.Forms.PictureBox();
+            this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
+            this.initialInterfaceAsset1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.initialInterfaceAsset();
             this.uc_assets_11 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_assets_1();
             this.uc_analytics_navi_one1 = new Asset_and_Maintenance_Management_System.src.Analytics.uc_analytics_navi_one();
             this.uc_inventory_navi1 = new Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_navi();
             this.uc_maintenance_navi1 = new Asset_and_Maintenance_Management_System.src.Maintenance.uc_maintenance_navi();
             this.uc_dash_main1 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_dash_main();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pic_close = new System.Windows.Forms.PictureBox();
-            this.uc_maintenance_dashboard_info1 = new Asset_and_Maintenance_Management_System.src.Maintenance.uc_maintenance_dashboard_info();
-            this.uc_analytics_intial_dash2 = new Asset_and_Maintenance_Management_System.src.Analytics.uc_analytics_intial_dash();
-            this.uc_inventory_dash1 = new Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_dash();
+            this.uc_navPanel_assets1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_navPanel_assets();
             this.uc_calendar1 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_calendar();
             this.dashboard_info1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.dashboard_info();
             this.uc_maintenance_reccomendations1 = new Asset_and_Maintenance_Management_System.src.Maintenance.uc_maintenance_reccomendations();
             this.uc_maintenance_backlog1 = new Asset_and_Maintenance_Management_System.src.Maintenance.uc_maintenance_backlog();
+            this.uc_maintenance_dashboard_info1 = new Asset_and_Maintenance_Management_System.src.Maintenance.uc_maintenance_dashboard_info();
+            this.uc_analytics_intial_dash2 = new Asset_and_Maintenance_Management_System.src.Analytics.uc_analytics_intial_dash();
+            this.uc_inventory_dash1 = new Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_dash();
+            this.uc_asset_browse1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_asset_browse();
             this.navPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,27 +64,18 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.navPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
             this.navPanel.Controls.Add(this.elementHost1);
             this.navPanel.Controls.Add(this.panel2);
+            this.navPanel.Controls.Add(this.uc_navPanel_assets1);
             this.navPanel.Controls.Add(this.uc_assets_11);
             this.navPanel.Controls.Add(this.uc_analytics_navi_one1);
             this.navPanel.Controls.Add(this.uc_inventory_navi1);
             this.navPanel.Controls.Add(this.uc_maintenance_navi1);
             this.navPanel.Controls.Add(this.uc_dash_main1);
-            this.navPanel.Controls.Add(this.uc_navPanel_assets1);
             this.navPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.navPanel.Location = new System.Drawing.Point(0, 0);
             this.navPanel.Name = "navPanel";
             this.navPanel.Size = new System.Drawing.Size(311, 826);
             this.navPanel.TabIndex = 1;
             this.navPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.navPanel_Paint);
-            // 
-            // elementHost1
-            // 
-            this.elementHost1.Location = new System.Drawing.Point(92, 631);
-            this.elementHost1.Name = "elementHost1";
-            this.elementHost1.Size = new System.Drawing.Size(10, 10);
-            this.elementHost1.TabIndex = 7;
-            this.elementHost1.Text = "elementHost1";
-            this.elementHost1.Child = this.initialInterfaceAsset1;
             // 
             // panel2
             // 
@@ -117,14 +109,37 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // uc_navPanel_assets1
+            // pictureBox2
             // 
-            this.uc_navPanel_assets1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.uc_navPanel_assets1.Location = new System.Drawing.Point(20, 204);
-            this.uc_navPanel_assets1.Name = "uc_navPanel_assets1";
-            this.uc_navPanel_assets1.Size = new System.Drawing.Size(267, 616);
-            this.uc_navPanel_assets1.TabIndex = 4;
-            this.uc_navPanel_assets1.Load += new System.EventHandler(this.uc_navPanel_assets1_Load);
+            this.pictureBox2.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.close;
+            this.pictureBox2.Location = new System.Drawing.Point(1627, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(28, 24);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pic_close
+            // 
+            this.pic_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(69)))), ((int)(((byte)(114)))));
+            this.pic_close.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_close.Image = ((System.Drawing.Image)(resources.GetObject("pic_close.Image")));
+            this.pic_close.Location = new System.Drawing.Point(1478, 11);
+            this.pic_close.Name = "pic_close";
+            this.pic_close.Size = new System.Drawing.Size(30, 27);
+            this.pic_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_close.TabIndex = 11;
+            this.pic_close.TabStop = false;
+            this.pic_close.Click += new System.EventHandler(this.pic_close_Click);
+            // 
+            // elementHost1
+            // 
+            this.elementHost1.Location = new System.Drawing.Point(92, 631);
+            this.elementHost1.Name = "elementHost1";
+            this.elementHost1.Size = new System.Drawing.Size(10, 10);
+            this.elementHost1.TabIndex = 7;
+            this.elementHost1.Text = "elementHost1";
+            this.elementHost1.Child = this.initialInterfaceAsset1;
             // 
             // uc_assets_11
             // 
@@ -168,52 +183,14 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.uc_dash_main1.TabIndex = 3;
             this.uc_dash_main1.Load += new System.EventHandler(this.uc_dash_main1_Load);
             // 
-            // pictureBox2
+            // uc_navPanel_assets1
             // 
-            this.pictureBox2.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.close;
-            this.pictureBox2.Location = new System.Drawing.Point(1627, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(28, 24);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pic_close
-            // 
-            this.pic_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(69)))), ((int)(((byte)(114)))));
-            this.pic_close.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pic_close.Image = ((System.Drawing.Image)(resources.GetObject("pic_close.Image")));
-            this.pic_close.Location = new System.Drawing.Point(1478, 11);
-            this.pic_close.Name = "pic_close";
-            this.pic_close.Size = new System.Drawing.Size(30, 27);
-            this.pic_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic_close.TabIndex = 11;
-            this.pic_close.TabStop = false;
-            this.pic_close.Click += new System.EventHandler(this.pic_close_Click);
-            // 
-            // uc_maintenance_dashboard_info1
-            // 
-            this.uc_maintenance_dashboard_info1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.uc_maintenance_dashboard_info1.Location = new System.Drawing.Point(311, 0);
-            this.uc_maintenance_dashboard_info1.Name = "uc_maintenance_dashboard_info1";
-            this.uc_maintenance_dashboard_info1.Size = new System.Drawing.Size(1356, 826);
-            this.uc_maintenance_dashboard_info1.TabIndex = 8;
-            // 
-            // uc_analytics_intial_dash2
-            // 
-            this.uc_analytics_intial_dash2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.uc_analytics_intial_dash2.Location = new System.Drawing.Point(311, 0);
-            this.uc_analytics_intial_dash2.Name = "uc_analytics_intial_dash2";
-            this.uc_analytics_intial_dash2.Size = new System.Drawing.Size(1356, 826);
-            this.uc_analytics_intial_dash2.TabIndex = 12;
-            // 
-            // uc_inventory_dash1
-            // 
-            this.uc_inventory_dash1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
-            this.uc_inventory_dash1.Location = new System.Drawing.Point(311, 0);
-            this.uc_inventory_dash1.Name = "uc_inventory_dash1";
-            this.uc_inventory_dash1.Size = new System.Drawing.Size(1356, 826);
-            this.uc_inventory_dash1.TabIndex = 7;
+            this.uc_navPanel_assets1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.uc_navPanel_assets1.Location = new System.Drawing.Point(20, 204);
+            this.uc_navPanel_assets1.Name = "uc_navPanel_assets1";
+            this.uc_navPanel_assets1.Size = new System.Drawing.Size(267, 616);
+            this.uc_navPanel_assets1.TabIndex = 4;
+            this.uc_navPanel_assets1.Load += new System.EventHandler(this.uc_navPanel_assets1_Load);
             // 
             // uc_calendar1
             // 
@@ -250,6 +227,38 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.uc_maintenance_backlog1.Size = new System.Drawing.Size(1356, 826);
             this.uc_maintenance_backlog1.TabIndex = 9;
             // 
+            // uc_maintenance_dashboard_info1
+            // 
+            this.uc_maintenance_dashboard_info1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.uc_maintenance_dashboard_info1.Location = new System.Drawing.Point(311, 0);
+            this.uc_maintenance_dashboard_info1.Name = "uc_maintenance_dashboard_info1";
+            this.uc_maintenance_dashboard_info1.Size = new System.Drawing.Size(1356, 826);
+            this.uc_maintenance_dashboard_info1.TabIndex = 8;
+            // 
+            // uc_analytics_intial_dash2
+            // 
+            this.uc_analytics_intial_dash2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.uc_analytics_intial_dash2.Location = new System.Drawing.Point(311, 0);
+            this.uc_analytics_intial_dash2.Name = "uc_analytics_intial_dash2";
+            this.uc_analytics_intial_dash2.Size = new System.Drawing.Size(1356, 826);
+            this.uc_analytics_intial_dash2.TabIndex = 12;
+            // 
+            // uc_inventory_dash1
+            // 
+            this.uc_inventory_dash1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
+            this.uc_inventory_dash1.Location = new System.Drawing.Point(311, 0);
+            this.uc_inventory_dash1.Name = "uc_inventory_dash1";
+            this.uc_inventory_dash1.Size = new System.Drawing.Size(1356, 826);
+            this.uc_inventory_dash1.TabIndex = 7;
+            // 
+            // uc_asset_browse1
+            // 
+            this.uc_asset_browse1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.uc_asset_browse1.Location = new System.Drawing.Point(311, 0);
+            this.uc_asset_browse1.Name = "uc_asset_browse1";
+            this.uc_asset_browse1.Size = new System.Drawing.Size(1356, 826);
+            this.uc_asset_browse1.TabIndex = 13;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -266,6 +275,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.Controls.Add(this.uc_maintenance_dashboard_info1);
             this.Controls.Add(this.uc_analytics_intial_dash2);
             this.Controls.Add(this.uc_inventory_dash1);
+            this.Controls.Add(this.uc_asset_browse1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -305,5 +315,6 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         private Maintenance.uc_maintenance_reccomendations uc_maintenance_reccomendations1;
         private System.Windows.Forms.PictureBox pic_close;
         private Analytics.uc_analytics_intial_dash uc_analytics_intial_dash2;
+        private Master_Data_Capturing.Assets.uc_asset_browse uc_asset_browse1;
     }
 }

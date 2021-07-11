@@ -29,6 +29,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_analytics_navi_one));
             this.btn_back = new System.Windows.Forms.Button();
             this.btn_backlog = new System.Windows.Forms.Button();
             this.btn_preventive = new System.Windows.Forms.Button();
@@ -60,9 +61,9 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             this.btn_backlog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_backlog.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_backlog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btn_backlog.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources._1728869__Custom_;
+            this.btn_backlog.Image = ((System.Drawing.Image)(resources.GetObject("btn_backlog.Image")));
             this.btn_backlog.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_backlog.Location = new System.Drawing.Point(1, 187);
+            this.btn_backlog.Location = new System.Drawing.Point(1, 100);
             this.btn_backlog.Name = "btn_backlog";
             this.btn_backlog.Size = new System.Drawing.Size(267, 53);
             this.btn_backlog.TabIndex = 22;
@@ -79,9 +80,9 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             this.btn_preventive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_preventive.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_preventive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btn_preventive.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.analytics__Custom_;
+            this.btn_preventive.Image = ((System.Drawing.Image)(resources.GetObject("btn_preventive.Image")));
             this.btn_preventive.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_preventive.Location = new System.Drawing.Point(1, 246);
+            this.btn_preventive.Location = new System.Drawing.Point(1, 159);
             this.btn_preventive.Name = "btn_preventive";
             this.btn_preventive.Size = new System.Drawing.Size(267, 53);
             this.btn_preventive.TabIndex = 23;
@@ -96,9 +97,9 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             this.btn_corrective.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_corrective.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_corrective.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btn_corrective.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.maintenance__Custom_;
+            this.btn_corrective.Image = ((System.Drawing.Image)(resources.GetObject("btn_corrective.Image")));
             this.btn_corrective.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_corrective.Location = new System.Drawing.Point(1, 305);
+            this.btn_corrective.Location = new System.Drawing.Point(1, 218);
             this.btn_corrective.Name = "btn_corrective";
             this.btn_corrective.Size = new System.Drawing.Size(264, 53);
             this.btn_corrective.TabIndex = 24;

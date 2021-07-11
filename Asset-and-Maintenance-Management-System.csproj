@@ -197,6 +197,12 @@
     <Compile Include="src\Master Data Capturing\Assets\uc_AllAssets.Designer.cs">
       <DependentUpon>uc_AllAssets.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_asset_browse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\uc_asset_browse.Designer.cs">
+      <DependentUpon>uc_asset_browse.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Master Data Capturing\Assets\uc_asset_general.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -352,6 +358,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_AllAssets.resx">
       <DependentUpon>uc_AllAssets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_asset_browse.resx">
+      <DependentUpon>uc_asset_browse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_asset_general.resx">
       <DependentUpon>uc_asset_general.cs</DependentUpon>
