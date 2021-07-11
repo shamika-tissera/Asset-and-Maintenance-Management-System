@@ -12,14 +12,19 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
 {
     public partial class main_window : Form
     {
+        private settingsParent settingsParentInst;
         public main_window()
         {
             InitializeComponent();
         }
-
+        public main_window(settingsParent settingsParentInst) : this()
+        {
+            InitializeComponent();
+            this.settingsParentInst = settingsParentInst;
+        }
         private void btnAddItem_Click(object sender, EventArgs e)
         {
-            add_item form = new add_item();
+            add_item form = new add_item(settingsParentInst);
             form.ShowDialog();
         }
 

@@ -36,12 +36,12 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_uname = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.uc_navPanel_assets1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_navPanel_assets();
             this.uc_assets_11 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_assets_1();
             this.uc_analytics_navi_one1 = new Asset_and_Maintenance_Management_System.src.Analytics.uc_analytics_navi_one();
             this.uc_inventory_navi1 = new Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_navi();
             this.uc_maintenance_navi1 = new Asset_and_Maintenance_Management_System.src.Maintenance.uc_maintenance_navi();
             this.uc_dash_main1 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_dash_main();
-            this.uc_navPanel_assets1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_navPanel_assets();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pic_close = new System.Windows.Forms.PictureBox();
             this.uc_maintenance_dashboard_info1 = new Asset_and_Maintenance_Management_System.src.Maintenance.uc_maintenance_dashboard_info();
@@ -63,12 +63,12 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.navPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
             this.navPanel.Controls.Add(this.elementHost1);
             this.navPanel.Controls.Add(this.panel2);
-            this.navPanel.Controls.Add(this.uc_navPanel_assets1);
             this.navPanel.Controls.Add(this.uc_assets_11);
             this.navPanel.Controls.Add(this.uc_analytics_navi_one1);
             this.navPanel.Controls.Add(this.uc_inventory_navi1);
             this.navPanel.Controls.Add(this.uc_maintenance_navi1);
             this.navPanel.Controls.Add(this.uc_dash_main1);
+            this.navPanel.Controls.Add(this.uc_navPanel_assets1);
             this.navPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.navPanel.Location = new System.Drawing.Point(0, 0);
             this.navPanel.Name = "navPanel";
@@ -117,6 +117,15 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // uc_navPanel_assets1
+            // 
+            this.uc_navPanel_assets1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.uc_navPanel_assets1.Location = new System.Drawing.Point(20, 204);
+            this.uc_navPanel_assets1.Name = "uc_navPanel_assets1";
+            this.uc_navPanel_assets1.Size = new System.Drawing.Size(267, 616);
+            this.uc_navPanel_assets1.TabIndex = 4;
+            this.uc_navPanel_assets1.Load += new System.EventHandler(this.uc_navPanel_assets1_Load);
+            // 
             // uc_assets_11
             // 
             this.uc_assets_11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
@@ -158,15 +167,6 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.uc_dash_main1.Size = new System.Drawing.Size(267, 616);
             this.uc_dash_main1.TabIndex = 3;
             this.uc_dash_main1.Load += new System.EventHandler(this.uc_dash_main1_Load);
-            // 
-            // uc_navPanel_assets1
-            // 
-            this.uc_navPanel_assets1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.uc_navPanel_assets1.Location = new System.Drawing.Point(20, 204);
-            this.uc_navPanel_assets1.Name = "uc_navPanel_assets1";
-            this.uc_navPanel_assets1.Size = new System.Drawing.Size(267, 616);
-            this.uc_navPanel_assets1.TabIndex = 4;
-            this.uc_navPanel_assets1.Load += new System.EventHandler(this.uc_navPanel_assets1_Load);
             // 
             // pictureBox2
             // 

@@ -245,6 +245,15 @@
     <Compile Include="src\Master Data Capturing\Assets\uc_warranty_common.Designer.cs">
       <DependentUpon>uc_warranty_common.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Master Data Capturing\Products\uc_addProduct.xaml.cs">
+      <DependentUpon>uc_addProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Products\uc_addProduct_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Products\uc_addProduct_form.Designer.cs">
+      <DependentUpon>uc_addProduct_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Master Data Capturing\settingsParent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -367,6 +376,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_warranty_common.resx">
       <DependentUpon>uc_warranty_common.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\Products\uc_addProduct_form.resx">
+      <DependentUpon>uc_addProduct_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\settingsParent.resx">
       <DependentUpon>settingsParent.cs</DependentUpon>
@@ -504,6 +516,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="src\Master Data Capturing\Assets\initialInterfaceAsset.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="src\Master Data Capturing\Products\uc_addProduct.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

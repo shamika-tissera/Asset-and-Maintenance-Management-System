@@ -12,12 +12,12 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
 {
     public partial class add_item : Form
     {
-        private uc_navPanel_assets inst;
+        private settingsParent inst;
         public add_item()
         {
             InitializeComponent();
         }
-        public add_item(uc_navPanel_assets asset)
+        public add_item(settingsParent asset)
         {
             InitializeComponent();
             this.inst = asset;

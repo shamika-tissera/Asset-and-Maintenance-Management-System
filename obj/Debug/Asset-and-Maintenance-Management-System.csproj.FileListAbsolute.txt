@@ -46,5 +46,8 @@ F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-Syst
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.csproj.CoreCompileInputs.cache
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.exe
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.pdb
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.csproj.AssemblyReference.cache
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.settingsParent.resources
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\src\Master Data Capturing\Products\uc_addProduct.g.cs
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\src\Master Data Capturing\Products\uc_addProduct.baml
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Products.uc_addProduct_form.resources
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.csproj.AssemblyReference.cache

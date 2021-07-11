@@ -121,7 +121,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         {
             uc_inventory_navi1.Visible = false;
             uc_inventory_dash1.Visible = false;
-            uc_assets_11.Visible = true;
+            uc_assets_11.Visible = false;
             uc_calendar1.Visible = true;
             uc_dash_main1.Visible = true;
         }
@@ -137,6 +137,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_maintenance_dashboard_info1.Visible = false;
             uc_maintenance_navi1.Visible = false;
             uc_maintenance_backlog1.Visible = false;
+            uc_assets_11.Visible = false;
             uc_maintenance_reccomendations1.Visible = false;
             uc_calendar1.Visible = true;
             uc_dash_main1.Visible = true;

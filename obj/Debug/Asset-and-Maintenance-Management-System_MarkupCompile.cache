@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 
-2-2044807944
+3401768610
 
-75-149031281
+78-1530282665
 191012669824
-src\Master Data Capturing\Assets\initialInterfaceAsset.xaml;src\Startup Wizard\uc_initial_welcome.xaml;
+src\Master Data Capturing\Assets\initialInterfaceAsset.xaml;src\Master Data Capturing\Products\uc_addProduct.xaml;src\Startup Wizard\uc_initial_welcome.xaml;
 
 False
 

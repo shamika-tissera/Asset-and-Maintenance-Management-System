@@ -40,7 +40,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
 
         private void btnAddItem_Click(object sender, EventArgs e)
         {
-            settingsParent settings = new settingsParent(true);
+            settingsParent settings = new settingsParent(true, inst);
             
 
             //item = new add_item(this);

@@ -61,7 +61,9 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
 
         private void button5_Click(object sender, EventArgs e)
         {
-            new settingsParent().Show();
+            settingsParent settings =  new settingsParent();
+            settings.setDashboardInstance(inst);
+            settings.Show();
         }
     }
 }

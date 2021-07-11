@@ -39,6 +39,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.lbl_date = new System.Windows.Forms.Label();
             this.lbl_time = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -47,13 +49,13 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             // lbl_uname
             // 
             this.lbl_uname.AutoSize = true;
-            this.lbl_uname.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_uname.Font = new System.Drawing.Font("Segoe UI Black", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_uname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lbl_uname.Location = new System.Drawing.Point(16, 18);
+            this.lbl_uname.Location = new System.Drawing.Point(6, 20);
             this.lbl_uname.Name = "lbl_uname";
-            this.lbl_uname.Size = new System.Drawing.Size(261, 25);
+            this.lbl_uname.Size = new System.Drawing.Size(155, 30);
             this.lbl_uname.TabIndex = 3;
-            this.lbl_uname.Text = "My upcoming Engagements";
+            this.lbl_uname.Text = "Notifications";
             // 
             // flowLayoutPanel1
             // 
@@ -64,10 +66,12 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.lbl_uname);
-            this.groupBox1.Location = new System.Drawing.Point(57, 120);
+            this.groupBox1.Location = new System.Drawing.Point(39, 120);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(642, 535);
+            this.groupBox1.Size = new System.Drawing.Size(962, 557);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 
@@ -99,16 +103,16 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.label1.Location = new System.Drawing.Point(457, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 32);
+            this.label1.Size = new System.Drawing.Size(250, 32);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Welcome Back *username*!";
+            this.label1.Text = "Welcome Back John!";
             // 
             // lbl_date
             // 
             this.lbl_date.AutoSize = true;
             this.lbl_date.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_date.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbl_date.Location = new System.Drawing.Point(1054, 140);
+            this.lbl_date.Location = new System.Drawing.Point(1034, 140);
             this.lbl_date.Name = "lbl_date";
             this.lbl_date.Size = new System.Drawing.Size(262, 32);
             this.lbl_date.TabIndex = 9;
@@ -119,7 +123,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.lbl_time.AutoSize = true;
             this.lbl_time.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_time.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lbl_time.Location = new System.Drawing.Point(1044, 106);
+            this.lbl_time.Location = new System.Drawing.Point(1033, 106);
             this.lbl_time.Name = "lbl_time";
             this.lbl_time.Size = new System.Drawing.Size(165, 32);
             this.lbl_time.TabIndex = 9;
@@ -128,6 +132,28 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             // timer1
             // 
             this.timer1.Interval = 1000;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.label2.Location = new System.Drawing.Point(7, 118);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(558, 32);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "User-5432 reported a technical issue on Mach-342.";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.label3.Location = new System.Drawing.Point(7, 164);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(826, 32);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Preventive maintenance scheduled for 20/01/2021 has not been performed.";
             // 
             // uc_calendar
             // 
@@ -162,5 +188,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         private System.Windows.Forms.Label lbl_date;
         private System.Windows.Forms.Label lbl_time;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

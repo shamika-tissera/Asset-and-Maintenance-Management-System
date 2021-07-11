@@ -30,9 +30,9 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(settingsParent));
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.assetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.heaterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,47 +48,46 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             this.lightingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventoryTypeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.windowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tblLayout_Options = new System.Windows.Forms.TableLayoutPanel();
             this.btn_backlog = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.toolStrip1.SuspendLayout();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.tblLayout_Options.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 28);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1035, 27);
-            this.toolStrip1.TabIndex = 1;
-            this.toolStrip1.Text = "toolStrip1";
             // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.addToolStripMenuItem});
+            this.addToolStripMenuItem,
+            this.windowsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1035, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1517, 30);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // toolStripButton1
+            // fileToolStripMenuItem
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.closeToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Text = "&File";
+            // 
+            // closeToolStripMenuItem
+            // 
+            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.closeToolStripMenuItem.Text = "&Close";
+            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // addToolStripMenuItem
             // 
@@ -115,180 +114,217 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             this.sinkToolStripMenuItem,
             this.lightingToolStripMenuItem});
             this.assetToolStripMenuItem.Name = "assetToolStripMenuItem";
-            this.assetToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.assetToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
             this.assetToolStripMenuItem.Text = "A&sset";
             this.assetToolStripMenuItem.Click += new System.EventHandler(this.assetToolStripMenuItem_Click);
             // 
             // heaterToolStripMenuItem
             // 
             this.heaterToolStripMenuItem.Name = "heaterToolStripMenuItem";
-            this.heaterToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.heaterToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.heaterToolStripMenuItem.Text = "Heater";
+            this.heaterToolStripMenuItem.Click += new System.EventHandler(this.heaterToolStripMenuItem_Click);
             // 
             // networkDeviceToolStripMenuItem
             // 
             this.networkDeviceToolStripMenuItem.Name = "networkDeviceToolStripMenuItem";
-            this.networkDeviceToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.networkDeviceToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.networkDeviceToolStripMenuItem.Text = "Network Device";
+            this.networkDeviceToolStripMenuItem.Click += new System.EventHandler(this.networkDeviceToolStripMenuItem_Click);
             // 
             // sanitationDeviceToolStripMenuItem
             // 
             this.sanitationDeviceToolStripMenuItem.Name = "sanitationDeviceToolStripMenuItem";
-            this.sanitationDeviceToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.sanitationDeviceToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.sanitationDeviceToolStripMenuItem.Text = "Sanitation Device";
+            this.sanitationDeviceToolStripMenuItem.Click += new System.EventHandler(this.sanitationDeviceToolStripMenuItem_Click);
             // 
             // printerScannerToolStripMenuItem
             // 
             this.printerScannerToolStripMenuItem.Name = "printerScannerToolStripMenuItem";
-            this.printerScannerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.printerScannerToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.printerScannerToolStripMenuItem.Text = "Printer/Scanner";
+            this.printerScannerToolStripMenuItem.Click += new System.EventHandler(this.printerScannerToolStripMenuItem_Click);
             // 
             // liftToolStripMenuItem
             // 
             this.liftToolStripMenuItem.Name = "liftToolStripMenuItem";
-            this.liftToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.liftToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.liftToolStripMenuItem.Text = "Lift";
+            this.liftToolStripMenuItem.Click += new System.EventHandler(this.liftToolStripMenuItem_Click);
             // 
             // fireExtinguisherToolStripMenuItem
             // 
             this.fireExtinguisherToolStripMenuItem.Name = "fireExtinguisherToolStripMenuItem";
-            this.fireExtinguisherToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fireExtinguisherToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.fireExtinguisherToolStripMenuItem.Text = "Fire Extinguisher";
+            this.fireExtinguisherToolStripMenuItem.Click += new System.EventHandler(this.fireExtinguisherToolStripMenuItem_Click);
             // 
             // computerToolStripMenuItem
             // 
             this.computerToolStripMenuItem.Name = "computerToolStripMenuItem";
-            this.computerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.computerToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.computerToolStripMenuItem.Text = "Computer";
+            this.computerToolStripMenuItem.Click += new System.EventHandler(this.computerToolStripMenuItem_Click);
             // 
             // plumbingDeviceToolStripMenuItem
             // 
             this.plumbingDeviceToolStripMenuItem.Name = "plumbingDeviceToolStripMenuItem";
-            this.plumbingDeviceToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.plumbingDeviceToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.plumbingDeviceToolStripMenuItem.Text = "Plumbing Device";
+            this.plumbingDeviceToolStripMenuItem.Click += new System.EventHandler(this.plumbingDeviceToolStripMenuItem_Click);
             // 
             // phoneToolStripMenuItem
             // 
             this.phoneToolStripMenuItem.Name = "phoneToolStripMenuItem";
-            this.phoneToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.phoneToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.phoneToolStripMenuItem.Text = "Phone";
+            this.phoneToolStripMenuItem.Click += new System.EventHandler(this.phoneToolStripMenuItem_Click);
             // 
             // sinkToolStripMenuItem
             // 
             this.sinkToolStripMenuItem.Name = "sinkToolStripMenuItem";
-            this.sinkToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.sinkToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.sinkToolStripMenuItem.Text = "Sink";
+            this.sinkToolStripMenuItem.Click += new System.EventHandler(this.sinkToolStripMenuItem_Click);
             // 
             // lightingToolStripMenuItem
             // 
             this.lightingToolStripMenuItem.Name = "lightingToolStripMenuItem";
-            this.lightingToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.lightingToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.lightingToolStripMenuItem.Text = "Lighting";
+            this.lightingToolStripMenuItem.Click += new System.EventHandler(this.lightingToolStripMenuItem_Click);
             // 
             // productToolStripMenuItem
             // 
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.productToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
             this.productToolStripMenuItem.Text = "&Product";
+            this.productToolStripMenuItem.Click += new System.EventHandler(this.productToolStripMenuItem_Click);
             // 
             // inventoryTypeToolStripMenuItem
             // 
             this.inventoryTypeToolStripMenuItem.Name = "inventoryTypeToolStripMenuItem";
-            this.inventoryTypeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.inventoryTypeToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
             this.inventoryTypeToolStripMenuItem.Text = "&Inventory Type";
             // 
-            // fileToolStripMenuItem
+            // windowsToolStripMenuItem
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.closeToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
-            this.fileToolStripMenuItem.Text = "&File";
-            // 
-            // closeToolStripMenuItem
-            // 
-            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.closeToolStripMenuItem.Text = "&Close";
+            this.windowsToolStripMenuItem.Name = "windowsToolStripMenuItem";
+            this.windowsToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
+            this.windowsToolStripMenuItem.Text = "&Windows";
             // 
             // tblLayout_Options
             // 
             this.tblLayout_Options.ColumnCount = 2;
-            this.tblLayout_Options.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.80981F));
-            this.tblLayout_Options.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.19019F));
+            this.tblLayout_Options.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.52174F));
+            this.tblLayout_Options.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.47826F));
             this.tblLayout_Options.Controls.Add(this.btn_backlog, 0, 0);
             this.tblLayout_Options.Controls.Add(this.button1, 0, 1);
-            this.tblLayout_Options.Location = new System.Drawing.Point(141, 131);
+            this.tblLayout_Options.Location = new System.Drawing.Point(628, 387);
             this.tblLayout_Options.Name = "tblLayout_Options";
             this.tblLayout_Options.RowCount = 2;
             this.tblLayout_Options.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.30675F));
             this.tblLayout_Options.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.69325F));
-            this.tblLayout_Options.Size = new System.Drawing.Size(652, 163);
+            this.tblLayout_Options.Size = new System.Drawing.Size(348, 163);
             this.tblLayout_Options.TabIndex = 3;
             // 
             // btn_backlog
             // 
-            this.btn_backlog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.btn_backlog.BackColor = System.Drawing.Color.LightGray;
             this.btn_backlog.FlatAppearance.BorderSize = 0;
             this.btn_backlog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_backlog.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_backlog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btn_backlog.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources._1728869__Custom_;
+            this.btn_backlog.ForeColor = System.Drawing.Color.White;
+            this.btn_backlog.Image = ((System.Drawing.Image)(resources.GetObject("btn_backlog.Image")));
             this.btn_backlog.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_backlog.Location = new System.Drawing.Point(3, 3);
             this.btn_backlog.Name = "btn_backlog";
-            this.btn_backlog.Size = new System.Drawing.Size(233, 75);
+            this.btn_backlog.Size = new System.Drawing.Size(190, 75);
             this.btn_backlog.TabIndex = 8;
             this.btn_backlog.Tag = "";
-            this.btn_backlog.Text = "Backlog";
+            this.btn_backlog.Text = "Add Inventory";
             this.btn_backlog.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_backlog.UseVisualStyleBackColor = false;
+            this.btn_backlog.Click += new System.EventHandler(this.btn_backlog_Click);
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.button1.BackColor = System.Drawing.Color.LightGray;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources._1728869__Custom_;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(3, 84);
+            this.button1.Location = new System.Drawing.Point(3, 85);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(233, 74);
+            this.button1.Size = new System.Drawing.Size(190, 75);
             this.button1.TabIndex = 8;
             this.button1.Tag = "";
             this.button1.Text = "Backlog";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 30);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1517, 31);
+            this.toolStrip1.TabIndex = 1;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 28);
+            this.toolStripButton1.Text = "toolStripButton1";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.tblLayout_Options);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1517, 910);
+            this.panel1.TabIndex = 5;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
             // settingsParent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1035, 693);
-            this.Controls.Add(this.tblLayout_Options);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CancelButton = this.button1;
+            this.ClientSize = new System.Drawing.Size(1517, 910);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.panel1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "settingsParent";
             this.Text = "settingsParent";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.Load += new System.EventHandler(this.settingsParent_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tblLayout_Options.ResumeLayout(false);
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem assetToolStripMenuItem;
@@ -310,5 +346,9 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
         private System.Windows.Forms.TableLayoutPanel tblLayout_Options;
         private System.Windows.Forms.Button btn_backlog;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripMenuItem windowsToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
     }
 }
