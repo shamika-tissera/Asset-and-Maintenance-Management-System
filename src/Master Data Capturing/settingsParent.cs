@@ -411,5 +411,10 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            productToolStripMenuItem_Click(sender, e);
+        }
     }
 }

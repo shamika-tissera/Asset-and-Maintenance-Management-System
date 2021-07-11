@@ -50,11 +50,12 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             this.inventoryTypeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tblLayout_Options = new System.Windows.Forms.TableLayoutPanel();
-            this.btn_backlog = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.btn_backlog = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tblLayout_Options.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -70,7 +71,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             this.windowsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1517, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1517, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -114,7 +115,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             this.sinkToolStripMenuItem,
             this.lightingToolStripMenuItem});
             this.assetToolStripMenuItem.Name = "assetToolStripMenuItem";
-            this.assetToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
+            this.assetToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.assetToolStripMenuItem.Text = "A&sset";
             this.assetToolStripMenuItem.Click += new System.EventHandler(this.assetToolStripMenuItem_Click);
             // 
@@ -198,14 +199,14 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             // productToolStripMenuItem
             // 
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
+            this.productToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.productToolStripMenuItem.Text = "&Product";
             this.productToolStripMenuItem.Click += new System.EventHandler(this.productToolStripMenuItem_Click);
             // 
             // inventoryTypeToolStripMenuItem
             // 
             this.inventoryTypeToolStripMenuItem.Name = "inventoryTypeToolStripMenuItem";
-            this.inventoryTypeToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
+            this.inventoryTypeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.inventoryTypeToolStripMenuItem.Text = "&Inventory Type";
             // 
             // windowsToolStripMenuItem
@@ -219,73 +220,28 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             this.tblLayout_Options.ColumnCount = 2;
             this.tblLayout_Options.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.52174F));
             this.tblLayout_Options.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.47826F));
-            this.tblLayout_Options.Controls.Add(this.btn_backlog, 0, 0);
-            this.tblLayout_Options.Controls.Add(this.button1, 0, 1);
-            this.tblLayout_Options.Location = new System.Drawing.Point(628, 387);
+            this.tblLayout_Options.Controls.Add(this.button2, 0, 1);
+            this.tblLayout_Options.Controls.Add(this.button1, 0, 0);
+            this.tblLayout_Options.Controls.Add(this.btn_backlog, 1, 0);
+            this.tblLayout_Options.Location = new System.Drawing.Point(552, 336);
             this.tblLayout_Options.Name = "tblLayout_Options";
+            this.tblLayout_Options.Padding = new System.Windows.Forms.Padding(10);
             this.tblLayout_Options.RowCount = 2;
             this.tblLayout_Options.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.30675F));
             this.tblLayout_Options.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.69325F));
-            this.tblLayout_Options.Size = new System.Drawing.Size(348, 163);
+            this.tblLayout_Options.Size = new System.Drawing.Size(450, 212);
             this.tblLayout_Options.TabIndex = 3;
-            // 
-            // btn_backlog
-            // 
-            this.btn_backlog.BackColor = System.Drawing.Color.LightGray;
-            this.btn_backlog.FlatAppearance.BorderSize = 0;
-            this.btn_backlog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_backlog.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_backlog.ForeColor = System.Drawing.Color.White;
-            this.btn_backlog.Image = ((System.Drawing.Image)(resources.GetObject("btn_backlog.Image")));
-            this.btn_backlog.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_backlog.Location = new System.Drawing.Point(3, 3);
-            this.btn_backlog.Name = "btn_backlog";
-            this.btn_backlog.Size = new System.Drawing.Size(190, 75);
-            this.btn_backlog.TabIndex = 8;
-            this.btn_backlog.Tag = "";
-            this.btn_backlog.Text = "Add Inventory";
-            this.btn_backlog.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_backlog.UseVisualStyleBackColor = false;
-            this.btn_backlog.Click += new System.EventHandler(this.btn_backlog_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.LightGray;
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources._1728869__Custom_;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(3, 85);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 75);
-            this.button1.TabIndex = 8;
-            this.button1.Tag = "";
-            this.button1.Text = "Backlog";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // toolStrip1
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 30);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 28);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1517, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(1517, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 28);
-            this.toolStripButton1.Text = "toolStripButton1";
             // 
             // panel1
             // 
@@ -296,6 +252,72 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             this.panel1.Size = new System.Drawing.Size(1517, 910);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightGray;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(13, 13);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(178, 73);
+            this.button1.TabIndex = 8;
+            this.button1.Tag = "";
+            this.button1.Text = "Add Asset";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton1.Text = "toolStripButton1";
+            // 
+            // btn_backlog
+            // 
+            this.btn_backlog.BackColor = System.Drawing.Color.LightGray;
+            this.btn_backlog.FlatAppearance.BorderSize = 0;
+            this.btn_backlog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_backlog.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_backlog.ForeColor = System.Drawing.Color.White;
+            this.btn_backlog.Image = ((System.Drawing.Image)(resources.GetObject("btn_backlog.Image")));
+            this.btn_backlog.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_backlog.Location = new System.Drawing.Point(256, 13);
+            this.btn_backlog.Name = "btn_backlog";
+            this.btn_backlog.Size = new System.Drawing.Size(178, 73);
+            this.btn_backlog.TabIndex = 8;
+            this.btn_backlog.Tag = "";
+            this.btn_backlog.Text = "Add Inventory";
+            this.btn_backlog.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_backlog.UseVisualStyleBackColor = false;
+            this.btn_backlog.Click += new System.EventHandler(this.btn_backlog_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.LightGray;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.Location = new System.Drawing.Point(13, 109);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(178, 73);
+            this.button2.TabIndex = 9;
+            this.button2.Tag = "";
+            this.button2.Text = "Add Product";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // settingsParent
             // 
@@ -350,5 +372,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripMenuItem windowsToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button2;
     }
 }

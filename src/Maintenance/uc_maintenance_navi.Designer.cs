@@ -29,8 +29,8 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_maintenance_navi));
             this.btn_back = new System.Windows.Forms.Button();
-            this.btn_logout = new System.Windows.Forms.Button();
             this.btn_backlog = new System.Windows.Forms.Button();
             this.btn_preventive = new System.Windows.Forms.Button();
             this.btn_corrective = new System.Windows.Forms.Button();
@@ -55,23 +55,6 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.btn_back.UseVisualStyleBackColor = false;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
-            // btn_logout
-            // 
-            this.btn_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.btn_logout.FlatAppearance.BorderSize = 0;
-            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_logout.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_logout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btn_logout.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.logout__Custom_;
-            this.btn_logout.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_logout.Location = new System.Drawing.Point(0, 530);
-            this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(264, 53);
-            this.btn_logout.TabIndex = 10;
-            this.btn_logout.Text = "&Logout";
-            this.btn_logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_logout.UseVisualStyleBackColor = false;
-            // 
             // btn_backlog
             // 
             this.btn_backlog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
@@ -79,9 +62,9 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.btn_backlog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_backlog.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_backlog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btn_backlog.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources._1728869__Custom_;
+            this.btn_backlog.Image = ((System.Drawing.Image)(resources.GetObject("btn_backlog.Image")));
             this.btn_backlog.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_backlog.Location = new System.Drawing.Point(0, 176);
+            this.btn_backlog.Location = new System.Drawing.Point(0, 84);
             this.btn_backlog.Name = "btn_backlog";
             this.btn_backlog.Size = new System.Drawing.Size(267, 53);
             this.btn_backlog.TabIndex = 6;
@@ -98,9 +81,9 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.btn_preventive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_preventive.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_preventive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btn_preventive.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.analytics__Custom_;
+            this.btn_preventive.Image = ((System.Drawing.Image)(resources.GetObject("btn_preventive.Image")));
             this.btn_preventive.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_preventive.Location = new System.Drawing.Point(0, 235);
+            this.btn_preventive.Location = new System.Drawing.Point(0, 143);
             this.btn_preventive.Name = "btn_preventive";
             this.btn_preventive.Size = new System.Drawing.Size(267, 53);
             this.btn_preventive.TabIndex = 7;
@@ -115,9 +98,9 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.btn_corrective.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_corrective.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_corrective.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btn_corrective.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.maintenance__Custom_;
+            this.btn_corrective.Image = ((System.Drawing.Image)(resources.GetObject("btn_corrective.Image")));
             this.btn_corrective.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_corrective.Location = new System.Drawing.Point(-3, 294);
+            this.btn_corrective.Location = new System.Drawing.Point(-3, 202);
             this.btn_corrective.Name = "btn_corrective";
             this.btn_corrective.Size = new System.Drawing.Size(267, 53);
             this.btn_corrective.TabIndex = 8;
@@ -132,9 +115,9 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.btn_recommendations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_recommendations.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_recommendations.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btn_recommendations.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.calendar__Custom___1_;
+            this.btn_recommendations.Image = ((System.Drawing.Image)(resources.GetObject("btn_recommendations.Image")));
             this.btn_recommendations.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_recommendations.Location = new System.Drawing.Point(0, 353);
+            this.btn_recommendations.Location = new System.Drawing.Point(0, 261);
             this.btn_recommendations.Name = "btn_recommendations";
             this.btn_recommendations.Size = new System.Drawing.Size(267, 53);
             this.btn_recommendations.TabIndex = 9;
@@ -149,7 +132,6 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
             this.Controls.Add(this.btn_back);
-            this.Controls.Add(this.btn_logout);
             this.Controls.Add(this.btn_backlog);
             this.Controls.Add(this.btn_preventive);
             this.Controls.Add(this.btn_corrective);
@@ -162,8 +144,6 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btn_logout;
         private System.Windows.Forms.Button btn_backlog;
         private System.Windows.Forms.Button btn_preventive;
         private System.Windows.Forms.Button btn_corrective;

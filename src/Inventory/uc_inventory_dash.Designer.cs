@@ -34,8 +34,8 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -66,6 +66,17 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             this.panel1.Size = new System.Drawing.Size(127, 101);
             this.panel1.TabIndex = 7;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(27, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 59);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "12";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -76,17 +87,6 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             this.label1.Size = new System.Drawing.Size(136, 32);
             this.label1.TabIndex = 5;
             this.label1.Text = "Categories";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(27, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 60);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "12";
             // 
             // panel2
             // 
@@ -104,7 +104,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             this.label3.ForeColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(41, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 60);
+            this.label3.Size = new System.Drawing.Size(50, 59);
             this.label3.TabIndex = 5;
             this.label3.Text = "6";
             // 
@@ -126,7 +126,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             this.label5.ForeColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(41, 19);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 60);
+            this.label5.Size = new System.Drawing.Size(50, 59);
             this.label5.TabIndex = 5;
             this.label5.Text = "5";
             // 
@@ -134,7 +134,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(983, 91);
+            this.panel3.Location = new System.Drawing.Point(955, 91);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(127, 101);
             this.panel3.TabIndex = 14;
@@ -144,7 +144,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(905, 125);
+            this.label6.Location = new System.Drawing.Point(877, 125);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 32);
             this.label6.TabIndex = 13;
@@ -166,7 +166,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             this.label7.ForeColor = System.Drawing.Color.Salmon;
             this.label7.Location = new System.Drawing.Point(27, 17);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 60);
+            this.label7.Size = new System.Drawing.Size(75, 59);
             this.label7.TabIndex = 5;
             this.label7.Text = "12";
             // 
@@ -197,7 +197,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             this.label9.ForeColor = System.Drawing.Color.DarkRed;
             this.label9.Location = new System.Drawing.Point(27, 20);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 60);
+            this.label9.Size = new System.Drawing.Size(75, 59);
             this.label9.TabIndex = 5;
             this.label9.Text = "12";
             // 
