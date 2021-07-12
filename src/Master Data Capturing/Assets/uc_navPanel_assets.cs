@@ -72,7 +72,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             item.Hide();
         }
         bool isButtonEmphasized = false;
-        private void resetBtnEmphasis()
+        public void resetBtnEmphasis()
         {
             button2.BackColor = Color.FromArgb(31, 46, 76);
             button5.BackColor = Color.FromArgb(31, 46, 76);
@@ -89,93 +89,93 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            //inst.clickedHeater(button2.Location);
-            isButtonEmphasized = true;
+            //inst.clickedHeater(button2.Location);            
             if (isButtonEmphasized)
             {
                 resetBtnEmphasis();
             }
             button2.BackColor = Color.FromArgb(61, 70, 89);
+            isButtonEmphasized = true;
         }
 
         private void button10_Click(object sender, EventArgs e)
-        {
-            isButtonEmphasized = true;
+        {            
             if (isButtonEmphasized)
             {
                 resetBtnEmphasis();
             }
             button10.BackColor = Color.FromArgb(61, 70, 89);
+            isButtonEmphasized = true;
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            isButtonEmphasized = true;
             if (isButtonEmphasized)
             {
                 resetBtnEmphasis();
             }
             button8.BackColor = Color.FromArgb(61, 70, 89);
+            isButtonEmphasized = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            isButtonEmphasized = true;
             if (isButtonEmphasized)
             {
                 resetBtnEmphasis();
             }
             button3.BackColor = Color.FromArgb(61, 70, 89);
+            isButtonEmphasized = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            isButtonEmphasized = true;
             if (isButtonEmphasized)
             {
                 resetBtnEmphasis();
             }
             button1.BackColor = Color.FromArgb(61, 70, 89);
+            isButtonEmphasized = true;
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            isButtonEmphasized = true;
             if (isButtonEmphasized)
             {
                 resetBtnEmphasis();
             }
             button13.BackColor = Color.FromArgb(61, 70, 89);
+            isButtonEmphasized = true;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            isButtonEmphasized = true;
             if (isButtonEmphasized)
             {
                 resetBtnEmphasis();
             }
             button6.BackColor = Color.FromArgb(61, 70, 89);
+            isButtonEmphasized = true;
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            isButtonEmphasized = true;
             if (isButtonEmphasized)
             {
                 resetBtnEmphasis();
             }
             button7.BackColor = Color.FromArgb(61, 70, 89);
+            isButtonEmphasized = true;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            isButtonEmphasized = true;
             if (isButtonEmphasized)
             {
                 resetBtnEmphasis();
             }
             button4.BackColor = Color.FromArgb(61, 70, 89);
+            isButtonEmphasized = true;
         }
     }
 }

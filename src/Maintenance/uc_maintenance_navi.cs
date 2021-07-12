@@ -55,15 +55,55 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             //        break;
             //}
         }
-
+        private bool isButtonEmphasized = false;
+        public void resetBtnEmphasis()
+        {
+            btn_backlog.BackColor = Color.FromArgb(31, 46, 76);
+            btn_preventive.BackColor = Color.FromArgb(31, 46, 76);
+            btn_corrective.BackColor = Color.FromArgb(31, 46, 76);
+            btn_recommendations.BackColor = Color.FromArgb(31, 46, 76);
+            isButtonEmphasized = false;
+        }
         private void btn_backlog_Click(object sender, EventArgs e)
         {
-            inst.clickedMaintenanceBacklog();
+            inst.clickedMaintenanceBacklog();            
+            if (isButtonEmphasized)
+            {
+                resetBtnEmphasis();
+            }
+            btn_backlog.BackColor = Color.FromArgb(61, 70, 89);
+            isButtonEmphasized = true;
         }
 
-        public void btn_recommendations_Click(object sender, EventArgs e)
+        private void btn_recommendations_Click(object sender, EventArgs e)
         {
             inst.clickedMaintenanceReccomendations();
+            if (isButtonEmphasized)
+            {
+                resetBtnEmphasis();
+            }
+            btn_recommendations.BackColor = Color.FromArgb(61, 70, 89);
+            isButtonEmphasized = true;
+        }
+
+        private void btn_preventive_Click(object sender, EventArgs e)
+        {
+            if (isButtonEmphasized)
+            {
+                resetBtnEmphasis();
+            }
+            btn_preventive.BackColor = Color.FromArgb(61, 70, 89);
+            isButtonEmphasized = true;
+        }
+
+        private void btn_corrective_Click(object sender, EventArgs e)
+        {
+            if (isButtonEmphasized)
+            {
+                resetBtnEmphasis();
+            }
+            btn_corrective.BackColor = Color.FromArgb(61, 70, 89);
+            isButtonEmphasized = true;
         }
     }
 }

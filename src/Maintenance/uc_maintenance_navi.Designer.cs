@@ -90,6 +90,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.btn_preventive.Text = "Preventive";
             this.btn_preventive.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_preventive.UseVisualStyleBackColor = false;
+            this.btn_preventive.Click += new System.EventHandler(this.btn_preventive_Click);
             // 
             // btn_corrective
             // 
@@ -107,6 +108,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.btn_corrective.Text = "Corrective";
             this.btn_corrective.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_corrective.UseVisualStyleBackColor = false;
+            this.btn_corrective.Click += new System.EventHandler(this.btn_corrective_Click);
             // 
             // btn_recommendations
             // 

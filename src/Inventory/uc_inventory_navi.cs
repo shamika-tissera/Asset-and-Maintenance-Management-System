@@ -26,7 +26,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             inst.clickedInventoryBack();
         }
         private bool isButtonEmphasized = false;
-        private void resetBtnEmphasis()
+        public void resetBtnEmphasis()
         {
             button1.BackColor = Color.FromArgb(31, 46, 76);
             button2.BackColor = Color.FromArgb(31, 46, 76);

@@ -108,6 +108,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         {
             uc_assets_11.Visible = false;
             dashboard_info1.Visible = false;
+            uc_navPanel_assets1.resetBtnEmphasis();
             uc_navPanel_assets1.Visible = true;
             uc_asset_browse1.Visible = true;
             //uc_navPanel_assets1.BringToFront();
@@ -126,6 +127,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_inventory_dash1.Visible = true;
             uc_calendar1.Visible = false;
             uc_dash_main1.Visible = false;
+            uc_inventory_navi1.resetBtnEmphasis();
             uc_inventory_navi1.Visible = true;
         }
         public void clickedInventoryBack()
@@ -144,6 +146,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         public void clickedMaintenance()
         {
             uc_maintenance_dashboard_info1.Visible = true;
+            uc_maintenance_navi1.resetBtnEmphasis();
             uc_maintenance_navi1.Visible = true;
             uc_calendar1.Visible = false;
             uc_dash_main1.Visible = false;
