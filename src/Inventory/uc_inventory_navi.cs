@@ -25,5 +25,54 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
         {
             inst.clickedInventoryBack();
         }
+        private bool isButtonEmphasized = false;
+        private void resetBtnEmphasis()
+        {
+            button1.BackColor = Color.FromArgb(31, 46, 76);
+            button2.BackColor = Color.FromArgb(31, 46, 76);
+            button3.BackColor = Color.FromArgb(31, 46, 76);
+            button6.BackColor = Color.FromArgb(31, 46, 76);
+            isButtonEmphasized = false;
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            inst.clickedInventoryTrends();
+            if (isButtonEmphasized)
+            {
+                resetBtnEmphasis();
+            }
+            button1.BackColor = Color.FromArgb(61, 70, 89);
+            isButtonEmphasized = true;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (isButtonEmphasized)
+            {
+                resetBtnEmphasis();
+            }
+            button6.BackColor = Color.FromArgb(61, 70, 89);
+            isButtonEmphasized = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (isButtonEmphasized)
+            {
+                resetBtnEmphasis();
+            }
+            button2.BackColor = Color.FromArgb(61, 70, 89);
+            isButtonEmphasized = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (isButtonEmphasized)
+            {
+                resetBtnEmphasis();
+            }
+            button3.BackColor = Color.FromArgb(61, 70, 89);
+            isButtonEmphasized = true;
+        }
     }
 }

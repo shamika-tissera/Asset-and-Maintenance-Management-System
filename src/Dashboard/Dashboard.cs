@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Asset_and_Maintenance_Management_System.src.Maintenance;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,6 +39,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_maintenance_navi1.setDashboardInstance(this);
             uc_maintenance_backlog1.setDashboardInstance(this);
             uc_analytics_navi_one1.setDashboardInstance(this);
+            //uc_maintenance_dashboard_info.setDashboardInstance(this);
             uc_dash_main1.Visible = true;
             uc_maintenance_backlog1.Visible = false;
             uc_assets_11.Visible = false;
@@ -51,11 +53,14 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_maintenance_dashboard_info1.Visible = false;
             uc_maintenance_navi1.Visible = false;
             uc_asset_browse1.Visible = false;
+            uc_inventory_trends1.Visible = false;
 
 
             GraphicsPath gp = new GraphicsPath();
             gp.AddEllipse(pic_close.DisplayRectangle);
             pic_close.Region = new Region();
+
+            pnl_highlight.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -128,8 +133,13 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_inventory_navi1.Visible = false;
             uc_inventory_dash1.Visible = false;
             uc_assets_11.Visible = false;
+            uc_inventory_trends1.Visible = false;
             uc_calendar1.Visible = true;
             uc_dash_main1.Visible = true;
+        }
+        public void clickedInventoryTrends()
+        {
+            uc_inventory_trends1.Visible = true;
         }
         public void clickedMaintenance()
         {
@@ -186,6 +196,16 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         public void exit()
         {
             this.Dispose();
+        }
+
+        //Button decorations
+        /*
+            Assets Navigation Pane
+        */
+        public void clickedHeater(Point location)
+        {
+            pnl_highlight.Location = location;
+            pnl_highlight.Visible = true;
         }
 
         public void clickedAssetAddItemOK()

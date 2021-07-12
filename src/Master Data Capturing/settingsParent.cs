@@ -27,6 +27,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
         private int Phone = 0;
         private int Sink = 0;
         private int Lighting = 0;
+        private int Product = 0;
 
         private DataTable childForms;
         private addItem_assetCategory assetCategory;
@@ -138,7 +139,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     else
                     {
-                        choice.Text = "Add" + formType + "(" + (winCount - 1) + ")";
+                        choice.Text = "Add" + formType + "(" + (Heater - 1) + ")";
                     }
                     break;
                 case "Network Device":
@@ -150,7 +151,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     else
                     {
-                        choice.Text = "Add" + formType + "(" + (winCount - 1) + ")";
+                        choice.Text = "Add" + formType + "(" + (Network - 1) + ")";
                     }
                     break;
                 case "Sanitation Device":
@@ -162,7 +163,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     else
                     {
-                        choice.Text = "Add" + formType + "(" + (winCount - 1) + ")";
+                        choice.Text = "Add" + formType + "(" + (Sanitation - 1) + ")";
                     }
                     break;
                 case "Printer/Scanner":
@@ -174,7 +175,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     else
                     {
-                        choice.Text = "Add" + formType + "(" + (winCount - 1) + ")";
+                        choice.Text = "Add" + formType + "(" + (Printer - 1) + ")";
                     }
                     break;
                 case "Lift":
@@ -186,7 +187,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     else
                     {
-                        choice.Text = "Add" + formType + "(" + (winCount - 1) + ")";
+                        choice.Text = "Add" + formType + "(" + (Lift - 1) + ")";
                     }
                     break;
                 case "Fire Extinguisher":
@@ -198,7 +199,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     else
                     {
-                        choice.Text = "Add" + formType + "(" + (winCount - 1) + ")";
+                        choice.Text = "Add" + formType + "(" + (Extinguisher - 1) + ")";
                     }
                     break;
                 case "Computer":
@@ -210,7 +211,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     else
                     {
-                        choice.Text = "Add" + formType + "(" + (winCount - 1) + ")";
+                        choice.Text = "Add" + formType + "(" + (Computer - 1) + ")";
                     }
                     break;
                 case "Plumbing Device":
@@ -222,7 +223,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     else
                     {
-                        choice.Text = "Add" + formType + "(" + (winCount - 1) + ")";
+                        choice.Text = "Add" + formType + "(" + (Plumbing - 1) + ")";
                     }
                     break;
                 case "Phone":
@@ -234,7 +235,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     else
                     {
-                        choice.Text = "Add" + formType + "(" + (winCount - 1) + ")";
+                        choice.Text = "Add" + formType + "(" + (Phone - 1) + ")";
                     }
                     break;
                 case "Sink":
@@ -246,7 +247,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     else
                     {
-                        choice.Text = "Add" + formType + "(" + (winCount - 1) + ")";
+                        choice.Text = "Add" + formType + "(" + (Sink - 1) + ")";
                     }
                     break;
                 case "Lighting":
@@ -258,7 +259,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     else
                     {
-                        choice.Text = "Add" + formType + "(" + (winCount - 1) + ")";
+                        choice.Text = "Add" + formType + "(" + (Lighting - 1) + ")";
                     }
                     break;
             }
@@ -393,9 +394,17 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
         private void productToolStripMenuItem_Click(object sender, EventArgs e)
         {
             uc_addProduct_form addItem = new uc_addProduct_form();
+            Product++;
             addItem.MdiParent = this;
             tblLayout_Options.Visible = false;
-            addItem.Text = "Add New Product";
+            if (Product == 1)
+            {
+                addItem.Text = "Add New Product";
+            }
+            else
+            {
+                addItem.Text = "Add New Product" + "(" + (Product - 1) + ")";
+            }
             panel1.SendToBack();
             addItem.Show();
             winCount++;
@@ -404,7 +413,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
 
         private void btn_backlog_Click(object sender, EventArgs e)
         {
-            assetToolStripMenuItem_Click(sender, e);
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -415,6 +424,11 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
         private void button2_Click(object sender, EventArgs e)
         {
             productToolStripMenuItem_Click(sender, e);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            assetToolStripMenuItem_Click(sender, e);
         }
     }
 }

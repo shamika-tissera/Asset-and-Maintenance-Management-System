@@ -29,18 +29,18 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.asset_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.due_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.days_passed = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_continue = new System.Windows.Forms.Button();
-            this.btn_print = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btn_print = new System.Windows.Forms.Button();
+            this.btn_continue = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -86,16 +86,16 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(455, 49);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(688, 619);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
@@ -113,18 +113,18 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.panel1.Size = new System.Drawing.Size(1162, 767);
             this.panel1.TabIndex = 2;
             // 
-            // btn_continue
+            // button1
             // 
-            this.btn_continue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
-            this.btn_continue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_continue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_continue.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_continue.Location = new System.Drawing.Point(586, 367);
-            this.btn_continue.Name = "btn_continue";
-            this.btn_continue.Size = new System.Drawing.Size(123, 33);
-            this.btn_continue.TabIndex = 1;
-            this.btn_continue.Text = "Continue";
-            this.btn_continue.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(872, 712);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 33);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "&Schedule...";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // btn_print
             // 
@@ -139,18 +139,18 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.btn_print.Text = "&Print...";
             this.btn_print.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btn_continue
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(872, 712);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 33);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "&Schedule...";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_continue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
+            this.btn_continue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_continue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_continue.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_continue.Location = new System.Drawing.Point(586, 367);
+            this.btn_continue.Name = "btn_continue";
+            this.btn_continue.Size = new System.Drawing.Size(123, 33);
+            this.btn_continue.TabIndex = 1;
+            this.btn_continue.Text = "Continue";
+            this.btn_continue.UseVisualStyleBackColor = false;
             // 
             // uc_maintenance_backlog
             // 

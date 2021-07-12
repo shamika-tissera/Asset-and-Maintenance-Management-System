@@ -32,7 +32,10 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btn_print = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -62,10 +65,38 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btn_print);
             this.panel1.Location = new System.Drawing.Point(57, 56);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1110, 669);
+            this.panel1.Size = new System.Drawing.Size(1110, 714);
             this.panel1.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(831, 663);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 33);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "&Schedule...";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btn_print
+            // 
+            this.btn_print.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
+            this.btn_print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_print.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_print.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_print.Location = new System.Drawing.Point(972, 663);
+            this.btn_print.Name = "btn_print";
+            this.btn_print.Size = new System.Drawing.Size(123, 33);
+            this.btn_print.TabIndex = 5;
+            this.btn_print.Text = "&Print...";
+            this.btn_print.UseVisualStyleBackColor = false;
             // 
             // uc_maintenance_reccomendations
             // 
@@ -78,6 +109,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.Size = new System.Drawing.Size(1356, 826);
             this.Load += new System.EventHandler(this.uc_maintenance_reccomendations_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -86,5 +118,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_print;
     }
 }

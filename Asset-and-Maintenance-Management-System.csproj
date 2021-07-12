@@ -116,6 +116,12 @@
     <Compile Include="src\Inventory\uc_inventory_navi.Designer.cs">
       <DependentUpon>uc_inventory_navi.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Inventory\uc_inventory_trends.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Inventory\uc_inventory_trends.Designer.cs">
+      <DependentUpon>uc_inventory_trends.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,15 @@
     </Compile>
     <Compile Include="src\Maintenance\uc_maintenance_reccomendations.Designer.cs">
       <DependentUpon>uc_maintenance_reccomendations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Maintenance\uc_preventive_maintenance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Maintenance\uc_preventive_maintenance.Designer.cs">
+      <DependentUpon>uc_preventive_maintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Maintenance\uc_preventive_maintenance_calendar.xaml.cs">
+      <DependentUpon>uc_preventive_maintenance_calendar.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\Master Data Capturing\Assets\addItem_assetCategory.cs">
       <SubType>Form</SubType>
@@ -320,6 +335,9 @@
     <EmbeddedResource Include="src\Inventory\uc_inventory_navi.resx">
       <DependentUpon>uc_inventory_navi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\Inventory\uc_inventory_trends.resx">
+      <DependentUpon>uc_inventory_trends.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -337,6 +355,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Maintenance\uc_maintenance_reccomendations.resx">
       <DependentUpon>uc_maintenance_reccomendations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Maintenance\uc_preventive_maintenance.resx">
+      <DependentUpon>uc_preventive_maintenance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\addItem_assetCategory.resx">
       <DependentUpon>addItem_assetCategory.cs</DependentUpon>
@@ -524,6 +545,10 @@
     <None Include="Resources\welcome-startup.png" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="src\Maintenance\uc_preventive_maintenance_calendar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="src\Master Data Capturing\Assets\initialInterfaceAsset.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

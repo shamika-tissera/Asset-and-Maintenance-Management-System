@@ -12,6 +12,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
 {
     public partial class uc_maintenance_dashboard_info : UserControl
     {
+        private static Dashboard.Dashboard inst;
         public uc_maintenance_dashboard_info()
         {
             InitializeComponent();
@@ -26,7 +27,10 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
         {
 
         }
-
+        public static void setDashboardInstance(Dashboard.Dashboard instance)
+        {
+            inst = instance;
+        }
         private void label6_Click(object sender, EventArgs e)
         {
 
@@ -35,6 +39,21 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
         private void lbl_uname_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            //inst.clickedMaintenanceReccomendations();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            //inst.clickedMaintenanceReccomendations();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+           // inst.clickedMaintenanceReccomendations();
         }
     }
 }

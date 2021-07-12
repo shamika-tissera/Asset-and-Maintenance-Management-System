@@ -61,7 +61,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             inst.clickedMaintenanceBacklog();
         }
 
-        private void btn_recommendations_Click(object sender, EventArgs e)
+        public void btn_recommendations_Click(object sender, EventArgs e)
         {
             inst.clickedMaintenanceReccomendations();
         }
