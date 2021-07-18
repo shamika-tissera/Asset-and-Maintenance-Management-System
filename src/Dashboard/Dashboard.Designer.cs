@@ -287,7 +287,6 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.Controls.Add(this.uc_inventory_trends1);
             this.Controls.Add(this.pic_close);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.navPanel);
             this.Controls.Add(this.uc_calendar1);
             this.Controls.Add(this.dashboard_info1);
             this.Controls.Add(this.uc_maintenance_reccomendations1);
@@ -296,6 +295,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.Controls.Add(this.uc_analytics_intial_dash2);
             this.Controls.Add(this.uc_inventory_dash1);
             this.Controls.Add(this.uc_asset_browse1);
+            this.Controls.Add(this.navPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

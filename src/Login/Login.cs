@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Asset_and_Maintenance_Management_System.src.Dashboard;
 
 namespace Asset_and_Maintenance_Management_System.src.Login
 {
@@ -25,6 +26,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             int nHeightEllipse
 
         );
+        
         public Login()
         {
             InitializeComponent();
@@ -34,6 +36,29 @@ namespace Asset_and_Maintenance_Management_System.src.Login
         private void Login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        //private Dashboard inst;
+        //public setDashboardInst(Dashboard inst)
+        //{
+        //    this.inst = inst;
+        //}
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtUsername.Text == "" || txtPassword.Text == "")
+            {
+                MessageBox.Show("Enter a password and username.", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                string[] loginDetails= { txtUsername.Text, txtPassword.Text }; //loginDetails[0]:Username, loginDetails[1]:password
+
+
+                Dashboard.Dashboard dashboard = new Dashboard.Dashboard();
+                dashboard.Show();
+                this.Visible = false;
+            }
         }
     }
 }

@@ -24,10 +24,17 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
 
         private void setTime(object sender, System.Timers.ElapsedEventArgs e)
         {
-            Invoke(new MethodInvoker(delegate ()
+            try
             {
-                lbl_time.Text = DateTime.Now.ToString("T");
-            }));
+                Invoke(new MethodInvoker(delegate ()
+                {
+                    lbl_time.Text = DateTime.Now.ToString("T");
+                }));
+            }
+            catch(System.InvalidOperationException ex)
+            {
+                TextWriter.writeContent("logs.txt", ex.ToString());
+            }
         }
 
         private void uc_calendar_Load(object sender, EventArgs e)

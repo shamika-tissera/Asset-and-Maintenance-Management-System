@@ -31,7 +31,7 @@ namespace Asset_and_Maintenance_Management_System.src.Startup_Wizard
         }
         public string[] getTxtInfo()
         {
-            string[] info = { txt_compName.Text, txt_compName.Text };
+            string[] info = { txt_compName.Text, txt_fascilCount.Text };
             return info;
         }
 

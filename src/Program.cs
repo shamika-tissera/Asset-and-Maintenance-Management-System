@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Asset_and_Maintenance_Management_System.src.Dashboard;
+using Asset_and_Maintenance_Management_System.src.Login;
 
 namespace Asset_and_Maintenance_Management_System
 {
@@ -40,7 +41,8 @@ namespace Asset_and_Maintenance_Management_System
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new Dashboard());
+
+                Application.Run(new Login());
             }
             else
             {

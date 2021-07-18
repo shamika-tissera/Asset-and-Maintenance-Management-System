@@ -70,6 +70,7 @@ namespace Asset_and_Maintenance_Management_System
             this.uc_compName1.Name = "uc_compName1";
             this.uc_compName1.Size = new System.Drawing.Size(1136, 636);
             this.uc_compName1.TabIndex = 2;
+            this.uc_compName1.Load += new System.EventHandler(this.uc_compName1_Load);
             // 
             // uc_welcome_11
             // 

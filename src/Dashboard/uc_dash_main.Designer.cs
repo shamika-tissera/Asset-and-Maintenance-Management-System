@@ -70,7 +70,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.btn_assets.Size = new System.Drawing.Size(267, 53);
             this.btn_assets.TabIndex = 1;
             this.btn_assets.Tag = "";
-            this.btn_assets.Text = "&Fascilities and Assets  \r\n";
+            this.btn_assets.Text = "&Facilities and Assets  \r\n";
             this.btn_assets.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_assets.UseVisualStyleBackColor = false;
             this.btn_assets.Click += new System.EventHandler(this.btn_assets_Click);
@@ -106,7 +106,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(267, 53);
             this.button2.TabIndex = 3;
-            this.button2.Text = "&Maintainance";
+            this.button2.Text = "&Maintenance";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);

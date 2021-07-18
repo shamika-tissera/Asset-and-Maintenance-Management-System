@@ -31,24 +31,25 @@ namespace Asset_and_Maintenance_Management_System
             }
             else if (uc_compName1.Visible)
             {
+                bool isValid = false;
+
                 string[] info = uc_compName1.getTxtInfo();
-                bool isValid;
-                
+
                 isValid = Validation(info);
                 if (!isValid)
                 {
-                    MessageBox.Show("Please check the details entered again...");
+                    MessageBox.Show("Please enter valid information.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     uc_compName1.Visible = false;
                     uc_compName1.resetTxt();
                     uc_compName1.Visible = true;
-                    info = uc_compName1.getTxtInfo();
-                    isValid = Validation(info);
                 }
-
+                else
+                {
+                    uc_welcome_11.Visible = false;
+                    uc_compName1.Visible = false;
+                    assetTypes1.Visible = true;
+                }                
                 
-                uc_welcome_11.Visible = false;
-                uc_compName1.Visible = false;
-                assetTypes1.Visible = true;
             }
             else
             {
@@ -69,17 +70,27 @@ namespace Asset_and_Maintenance_Management_System
         {
             try
             {
-                if (info[0] == "")
+                if (info[0] == "" || info[1] == "")
                 {
                     return false;
                 }
+                int num = int.Parse(info[1]);
+                //if (!int.TryParse(info[1], out num))
+                //{
+                //    return false;
+                //}
             }
-            catch (System.FormatException ex)
+            catch (FormatException ex)
             {
                 return false;
             }
 
             return true;
-        } 
+        }
+
+        private void uc_compName1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
