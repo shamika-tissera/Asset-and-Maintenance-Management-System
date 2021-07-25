@@ -33,9 +33,9 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_asset_browse));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_uname = new System.Windows.Forms.Label();
-            this.txtWarrantyCode = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtWarrantyCode = new System.Windows.Forms.TextBox();
+            this.lbl_uname = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -75,26 +75,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.panel1.Size = new System.Drawing.Size(1110, 695);
             this.panel1.TabIndex = 3;
             // 
-            // lbl_uname
-            // 
-            this.lbl_uname.AutoSize = true;
-            this.lbl_uname.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_uname.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_uname.Location = new System.Drawing.Point(653, 37);
-            this.lbl_uname.Name = "lbl_uname";
-            this.lbl_uname.Size = new System.Drawing.Size(80, 28);
-            this.lbl_uname.TabIndex = 4;
-            this.lbl_uname.Text = "Search:";
-            // 
-            // txtWarrantyCode
-            // 
-            this.txtWarrantyCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWarrantyCode.Location = new System.Drawing.Point(738, 39);
-            this.txtWarrantyCode.MaxLength = 100;
-            this.txtWarrantyCode.Name = "txtWarrantyCode";
-            this.txtWarrantyCode.Size = new System.Drawing.Size(232, 30);
-            this.txtWarrantyCode.TabIndex = 4;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
@@ -106,6 +86,27 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.button1.Size = new System.Drawing.Size(40, 34);
             this.button1.TabIndex = 5;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtWarrantyCode
+            // 
+            this.txtWarrantyCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWarrantyCode.Location = new System.Drawing.Point(738, 39);
+            this.txtWarrantyCode.MaxLength = 100;
+            this.txtWarrantyCode.Name = "txtWarrantyCode";
+            this.txtWarrantyCode.Size = new System.Drawing.Size(232, 30);
+            this.txtWarrantyCode.TabIndex = 4;
+            // 
+            // lbl_uname
+            // 
+            this.lbl_uname.AutoSize = true;
+            this.lbl_uname.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_uname.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_uname.Location = new System.Drawing.Point(653, 37);
+            this.lbl_uname.Name = "lbl_uname";
+            this.lbl_uname.Size = new System.Drawing.Size(80, 28);
+            this.lbl_uname.TabIndex = 4;
+            this.lbl_uname.Text = "Search:";
             // 
             // uc_asset_browse
             // 

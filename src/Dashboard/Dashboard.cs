@@ -111,6 +111,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_navPanel_assets1.resetBtnEmphasis();
             uc_navPanel_assets1.Visible = true;
             uc_asset_browse1.Visible = true;
+            uc_asset_browse1.setAssetCategory("config");
             //uc_navPanel_assets1.BringToFront();
         }
 

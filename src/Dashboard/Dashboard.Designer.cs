@@ -67,12 +67,12 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.navPanel.Controls.Add(this.pnl_highlight);
             this.navPanel.Controls.Add(this.elementHost1);
             this.navPanel.Controls.Add(this.panel2);
+            this.navPanel.Controls.Add(this.uc_dash_main1);
             this.navPanel.Controls.Add(this.uc_navPanel_assets1);
             this.navPanel.Controls.Add(this.uc_assets_11);
             this.navPanel.Controls.Add(this.uc_analytics_navi_one1);
             this.navPanel.Controls.Add(this.uc_inventory_navi1);
             this.navPanel.Controls.Add(this.uc_maintenance_navi1);
-            this.navPanel.Controls.Add(this.uc_dash_main1);
             this.navPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.navPanel.Location = new System.Drawing.Point(0, 0);
             this.navPanel.Name = "navPanel";

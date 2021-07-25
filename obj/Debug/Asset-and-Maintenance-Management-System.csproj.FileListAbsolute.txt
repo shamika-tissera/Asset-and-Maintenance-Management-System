@@ -56,3 +56,8 @@ F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-Syst
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\src\Maintenance\uc_preventive_maintenance_calendar.baml
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Maintenance.uc_preventive_maintenance.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.csproj.AssemblyReference.cache
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.uc_assets_operational.resources
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Worker_Interface.WorkerInterface.resources
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\bin\Debug\AssetManagementSystem.mdf
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\bin\Debug\AssetManagementSystem_log.ldf
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System_Content.g.cs

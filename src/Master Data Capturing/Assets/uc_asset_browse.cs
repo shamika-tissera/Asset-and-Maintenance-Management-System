@@ -12,12 +12,21 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
 {
     public partial class uc_asset_browse : UserControl
     {
+        private string assetCategoryToFetchFromDatabase;
         public uc_asset_browse()
         {
             InitializeComponent();
         }
-
+        public void setAssetCategory(string assetCategoryToFetchFromDatabase)
+        {
+            this.assetCategoryToFetchFromDatabase = assetCategoryToFetchFromDatabase;
+        }
         private void uc_asset_browse_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

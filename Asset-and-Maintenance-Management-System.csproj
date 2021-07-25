@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -68,6 +68,11 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssetManagementSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetManagementSystemDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="src\Analytics\uc_analytics_intial_dash.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -92,6 +97,12 @@
     <Compile Include="src\Dashboard\uc_assets_1.Designer.cs">
       <DependentUpon>uc_assets_1.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Dashboard\uc_assets_operational.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Dashboard\uc_assets_operational.Designer.cs">
+      <DependentUpon>uc_assets_operational.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Dashboard\uc_calendar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -104,6 +115,7 @@
     <Compile Include="src\Dashboard\uc_dash_main.Designer.cs">
       <DependentUpon>uc_dash_main.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\DatabaseHandlers\DBConnection.cs" />
     <Compile Include="src\Inventory\uc_inventory_dash.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -311,6 +323,12 @@
       <DependentUpon>uc_welcome_1.cs</DependentUpon>
     </Compile>
     <Compile Include="src\TextWriter.cs" />
+    <Compile Include="src\Worker_Interface\WorkerInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Worker_Interface\WorkerInterface.Designer.cs">
+      <DependentUpon>WorkerInterface.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="src\Analytics\uc_analytics_intial_dash.resx">
       <DependentUpon>uc_analytics_intial_dash.cs</DependentUpon>
     </EmbeddedResource>
@@ -322,6 +340,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Dashboard\uc_assets_1.resx">
       <DependentUpon>uc_assets_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Dashboard\uc_assets_operational.resx">
+      <DependentUpon>uc_assets_operational.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Dashboard\uc_calendar.resx">
       <DependentUpon>uc_calendar.cs</DependentUpon>
@@ -435,6 +456,20 @@
     <EmbeddedResource Include="src\Startup Wizard\uc_welcome_1.resx">
       <DependentUpon>uc_welcome_1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\Worker_Interface\WorkerInterface.resx">
+      <DependentUpon>WorkerInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AssetManagementSystemDataSet.xsc">
+      <DependentUpon>AssetManagementSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AssetManagementSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AssetManagementSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AssetManagementSystemDataSet.xss">
+      <DependentUpon>AssetManagementSystemDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -561,6 +596,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AssetManagementSystem.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AssetManagementSystem_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>AssetManagementSystem.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

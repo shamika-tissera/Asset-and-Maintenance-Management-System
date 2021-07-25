@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -9,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Asset_and_Maintenance_Management_System.src.Dashboard;
+using Asset_and_Maintenance_Management_System.src.DatabaseHandlers;
+using Asset_and_Maintenance_Management_System.src.Worker_Interface;
 
 namespace Asset_and_Maintenance_Management_System.src.Login
 {
@@ -46,6 +49,13 @@ namespace Asset_and_Maintenance_Management_System.src.Login
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
+            string empCat = null;
+            string query = "SELECT empcategory FROM UserInfo WHERE username = '" + username + "' AND password = '" + password + "';";
+
+            
+
             if (txtUsername.Text == "" || txtPassword.Text == "")
             {
                 MessageBox.Show("Enter a password and username.", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -53,11 +63,39 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             else
             {
                 string[] loginDetails= { txtUsername.Text, txtPassword.Text }; //loginDetails[0]:Username, loginDetails[1]:password
+                username = txtUsername.Text;
+                password = txtPassword.Text;
 
+                using(SqlConnection connection = DBConnection.establishConnection())
+                {
+                    using(SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        empCat = (string)command.ExecuteScalar();
+                    }
+                }
 
-                Dashboard.Dashboard dashboard = new Dashboard.Dashboard();
-                dashboard.Show();
-                this.Visible = false;
+                switch (empCat)
+                {
+                    case "acc":
+                        break;
+                    case "man":
+                        Dashboard.Dashboard dashboard = new Dashboard.Dashboard();
+                        dashboard.Show();
+                        this.Visible = false;
+                        break;
+                    case "wor":
+                        WorkerInterface interf = new WorkerInterface();
+                        interf.Show();
+                        break;
+                    default:
+                        MessageBox.Show("Invalid username or password!\n" +
+                            "If you are facing any difficulties logging in, " +
+                            "please contact the system administrator.", "Login Error", 
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        break;
+                }
+
+                
             }
         }
     }

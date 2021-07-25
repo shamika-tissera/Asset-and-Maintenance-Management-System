@@ -60,7 +60,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             this.txtUsername.Location = new System.Drawing.Point(240, 315);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(386, 27);
-            this.txtUsername.TabIndex = 4;
+            this.txtUsername.TabIndex = 1;
             // 
             // label10
             // 
@@ -70,7 +70,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             this.label10.Location = new System.Drawing.Point(46, 315);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(132, 29);
-            this.label10.TabIndex = 3;
+            this.label10.TabIndex = 0;
             this.label10.Text = "Username";
             // 
             // label1
@@ -81,7 +81,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             this.label1.Location = new System.Drawing.Point(50, 413);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 29);
-            this.label1.TabIndex = 5;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Password";
             // 
             // button1
@@ -91,7 +91,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             this.button1.Location = new System.Drawing.Point(475, 528);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 40);
-            this.button1.TabIndex = 7;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -114,14 +114,14 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(386, 27);
-            this.txtPassword.TabIndex = 9;
+            this.txtPassword.TabIndex = 2;
             // 
             // elementHost1
             // 
             this.elementHost1.Location = new System.Drawing.Point(446, 70);
             this.elementHost1.Name = "elementHost1";
             this.elementHost1.Size = new System.Drawing.Size(10, 20);
-            this.elementHost1.TabIndex = 10;
+            this.elementHost1.TabIndex = 0;
             this.elementHost1.Text = "elementHost1";
             this.elementHost1.Child = this.uc_initial_welcome1;
             // 
