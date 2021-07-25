@@ -323,6 +323,12 @@
       <DependentUpon>uc_welcome_1.cs</DependentUpon>
     </Compile>
     <Compile Include="src\TextWriter.cs" />
+    <Compile Include="src\Worker_Interface\uc_previously_reported.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Worker_Interface\uc_previously_reported.Designer.cs">
+      <DependentUpon>uc_previously_reported.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Worker_Interface\WorkerInterface.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -455,6 +461,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Startup Wizard\uc_welcome_1.resx">
       <DependentUpon>uc_welcome_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Worker_Interface\uc_previously_reported.resx">
+      <DependentUpon>uc_previously_reported.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Worker_Interface\WorkerInterface.resx">
       <DependentUpon>WorkerInterface.cs</DependentUpon>

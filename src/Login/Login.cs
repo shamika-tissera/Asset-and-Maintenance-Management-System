@@ -85,6 +85,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
                         break;
                     case "wor":
                         WorkerInterface interf = new WorkerInterface();
+                        interf.setUsernameLabel(username);
                         interf.Show();
                         break;
                     default:
