@@ -31,21 +31,21 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_asset_browse));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewAssets = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.txtWarrantyCode = new System.Windows.Forms.TextBox();
             this.lbl_uname = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAssets)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridViewAssets
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAssets.AllowUserToAddRows = false;
+            this.dataGridViewAssets.AllowUserToDeleteRows = false;
+            this.dataGridViewAssets.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
+            this.dataGridViewAssets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -53,16 +53,16 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ControlLightLight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.Location = new System.Drawing.Point(77, 209);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1081, 484);
-            this.dataGridView1.TabIndex = 2;
+            this.dataGridViewAssets.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewAssets.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dataGridViewAssets.Location = new System.Drawing.Point(77, 209);
+            this.dataGridViewAssets.MultiSelect = false;
+            this.dataGridViewAssets.Name = "dataGridViewAssets";
+            this.dataGridViewAssets.ReadOnly = true;
+            this.dataGridViewAssets.RowHeadersWidth = 51;
+            this.dataGridViewAssets.RowTemplate.Height = 24;
+            this.dataGridViewAssets.Size = new System.Drawing.Size(1081, 484);
+            this.dataGridViewAssets.TabIndex = 2;
             // 
             // panel1
             // 
@@ -113,12 +113,12 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewAssets);
             this.Controls.Add(this.panel1);
             this.Name = "uc_asset_browse";
             this.Size = new System.Drawing.Size(1356, 826);
             this.Load += new System.EventHandler(this.uc_asset_browse_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAssets)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -127,7 +127,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewAssets;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_uname;
         private System.Windows.Forms.TextBox txtWarrantyCode;

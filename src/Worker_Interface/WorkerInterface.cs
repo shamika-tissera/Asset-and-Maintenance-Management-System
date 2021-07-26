@@ -90,9 +90,32 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
                 }
             }
 
-
-
-            string query = "insert into WorkerReports(username, reported_date, asset_id, plant, criticality_machineOperations, criticality_activityConstraints, managerRespoded) values('" + lbl_uname.Text + "', '7/25/2021', 'ASSET-001', 'Minuwangoda', 'high', 'high', 0); ";
+            string query = "INSERT INTO WorkerReports(username, reported_date, asset_id, plant, criticality_machineOperations, criticality_activityConstraints, managerRespoded, message) VALUES('" + lbl_uname.Text + "', '" + DateTime.Now.ToString("MM-dd-yy") + "', '" + comboAssetID.Text + "', '" + comboPlant.Text + "', '" + comboCriticalOperational.Text + "', '" + comboCriticalActivity.Text + "', 0, '" + txtMessage.Text + "'); ";
+            using(SqlConnection connection = DBConnection.establishConnection())
+            {
+                using(SqlCommand command = new SqlCommand(query, connection))
+                {
+                    try
+                    {
+                        int rowsEffected = command.ExecuteNonQuery();
+                        if (rowsEffected > 0)
+                        {
+                            MessageBox.Show("Report submitted successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            txtMessage.ResetText();
+                            comboAssetID.ResetText();
+                        }
+                        else
+                        {
+                            MessageBox.Show("An error occurred. Couldn't submit report", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    catch(System.Data.SqlClient.SqlException ex)
+                    {
+                        TextWriter.writeContent("logs.txt", ex.ToString());
+                        MessageBox.Show("You have already submitted a report today on this asset!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
         }
     }
 }
