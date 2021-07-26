@@ -83,7 +83,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.combo_general_state.FormattingEnabled = true;
             this.combo_general_state.Items.AddRange(new object[] {
             "In stock",
-            "Under maintainance",
+            "Under maintenance",
             "Disposed",
             "In use"});
             this.combo_general_state.Location = new System.Drawing.Point(498, 173);
