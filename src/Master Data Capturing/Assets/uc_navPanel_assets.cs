@@ -14,6 +14,11 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
     {
         private Dashboard.Dashboard inst;
         private add_item item;
+        private static uc_asset_browse browse;
+        public static void setBrowse(uc_asset_browse inst)
+        {
+            browse = inst;
+        }
         public uc_navPanel_assets()
         {
             InitializeComponent();

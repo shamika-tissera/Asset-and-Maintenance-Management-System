@@ -1,13 +1,6 @@
-[26-Jul-21 2:08:20 PM]:
-System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__WorkerRe__05B1D943F94B9D7C'. Cannot insert duplicate key in object 'dbo.WorkerReports'. The duplicate key value is (draco_malfoy, 2021-07-26, ASS-SINK-001).
-The statement has been terminated.
-   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
-   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
-   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
-   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
-   at Asset_and_Maintenance_Management_System.src.Worker_Interface.WorkerInterface.button1_Click(Object sender, EventArgs e) in F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\src\Worker_Interface\WorkerInterface.cs:line 100
-ClientConnectionId:bed1737b-dc06-4328-9427-f0077783b09d
-Error Number:2627,State:1,Class:14
+[26-Jul-21 9:37:20 PM]:
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   at System.Windows.Forms.Control.Invoke(Delegate method)
+   at Asset_and_Maintenance_Management_System.src.Dashboard.uc_calendar.setTime(Object sender, ElapsedEventArgs e) in F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\src\Dashboard\uc_calendar.cs:line 29

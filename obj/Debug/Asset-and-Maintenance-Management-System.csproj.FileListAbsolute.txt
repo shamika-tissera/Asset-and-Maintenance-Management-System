@@ -1,27 +1,37 @@
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\bin\Debug\AssetManagementSystem.mdf
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\bin\Debug\AssetManagementSystem_log.ldf
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\bin\Debug\Asset-and-Maintenance-Management-System.exe.config
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\bin\Debug\Asset-and-Maintenance-Management-System.exe
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\bin\Debug\Asset-and-Maintenance-Management-System.pdb
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\src\Maintenance\uc_preventive_maintenance_calendar.g.cs
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\src\Master Data Capturing\Assets\initialInterfaceAsset.g.cs
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\src\Master Data Capturing\Products\uc_addProduct.g.cs
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\src\Startup Wizard\uc_initial_welcome.g.cs
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System_Content.g.cs
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System_MarkupCompile.cache
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System_MarkupCompile.lref
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\src\Maintenance\uc_preventive_maintenance_calendar.baml
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\src\Master Data Capturing\Assets\initialInterfaceAsset.baml
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\src\Master Data Capturing\Products\uc_addProduct.baml
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\src\Startup Wizard\uc_initial_welcome.baml
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.g.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Analytics.uc_analytics_intial_dash.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Analytics.uc_analytics_navi_one.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.Dashboard.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.uc_assets_1.resources
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.uc_assets_operational.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.uc_calendar.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.uc_dash_main.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_dash.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_navi.resources
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_trends.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Login.Login.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Login.UserControl1.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Maintenance.uc_maintenance_backlog.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Maintenance.uc_maintenance_dashboard_info.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Maintenance.uc_maintenance_navi.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Maintenance.uc_maintenance_reccomendations.resources
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Maintenance.uc_preventive_maintenance.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.addItem_assetCategory.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.add_item.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.dashboard_info.resources
@@ -29,6 +39,7 @@ F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-Syst
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.main_window.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_administrative_common.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_AllAssets.resources
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_asset_browse.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_asset_general.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_general_common.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_HeaterTechnical.resources
@@ -37,28 +48,17 @@ F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-Syst
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_maintenance_common.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_navPanel_assets.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_warranty_common.resources
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Products.uc_addProduct_form.resources
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.settingsParent.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.assetTypes.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.startup_main.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.Properties.Resources.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.uc_compName.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.uc_welcome_1.resources
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Worker_Interface.uc_previously_reported.resources
+F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Worker_Interface.WorkerInterface.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.csproj.GenerateResource.cache
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.csproj.CoreCompileInputs.cache
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.exe
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.pdb
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.settingsParent.resources
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\src\Master Data Capturing\Products\uc_addProduct.g.cs
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\src\Master Data Capturing\Products\uc_addProduct.baml
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Products.uc_addProduct_form.resources
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_asset_browse.resources
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_trends.resources
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\src\Maintenance\uc_preventive_maintenance_calendar.g.cs
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\src\Maintenance\uc_preventive_maintenance_calendar.baml
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Maintenance.uc_preventive_maintenance.resources
 F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.csproj.AssemblyReference.cache
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.uc_assets_operational.resources
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Worker_Interface.WorkerInterface.resources
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\bin\Debug\AssetManagementSystem.mdf
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\bin\Debug\AssetManagementSystem_log.ldf
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System_Content.g.cs
-F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Worker_Interface.uc_previously_reported.resources
