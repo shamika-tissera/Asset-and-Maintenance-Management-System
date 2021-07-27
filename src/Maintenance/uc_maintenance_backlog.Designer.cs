@@ -32,81 +32,50 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.asset_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.due_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.days_passed = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.dataGridViewMain = new System.Windows.Forms.DataGridView();
+            this.chartVarience = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_print = new System.Windows.Forms.Button();
             this.btn_continue = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartVarience)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridViewMain
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.asset_id,
-            this.due_date,
-            this.days_passed});
-            this.dataGridView1.Location = new System.Drawing.Point(20, 49);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(429, 619);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridViewMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMain.Location = new System.Drawing.Point(20, 49);
+            this.dataGridViewMain.Name = "dataGridViewMain";
+            this.dataGridViewMain.RowHeadersWidth = 51;
+            this.dataGridViewMain.RowTemplate.Height = 24;
+            this.dataGridViewMain.Size = new System.Drawing.Size(429, 619);
+            this.dataGridViewMain.TabIndex = 0;
             // 
-            // asset_id
-            // 
-            this.asset_id.HeaderText = "Asset ID";
-            this.asset_id.MinimumWidth = 6;
-            this.asset_id.Name = "asset_id";
-            this.asset_id.ReadOnly = true;
-            this.asset_id.Width = 125;
-            // 
-            // due_date
-            // 
-            this.due_date.HeaderText = "Due Date";
-            this.due_date.MinimumWidth = 6;
-            this.due_date.Name = "due_date";
-            this.due_date.ReadOnly = true;
-            this.due_date.Width = 125;
-            // 
-            // days_passed
-            // 
-            this.days_passed.HeaderText = "Delay";
-            this.days_passed.MinimumWidth = 6;
-            this.days_passed.Name = "days_passed";
-            this.days_passed.ReadOnly = true;
-            this.days_passed.Width = 125;
-            // 
-            // chart1
+            // chartVarience
             // 
             chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            this.chartVarience.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(455, 49);
-            this.chart1.Name = "chart1";
+            this.chartVarience.Legends.Add(legend1);
+            this.chartVarience.Location = new System.Drawing.Point(455, 49);
+            this.chartVarience.Name = "chartVarience";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(688, 619);
-            this.chart1.TabIndex = 1;
-            this.chart1.Text = "chart1";
+            series1.Name = "Days";
+            this.chartVarience.Series.Add(series1);
+            this.chartVarience.Size = new System.Drawing.Size(688, 619);
+            this.chartVarience.TabIndex = 1;
+            this.chartVarience.Text = "Date Varience";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
-            this.panel1.Controls.Add(this.chart1);
+            this.panel1.Controls.Add(this.chartVarience);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btn_print);
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dataGridViewMain);
             this.panel1.Controls.Add(this.btn_continue);
             this.panel1.Location = new System.Drawing.Point(27, 34);
             this.panel1.Name = "panel1";
@@ -161,8 +130,8 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.Name = "uc_maintenance_backlog";
             this.Size = new System.Drawing.Size(1356, 826);
             this.Load += new System.EventHandler(this.uc_maintenance_backlog_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartVarience)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -170,11 +139,8 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn asset_id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn due_date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn days_passed;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataGridView dataGridViewMain;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartVarience;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_print;

@@ -79,11 +79,11 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
                 switch (row["depreciationMethod"].ToString())
                 {
                     case "straight-line":
-                        string tes= row["purchaseDate"].ToString();
+                        //string tes= row["purchaseDate"].ToString();
                         int purchaseYear = DateTime.Parse(row["purchaseDate"].ToString()).Year;
                         int currentYear = DateTime.Now.Year;
                         int yearDifference = currentYear - purchaseYear;
-                        int test = int.Parse(row["depreciationRate"].ToString());
+                        //int test = int.Parse(row["depreciationRate"].ToString());
                         double perYearDepreciation = double.Parse(row["depreciationRate"].ToString()) / 100 
                             * double.Parse(row["costOfPurchase"].ToString());
                         int carryingValue = yearDifference * (int)perYearDepreciation;
