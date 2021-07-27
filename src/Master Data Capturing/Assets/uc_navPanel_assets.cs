@@ -32,6 +32,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
                 resetBtnEmphasis();
             }
             button11.BackColor = Color.FromArgb(61, 70, 89);
+            browse.sortAssets("Sink");
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -171,6 +172,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             }
             button7.BackColor = Color.FromArgb(61, 70, 89);
             isButtonEmphasized = true;
+            browse.sortAssets("Phone");
         }
 
         private void button4_Click(object sender, EventArgs e)

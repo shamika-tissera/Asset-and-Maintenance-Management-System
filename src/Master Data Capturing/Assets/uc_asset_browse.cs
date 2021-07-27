@@ -115,49 +115,59 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         public void sortAssets(string assetType)
         {
             DataTable newDataTable = new DataTable();
-            foreach(DataRow row in table)
+            foreach(DataRow row in table.Rows)
             {
-                if (row["assetType"] == assetType)
+                if ((string)row["assetType"] == assetType)
                 {
-                    newDataTable.Rows.Add(row);
+                    string test = (string)row["assetType"];
+                    newDataTable.ImportRow(row);
                 }
             }
-            switch (assetType)
+            foreach(DataRow row in newDataTable.Rows)
             {
-                case "Heater":
-
-                    break
-                case "Network Device":
-
-                    break
-                case "Sanitation Device":
-
-                    break
-                case "Printer/Scanner":
-
-                    break
-                case "Lift":
-
-                    break
-                case "Fire Extinguisher":
-
-                    break
-                case "Computer":
-
-                    break
-                case "Plumbing Device":
-
-                    break
-                case "Phone":
-
-                    break
-                case "Sink":
-
-                    break
-                case "Lighting":
-
-                    break
+                MessageBox.Show(row.ToString());
             }
+            dataGridViewAssets.AutoGenerateColumns = true;
+            dataGridViewAssets.DataSource = null;
+            dataGridViewAssets.DataSource = newDataTable;
+            dataGridViewAssets.Refresh();
+
+            //switch (assetType)
+            //{
+            //    case "Heater":
+
+            //        break;
+            //    case "Network Device":
+
+            //        break;
+            //    case "Sanitation Device":
+
+            //        break;
+            //    case "Printer/Scanner":
+
+            //        break;
+            //    case "Lift":
+
+            //        break;
+            //    case "Fire Extinguisher":
+
+            //        break;
+            //    case "Computer":
+
+            //        break;
+            //    case "Plumbing Device":
+
+            //        break;
+            //    case "Phone":
+
+            //        break;
+            //    case "Sink":
+
+            //        break;
+            //    case "Lighting":
+
+            //        break;
+            //}
         }
     }
 }
