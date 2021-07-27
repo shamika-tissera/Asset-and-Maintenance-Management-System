@@ -85,6 +85,12 @@
     <Compile Include="src\Analytics\uc_analytics_navi_one.Designer.cs">
       <DependentUpon>uc_analytics_navi_one.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Analytics\uc_analytics_warranty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Analytics\uc_analytics_warranty.Designer.cs">
+      <DependentUpon>uc_analytics_warranty.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Dashboard\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -340,6 +346,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Analytics\uc_analytics_navi_one.resx">
       <DependentUpon>uc_analytics_navi_one.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Analytics\uc_analytics_warranty.resx">
+      <DependentUpon>uc_analytics_warranty.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Dashboard\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>

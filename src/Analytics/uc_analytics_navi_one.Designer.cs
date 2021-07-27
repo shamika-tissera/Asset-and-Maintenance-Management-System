@@ -31,9 +31,9 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_analytics_navi_one));
             this.btn_back = new System.Windows.Forms.Button();
-            this.btn_backlog = new System.Windows.Forms.Button();
-            this.btn_preventive = new System.Windows.Forms.Button();
-            this.btn_corrective = new System.Windows.Forms.Button();
+            this.btn_warranty = new System.Windows.Forms.Button();
+            this.btn_disposal = new System.Windows.Forms.Button();
+            this.btn_utilization = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_back
@@ -54,58 +54,60 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             this.btn_back.UseVisualStyleBackColor = false;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
-            // btn_backlog
+            // btn_warranty
             // 
-            this.btn_backlog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.btn_backlog.FlatAppearance.BorderSize = 0;
-            this.btn_backlog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_backlog.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_backlog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btn_backlog.Image = ((System.Drawing.Image)(resources.GetObject("btn_backlog.Image")));
-            this.btn_backlog.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_backlog.Location = new System.Drawing.Point(1, 100);
-            this.btn_backlog.Name = "btn_backlog";
-            this.btn_backlog.Size = new System.Drawing.Size(267, 53);
-            this.btn_backlog.TabIndex = 22;
-            this.btn_backlog.Tag = "";
-            this.btn_backlog.Text = "Warranty";
-            this.btn_backlog.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_backlog.UseVisualStyleBackColor = false;
-            this.btn_backlog.Click += new System.EventHandler(this.btn_backlog_Click);
+            this.btn_warranty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.btn_warranty.FlatAppearance.BorderSize = 0;
+            this.btn_warranty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_warranty.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_warranty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btn_warranty.Image = ((System.Drawing.Image)(resources.GetObject("btn_warranty.Image")));
+            this.btn_warranty.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_warranty.Location = new System.Drawing.Point(1, 100);
+            this.btn_warranty.Name = "btn_warranty";
+            this.btn_warranty.Size = new System.Drawing.Size(267, 53);
+            this.btn_warranty.TabIndex = 22;
+            this.btn_warranty.Tag = "";
+            this.btn_warranty.Text = "Warranty";
+            this.btn_warranty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_warranty.UseVisualStyleBackColor = false;
+            this.btn_warranty.Click += new System.EventHandler(this.btn_backlog_Click);
             // 
-            // btn_preventive
+            // btn_disposal
             // 
-            this.btn_preventive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.btn_preventive.FlatAppearance.BorderSize = 0;
-            this.btn_preventive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_preventive.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_preventive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btn_preventive.Image = ((System.Drawing.Image)(resources.GetObject("btn_preventive.Image")));
-            this.btn_preventive.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_preventive.Location = new System.Drawing.Point(1, 159);
-            this.btn_preventive.Name = "btn_preventive";
-            this.btn_preventive.Size = new System.Drawing.Size(267, 53);
-            this.btn_preventive.TabIndex = 23;
-            this.btn_preventive.Text = "Disposal";
-            this.btn_preventive.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_preventive.UseVisualStyleBackColor = false;
+            this.btn_disposal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.btn_disposal.FlatAppearance.BorderSize = 0;
+            this.btn_disposal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_disposal.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_disposal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btn_disposal.Image = ((System.Drawing.Image)(resources.GetObject("btn_disposal.Image")));
+            this.btn_disposal.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_disposal.Location = new System.Drawing.Point(1, 159);
+            this.btn_disposal.Name = "btn_disposal";
+            this.btn_disposal.Size = new System.Drawing.Size(267, 53);
+            this.btn_disposal.TabIndex = 23;
+            this.btn_disposal.Text = "Disposal";
+            this.btn_disposal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_disposal.UseVisualStyleBackColor = false;
+            this.btn_disposal.Click += new System.EventHandler(this.btn_disposal_Click);
             // 
-            // btn_corrective
+            // btn_utilization
             // 
-            this.btn_corrective.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.btn_corrective.FlatAppearance.BorderSize = 0;
-            this.btn_corrective.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_corrective.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_corrective.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btn_corrective.Image = ((System.Drawing.Image)(resources.GetObject("btn_corrective.Image")));
-            this.btn_corrective.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_corrective.Location = new System.Drawing.Point(1, 218);
-            this.btn_corrective.Name = "btn_corrective";
-            this.btn_corrective.Size = new System.Drawing.Size(264, 53);
-            this.btn_corrective.TabIndex = 24;
-            this.btn_corrective.Text = "Utilization";
-            this.btn_corrective.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_corrective.UseVisualStyleBackColor = false;
+            this.btn_utilization.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.btn_utilization.FlatAppearance.BorderSize = 0;
+            this.btn_utilization.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_utilization.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_utilization.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btn_utilization.Image = ((System.Drawing.Image)(resources.GetObject("btn_utilization.Image")));
+            this.btn_utilization.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_utilization.Location = new System.Drawing.Point(1, 218);
+            this.btn_utilization.Name = "btn_utilization";
+            this.btn_utilization.Size = new System.Drawing.Size(264, 53);
+            this.btn_utilization.TabIndex = 24;
+            this.btn_utilization.Text = "Utilization";
+            this.btn_utilization.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_utilization.UseVisualStyleBackColor = false;
+            this.btn_utilization.Click += new System.EventHandler(this.btn_utilization_Click);
             // 
             // uc_analytics_navi_one
             // 
@@ -113,9 +115,9 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
             this.Controls.Add(this.btn_back);
-            this.Controls.Add(this.btn_backlog);
-            this.Controls.Add(this.btn_preventive);
-            this.Controls.Add(this.btn_corrective);
+            this.Controls.Add(this.btn_warranty);
+            this.Controls.Add(this.btn_disposal);
+            this.Controls.Add(this.btn_utilization);
             this.Name = "uc_analytics_navi_one";
             this.Size = new System.Drawing.Size(267, 616);
             this.ResumeLayout(false);
@@ -125,8 +127,8 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
         #endregion
 
         private System.Windows.Forms.Button btn_back;
-        private System.Windows.Forms.Button btn_backlog;
-        private System.Windows.Forms.Button btn_preventive;
-        private System.Windows.Forms.Button btn_corrective;
+        private System.Windows.Forms.Button btn_warranty;
+        private System.Windows.Forms.Button btn_disposal;
+        private System.Windows.Forms.Button btn_utilization;
     }
 }

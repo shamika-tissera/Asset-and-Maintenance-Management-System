@@ -1,4 +1,5 @@
-﻿using Asset_and_Maintenance_Management_System.src.Maintenance;
+﻿using Asset_and_Maintenance_Management_System.src.Analytics;
+using Asset_and_Maintenance_Management_System.src.Maintenance;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,12 +34,13 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             //pic_close.BackColor = Color.Transparent;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             uc_dash_main1.setDashboardInstance(this);
+            uc_analytics_navi_one1.setDashboardInstance(this);
             uc_assets_11.setDashboardInstance(this);
             uc_navPanel_assets1.setDashboardInstance(this);
             uc_inventory_navi1.setDashboardInstance(this);
             uc_maintenance_navi1.setDashboardInstance(this);
             uc_maintenance_backlog1.setDashboardInstance(this);
-            uc_analytics_navi_one1.setDashboardInstance(this);
+            uc_analytics_warranty.setDashboardInstance(this);
             //uc_maintenance_dashboard_info.setDashboardInstance(this);
             uc_dash_main1.Visible = true;
             uc_maintenance_backlog1.Visible = false;
@@ -54,6 +56,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_maintenance_navi1.Visible = false;
             uc_asset_browse1.Visible = false;
             uc_inventory_trends1.Visible = false;
+            uc_analytics_warranty1.Visible = false;
 
 
             GraphicsPath gp = new GraphicsPath();
@@ -72,7 +75,11 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         {
 
         }
-
+        private uc_analytics_navi_one analyticsNaviInstance;
+        public void setAnalyticsNaviInstance(uc_analytics_navi_one analyticsNaviInstance)
+        {
+            this.analyticsNaviInstance = analyticsNaviInstance;
+        }
         public void clickedAssets()
         {
             uc_assets_11.Visible = true;
@@ -82,6 +89,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
 
         public void clickedAnalytics()
         {
+            //analyticsNaviInstance.resetButtonHighlights();
             uc_analytics_navi_one1.Visible = true;
             uc_dash_main1.Visible = false;
             uc_analytics_intial_dash2.Visible = true;
@@ -93,6 +101,15 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_dash_main1.Visible = true;
             uc_analytics_intial_dash2.Visible = false;
             uc_calendar1.Visible = true;
+            uc_analytics_warranty1.Visible = false;
+        }
+        public void clickedAnalyticsWarranty()
+        {
+            uc_analytics_navi_one1.Visible = true;
+            uc_dash_main1.Visible = false;
+            uc_analytics_intial_dash2.Visible = false;
+            uc_calendar1.Visible = false;
+            uc_analytics_warranty1.Visible = true;
         }
 
         public void clickedAssetsBack()

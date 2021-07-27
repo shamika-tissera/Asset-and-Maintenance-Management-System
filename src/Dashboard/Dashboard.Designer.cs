@@ -54,6 +54,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.uc_inventory_dash1 = new Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_dash();
             this.uc_asset_browse1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_asset_browse();
             this.uc_inventory_trends1 = new Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_trends();
+            this.uc_analytics_warranty1 = new Asset_and_Maintenance_Management_System.src.Analytics.uc_analytics_warranty();
             this.navPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -278,12 +279,21 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.uc_inventory_trends1.Size = new System.Drawing.Size(1356, 826);
             this.uc_inventory_trends1.TabIndex = 14;
             // 
+            // uc_analytics_warranty1
+            // 
+            this.uc_analytics_warranty1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.uc_analytics_warranty1.Location = new System.Drawing.Point(311, 0);
+            this.uc_analytics_warranty1.Name = "uc_analytics_warranty1";
+            this.uc_analytics_warranty1.Size = new System.Drawing.Size(1356, 826);
+            this.uc_analytics_warranty1.TabIndex = 15;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1520, 826);
+            this.Controls.Add(this.uc_analytics_warranty1);
             this.Controls.Add(this.pic_close);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.uc_asset_browse1);
@@ -338,5 +348,6 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         private Master_Data_Capturing.Assets.uc_asset_browse uc_asset_browse1;
         private System.Windows.Forms.Panel pnl_highlight;
         private Inventory.uc_inventory_trends uc_inventory_trends1;
+        private Analytics.uc_analytics_warranty uc_analytics_warranty1;
     }
 }
