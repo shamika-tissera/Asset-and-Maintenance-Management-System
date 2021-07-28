@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AssetManagementSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Disposal">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="asset_id" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="disposedDate" Type="date" Nullable="false" />
+          <Property Name="disposedValue" Type="decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="NonCurrentAsset">
+          <Key>
+            <PropertyRef Name="asset_id" />
+          </Key>
+          <Property Name="asset_id" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="lifetime" Type="tinyint" />
+          <Property Name="depreciationRate" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="condition" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="manufacturer" Type="varchar" MaxLength="20" />
+          <Property Name="plant" Type="varchar" MaxLength="20" />
+          <Property Name="serialNumber" Type="varchar" MaxLength="20" />
+          <Property Name="depreciationMethod" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="costOfPurchase" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="serviceInterval" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="currentMarketValue" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="warranty" Type="varchar" MaxLength="20" />
+          <Property Name="state" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="disposalValue" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="assetType" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="purchaseDate" Type="date" />
+          <Property Name="warrantyCode" Type="varchar" MaxLength="20" />
+          <Property Name="serviceDue" Type="date" />
+          <Property Name="disposalDate" Type="date" />
+        </EntityType>
+        <EntityType Name="UserInfo">
+          <Key>
+            <PropertyRef Name="Username" />
+          </Key>
+          <Property Name="EmpID" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="FirstName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="LastName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="EmpCategory" Type="varchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Warranty">
+          <Key>
+            <PropertyRef Name="warrantyCode" />
+          </Key>
+          <Property Name="warrantyCode" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="invoiceNum" Type="varchar" MaxLength="20" />
+          <Property Name="type" Type="varchar" MaxLength="20" />
+          <Property Name="startDate" Type="date" Nullable="false" />
+          <Property Name="endDate" Type="date" />
+        </EntityType>
+        <EntityType Name="WorkerReports">
+          <Key>
+            <PropertyRef Name="username" />
+            <PropertyRef Name="reported_date" />
+            <PropertyRef Name="asset_id" />
+          </Key>
+          <Property Name="username" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="reported_date" Type="date" Nullable="false" />
+          <Property Name="asset_id" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="plant" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="criticality_machineOperations" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="criticality_activityConstraints" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="managerRespoded" Type="bit" Nullable="false" />
+          <Property Name="service_date_schedule" Type="date" />
+          <Property Name="message" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <Association Name="FK_Disposal_NonCurrentAsset">
+          <End Role="NonCurrentAsset" Type="Self.NonCurrentAsset" Multiplicity="1" />
+          <End Role="Disposal" Type="Self.Disposal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NonCurrentAsset">
+              <PropertyRef Name="asset_id" />
+            </Principal>
+            <Dependent Role="Disposal">
+              <PropertyRef Name="asset_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NonCurrentAsset_Warranty">
+          <End Role="Warranty" Type="Self.Warranty" Multiplicity="0..1" />
+          <End Role="NonCurrentAsset" Type="Self.NonCurrentAsset" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Warranty">
+              <PropertyRef Name="warrantyCode" />
+            </Principal>
+            <Dependent Role="NonCurrentAsset">
+              <PropertyRef Name="warrantyCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_WorkerReports_NonCurrentAsset">
+          <End Role="NonCurrentAsset" Type="Self.NonCurrentAsset" Multiplicity="1" />
+          <End Role="WorkerReports" Type="Self.WorkerReports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NonCurrentAsset">
+              <PropertyRef Name="asset_id" />
+            </Principal>
+            <Dependent Role="WorkerReports">
+              <PropertyRef Name="asset_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_WorkerReports_UserInfo">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="WorkerReports" Type="Self.WorkerReports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="Username" />
+            </Principal>
+            <Dependent Role="WorkerReports">
+              <PropertyRef Name="username" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="AssetManagementSystemModelStoreContainer">
+          <EntitySet Name="Disposal" EntityType="Self.Disposal" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NonCurrentAsset" EntityType="Self.NonCurrentAsset" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserInfo" EntityType="Self.UserInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Warranty" EntityType="Self.Warranty" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WorkerReports" EntityType="Self.WorkerReports" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Disposal_NonCurrentAsset" Association="Self.FK_Disposal_NonCurrentAsset">
+            <End Role="NonCurrentAsset" EntitySet="NonCurrentAsset" />
+            <End Role="Disposal" EntitySet="Disposal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NonCurrentAsset_Warranty" Association="Self.FK_NonCurrentAsset_Warranty">
+            <End Role="Warranty" EntitySet="Warranty" />
+            <End Role="NonCurrentAsset" EntitySet="NonCurrentAsset" />
+          </AssociationSet>
+          <AssociationSet Name="FK_WorkerReports_NonCurrentAsset" Association="Self.FK_WorkerReports_NonCurrentAsset">
+            <End Role="NonCurrentAsset" EntitySet="NonCurrentAsset" />
+            <End Role="WorkerReports" EntitySet="WorkerReports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_WorkerReports_UserInfo" Association="Self.FK_WorkerReports_UserInfo">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="WorkerReports" EntitySet="WorkerReports" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AssetManagementSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="NonCurrentAsset">
+          <Key>
+            <PropertyRef Name="asset_id" />
+          </Key>
+          <Property Name="asset_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="lifetime" Type="Byte" />
+          <Property Name="depreciationRate" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="condition" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="manufacturer" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="plant" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="serialNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="depreciationMethod" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="costOfPurchase" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="serviceInterval" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="currentMarketValue" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="warranty" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="state" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="disposalValue" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="assetType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="purchaseDate" Type="DateTime" Precision="0" />
+          <Property Name="warrantyCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="serviceDue" Type="DateTime" Precision="0" />
+          <Property Name="disposalDate" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Warranty1" Relationship="Self.FK_NonCurrentAsset_Warranty" FromRole="NonCurrentAsset" ToRole="Warranty" />
+          <NavigationProperty Name="WorkerReports" Relationship="Self.FK_WorkerReports_NonCurrentAsset" FromRole="NonCurrentAsset" ToRole="WorkerReports" />
+          <NavigationProperty Name="Disposals" Relationship="AssetManagementSystemModel.FK_Disposal_NonCurrentAsset" FromRole="NonCurrentAsset" ToRole="Disposal" />
+        </EntityType>
+        <EntityType Name="UserInfo">
+          <Key>
+            <PropertyRef Name="Username" />
+          </Key>
+          <Property Name="EmpID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EmpCategory" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="WorkerReports" Relationship="Self.FK_WorkerReports_UserInfo" FromRole="UserInfo" ToRole="WorkerReports" />
+        </EntityType>
+        <EntityType Name="Warranty">
+          <Key>
+            <PropertyRef Name="warrantyCode" />
+          </Key>
+          <Property Name="warrantyCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="invoiceNum" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="startDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="endDate" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="NonCurrentAssets" Relationship="Self.FK_NonCurrentAsset_Warranty" FromRole="Warranty" ToRole="NonCurrentAsset" />
+        </EntityType>
+        <EntityType Name="WorkerReport">
+          <Key>
+            <PropertyRef Name="username" />
+            <PropertyRef Name="reported_date" />
+            <PropertyRef Name="asset_id" />
+          </Key>
+          <Property Name="username" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="reported_date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="asset_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="plant" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="criticality_machineOperations" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="criticality_activityConstraints" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="managerRespoded" Type="Boolean" Nullable="false" />
+          <Property Name="service_date_schedule" Type="DateTime" Precision="0" />
+          <Property Name="message" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="NonCurrentAsset" Relationship="Self.FK_WorkerReports_NonCurrentAsset" FromRole="WorkerReports" ToRole="NonCurrentAsset" />
+          <NavigationProperty Name="UserInfo" Relationship="Self.FK_WorkerReports_UserInfo" FromRole="WorkerReports" ToRole="UserInfo" />
+        </EntityType>
+        <Association Name="FK_NonCurrentAsset_Warranty">
+          <End Role="Warranty" Type="Self.Warranty" Multiplicity="0..1" />
+          <End Role="NonCurrentAsset" Type="Self.NonCurrentAsset" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Warranty">
+              <PropertyRef Name="warrantyCode" />
+            </Principal>
+            <Dependent Role="NonCurrentAsset">
+              <PropertyRef Name="warrantyCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_WorkerReports_NonCurrentAsset">
+          <End Role="NonCurrentAsset" Type="Self.NonCurrentAsset" Multiplicity="1" />
+          <End Role="WorkerReports" Type="Self.WorkerReport" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NonCurrentAsset">
+              <PropertyRef Name="asset_id" />
+            </Principal>
+            <Dependent Role="WorkerReports">
+              <PropertyRef Name="asset_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_WorkerReports_UserInfo">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="WorkerReports" Type="Self.WorkerReport" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="Username" />
+            </Principal>
+            <Dependent Role="WorkerReports">
+              <PropertyRef Name="username" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="AssetManagementSystemEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="NonCurrentAssets" EntityType="Self.NonCurrentAsset" />
+          <EntitySet Name="UserInfoes" EntityType="Self.UserInfo" />
+          <EntitySet Name="Warranties" EntityType="Self.Warranty" />
+          <EntitySet Name="WorkerReports" EntityType="Self.WorkerReport" />
+          <AssociationSet Name="FK_NonCurrentAsset_Warranty" Association="Self.FK_NonCurrentAsset_Warranty">
+            <End Role="Warranty" EntitySet="Warranties" />
+            <End Role="NonCurrentAsset" EntitySet="NonCurrentAssets" />
+          </AssociationSet>
+          <AssociationSet Name="FK_WorkerReports_NonCurrentAsset" Association="Self.FK_WorkerReports_NonCurrentAsset">
+            <End Role="NonCurrentAsset" EntitySet="NonCurrentAssets" />
+            <End Role="WorkerReports" EntitySet="WorkerReports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_WorkerReports_UserInfo" Association="Self.FK_WorkerReports_UserInfo">
+            <End Role="UserInfo" EntitySet="UserInfoes" />
+            <End Role="WorkerReports" EntitySet="WorkerReports" />
+          </AssociationSet>
+          <EntitySet Name="Disposals" EntityType="AssetManagementSystemModel.Disposal" />
+          <AssociationSet Name="FK_Disposal_NonCurrentAsset" Association="AssetManagementSystemModel.FK_Disposal_NonCurrentAsset">
+            <End Role="NonCurrentAsset" EntitySet="NonCurrentAssets" />
+            <End Role="Disposal" EntitySet="Disposals" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Disposal">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="asset_id" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="disposedDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="disposedValue" Type="Decimal" Precision="18" Scale="0" />
+          <NavigationProperty Name="NonCurrentAsset" Relationship="AssetManagementSystemModel.FK_Disposal_NonCurrentAsset" FromRole="Disposal" ToRole="NonCurrentAsset" />
+        </EntityType>
+        <Association Name="FK_Disposal_NonCurrentAsset">
+          <End Type="AssetManagementSystemModel.NonCurrentAsset" Role="NonCurrentAsset" Multiplicity="1" />
+          <End Type="AssetManagementSystemModel.Disposal" Role="Disposal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NonCurrentAsset">
+              <PropertyRef Name="asset_id" />
+            </Principal>
+            <Dependent Role="Disposal">
+              <PropertyRef Name="asset_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AssetManagementSystemModelStoreContainer" CdmEntityContainer="AssetManagementSystemEntities">
+          <EntitySetMapping Name="NonCurrentAssets">
+            <EntityTypeMapping TypeName="AssetManagementSystemModel.NonCurrentAsset">
+              <MappingFragment StoreEntitySet="NonCurrentAsset">
+                <ScalarProperty Name="asset_id" ColumnName="asset_id" />
+                <ScalarProperty Name="lifetime" ColumnName="lifetime" />
+                <ScalarProperty Name="depreciationRate" ColumnName="depreciationRate" />
+                <ScalarProperty Name="condition" ColumnName="condition" />
+                <ScalarProperty Name="manufacturer" ColumnName="manufacturer" />
+                <ScalarProperty Name="plant" ColumnName="plant" />
+                <ScalarProperty Name="serialNumber" ColumnName="serialNumber" />
+                <ScalarProperty Name="depreciationMethod" ColumnName="depreciationMethod" />
+                <ScalarProperty Name="costOfPurchase" ColumnName="costOfPurchase" />
+                <ScalarProperty Name="serviceInterval" ColumnName="serviceInterval" />
+                <ScalarProperty Name="currentMarketValue" ColumnName="currentMarketValue" />
+                <ScalarProperty Name="warranty" ColumnName="warranty" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="disposalValue" ColumnName="disposalValue" />
+                <ScalarProperty Name="assetType" ColumnName="assetType" />
+                <ScalarProperty Name="purchaseDate" ColumnName="purchaseDate" />
+                <ScalarProperty Name="warrantyCode" ColumnName="warrantyCode" />
+                <ScalarProperty Name="serviceDue" ColumnName="serviceDue" />
+                <ScalarProperty Name="disposalDate" ColumnName="disposalDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserInfoes">
+            <EntityTypeMapping TypeName="AssetManagementSystemModel.UserInfo">
+              <MappingFragment StoreEntitySet="UserInfo">
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="EmpCategory" ColumnName="EmpCategory" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Warranties">
+            <EntityTypeMapping TypeName="AssetManagementSystemModel.Warranty">
+              <MappingFragment StoreEntitySet="Warranty">
+                <ScalarProperty Name="warrantyCode" ColumnName="warrantyCode" />
+                <ScalarProperty Name="invoiceNum" ColumnName="invoiceNum" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="startDate" ColumnName="startDate" />
+                <ScalarProperty Name="endDate" ColumnName="endDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WorkerReports">
+            <EntityTypeMapping TypeName="AssetManagementSystemModel.WorkerReport">
+              <MappingFragment StoreEntitySet="WorkerReports">
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="reported_date" ColumnName="reported_date" />
+                <ScalarProperty Name="asset_id" ColumnName="asset_id" />
+                <ScalarProperty Name="plant" ColumnName="plant" />
+                <ScalarProperty Name="criticality_machineOperations" ColumnName="criticality_machineOperations" />
+                <ScalarProperty Name="criticality_activityConstraints" ColumnName="criticality_activityConstraints" />
+                <ScalarProperty Name="managerRespoded" ColumnName="managerRespoded" />
+                <ScalarProperty Name="service_date_schedule" ColumnName="service_date_schedule" />
+                <ScalarProperty Name="message" ColumnName="message" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Disposals">
+            <EntityTypeMapping TypeName="AssetManagementSystemModel.Disposal">
+              <MappingFragment StoreEntitySet="Disposal">
+                <ScalarProperty Name="disposedValue" ColumnName="disposedValue" />
+                <ScalarProperty Name="disposedDate" ColumnName="disposedDate" />
+                <ScalarProperty Name="asset_id" ColumnName="asset_id" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

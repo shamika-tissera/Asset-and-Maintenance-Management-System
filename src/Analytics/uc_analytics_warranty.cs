@@ -1,4 +1,5 @@
 ﻿using Asset_and_Maintenance_Management_System.src.DatabaseHandlers;
+using DGVPrinterHelper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -94,6 +95,21 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
                         break;
                 }
             }
+        }
+
+        private void btn_print_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Warranty Report";
+            printer.SubTitle = string.Format("Date: {0}", DateTime.Now.Date);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "AMMS";
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridViewWarranty);
         }
     }
 }

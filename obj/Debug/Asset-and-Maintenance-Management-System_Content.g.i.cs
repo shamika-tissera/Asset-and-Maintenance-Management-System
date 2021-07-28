@@ -10,5 +10,7 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assetmanagementsystem.mdf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assetmanagementsystem_log.ldf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("er.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("er.tt")]
 
 

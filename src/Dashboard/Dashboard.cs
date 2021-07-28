@@ -57,6 +57,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_asset_browse1.Visible = false;
             uc_inventory_trends1.Visible = false;
             uc_analytics_warranty1.Visible = false;
+            uc_profit_on_disposal1.Visible = false;
 
 
             GraphicsPath gp = new GraphicsPath();
@@ -102,16 +103,26 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_analytics_intial_dash2.Visible = false;
             uc_calendar1.Visible = true;
             uc_analytics_warranty1.Visible = false;
+            uc_profit_on_disposal1.Visible = false;
         }
         public void clickedAnalyticsWarranty()
         {
+            uc_profit_on_disposal1.Visible = false;
             uc_analytics_navi_one1.Visible = true;
             uc_dash_main1.Visible = false;
             uc_analytics_intial_dash2.Visible = false;
             uc_calendar1.Visible = false;
             uc_analytics_warranty1.Visible = true;
         }
-
+        public void clickedAnalyticsDisposal()
+        {
+            uc_analytics_warranty1.Visible = false;
+            uc_analytics_navi_one1.Visible = true;
+            uc_dash_main1.Visible = false;
+            uc_analytics_intial_dash2.Visible = false;
+            uc_calendar1.Visible = false;
+            uc_profit_on_disposal1.Visible = true;
+        }
         public void clickedAssetsBack()
         {
             uc_assets_11.Visible = false;

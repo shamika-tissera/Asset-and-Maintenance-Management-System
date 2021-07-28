@@ -30,8 +30,9 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridViewWarranty = new System.Windows.Forms.DataGridView();
             this.lbl_uname = new System.Windows.Forms.Label();
+            this.dataGridViewWarranty = new System.Windows.Forms.DataGridView();
+            this.btn_print = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewWarranty)).BeginInit();
             this.SuspendLayout();
@@ -39,6 +40,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
+            this.panel1.Controls.Add(this.btn_print);
             this.panel1.Controls.Add(this.lbl_uname);
             this.panel1.Controls.Add(this.dataGridViewWarranty);
             this.panel1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -47,6 +49,17 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1142, 791);
             this.panel1.TabIndex = 3;
+            // 
+            // lbl_uname
+            // 
+            this.lbl_uname.AutoSize = true;
+            this.lbl_uname.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_uname.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_uname.Location = new System.Drawing.Point(519, 587);
+            this.lbl_uname.Name = "lbl_uname";
+            this.lbl_uname.Size = new System.Drawing.Size(564, 28);
+            this.lbl_uname.TabIndex = 3;
+            this.lbl_uname.Text = "Note: Only assets with active warranty are displayed here.";
             // 
             // dataGridViewWarranty
             // 
@@ -58,16 +71,19 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             this.dataGridViewWarranty.Size = new System.Drawing.Size(1025, 535);
             this.dataGridViewWarranty.TabIndex = 0;
             // 
-            // lbl_uname
+            // btn_print
             // 
-            this.lbl_uname.AutoSize = true;
-            this.lbl_uname.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_uname.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_uname.Location = new System.Drawing.Point(498, 692);
-            this.lbl_uname.Name = "lbl_uname";
-            this.lbl_uname.Size = new System.Drawing.Size(564, 28);
-            this.lbl_uname.TabIndex = 3;
-            this.lbl_uname.Text = "Note: Only assets with active warranty are displayed here.";
+            this.btn_print.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
+            this.btn_print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_print.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_print.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_print.Location = new System.Drawing.Point(960, 708);
+            this.btn_print.Name = "btn_print";
+            this.btn_print.Size = new System.Drawing.Size(123, 33);
+            this.btn_print.TabIndex = 4;
+            this.btn_print.Text = "&Print";
+            this.btn_print.UseVisualStyleBackColor = false;
+            this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
             // 
             // uc_analytics_warranty
             // 
@@ -89,5 +105,6 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridViewWarranty;
         private System.Windows.Forms.Label lbl_uname;
+        private System.Windows.Forms.Button btn_print;
     }
 }

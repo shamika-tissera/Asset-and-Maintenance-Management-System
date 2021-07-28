@@ -47,6 +47,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
         {
             resetButtonHighlights();
             btn_disposal.BackColor = Color.FromArgb(61, 70, 89);
+            inst.clickedAnalyticsDisposal();
         }
 
         private void btn_utilization_Click(object sender, EventArgs e)

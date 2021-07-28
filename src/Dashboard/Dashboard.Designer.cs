@@ -55,6 +55,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.uc_asset_browse1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_asset_browse();
             this.uc_inventory_trends1 = new Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_trends();
             this.uc_analytics_warranty1 = new Asset_and_Maintenance_Management_System.src.Analytics.uc_analytics_warranty();
+            this.uc_profit_on_disposal1 = new Asset_and_Maintenance_Management_System.src.Analytics.uc_profit_on_disposal();
             this.navPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,12 +69,12 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.navPanel.Controls.Add(this.pnl_highlight);
             this.navPanel.Controls.Add(this.elementHost1);
             this.navPanel.Controls.Add(this.panel2);
-            this.navPanel.Controls.Add(this.uc_dash_main1);
-            this.navPanel.Controls.Add(this.uc_navPanel_assets1);
-            this.navPanel.Controls.Add(this.uc_assets_11);
             this.navPanel.Controls.Add(this.uc_analytics_navi_one1);
             this.navPanel.Controls.Add(this.uc_inventory_navi1);
             this.navPanel.Controls.Add(this.uc_maintenance_navi1);
+            this.navPanel.Controls.Add(this.uc_dash_main1);
+            this.navPanel.Controls.Add(this.uc_navPanel_assets1);
+            this.navPanel.Controls.Add(this.uc_assets_11);
             this.navPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.navPanel.Location = new System.Drawing.Point(0, 0);
             this.navPanel.Name = "navPanel";
@@ -287,12 +288,21 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.uc_analytics_warranty1.Size = new System.Drawing.Size(1356, 826);
             this.uc_analytics_warranty1.TabIndex = 15;
             // 
+            // uc_profit_on_disposal1
+            // 
+            this.uc_profit_on_disposal1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.uc_profit_on_disposal1.Location = new System.Drawing.Point(311, 0);
+            this.uc_profit_on_disposal1.Name = "uc_profit_on_disposal1";
+            this.uc_profit_on_disposal1.Size = new System.Drawing.Size(1356, 826);
+            this.uc_profit_on_disposal1.TabIndex = 16;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1520, 826);
+            this.Controls.Add(this.uc_profit_on_disposal1);
             this.Controls.Add(this.uc_analytics_warranty1);
             this.Controls.Add(this.pic_close);
             this.Controls.Add(this.pictureBox2);
@@ -349,5 +359,6 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         private System.Windows.Forms.Panel pnl_highlight;
         private Inventory.uc_inventory_trends uc_inventory_trends1;
         private Analytics.uc_analytics_warranty uc_analytics_warranty1;
+        private Analytics.uc_profit_on_disposal uc_profit_on_disposal1;
     }
 }
