@@ -38,7 +38,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             // 
             // btn_back
             // 
-            this.btn_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.btn_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
             this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_back.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_back.FlatAppearance.BorderSize = 0;
@@ -56,7 +56,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             // 
             // btn_warranty
             // 
-            this.btn_warranty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.btn_warranty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
             this.btn_warranty.FlatAppearance.BorderSize = 0;
             this.btn_warranty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_warranty.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -75,7 +75,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             // 
             // btn_disposal
             // 
-            this.btn_disposal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.btn_disposal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
             this.btn_disposal.FlatAppearance.BorderSize = 0;
             this.btn_disposal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_disposal.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -93,7 +93,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             // 
             // btn_utilization
             // 
-            this.btn_utilization.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.btn_utilization.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
             this.btn_utilization.FlatAppearance.BorderSize = 0;
             this.btn_utilization.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_utilization.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -113,7 +113,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btn_warranty);
             this.Controls.Add(this.btn_disposal);

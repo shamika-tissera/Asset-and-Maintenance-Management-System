@@ -41,6 +41,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_maintenance_navi1.setDashboardInstance(this);
             uc_maintenance_backlog1.setDashboardInstance(this);
             uc_analytics_warranty.setDashboardInstance(this);
+            uc_approval_navi1.setDashboardInstance(this);
             //uc_maintenance_dashboard_info.setDashboardInstance(this);
             uc_dash_main1.Visible = true;
             uc_maintenance_backlog1.Visible = false;
@@ -58,6 +59,10 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_inventory_trends1.Visible = false;
             uc_analytics_warranty1.Visible = false;
             uc_profit_on_disposal1.Visible = false;
+            uc_inventory_levels1.Visible = false;
+            uc_approval_navi1.Visible = false;
+            uc_stock_requests1.Visible = false;
+            uc_calendar1.BackColor = Color.FromArgb(231, 245, 254);
 
 
             GraphicsPath gp = new GraphicsPath();
@@ -165,11 +170,18 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_inventory_dash1.Visible = false;
             uc_assets_11.Visible = false;
             uc_inventory_trends1.Visible = false;
+            uc_inventory_levels1.Visible = false;
             uc_calendar1.Visible = true;
             uc_dash_main1.Visible = true;
         }
+        public void clickedInventoryLevels()
+        {
+            uc_inventory_trends1.Visible = false;
+            uc_inventory_levels1.Visible = true;
+        }
         public void clickedInventoryTrends()
         {
+            uc_inventory_levels1.Visible = false;
             uc_inventory_trends1.Visible = true;
         }
         public void clickedMaintenance()
@@ -220,6 +232,22 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         public void clickedassetsConfigurational()
         {
             
+        }
+        public void clickedApproval()
+        {
+            uc_approval_navi1.Visible = true;
+            uc_dash_main1.Visible = false;
+            uc_stock_requests1.Visible = true;
+        }
+        public void clickedApprovalBack()
+        {
+            uc_approval_navi1.Visible = false;
+            uc_dash_main1.Visible = true;
+            uc_stock_requests1.Visible = false;
+        }
+        public void clickedApprovalStockRequests()
+        {
+            uc_stock_requests1.Visible = true;
         }
         public void logout()
         {

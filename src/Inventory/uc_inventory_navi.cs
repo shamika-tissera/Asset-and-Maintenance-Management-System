@@ -53,6 +53,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             }
             button6.BackColor = Color.FromArgb(61, 70, 89);
             isButtonEmphasized = true;
+            inst.clickedInventoryLevels();
         }
 
         private void button2_Click(object sender, EventArgs e)

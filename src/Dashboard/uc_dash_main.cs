@@ -49,6 +49,10 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         {
             inst.clickedInventory();
         }
+        private void approval_Click(object sender, EventArgs e)
+        {
+            inst.clickedApproval();
+        }
 
         private void button4_Click(object sender, EventArgs e)
         {

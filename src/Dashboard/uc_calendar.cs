@@ -20,6 +20,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             delay.Interval = 1000;
             delay.Elapsed += setTime;
             delay.Start();
+            this.BackColor = Color.FromArgb(231, 245, 254);
         }
 
         private void setTime(object sender, System.Timers.ElapsedEventArgs e)
