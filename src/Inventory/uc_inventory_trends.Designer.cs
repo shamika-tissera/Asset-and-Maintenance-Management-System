@@ -48,22 +48,40 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartMostRequestedStocks = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label2 = new System.Windows.Forms.Label();
             this.panel26 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label5 = new System.Windows.Forms.Label();
+            this.chartSupplierContacts = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblMostRequestedStocks1 = new System.Windows.Forms.Label();
+            this.lblMostRequestedStocks2 = new System.Windows.Forms.Label();
+            this.lblMostRequestedStocks3 = new System.Windows.Forms.Label();
+            this.lblSupplierContacts1 = new System.Windows.Forms.Label();
+            this.lblSupplierContacts2 = new System.Windows.Forms.Label();
+            this.lblSupplierContacts3 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
+            this.panel10.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartMostRequestedStocks)).BeginInit();
             this.panel26.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSupplierContacts)).BeginInit();
             this.SuspendLayout();
             // 
             // panel5
@@ -77,31 +95,34 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             this.panel5.Controls.Add(this.label1);
             this.panel5.Location = new System.Drawing.Point(58, 38);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(463, 330);
+            this.panel5.Size = new System.Drawing.Size(463, 343);
             this.panel5.TabIndex = 10;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(150)))), ((int)(((byte)(245)))));
-            this.panel6.Location = new System.Drawing.Point(16, 273);
+            this.panel6.Controls.Add(this.label6);
+            this.panel6.Location = new System.Drawing.Point(16, 286);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(422, 24);
+            this.panel6.Size = new System.Drawing.Size(422, 34);
             this.panel6.TabIndex = 15;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(150)))), ((int)(((byte)(245)))));
-            this.panel7.Location = new System.Drawing.Point(16, 245);
+            this.panel7.Controls.Add(this.label4);
+            this.panel7.Location = new System.Drawing.Point(16, 250);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(422, 24);
+            this.panel7.Size = new System.Drawing.Size(422, 34);
             this.panel7.TabIndex = 14;
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(150)))), ((int)(((byte)(245)))));
-            this.panel8.Location = new System.Drawing.Point(16, 217);
+            this.panel8.Controls.Add(this.label3);
+            this.panel8.Location = new System.Drawing.Point(16, 214);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(422, 24);
+            this.panel8.Size = new System.Drawing.Size(422, 34);
             this.panel8.TabIndex = 13;
             // 
             // chart2
@@ -139,53 +160,56 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Controls.Add(this.panel11);
             this.panel9.Controls.Add(this.panel12);
-            this.panel9.Controls.Add(this.chart3);
+            this.panel9.Controls.Add(this.chartMostRequestedStocks);
             this.panel9.Controls.Add(this.label2);
             this.panel9.Location = new System.Drawing.Point(647, 38);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(463, 330);
+            this.panel9.Size = new System.Drawing.Size(463, 343);
             this.panel9.TabIndex = 11;
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(150)))), ((int)(((byte)(245)))));
-            this.panel10.Location = new System.Drawing.Point(22, 271);
+            this.panel10.Controls.Add(this.lblMostRequestedStocks3);
+            this.panel10.Location = new System.Drawing.Point(22, 285);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(422, 24);
+            this.panel10.Size = new System.Drawing.Size(422, 34);
             this.panel10.TabIndex = 15;
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(150)))), ((int)(((byte)(245)))));
-            this.panel11.Location = new System.Drawing.Point(22, 243);
+            this.panel11.Controls.Add(this.lblMostRequestedStocks2);
+            this.panel11.Location = new System.Drawing.Point(22, 249);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(422, 24);
+            this.panel11.Size = new System.Drawing.Size(422, 34);
             this.panel11.TabIndex = 14;
             // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(150)))), ((int)(((byte)(245)))));
-            this.panel12.Location = new System.Drawing.Point(22, 215);
+            this.panel12.Controls.Add(this.lblMostRequestedStocks1);
+            this.panel12.Location = new System.Drawing.Point(22, 213);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(422, 24);
+            this.panel12.Size = new System.Drawing.Size(422, 34);
             this.panel12.TabIndex = 13;
             // 
-            // chart3
+            // chartMostRequestedStocks
             // 
             chartArea2.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea2);
+            this.chartMostRequestedStocks.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
-            this.chart3.Legends.Add(legend2);
-            this.chart3.Location = new System.Drawing.Point(16, 46);
-            this.chart3.Name = "chart3";
-            this.chart3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            this.chartMostRequestedStocks.Legends.Add(legend2);
+            this.chartMostRequestedStocks.Location = new System.Drawing.Point(16, 46);
+            this.chartMostRequestedStocks.Name = "chartMostRequestedStocks";
+            this.chartMostRequestedStocks.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart3.Series.Add(series2);
-            this.chart3.Size = new System.Drawing.Size(422, 157);
-            this.chart3.TabIndex = 11;
-            this.chart3.Text = "chart3";
+            series2.Name = "Times";
+            this.chartMostRequestedStocks.Series.Add(series2);
+            this.chartMostRequestedStocks.Size = new System.Drawing.Size(422, 157);
+            this.chartMostRequestedStocks.TabIndex = 11;
+            this.chartMostRequestedStocks.Text = "chart3";
             // 
             // label2
             // 
@@ -217,52 +241,11 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.chart1);
+            this.panel1.Controls.Add(this.chartSupplierContacts);
             this.panel1.Location = new System.Drawing.Point(367, 411);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(463, 330);
+            this.panel1.Size = new System.Drawing.Size(463, 343);
             this.panel1.TabIndex = 10;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(150)))), ((int)(((byte)(245)))));
-            this.panel2.Location = new System.Drawing.Point(19, 273);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(422, 24);
-            this.panel2.TabIndex = 15;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(150)))), ((int)(((byte)(245)))));
-            this.panel3.Location = new System.Drawing.Point(19, 245);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(422, 24);
-            this.panel3.TabIndex = 14;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(150)))), ((int)(((byte)(245)))));
-            this.panel4.Location = new System.Drawing.Point(19, 217);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(422, 24);
-            this.panel4.TabIndex = 13;
-            // 
-            // chart1
-            // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
-            this.chart1.Location = new System.Drawing.Point(16, 46);
-            this.chart1.Name = "chart1";
-            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart1.Series.Add(series3);
-            this.chart1.Size = new System.Drawing.Size(422, 157);
-            this.chart1.TabIndex = 11;
-            this.chart1.Text = "chart2";
             // 
             // label5
             // 
@@ -275,6 +258,140 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             this.label5.TabIndex = 16;
             this.label5.Text = "Supplier Contacts";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(150)))), ((int)(((byte)(245)))));
+            this.panel2.Controls.Add(this.lblSupplierContacts3);
+            this.panel2.Location = new System.Drawing.Point(19, 287);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(422, 34);
+            this.panel2.TabIndex = 15;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(150)))), ((int)(((byte)(245)))));
+            this.panel3.Controls.Add(this.lblSupplierContacts2);
+            this.panel3.Location = new System.Drawing.Point(19, 250);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(422, 34);
+            this.panel3.TabIndex = 14;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(150)))), ((int)(((byte)(245)))));
+            this.panel4.Controls.Add(this.lblSupplierContacts1);
+            this.panel4.Location = new System.Drawing.Point(19, 213);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(422, 34);
+            this.panel4.TabIndex = 13;
+            // 
+            // chartSupplierContacts
+            // 
+            chartArea3.Name = "ChartArea1";
+            this.chartSupplierContacts.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chartSupplierContacts.Legends.Add(legend3);
+            this.chartSupplierContacts.Location = new System.Drawing.Point(16, 46);
+            this.chartSupplierContacts.Name = "chartSupplierContacts";
+            this.chartSupplierContacts.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Times";
+            this.chartSupplierContacts.Series.Add(series3);
+            this.chartSupplierContacts.Size = new System.Drawing.Size(422, 157);
+            this.chartSupplierContacts.TabIndex = 11;
+            this.chartSupplierContacts.Text = "chart2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(77, 5);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 25);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "label3";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(77, 4);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 25);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "label3";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(77, 5);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 25);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "label3";
+            // 
+            // lblMostRequestedStocks1
+            // 
+            this.lblMostRequestedStocks1.AutoSize = true;
+            this.lblMostRequestedStocks1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMostRequestedStocks1.Location = new System.Drawing.Point(75, 4);
+            this.lblMostRequestedStocks1.Name = "lblMostRequestedStocks1";
+            this.lblMostRequestedStocks1.Size = new System.Drawing.Size(64, 25);
+            this.lblMostRequestedStocks1.TabIndex = 0;
+            this.lblMostRequestedStocks1.Text = "label3";
+            // 
+            // lblMostRequestedStocks2
+            // 
+            this.lblMostRequestedStocks2.AutoSize = true;
+            this.lblMostRequestedStocks2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMostRequestedStocks2.Location = new System.Drawing.Point(75, 5);
+            this.lblMostRequestedStocks2.Name = "lblMostRequestedStocks2";
+            this.lblMostRequestedStocks2.Size = new System.Drawing.Size(64, 25);
+            this.lblMostRequestedStocks2.TabIndex = 1;
+            this.lblMostRequestedStocks2.Text = "label3";
+            // 
+            // lblMostRequestedStocks3
+            // 
+            this.lblMostRequestedStocks3.AutoSize = true;
+            this.lblMostRequestedStocks3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMostRequestedStocks3.Location = new System.Drawing.Point(75, 4);
+            this.lblMostRequestedStocks3.Name = "lblMostRequestedStocks3";
+            this.lblMostRequestedStocks3.Size = new System.Drawing.Size(64, 25);
+            this.lblMostRequestedStocks3.TabIndex = 2;
+            this.lblMostRequestedStocks3.Text = "label3";
+            // 
+            // lblSupplierContacts1
+            // 
+            this.lblSupplierContacts1.AutoSize = true;
+            this.lblSupplierContacts1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSupplierContacts1.Location = new System.Drawing.Point(85, 5);
+            this.lblSupplierContacts1.Name = "lblSupplierContacts1";
+            this.lblSupplierContacts1.Size = new System.Drawing.Size(64, 25);
+            this.lblSupplierContacts1.TabIndex = 0;
+            this.lblSupplierContacts1.Text = "label3";
+            // 
+            // lblSupplierContacts2
+            // 
+            this.lblSupplierContacts2.AutoSize = true;
+            this.lblSupplierContacts2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSupplierContacts2.Location = new System.Drawing.Point(85, 5);
+            this.lblSupplierContacts2.Name = "lblSupplierContacts2";
+            this.lblSupplierContacts2.Size = new System.Drawing.Size(64, 25);
+            this.lblSupplierContacts2.TabIndex = 1;
+            this.lblSupplierContacts2.Text = "label3";
+            // 
+            // lblSupplierContacts3
+            // 
+            this.lblSupplierContacts3.AutoSize = true;
+            this.lblSupplierContacts3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSupplierContacts3.Location = new System.Drawing.Point(85, 4);
+            this.lblSupplierContacts3.Name = "lblSupplierContacts3";
+            this.lblSupplierContacts3.Size = new System.Drawing.Size(64, 25);
+            this.lblSupplierContacts3.TabIndex = 2;
+            this.lblSupplierContacts3.Text = "label3";
+            // 
             // uc_inventory_trends
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -285,14 +402,32 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             this.Size = new System.Drawing.Size(1356, 826);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartMostRequestedStocks)).EndInit();
             this.panel26.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSupplierContacts)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -306,7 +441,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartMostRequestedStocks;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
@@ -316,6 +451,15 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartSupplierContacts;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblMostRequestedStocks3;
+        private System.Windows.Forms.Label lblMostRequestedStocks2;
+        private System.Windows.Forms.Label lblMostRequestedStocks1;
+        private System.Windows.Forms.Label lblSupplierContacts3;
+        private System.Windows.Forms.Label lblSupplierContacts2;
+        private System.Windows.Forms.Label lblSupplierContacts1;
     }
 }
