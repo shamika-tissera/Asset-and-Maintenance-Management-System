@@ -51,5 +51,11 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StockRequest stockRequest = new StockRequest();
+            stockRequest.Show();
+        }
     }
 }

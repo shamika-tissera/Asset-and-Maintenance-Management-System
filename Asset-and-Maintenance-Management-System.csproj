@@ -48,16 +48,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.10.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>packages\Portable.BouncyCastle.1.8.10\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="MailKit, Version=2.14.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>packages\MailKit.2.14.0\lib\net47\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeKit, Version=2.14.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>packages\MimeKit.2.14.0\lib\net47\MimeKit.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System">
       <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -117,6 +129,12 @@
     <Compile Include="src\Analytics\uc_analytics_navi_one.Designer.cs">
       <DependentUpon>uc_analytics_navi_one.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Analytics\uc_analytics_utilization.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Analytics\uc_analytics_utilization.Designer.cs">
+      <DependentUpon>uc_analytics_utilization.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Analytics\uc_analytics_warranty.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -129,11 +147,23 @@
     <Compile Include="src\Analytics\uc_profit_on_disposal.Designer.cs">
       <DependentUpon>uc_profit_on_disposal.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Approval\StockRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Approval\StockRequest.Designer.cs">
+      <DependentUpon>StockRequest.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Approval\uc_approval_navi.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="src\Approval\uc_approval_navi.Designer.cs">
       <DependentUpon>uc_approval_navi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Approval\uc_stock_reception.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Approval\uc_stock_reception.Designer.cs">
+      <DependentUpon>uc_stock_reception.cs</DependentUpon>
     </Compile>
     <Compile Include="src\Approval\uc_stock_requests.cs">
       <SubType>UserControl</SubType>
@@ -172,6 +202,7 @@
       <DependentUpon>uc_dash_main.cs</DependentUpon>
     </Compile>
     <Compile Include="src\DatabaseHandlers\DBConnection.cs" />
+    <Compile Include="src\Email\Email.cs" />
     <Compile Include="src\Inventory\uc_inventory_dash.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -207,6 +238,12 @@
     </Compile>
     <Compile Include="src\Login\UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Maintenance\uc_corrective_maintenance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Maintenance\uc_corrective_maintenance.Designer.cs">
+      <DependentUpon>uc_corrective_maintenance.cs</DependentUpon>
     </Compile>
     <Compile Include="src\Maintenance\uc_maintenance_backlog.cs">
       <SubType>UserControl</SubType>
@@ -414,14 +451,23 @@
     <EmbeddedResource Include="src\Analytics\uc_analytics_navi_one.resx">
       <DependentUpon>uc_analytics_navi_one.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\Analytics\uc_analytics_utilization.resx">
+      <DependentUpon>uc_analytics_utilization.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Analytics\uc_analytics_warranty.resx">
       <DependentUpon>uc_analytics_warranty.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Analytics\uc_profit_on_disposal.resx">
       <DependentUpon>uc_profit_on_disposal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\Approval\StockRequest.resx">
+      <DependentUpon>StockRequest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Approval\uc_approval_navi.resx">
       <DependentUpon>uc_approval_navi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Approval\uc_stock_reception.resx">
+      <DependentUpon>uc_stock_reception.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Approval\uc_stock_requests.resx">
       <DependentUpon>uc_stock_requests.cs</DependentUpon>
@@ -458,6 +504,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Login\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Maintenance\uc_corrective_maintenance.resx">
+      <DependentUpon>uc_corrective_maintenance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Maintenance\uc_maintenance_backlog.resx">
       <DependentUpon>uc_maintenance_backlog.cs</DependentUpon>

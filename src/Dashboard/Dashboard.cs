@@ -62,6 +62,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_inventory_levels1.Visible = false;
             uc_approval_navi1.Visible = false;
             uc_stock_requests1.Visible = false;
+            uc_stock_reception1.Visible = false;
             uc_calendar1.BackColor = Color.FromArgb(231, 245, 254);
 
 
