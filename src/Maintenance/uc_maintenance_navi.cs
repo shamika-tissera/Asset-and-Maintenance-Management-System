@@ -94,6 +94,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             }
             btn_preventive.BackColor = Color.FromArgb(61, 70, 89);
             isButtonEmphasized = true;
+            inst.clickedMaintenancePreventive();
         }
 
         private void btn_corrective_Click(object sender, EventArgs e)
@@ -104,6 +105,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             }
             btn_corrective.BackColor = Color.FromArgb(61, 70, 89);
             isButtonEmphasized = true;
+            inst.clickedMaintenanceCorrective();
         }
     }
 }

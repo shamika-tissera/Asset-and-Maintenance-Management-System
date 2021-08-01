@@ -63,6 +63,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_approval_navi1.Visible = false;
             uc_stock_requests1.Visible = false;
             uc_stock_reception1.Visible = false;
+            uc_preventive_maintenance1.Visible = false;
+            uc_corrective_maintenance1.Visible = false;
             uc_calendar1.BackColor = Color.FromArgb(231, 245, 254);
 
 
@@ -179,11 +181,13 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         {
             uc_inventory_trends1.Visible = false;
             uc_inventory_levels1.Visible = true;
+            uc_inventory_dash1.Visible = false;
         }
         public void clickedInventoryTrends()
         {
             uc_inventory_levels1.Visible = false;
             uc_inventory_trends1.Visible = true;
+            uc_inventory_dash1.Visible = false;
         }
         public void clickedMaintenance()
         {
@@ -202,18 +206,24 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_maintenance_reccomendations1.Visible = false;
             uc_calendar1.Visible = true;
             uc_dash_main1.Visible = true;
+            uc_preventive_maintenance1.Visible = false;
+            uc_corrective_maintenance1.Visible = false;
         }
 
         public void clickedMaintenanceBacklog()
         {
             uc_maintenance_backlog1.Visible = true;
-            uc_maintenance_backlog1.BringToFront();
             uc_maintenance_dashboard_info1.Visible = false;
+            uc_corrective_maintenance1.Visible = false;
+            uc_preventive_maintenance1.Visible = false;
+            uc_maintenance_reccomendations1.Visible = false;
         }
         public void clickedMaintenanceBacklogBack()
         {
             uc_maintenance_backlog1.Visible = false;
             uc_maintenance_dashboard_info1.Visible = true;
+            uc_corrective_maintenance1.Visible = false;
+            uc_preventive_maintenance1.Visible = false;
         }
 
         public String getInfoForMaintenanceNaviBack()
@@ -225,10 +235,26 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
 
             return null;
         }
+        public void clickedMaintenancePreventive()
+        {
+            uc_preventive_maintenance1.Visible = true;
+            uc_maintenance_reccomendations1.Visible = false;
+            uc_corrective_maintenance1.Visible = false;
+            uc_maintenance_backlog1.Visible = false;
+        }
+        public void clickedMaintenanceCorrective()
+        {
+            uc_corrective_maintenance1.Visible = true;
+            uc_preventive_maintenance1.Visible = false;
+            uc_maintenance_reccomendations1.Visible = false;
+            uc_maintenance_backlog1.Visible = false;
+        }
         public void clickedMaintenanceReccomendations()
         {
             uc_maintenance_reccomendations1.Visible = true;
-            uc_maintenance_reccomendations1.BringToFront();
+            uc_preventive_maintenance1.Visible = false;
+            uc_corrective_maintenance1.Visible = false;
+            uc_maintenance_backlog1.Visible = false;
         }
         public void clickedassetsConfigurational()
         {
@@ -245,10 +271,17 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_approval_navi1.Visible = false;
             uc_dash_main1.Visible = true;
             uc_stock_requests1.Visible = false;
+            uc_stock_reception1.Visible = false;
         }
         public void clickedApprovalStockRequests()
         {
             uc_stock_requests1.Visible = true;
+            uc_stock_reception1.Visible = false;
+        }
+        public void clickedApprovalStockReception()
+        {
+            uc_stock_reception1.Visible = true;
+            uc_stock_requests1.Visible = false;
         }
         public void logout()
         {

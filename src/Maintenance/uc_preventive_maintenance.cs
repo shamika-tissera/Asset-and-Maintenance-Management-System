@@ -39,10 +39,10 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
                         dataGridViewPreventiveMaintenance.DataSource = table;
                         for(int i = 0; i < dataGridViewPreventiveMaintenance.Rows.Count; i++)
                         {
-                            if (Convert.ToDateTime(dataGridViewPreventiveMaintenance.Rows[i].Cells["Due by"].ToString()) < DateTime.Today)
-                            {
-                                dataGridViewPreventiveMaintenance.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                            }
+                            //if (Convert.ToDateTime(dataGridViewPreventiveMaintenance.Rows[i].Cells["Due by"].ToString()) < DateTime.Today)
+                            //{
+                            //    dataGridViewPreventiveMaintenance.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                            //}
                         }
                     }
                 }

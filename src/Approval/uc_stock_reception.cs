@@ -50,6 +50,7 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
             string stockName;
             int orderedQuantity;
             string supplierName;
+            bool isChecked = false;
 
             foreach(DataGridViewRow row in dataGridViewMain.Rows)
             {
@@ -61,6 +62,7 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
                         orderedQuantity = int.Parse(row.Cells["Ordered Quantity"].Value.ToString());
                         supplierName = row.Cells["Supplier Name"].Value.ToString();
                         string query = "UPDATE InventoryOrder SET received = 'TRUE' WHERE stockType = '" + stockName + "' AND supplierName = '" + supplierName + "' AND units = '" + orderedQuantity + "'";
+                        isChecked = true;
                         using (SqlConnection connection = DBConnection.establishConnection())
                         {
                             using (SqlCommand command = new SqlCommand(query, connection))
@@ -76,6 +78,10 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
                             }
                         }
                         dataGridViewMain.Rows.RemoveAt(row.Index);
+                    }
+                    if (!isChecked)
+                    {
+                        MessageBox.Show("Please select an item.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     }
                 }
                 catch (NullReferenceException ex)
