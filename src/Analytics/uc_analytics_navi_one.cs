@@ -54,6 +54,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
         {
             resetButtonHighlights();
             btn_utilization.BackColor = Color.FromArgb(61, 70, 89);
+            inst.clickedAnalyticsUtilization();
         }
     }
 }

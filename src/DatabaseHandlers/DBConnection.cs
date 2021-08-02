@@ -9,7 +9,7 @@ namespace Asset_and_Maintenance_Management_System.src.DatabaseHandlers
 {
     class DBConnection
     {
-        private const string source = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"|DataDirectory|\\AssetManagementSystem.mdf\";Integrated Security=True;Application Name=Asset-and-maintenance-management-system";
+        private const string source = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"F:\\Programming Workspaces\\C#\\New Folder\\Asset-and-Maintenance-Management-System\\AssetManagementSystem.mdf\";Integrated Security=True";
 
         public static SqlConnection establishConnection()
         {

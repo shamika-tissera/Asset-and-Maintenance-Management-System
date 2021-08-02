@@ -65,6 +65,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_stock_reception1.Visible = false;
             uc_preventive_maintenance1.Visible = false;
             uc_corrective_maintenance1.Visible = false;
+            uc_analytics_utilization1.Visible = false;
             uc_calendar1.BackColor = Color.FromArgb(231, 245, 254);
 
 
@@ -103,6 +104,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_dash_main1.Visible = false;
             uc_analytics_intial_dash2.Visible = true;
             uc_calendar1.Visible = false;
+            uc_analytics_utilization1.Visible = false;
         }
         public void clickedAnalyticsBack()
         {
@@ -112,6 +114,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_calendar1.Visible = true;
             uc_analytics_warranty1.Visible = false;
             uc_profit_on_disposal1.Visible = false;
+            uc_analytics_utilization1.Visible = false;
         }
         public void clickedAnalyticsWarranty()
         {
@@ -121,6 +124,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_analytics_intial_dash2.Visible = false;
             uc_calendar1.Visible = false;
             uc_analytics_warranty1.Visible = true;
+            uc_analytics_utilization1.Visible = false;
         }
         public void clickedAnalyticsDisposal()
         {
@@ -130,6 +134,17 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_analytics_intial_dash2.Visible = false;
             uc_calendar1.Visible = false;
             uc_profit_on_disposal1.Visible = true;
+            uc_analytics_utilization1.Visible = false;
+        }
+        public void clickedAnalyticsUtilization()
+        {
+            uc_analytics_warranty1.Visible = false;
+            uc_analytics_navi_one1.Visible = true;
+            uc_dash_main1.Visible = false;
+            uc_analytics_intial_dash2.Visible = false;
+            uc_calendar1.Visible = false;
+            uc_profit_on_disposal1.Visible = false;
+            uc_analytics_utilization1.Visible = true;
         }
         public void clickedAssetsBack()
         {
