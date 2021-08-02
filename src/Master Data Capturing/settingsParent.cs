@@ -46,6 +46,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             childForms.Columns.Add("Form Name", typeof(string));
             childForms.Columns.Add("Form Object", typeof(Form));
             assetCategory = new addItem_assetCategory(this);
+            FormHeater.setSettingsParentInstance(this);
             
 
             //System.Timers.Timer delay = new System.Timers.Timer();

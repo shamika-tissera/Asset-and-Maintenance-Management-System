@@ -100,6 +100,8 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             this.comboMaintainedBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboMaintainedBy.FormattingEnabled = true;
+            this.comboMaintainedBy.Items.AddRange(new object[] {
+            "Blanco"});
             this.comboMaintainedBy.Location = new System.Drawing.Point(39, 52);
             this.comboMaintainedBy.Name = "comboMaintainedBy";
             this.comboMaintainedBy.Size = new System.Drawing.Size(406, 24);

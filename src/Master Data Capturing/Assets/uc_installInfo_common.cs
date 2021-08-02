@@ -53,5 +53,13 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             dateAcceptance.ResetText();
             dateInstallation.ResetText();
         }
+        public string[] getInformation()
+        {
+            string[] info = new string[3];
+            info[0] = dateInstallation.Text.ToString();
+            info[1] = dateAcceptance.Text.ToString();
+            info[2] = comboPlant.Text.ToString();
+            return info;
+        }
     }
 }

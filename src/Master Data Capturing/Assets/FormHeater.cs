@@ -12,15 +12,15 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
 {
     public partial class FormHeater : add_item
     {
-        private settingsParent asset;
+        private static settingsParent asset;
 
-        public FormHeater() : base()
+        public FormHeater()
         {
             InitializeComponent();
         }
-        public FormHeater(settingsParent asset) : base(asset)
+        public static void setSettingsParentInstance(settingsParent assetInst)
         {
-            this.asset = asset;
+            asset = assetInst;
         }
         private void FormHeater_Load(object sender, EventArgs e)
         {
@@ -31,6 +31,8 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
             asset.clickedAddItemOK();
             btn_reset_Click(sender, e);
+            collectInformation();
+            updateDatabase("Heater");
         }
     }
 }

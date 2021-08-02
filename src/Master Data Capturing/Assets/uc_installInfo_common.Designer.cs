@@ -59,6 +59,8 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // comboPlant
             // 
             this.comboPlant.FormattingEnabled = true;
+            this.comboPlant.Items.AddRange(new object[] {
+            "Minuwangoda"});
             this.comboPlant.Location = new System.Drawing.Point(35, 115);
             this.comboPlant.Name = "comboPlant";
             this.comboPlant.Size = new System.Drawing.Size(406, 28);

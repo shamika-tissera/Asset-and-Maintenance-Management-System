@@ -41,6 +41,15 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
             return dateLastChecked.Text;
         }
+        public string[] getInformation()
+        {
+            string[] info = new string[4];
+            info[0] = comboMaintainedBy.Text.ToString();
+            info[1] = comboCondition.Text.ToString();
+            info[2] = comboCriticality.Text.ToString();
+            info[3] = dateLastChecked.Text.ToString();
+            return info;
+        }
 
         public void resetContent()
         {

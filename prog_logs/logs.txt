@@ -1,6 +1,6 @@
-[01-Aug-21 12:22:51 PM]:
+[02-Aug-21 11:40:49 PM]:
 System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
    at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
    at System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
    at System.Windows.Forms.Control.Invoke(Delegate method)
-   at Asset_and_Maintenance_Management_System.src.Dashboard.uc_calendar.setTime(Object sender, ElapsedEventArgs e) in F:\Programming Workspaces\C#\Group Project\Asset-and-Maintenance-Management-System\src\Dashboard\uc_calendar.cs:line 30
+   at Asset_and_Maintenance_Management_System.src.Dashboard.uc_calendar.setTime(Object sender, ElapsedEventArgs e) in F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\src\Dashboard\uc_calendar.cs:line 30

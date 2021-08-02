@@ -55,7 +55,36 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
 
         }
-
+        public string[] getInformation()
+        {
+            string[] info = new string[6];
+            if (isValidationSuccess())
+            {
+                info[0] = txt_general_code.Text.ToString().Trim();
+                info[1] = txt_general_name.Text.ToString().Trim();
+                info[2] = txt_general_serial.Text.ToString().Trim();
+                info[3] = combo_general_manu.Text.ToString();
+                info[4] = combo_general_supplier.Text.ToString();
+                info[5] = combo_general_state.Text.ToString();
+                return info;
+            }
+            else
+            {
+                return info;
+            }
+        }
+        private bool isValidationSuccess()
+        {
+            if(txt_general_name.Text.ToString().Trim() == "" || txt_general_serial.Text.ToString().Trim() == "")
+            {
+                MessageBox.Show("Please complete all fields in the 'General Section'!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
         public void resetContents()
         {
             combo_general_state.ResetText();

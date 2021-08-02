@@ -355,7 +355,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             // uc_analytics_utilization1
             // 
             this.uc_analytics_utilization1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
-            this.uc_analytics_utilization1.Location = new System.Drawing.Point(311, 0);
+            this.uc_analytics_utilization1.Location = new System.Drawing.Point(341, -3);
             this.uc_analytics_utilization1.Name = "uc_analytics_utilization1";
             this.uc_analytics_utilization1.Size = new System.Drawing.Size(1356, 826);
             this.uc_analytics_utilization1.TabIndex = 22;
