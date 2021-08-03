@@ -16,7 +16,10 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
     public partial class add_item : Form
     {
         /*
-         General
+        ARRAY DATA DESCRIPTION
+        ======================
+
+        General
 	        Code, Name, Serial Number, Manufacturer, Supplier, State
 
         Location
@@ -33,7 +36,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
 
         Administrative
 	        purchase price, invoice number, current value, disposal date, years of life, depreciation start, depreciation end, depreciation method, depreciation rate, fully depreciated
-
          */
         protected string[] general;
         protected string[] location;
