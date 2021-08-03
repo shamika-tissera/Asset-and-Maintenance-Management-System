@@ -58,14 +58,15 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         public string[] getInformation()
         {
             string[] info = new string[6];
-            if (isValidationSuccess())
+            if (true)
             {
-                info[0] = txt_general_code.Text.ToString().Trim();
-                info[1] = txt_general_name.Text.ToString().Trim();
-                info[2] = txt_general_serial.Text.ToString().Trim();
-                info[3] = combo_general_manu.Text.ToString();
-                info[4] = combo_general_supplier.Text.ToString();
-                info[5] = combo_general_state.Text.ToString();
+                info[0] = txt_general_code.Text;
+                string a = txt_general_code.Text;
+                info[1] = txt_general_name.Text;
+                info[2] = txt_general_serial.Text;
+                info[3] = combo_general_manu.Text;
+                info[4] = combo_general_supplier.Text;
+                info[5] = combo_general_state.Text;
                 return info;
             }
             else

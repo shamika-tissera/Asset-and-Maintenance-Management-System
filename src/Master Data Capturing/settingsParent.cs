@@ -132,7 +132,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             switch (formType)
             {
                 case "Heater":
-                    choice = new FormHeater();
+                    choice = new add_item(formType);
                     Heater++;
                     if (Heater == 1)
                     {
@@ -144,7 +144,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     break;
                 case "Network Device":
-                    choice = new FormHeater();
+                    choice = new add_item(formType);
                     Network++;
                     if (Network == 1)
                     {
@@ -156,7 +156,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     break;
                 case "Sanitation Device":
-                    choice = new FormHeater();
+                    choice = new add_item(formType);
                     Sanitation++;
                     if (Sanitation == 1)
                     {
@@ -168,7 +168,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     break;
                 case "Printer/Scanner":
-                    choice = new FormHeater();
+                    choice = new add_item("PrinterScanner");
                     Printer++;
                     if (Printer == 1)
                     {
@@ -180,7 +180,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     break;
                 case "Lift":
-                    choice = new FormHeater();
+                    choice = new add_item(formType);
                     Lift++;
                     if (Lift == 1)
                     {
@@ -192,7 +192,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     break;
                 case "Fire Extinguisher":
-                    choice = new FormHeater();
+                    choice = new add_item(formType);
                     Extinguisher++;
                     if (Extinguisher == 1)
                     {
@@ -204,7 +204,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     break;
                 case "Computer":
-                    choice = new FormHeater();
+                    choice = new add_item(formType);
                     Computer++;
                     if (Computer == 1)
                     {
@@ -216,7 +216,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     break;
                 case "Plumbing Device":
-                    choice = new FormHeater();
+                    choice = new add_item(formType);
                     Plumbing++;
                     if (Plumbing == 1)
                     {
@@ -228,7 +228,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     break;
                 case "Phone":
-                    choice = new FormHeater();
+                    choice = new add_item(formType);
                     Phone++;
                     if (Phone == 1)
                     {
@@ -240,7 +240,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     break;
                 case "Sink":
-                    choice = new FormHeater();
+                    choice = new add_item(formType);
                     Sink++;
                     if (Sink == 1)
                     {
@@ -252,7 +252,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     }
                     break;
                 case "Lighting":
-                    choice = new FormHeater();
+                    choice = new add_item(formType);
                     Lighting++;
                     if (Lighting == 1)
                     {

@@ -43,7 +43,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         public string[] getInformation()
         {
             string[] info = new string[4];
-            if (isValidationSuccess())
+            if (true)
             {
                 info[0] = txtWarrantyCode.Text.ToString().Trim();
                 info[1] = comboType.Text.ToString();

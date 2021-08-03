@@ -29,8 +29,32 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         /// </summary>
         private void InitializeComponent()
         {
-            this.uc_HeaterTechnical1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_HeaterTechnical();
-            this.SuspendLayout();
+            //this.uc_HeaterTechnical1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_HeaterTechnical();
+            //this.SuspendLayout();
+            //// 
+            //// uc_general_common1
+            //// 
+            //this.uc_general_common1.Size = new System.Drawing.Size(1122, 248);
+            //// 
+            //// uc_administrative_common1
+            //// 
+            //this.uc_administrative_common1.Size = new System.Drawing.Size(1122, 375);
+            //// 
+            //// uc_warranty_common1
+            //// 
+            //this.uc_warranty_common1.Size = new System.Drawing.Size(1122, 168);
+            //// 
+            //// uc_installInfo_common1
+            //// 
+            //this.uc_installInfo_common1.Size = new System.Drawing.Size(1122, 169);
+            //// 
+            //// uc_maintenance_common1
+            //// 
+            //this.uc_maintenance_common1.Size = new System.Drawing.Size(1122, 179);
+            //// 
+            //// uc_location_common1
+            //// 
+            //this.uc_location_common1.Size = new System.Drawing.Size(1122, 174);
             // 
             // btn_reset
             // 
@@ -60,11 +84,17 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1122, 735);
+            this.ClientSize = new System.Drawing.Size(1143, 735);
             this.Controls.Add(this.uc_HeaterTechnical1);
             this.Name = "FormHeater";
             this.Text = "FormHeater";
             this.Load += new System.EventHandler(this.FormHeater_Load);
+            //this.Controls.SetChildIndex(this.uc_general_common1, 0);
+            //this.Controls.SetChildIndex(this.uc_administrative_common1, 0);
+            //this.Controls.SetChildIndex(this.uc_warranty_common1, 0);
+            //this.Controls.SetChildIndex(this.uc_installInfo_common1, 0);
+            //this.Controls.SetChildIndex(this.uc_maintenance_common1, 0);
+            //this.Controls.SetChildIndex(this.uc_location_common1, 0);
             this.Controls.SetChildIndex(this.panel1, 0);
             this.Controls.SetChildIndex(this.btn_reset, 0);
             this.Controls.SetChildIndex(this.btnCancel, 0);

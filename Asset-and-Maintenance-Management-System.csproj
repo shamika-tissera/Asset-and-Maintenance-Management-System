@@ -317,6 +317,12 @@
     <Compile Include="src\Master Data Capturing\Assets\main_window.Designer.cs">
       <DependentUpon>main_window.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\recordItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Master Data Capturing\Assets\recordItem.Designer.cs">
+      <DependentUpon>recordItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Master Data Capturing\Assets\uc_administrative_common.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -546,6 +552,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\main_window.resx">
       <DependentUpon>main_window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Master Data Capturing\Assets\recordItem.resx">
+      <DependentUpon>recordItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Master Data Capturing\Assets\uc_administrative_common.resx">
       <DependentUpon>uc_administrative_common.cs</DependentUpon>

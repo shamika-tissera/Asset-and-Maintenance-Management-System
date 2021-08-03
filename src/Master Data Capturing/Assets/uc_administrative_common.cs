@@ -80,7 +80,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         public string[] getInformation()
         {
             string[] info = new string[10];
-            if (isValidationSuccessful())
+            if (true)
             {
                 info[0] = txtPurchasedPrice.Text.ToString().Trim();
                 info[1] = txtInvoiceNumber.Text.ToString().Trim();

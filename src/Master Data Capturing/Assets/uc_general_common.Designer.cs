@@ -41,12 +41,13 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label1 = new System.Windows.Forms.Label();
             this.txt_general_name = new System.Windows.Forms.TextBox();
             this.txt_general_serial = new System.Windows.Forms.TextBox();
-            this.txt_general_code = new System.Windows.Forms.TextBox();
+            this.txt_general_code = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_general_code);
             this.groupBox1.Controls.Add(this.combo_general_supplier);
             this.groupBox1.Controls.Add(this.combo_general_state);
             this.groupBox1.Controls.Add(this.combo_general_manu);
@@ -58,7 +59,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txt_general_name);
             this.groupBox1.Controls.Add(this.txt_general_serial);
-            this.groupBox1.Controls.Add(this.txt_general_code);
             this.groupBox1.Location = new System.Drawing.Point(10, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(941, 235);
@@ -176,11 +176,10 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // txt_general_code
             // 
-            this.txt_general_code.Location = new System.Drawing.Point(39, 52);
-            this.txt_general_code.MaxLength = 100;
+            this.txt_general_code.Location = new System.Drawing.Point(46, 51);
             this.txt_general_code.Name = "txt_general_code";
-            this.txt_general_code.Size = new System.Drawing.Size(406, 22);
-            this.txt_general_code.TabIndex = 1;
+            this.txt_general_code.Size = new System.Drawing.Size(399, 22);
+            this.txt_general_code.TabIndex = 7;
             // 
             // uc_general_common
             // 
@@ -198,17 +197,17 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox combo_general_supplier;
-        private System.Windows.Forms.ComboBox combo_general_state;
-        private System.Windows.Forms.ComboBox combo_general_manu;
+        protected System.Windows.Forms.ComboBox combo_general_supplier;
+        protected System.Windows.Forms.ComboBox combo_general_state;
+        protected System.Windows.Forms.ComboBox combo_general_manu;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_general_name;
-        private System.Windows.Forms.TextBox txt_general_serial;
-        private System.Windows.Forms.TextBox txt_general_code;
+        protected System.Windows.Forms.TextBox txt_general_name;
+        protected System.Windows.Forms.TextBox txt_general_serial;
+        private System.Windows.Forms.MaskedTextBox txt_general_code;
     }
 }
