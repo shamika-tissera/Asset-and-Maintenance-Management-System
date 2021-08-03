@@ -12,7 +12,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
 {
     public partial class uc_analytics_navi_one : UserControl
     {
-        Dashboard.Dashboard inst;
+        Dashboard.MainDashboard inst;
        
         public uc_analytics_navi_one()
         {
@@ -27,7 +27,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             inst.clickedAnalyticsWarranty();
             btn_warranty.BackColor = Color.FromArgb(61, 70, 89);
         }
-        public void setDashboardInstance(Dashboard.Dashboard inst)
+        public void setDashboardInstance(Dashboard.MainDashboard inst)
         {
             this.inst = inst;
         }

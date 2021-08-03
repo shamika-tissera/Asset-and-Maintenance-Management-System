@@ -12,7 +12,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
 {
     public partial class uc_navPanel_assets : UserControl
     {
-        private Dashboard.Dashboard inst;
+        private Dashboard.MainDashboard inst;
         private add_item item;
         private static uc_asset_browse browse;
         public static void setBrowse(uc_asset_browse inst)
@@ -44,7 +44,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             }
             button5.BackColor = Color.FromArgb(61, 70, 89);
         }
-        public void setDashboardInstance(Dashboard.Dashboard inst)
+        public void setDashboardInstance(Dashboard.MainDashboard inst)
         {
             this.inst = inst;
         }

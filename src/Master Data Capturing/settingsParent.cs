@@ -36,7 +36,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
         private List<Form> items;
         ToolStripItem[] stripItems;
 
-        Dashboard.Dashboard inst;
+        Dashboard.MainDashboard inst;
         private add_item item;
         public settingsParent()
         {
@@ -106,7 +106,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
         //        }
         //    }
         //}
-        public settingsParent(bool isRedirected, Dashboard.Dashboard inst) : this()
+        public settingsParent(bool isRedirected, Dashboard.MainDashboard inst) : this()
         {
             this.isRedirected = isRedirected;
             this.inst = inst;
@@ -117,7 +117,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
         {
             item.Hide();
         }
-        public void setDashboardInstance(Dashboard.Dashboard inst)
+        public void setDashboardInstance(Dashboard.MainDashboard inst)
         {
             this.inst = inst;
         }
@@ -430,6 +430,11 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
         private void button1_Click(object sender, EventArgs e)
         {
             assetToolStripMenuItem_Click(sender, e);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -17,7 +17,6 @@ F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\bin\Debug\MimeKit.pdb
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\bin\Debug\MimeKit.xml
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\bin\Debug\System.Buffers.xml
-F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.csproj.AssemblyReference.cache
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\src\Maintenance\uc_preventive_maintenance_calendar.g.cs
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\src\Master Data Capturing\Assets\initialInterfaceAsset.g.cs
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\src\Master Data Capturing\Products\uc_addProduct.g.cs
@@ -39,7 +38,6 @@ F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Approval.uc_approval_navi.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Approval.uc_stock_reception.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Approval.uc_stock_requests.resources
-F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.Dashboard.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.uc_assets_1.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.uc_assets_operational.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.uc_calendar.resources
@@ -88,3 +86,7 @@ F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.exe
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.pdb
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.recordItem.resources
+F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.MainDashboard.resources
+F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Accountant.Dashboard.AccountantDashboard.resources
+F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Accountant.Navigation.uc_dash_main_accountant.resources
+F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.csproj.AssemblyReference.cache

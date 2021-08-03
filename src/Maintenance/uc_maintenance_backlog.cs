@@ -14,8 +14,8 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
 {
     public partial class uc_maintenance_backlog : UserControl
     {
-        Dashboard.Dashboard inst;
-        public void setDashboardInstance(Dashboard.Dashboard inst)
+        Dashboard.MainDashboard inst;
+        public void setDashboardInstance(Dashboard.MainDashboard inst)
         {
             this.inst = inst;
         }

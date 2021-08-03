@@ -117,6 +117,18 @@
     <Compile Include="NonCurrentAsset.cs">
       <DependentUpon>ER.tt</DependentUpon>
     </Compile>
+    <Compile Include="src\Accountant\Dashboard\AccountantDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Accountant\Dashboard\AccountantDashboard.Designer.cs">
+      <DependentUpon>AccountantDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Accountant\Navigation\uc_dash_main_accountant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Accountant\Navigation\uc_dash_main_accountant.Designer.cs">
+      <DependentUpon>uc_dash_main_accountant.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Analytics\uc_analytics_intial_dash.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -171,11 +183,11 @@
     <Compile Include="src\Approval\uc_stock_requests.Designer.cs">
       <DependentUpon>uc_stock_requests.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\Dashboard\Dashboard.cs">
+    <Compile Include="src\Dashboard\MainDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\Dashboard\Dashboard.Designer.cs">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <Compile Include="src\Dashboard\MainDashboard.Designer.cs">
+      <DependentUpon>MainDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="src\Dashboard\uc_assets_1.cs">
       <SubType>UserControl</SubType>
@@ -457,6 +469,12 @@
     <Compile Include="WorkerReport.cs">
       <DependentUpon>ER.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="src\Accountant\Dashboard\AccountantDashboard.resx">
+      <DependentUpon>AccountantDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Accountant\Navigation\uc_dash_main_accountant.resx">
+      <DependentUpon>uc_dash_main_accountant.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Analytics\uc_analytics_intial_dash.resx">
       <DependentUpon>uc_analytics_intial_dash.cs</DependentUpon>
     </EmbeddedResource>
@@ -484,8 +502,8 @@
     <EmbeddedResource Include="src\Approval\uc_stock_requests.resx">
       <DependentUpon>uc_stock_requests.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\Dashboard\Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <EmbeddedResource Include="src\Dashboard\MainDashboard.resx">
+      <DependentUpon>MainDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Dashboard\uc_assets_1.resx">
       <DependentUpon>uc_assets_1.cs</DependentUpon>

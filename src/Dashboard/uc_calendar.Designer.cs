@@ -33,14 +33,15 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.lbl_uname = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblNotif2 = new System.Windows.Forms.Label();
+            this.lblNotif1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_date = new System.Windows.Forms.Label();
             this.lbl_time = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblNotif3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -66,8 +67,9 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.lblNotif3);
+            this.groupBox1.Controls.Add(this.lblNotif2);
+            this.groupBox1.Controls.Add(this.lblNotif1);
             this.groupBox1.Controls.Add(this.lbl_uname);
             this.groupBox1.Location = new System.Drawing.Point(39, 120);
             this.groupBox1.Name = "groupBox1";
@@ -75,27 +77,27 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 
-            // label3
+            // lblNotif2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.label3.Location = new System.Drawing.Point(7, 164);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(826, 32);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Preventive maintenance scheduled for 20/01/2021 has not been performed.";
+            this.lblNotif2.AutoSize = true;
+            this.lblNotif2.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotif2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblNotif2.Location = new System.Drawing.Point(11, 211);
+            this.lblNotif2.Name = "lblNotif2";
+            this.lblNotif2.Size = new System.Drawing.Size(0, 32);
+            this.lblNotif2.TabIndex = 6;
+            this.lblNotif2.Click += new System.EventHandler(this.lblNotif2_Click);
             // 
-            // label2
+            // lblNotif1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.label2.Location = new System.Drawing.Point(7, 118);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(558, 32);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "User-5432 reported a technical issue on Mach-342.";
+            this.lblNotif1.AutoSize = true;
+            this.lblNotif1.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotif1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblNotif1.Location = new System.Drawing.Point(11, 64);
+            this.lblNotif1.Name = "lblNotif1";
+            this.lblNotif1.Size = new System.Drawing.Size(0, 32);
+            this.lblNotif1.TabIndex = 6;
+            this.lblNotif1.Click += new System.EventHandler(this.lblNotif1_Click);
             // 
             // panel2
             // 
@@ -107,6 +109,16 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1313, 100);
             this.panel2.TabIndex = 8;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.salute;
+            this.pictureBox1.Location = new System.Drawing.Point(384, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(68, 80);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -145,15 +157,16 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             // 
             this.timer1.Interval = 1000;
             // 
-            // pictureBox1
+            // lblNotif3
             // 
-            this.pictureBox1.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.salute;
-            this.pictureBox1.Location = new System.Drawing.Point(384, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(68, 80);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.lblNotif3.AutoSize = true;
+            this.lblNotif3.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotif3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblNotif3.Location = new System.Drawing.Point(11, 377);
+            this.lblNotif3.Name = "lblNotif3";
+            this.lblNotif3.Size = new System.Drawing.Size(0, 32);
+            this.lblNotif3.TabIndex = 6;
+            this.lblNotif3.Click += new System.EventHandler(this.label2_Click);
             // 
             // uc_calendar
             // 
@@ -188,7 +201,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         private System.Windows.Forms.Label lbl_date;
         private System.Windows.Forms.Label lbl_time;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label lblNotif1;
+        public System.Windows.Forms.Label lblNotif2;
+        public System.Windows.Forms.Label lblNotif3;
     }
 }

@@ -47,5 +47,20 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNotif2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNotif1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

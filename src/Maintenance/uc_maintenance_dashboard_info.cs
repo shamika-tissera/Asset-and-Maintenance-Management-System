@@ -12,7 +12,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
 {
     public partial class uc_maintenance_dashboard_info : UserControl
     {
-        private static Dashboard.Dashboard inst;
+        private static Dashboard.MainDashboard inst;
         public uc_maintenance_dashboard_info()
         {
             InitializeComponent();
@@ -27,7 +27,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
         {
 
         }
-        public static void setDashboardInstance(Dashboard.Dashboard instance)
+        public static void setDashboardInstance(Dashboard.MainDashboard instance)
         {
             inst = instance;
         }

@@ -12,12 +12,12 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
 {
     public partial class uc_approval_navi : UserControl
     {
-        private Dashboard.Dashboard inst;
+        private Dashboard.MainDashboard inst;
         public uc_approval_navi()
         {
             InitializeComponent();
         }
-        public void setDashboardInstance(Dashboard.Dashboard inst)
+        public void setDashboardInstance(Dashboard.MainDashboard inst)
         {
             this.inst = inst;
         }

@@ -14,7 +14,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
 {
     public partial class uc_analytics_intial_dash : UserControl
     {
-        Dashboard.Dashboard inst;
+        Dashboard.MainDashboard inst;
         public uc_analytics_intial_dash()
         {
             InitializeComponent();
@@ -82,7 +82,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
                 return false;
             }
         }
-        public void setDashboardInstance(Dashboard.Dashboard inst)
+        public void setDashboardInstance(Dashboard.MainDashboard inst)
         {
             this.inst = inst;
         }

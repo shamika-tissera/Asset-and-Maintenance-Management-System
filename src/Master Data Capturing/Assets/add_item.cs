@@ -125,7 +125,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
                     combo_general_manu.DataSource = phoneBrands;
                     break;
                 case "Sink":
-                    combo_general_manu.DataSource = heaterBrands;
+                    combo_general_manu.DataSource = sinkBrands;
                     break;
                 case "Lighting":
                     combo_general_manu.DataSource = lightingBrands;

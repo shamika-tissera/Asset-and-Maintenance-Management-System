@@ -13,48 +13,48 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
 {
     public partial class uc_dash_main : UserControl
     {
-        private Dashboard inst;
+        protected MainDashboard inst;
         public uc_dash_main()
         {
             InitializeComponent();
         }
 
-        private void btn_assets_Click(object sender, EventArgs e)
+        protected void btn_assets_Click(object sender, EventArgs e)
         {
             this.Visible = false;
             inst.clickedAssets();
         }
 
-        private void uc_dash_main_Load(object sender, EventArgs e)
+        protected void uc_dash_main_Load(object sender, EventArgs e)
         {
 
         }
 
-        public void setDashboardInstance(Dashboard inst)
+        public void setDashboardInstance(MainDashboard inst)
         {
             this.inst = inst;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        protected void button3_Click(object sender, EventArgs e)
         {
             inst.clickedAnalytics();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        protected void button2_Click(object sender, EventArgs e)
         {
             inst.clickedMaintenance();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        protected void button1_Click(object sender, EventArgs e)
         {
             inst.clickedInventory();
         }
-        private void approval_Click(object sender, EventArgs e)
+        protected void approval_Click(object sender, EventArgs e)
         {
             inst.clickedApproval();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        protected void button4_Click(object sender, EventArgs e)
         {
             DialogResult response = MessageBox.Show("Are you sure you want to logout?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (response == DialogResult.Yes)
@@ -63,7 +63,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        protected void button5_Click(object sender, EventArgs e)
         {
             settingsParent settings =  new settingsParent();
             settings.setDashboardInstance(inst);

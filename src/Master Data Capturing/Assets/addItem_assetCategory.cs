@@ -14,7 +14,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
 {
     public partial class addItem_assetCategory : Form
     {
-        private Dashboard.Dashboard dashboardInst;
+        private Dashboard.MainDashboard dashboardInst;
         private add_item itemFormInstance;
         private settingsParent mdiParentInstance;
         public addItem_assetCategory()
@@ -39,7 +39,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.mdiParentInstance = mdiParentInstance;
         }
 
-        public addItem_assetCategory(Dashboard.Dashboard dashboardInst, add_item itemFormInstance)
+        public addItem_assetCategory(Dashboard.MainDashboard dashboardInst, add_item itemFormInstance)
             :this()
         {
             this.dashboardInst = dashboardInst;

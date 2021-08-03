@@ -12,7 +12,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
 {
     public partial class uc_assets_1 : UserControl
     {
-        private Dashboard inst;
+        private MainDashboard inst;
         public uc_assets_1()
         {
             InitializeComponent();
@@ -23,7 +23,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             inst.clickedAssetsBack();
         }
 
-        public void setDashboardInstance(Dashboard inst)
+        public void setDashboardInstance(MainDashboard inst)
         {
             this.inst = inst;
         }

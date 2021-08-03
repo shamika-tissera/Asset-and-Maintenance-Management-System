@@ -16,8 +16,8 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
 {
     public partial class uc_analytics_warranty : UserControl
     {
-        private static Dashboard.Dashboard inst;
-        public static void setDashboardInstance(Dashboard.Dashboard instance)
+        private static Dashboard.MainDashboard inst;
+        public static void setDashboardInstance(Dashboard.MainDashboard instance)
         {
             inst = instance;
         }

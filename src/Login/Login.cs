@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Asset_and_Maintenance_Management_System.src.Accountant.Dashboard;
 using Asset_and_Maintenance_Management_System.src.Dashboard;
 using Asset_and_Maintenance_Management_System.src.DatabaseHandlers;
 using Asset_and_Maintenance_Management_System.src.Worker_Interface;
@@ -77,9 +78,12 @@ namespace Asset_and_Maintenance_Management_System.src.Login
                 switch (empCat)
                 {
                     case "acc":
+                        AccountantDashboard acc = new AccountantDashboard();
+                        acc.Show();
+                        this.Visible = false;
                         break;
                     case "man":
-                        Dashboard.Dashboard dashboard = new Dashboard.Dashboard();
+                        Dashboard.MainDashboard dashboard = new Dashboard.MainDashboard();
                         dashboard.Show();
                         this.Visible = false;
                         break;

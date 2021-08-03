@@ -187,12 +187,12 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
 
         #endregion
 
-        private System.Windows.Forms.Button btn_assets;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button btnApproval;
+        protected System.Windows.Forms.Button btn_assets;
+        protected System.Windows.Forms.Button button3;
+        protected System.Windows.Forms.Button button2;
+        protected System.Windows.Forms.Button button1;
+        protected System.Windows.Forms.Button button4;
+        protected System.Windows.Forms.Button button5;
+        protected System.Windows.Forms.Button btnApproval;
     }
 }
