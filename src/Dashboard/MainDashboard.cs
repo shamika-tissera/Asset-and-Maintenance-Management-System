@@ -44,6 +44,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_maintenance_backlog1.setDashboardInstance(this);
             uc_analytics_warranty.setDashboardInstance(this);
             uc_approval_navi1.setDashboardInstance(this);
+            uc_calendar1.setDashboardInstance(this);
+            inventory_low_navi1.setDashboardInstance(this);
             //uc_maintenance_dashboard_info.setDashboardInstance(this);
             uc_dash_main1.Visible = true;
             uc_maintenance_backlog1.Visible = false;
@@ -68,6 +70,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_preventive_maintenance1.Visible = false;
             uc_corrective_maintenance1.Visible = false;
             uc_analytics_utilization1.Visible = false;
+            inventory_low_navi1.Visible = false;
+            uc_inventory_low1.Visible = false;
             uc_calendar1.BackColor = Color.FromArgb(231, 245, 254);
 
 
@@ -179,6 +183,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         }
         public void clickedInventory()
         {
+            uc_calendar1.Visible = false;
             uc_inventory_dash1.Visible = true;
             uc_calendar1.Visible = false;
             uc_dash_main1.Visible = false;
@@ -197,18 +202,37 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         }
         public void clickedInventoryLevels()
         {
+            uc_calendar1.Visible = false;
             uc_inventory_trends1.Visible = false;
             uc_inventory_levels1.Visible = true;
             uc_inventory_dash1.Visible = false;
         }
         public void clickedInventoryTrends()
         {
+            uc_calendar1.Visible = false;
             uc_inventory_levels1.Visible = false;
             uc_inventory_trends1.Visible = true;
             uc_inventory_dash1.Visible = false;
         }
+
+        public void clickedInventoryLowDashboard()
+        {
+            uc_calendar1.Visible = false;
+            uc_dash_main1.Visible = false;
+            uc_inventory_low1.Visible = true;
+            inventory_low_navi1.Visible = true;
+        }
+
+        public void clickedInventoryLowDashboardBack()
+        {
+            uc_calendar1.Visible = true;
+            uc_dash_main1.Visible = true;
+            uc_inventory_low1.Visible = false;
+            inventory_low_navi1.Visible = false;
+        }
         public void clickedMaintenance()
         {
+            uc_calendar1.Visible = false;
             uc_maintenance_dashboard_info1.Visible = true;
             uc_maintenance_navi1.resetBtnEmphasis();
             uc_maintenance_navi1.Visible = true;
@@ -230,6 +254,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
 
         public void clickedMaintenanceBacklog()
         {
+            uc_calendar1.Visible = false;
             uc_maintenance_backlog1.Visible = true;
             uc_maintenance_dashboard_info1.Visible = false;
             uc_corrective_maintenance1.Visible = false;
@@ -238,6 +263,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         }
         public void clickedMaintenanceBacklogBack()
         {
+            uc_calendar1.Visible = false;
             uc_maintenance_backlog1.Visible = false;
             uc_maintenance_dashboard_info1.Visible = true;
             uc_corrective_maintenance1.Visible = false;
@@ -255,6 +281,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         }
         public void clickedMaintenancePreventive()
         {
+            uc_maintenance_dashboard_info1.Visible = false;
+            uc_calendar1.Visible = false;
             uc_preventive_maintenance1.Visible = true;
             uc_maintenance_reccomendations1.Visible = false;
             uc_corrective_maintenance1.Visible = false;
@@ -262,6 +290,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         }
         public void clickedMaintenanceCorrective()
         {
+            uc_maintenance_dashboard_info1.Visible = false;
+            uc_calendar1.Visible = false;
             uc_corrective_maintenance1.Visible = true;
             uc_preventive_maintenance1.Visible = false;
             uc_maintenance_reccomendations1.Visible = false;
@@ -269,6 +299,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         }
         public void clickedMaintenanceReccomendations()
         {
+            uc_maintenance_dashboard_info1.Visible = false;
+            uc_calendar1.Visible = false;
             uc_maintenance_reccomendations1.Visible = true;
             uc_preventive_maintenance1.Visible = false;
             uc_corrective_maintenance1.Visible = false;
@@ -282,6 +314,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         {
             uc_approval_navi1.Visible = true;
             uc_dash_main1.Visible = false;
+            uc_calendar1.Visible = false;
             uc_stock_requests1.Visible = true;
         }
         public void clickedApprovalBack()
@@ -289,6 +322,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_approval_navi1.Visible = false;
             uc_dash_main1.Visible = true;
             uc_stock_requests1.Visible = false;
+            uc_calendar1.Visible = true;
             uc_stock_reception1.Visible = false;
         }
         public void clickedApprovalStockRequests()
@@ -380,8 +414,50 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             exit();
         }
 
+        public void clickedDashboardLabel(string label)
+        {
+            switch (label)
+            {
+                case "label-1":
+                    if (label1Contents == "inventory")
+                    {
+                        clickedInventoryLowDashboard();
+                    }
+                    else if(label1Contents == "backlog")
+                    {
+                        clickedMaintenance();
+                        clickedMaintenanceBacklog();
+                    }
+                    else if(label1Contents == "serviceDue")
+                    {
+                        //perform service action
+                    }
+                    break;
 
+                case "label-2":
+                    if (label2Contents == "backlog")
+                    {
+                        clickedMaintenance();
+                        clickedMaintenanceBacklog();
+                    }
+                    else if (label2Contents == "serviceDue")
+                    {
+                        //perform service action
+                    }
 
+                    break;
+
+                case "label-3":
+                    if (label2Contents == "serviceDue")
+                    {
+                        //perform service action
+                    }
+                    break;
+            }
+        }
+        protected string label1Contents = null;
+        protected string label2Contents = null;
+        protected string label3Contents = null;
         protected void generateNotifications()
         {
             /*
@@ -423,6 +499,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
                 }
                 if (inventory.Rows.Count > 0)
                 {
+                    label1Contents = "inventory";
                     int i = 0;
                     int n = inventory.Rows.Count;
                     uc_calendar1.lblNotif1.Text = "The following stock items need attention: \n";
@@ -438,6 +515,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
                     int n = backlog.Rows.Count;
                     if (uc_calendar1.lblNotif1.Text == "")
                     {
+                        label1Contents = "backlog";
                         uc_calendar1.lblNotif1.Text = "Maintenance dates were past due for the following assets: \n";
                         uc_calendar1.lblNotif1.Text += "        ";
                         foreach (DataRow row in backlog.Rows)
@@ -447,6 +525,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
                     }
                     else
                     {
+                        label2Contents = "backlog";
                         uc_calendar1.lblNotif2.Text = "Maintenance dates were past due for the following assets: \n";
                         uc_calendar1.lblNotif2.Text += "        ";
                         foreach (DataRow row in backlog.Rows)
@@ -459,6 +538,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
                 {
                     if (uc_calendar1.lblNotif1.Text == "")
                     {
+                        label1Contents = "serviceDue";
                         uc_calendar1.lblNotif1.Text = "Maintenance dates for the following assets are within the next 2 months: \n";
                         uc_calendar1.lblNotif1.Text += "        ";
                         foreach (DataRow row in serviceDue.Rows)
@@ -468,6 +548,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
                     }
                     else if (uc_calendar1.lblNotif2.Text == "")
                     {
+                        label2Contents = "serviceDue";
                         uc_calendar1.lblNotif2.Text = "Maintenance dates for the following assets are within the next 2 months: \n";
                         uc_calendar1.lblNotif2.Text += "        ";
                         foreach (DataRow row in serviceDue.Rows)
@@ -477,6 +558,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
                     }
                     else
                     {
+                        label3Contents = "serviceDue";
                         uc_calendar1.lblNotif3.Text = "Maintenance dates for the following assets are within the next 2 months: \n";
                         uc_calendar1.lblNotif3.Text += "        ";
                         foreach (DataRow row in serviceDue.Rows)

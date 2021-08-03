@@ -12,6 +12,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
 {
     public partial class uc_calendar : UserControl
     {
+        private MainDashboard inst;
         public uc_calendar()
         {
             InitializeComponent();
@@ -22,7 +23,10 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             delay.Start();
             this.BackColor = Color.FromArgb(231, 245, 254);
         }
-
+        public void setDashboardInstance(MainDashboard inst)
+        {
+            this.inst = inst;
+        }
         private void setTime(object sender, System.Timers.ElapsedEventArgs e)
         {
             try
@@ -55,12 +59,17 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
 
         private void lblNotif2_Click(object sender, EventArgs e)
         {
-
+            inst.clickedDashboardLabel("label-2");
         }
 
         private void lblNotif1_Click(object sender, EventArgs e)
         {
+            inst.clickedDashboardLabel("label-1");
+        }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+            inst.clickedDashboardLabel("label-3");
         }
     }
 }

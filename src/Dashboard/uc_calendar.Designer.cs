@@ -33,6 +33,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.lbl_uname = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblNotif3 = new System.Windows.Forms.Label();
             this.lblNotif2 = new System.Windows.Forms.Label();
             this.lblNotif1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -41,7 +42,6 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.lbl_date = new System.Windows.Forms.Label();
             this.lbl_time = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.lblNotif3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -76,6 +76,17 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.groupBox1.Size = new System.Drawing.Size(962, 557);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
+            // 
+            // lblNotif3
+            // 
+            this.lblNotif3.AutoSize = true;
+            this.lblNotif3.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotif3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblNotif3.Location = new System.Drawing.Point(11, 377);
+            this.lblNotif3.Name = "lblNotif3";
+            this.lblNotif3.Size = new System.Drawing.Size(0, 32);
+            this.lblNotif3.TabIndex = 6;
+            this.lblNotif3.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblNotif2
             // 
@@ -156,17 +167,6 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             // timer1
             // 
             this.timer1.Interval = 1000;
-            // 
-            // lblNotif3
-            // 
-            this.lblNotif3.AutoSize = true;
-            this.lblNotif3.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNotif3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblNotif3.Location = new System.Drawing.Point(11, 377);
-            this.lblNotif3.Name = "lblNotif3";
-            this.lblNotif3.Size = new System.Drawing.Size(0, 32);
-            this.lblNotif3.TabIndex = 6;
-            this.lblNotif3.Click += new System.EventHandler(this.label2_Click);
             // 
             // uc_calendar
             // 

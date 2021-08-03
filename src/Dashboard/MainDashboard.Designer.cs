@@ -63,6 +63,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.uc_asset_browse1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_asset_browse();
             this.uc_inventory_trends1 = new Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_trends();
             this.uc_analytics_utilization1 = new Asset_and_Maintenance_Management_System.src.Analytics.uc_analytics_utilization();
+            this.inventory_low_navi1 = new Asset_and_Maintenance_Management_System.src.Inventory.inventory_low_navi();
+            this.uc_inventory_low1 = new Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_low();
             this.navPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -73,6 +75,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             // navPanel
             // 
             this.navPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.navPanel.Controls.Add(this.inventory_low_navi1);
             this.navPanel.Controls.Add(this.uc_approval_navi1);
             this.navPanel.Controls.Add(this.pnl_highlight);
             this.navPanel.Controls.Add(this.elementHost1);
@@ -360,12 +363,29 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.uc_analytics_utilization1.Size = new System.Drawing.Size(1356, 826);
             this.uc_analytics_utilization1.TabIndex = 22;
             // 
+            // inventory_low_navi1
+            // 
+            this.inventory_low_navi1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.inventory_low_navi1.Location = new System.Drawing.Point(17, 204);
+            this.inventory_low_navi1.Name = "inventory_low_navi1";
+            this.inventory_low_navi1.Size = new System.Drawing.Size(273, 616);
+            this.inventory_low_navi1.TabIndex = 16;
+            // 
+            // uc_inventory_low1
+            // 
+            this.uc_inventory_low1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.uc_inventory_low1.Location = new System.Drawing.Point(311, 0);
+            this.uc_inventory_low1.Name = "uc_inventory_low1";
+            this.uc_inventory_low1.Size = new System.Drawing.Size(1356, 826);
+            this.uc_inventory_low1.TabIndex = 23;
+            // 
             // MainDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1520, 826);
+            this.Controls.Add(this.uc_inventory_low1);
             this.Controls.Add(this.pic_close);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.navPanel);
@@ -437,5 +457,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         protected Maintenance.uc_preventive_maintenance uc_preventive_maintenance1;
         protected Maintenance.uc_corrective_maintenance uc_corrective_maintenance1;
         protected Analytics.uc_analytics_utilization uc_analytics_utilization1;
+        private Inventory.inventory_low_navi inventory_low_navi1;
+        private Inventory.uc_inventory_low uc_inventory_low1;
     }
 }

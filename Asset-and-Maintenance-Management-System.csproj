@@ -215,6 +215,12 @@
     </Compile>
     <Compile Include="src\DatabaseHandlers\DBConnection.cs" />
     <Compile Include="src\Email\Email.cs" />
+    <Compile Include="src\Inventory\inventory_low_navi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Inventory\inventory_low_navi.Designer.cs">
+      <DependentUpon>inventory_low_navi.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Inventory\uc_inventory_dash.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -226,6 +232,12 @@
     </Compile>
     <Compile Include="src\Inventory\uc_inventory_levels.Designer.cs">
       <DependentUpon>uc_inventory_levels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Inventory\uc_inventory_low.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Inventory\uc_inventory_low.Designer.cs">
+      <DependentUpon>uc_inventory_low.cs</DependentUpon>
     </Compile>
     <Compile Include="src\Inventory\uc_inventory_navi.cs">
       <SubType>UserControl</SubType>
@@ -517,11 +529,17 @@
     <EmbeddedResource Include="src\Dashboard\uc_dash_main.resx">
       <DependentUpon>uc_dash_main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\Inventory\inventory_low_navi.resx">
+      <DependentUpon>inventory_low_navi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Inventory\uc_inventory_dash.resx">
       <DependentUpon>uc_inventory_dash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Inventory\uc_inventory_levels.resx">
       <DependentUpon>uc_inventory_levels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Inventory\uc_inventory_low.resx">
+      <DependentUpon>uc_inventory_low.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Inventory\uc_inventory_navi.resx">
       <DependentUpon>uc_inventory_navi.cs</DependentUpon>

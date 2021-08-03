@@ -55,7 +55,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
             this.label2.Location = new System.Drawing.Point(208, 388);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 32);
@@ -66,7 +66,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
             this.label1.Location = new System.Drawing.Point(761, 120);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 64);
@@ -77,7 +77,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             // 
             this.lbl_uname.AutoSize = true;
             this.lbl_uname.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_uname.ForeColor = System.Drawing.Color.Transparent;
+            this.lbl_uname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
             this.lbl_uname.Location = new System.Drawing.Point(239, 139);
             this.lbl_uname.Name = "lbl_uname";
             this.lbl_uname.Size = new System.Drawing.Size(105, 32);
@@ -173,7 +173,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
             this.label3.Location = new System.Drawing.Point(687, 392);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(227, 32);
@@ -185,7 +185,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
             this.label4.Location = new System.Drawing.Point(181, 627);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(163, 32);
@@ -216,7 +216,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
