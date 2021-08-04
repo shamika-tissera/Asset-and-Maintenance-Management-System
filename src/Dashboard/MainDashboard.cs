@@ -72,6 +72,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_analytics_utilization1.Visible = false;
             inventory_low_navi1.Visible = false;
             uc_inventory_low1.Visible = false;
+            uc_employee_requests1.Visible = false;
             uc_calendar1.BackColor = Color.FromArgb(231, 245, 254);
 
 
@@ -327,6 +328,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         }
         public void clickedApprovalStockRequests()
         {
+            uc_stock_requests1.refreshData();
             uc_stock_requests1.Visible = true;
             uc_stock_reception1.Visible = false;
         }

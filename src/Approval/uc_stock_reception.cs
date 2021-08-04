@@ -21,7 +21,7 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
         }
         private void populateDataGridView()
         {
-            string query = "select inventoryName as 'Stock Name', orderedQuantity as 'Ordered Quantity', supplierName as 'Supplier Name', (orderedQuantity * CurrentCost) as 'Estimated Cost (Rs.)' from InventoryOrder inner join Supplier on InventoryOrder.supplierID = Supplier.supplierID inner join InventoryItem on InventoryItem.inventoryCode = InventoryOrder.inventoryCode where received = 'false';";
+            string query = "select InventoryOrder.inventoryCode as 'Stock Code', inventoryName as 'Stock Name', orderedQuantity as 'Ordered Quantity', supplierName as 'Supplier Name', (orderedQuantity * CurrentCost) as 'Estimated Cost (Rs.)' from InventoryOrder inner join Supplier on InventoryOrder.supplierID = Supplier.supplierID inner join InventoryItem on InventoryItem.inventoryCode = InventoryOrder.inventoryCode where received = 'false';";
             using (SqlConnection connection = DBConnection.establishConnection())
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
@@ -47,21 +47,22 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string stockName;
+            string inventoryCode;
             int orderedQuantity;
-            string supplierName;
             bool isChecked = false;
 
             foreach(DataGridViewRow row in dataGridViewMain.Rows)
             {
                 try
                 {
-                    if(row.Cells["Received"].Value.ToString() == "true")
+                    string a = row.Cells["Received"].Value.ToString();
+                    int b = dataGridViewMain.Rows.Count;
+                    if (row.Cells["Received"].Value.ToString() == "True")
                     {
-                        stockName = row.Cells["Stock Name"].Value.ToString();
+                        inventoryCode = row.Cells["Stock Code"].Value.ToString();
                         orderedQuantity = int.Parse(row.Cells["Ordered Quantity"].Value.ToString());
-                        supplierName = row.Cells["Supplier Name"].Value.ToString();
-                        string query = "UPDATE InventoryOrder SET received = 'TRUE' WHERE stockType = '" + stockName + "' AND supplierName = '" + supplierName + "' AND units = '" + orderedQuantity + "'";
+                        //supplierName = row.Cells["Supplier Name"].Value.ToString().Replace("\r\n", " ").Trim();
+                        string query = "UPDATE InventoryOrder SET received = 'TRUE' WHERE inventoryCode = '" + inventoryCode + "' AND orderedQuantity = '" + orderedQuantity + "'";
                         isChecked = true;
                         using (SqlConnection connection = DBConnection.establishConnection())
                         {
@@ -79,16 +80,17 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
                         }
                         dataGridViewMain.Rows.RemoveAt(row.Index);
                     }
-                    if (!isChecked)
-                    {
-                        MessageBox.Show("Please select an item.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                    }
                 }
                 catch (NullReferenceException ex)
                 {
                     TextWriter.writeContent("logs.txt", ex.ToString());
+                    MessageBox.Show("lol");
                     break;
                 }
+            }
+            if (!isChecked)
+            {
+                MessageBox.Show("Please select an item.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
         }
     }

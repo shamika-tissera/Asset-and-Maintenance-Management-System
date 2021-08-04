@@ -171,6 +171,12 @@
     <Compile Include="src\Approval\uc_approval_navi.Designer.cs">
       <DependentUpon>uc_approval_navi.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Approval\uc_employee_requests.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Approval\uc_employee_requests.Designer.cs">
+      <DependentUpon>uc_employee_requests.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Approval\uc_stock_reception.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -507,6 +513,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Approval\uc_approval_navi.resx">
       <DependentUpon>uc_approval_navi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Approval\uc_employee_requests.resx">
+      <DependentUpon>uc_employee_requests.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Approval\uc_stock_reception.resx">
       <DependentUpon>uc_stock_reception.cs</DependentUpon>
