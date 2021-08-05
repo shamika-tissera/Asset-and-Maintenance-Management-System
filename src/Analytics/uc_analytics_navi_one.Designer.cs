@@ -120,6 +120,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             this.Controls.Add(this.btn_utilization);
             this.Name = "uc_analytics_navi_one";
             this.Size = new System.Drawing.Size(267, 616);
+            this.Load += new System.EventHandler(this.uc_analytics_navi_one_Load);
             this.ResumeLayout(false);
 
         }

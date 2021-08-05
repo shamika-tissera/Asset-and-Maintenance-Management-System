@@ -21,7 +21,7 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
         }
         private void populateDataGridView()
         {
-            string query = "select  InventoryOrder.inventoryCode as 'Stock Code', inventoryName as 'Stock Name', orderedQuantity as 'Ordered Quantity', supplierName as 'Supplier Name', (orderedQuantity * CurrentCost) as 'Estimated Cost (Rs.)' from InventoryOrder inner join Supplier on InventoryOrder.supplierID = Supplier.supplierID inner join InventoryItem on InventoryItem.inventoryCode = InventoryOrder.inventoryCode where received = 0;";
+            string query = "select  InventoryOrder.inventoryCode as 'Stock Code', inventoryName as 'Stock Name', orderedQuantity as 'Ordered Quantity', supplierName as 'Supplier Name', (orderedQuantity * CurrentCost) as 'Estimated Cost (Rs.)', responsiblePerson as 'In charge', plant as 'Plant' from InventoryOrder inner join Supplier on InventoryOrder.supplierID = Supplier.supplierID inner join InventoryItem on InventoryItem.inventoryCode = InventoryOrder.inventoryCode where received = 0;";
             using (SqlConnection connection = DBConnection.establishConnection())
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
@@ -55,9 +55,16 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
         private void button1_Click(object sender, EventArgs e)
         {
             StockRequest stockRequest = new StockRequest();
+            stockRequest.setParentInstance(this);
             stockRequest.Show();
         }
 
+        public void clickedRequestSubmit()
+        {
+            populateDataGridView();
+            dataGridViewMain.Update();
+            dataGridViewMain.Refresh();
+        }
         public void refreshData()
         {
             dataGridViewMain.Refresh();

@@ -29,77 +29,14 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_back = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.btnConfig = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.btnAddItem = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox1.Location = new System.Drawing.Point(0, 126);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(264, 180);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Fascilities";
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.button7.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.building__Custom_;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.Location = new System.Drawing.Point(3, 67);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(252, 40);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "Buildings";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.button6.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.land__Custom_;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.Location = new System.Drawing.Point(2, 21);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(253, 40);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "Sites";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.groupBox1);
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox2.Location = new System.Drawing.Point(3, 307);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(264, 180);
-            this.groupBox2.TabIndex = 3;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Assets";
             // 
             // btn_back
             // 
-            this.btn_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.btn_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
             this.btn_back.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_back.FlatAppearance.BorderSize = 0;
             this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -114,66 +51,59 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.btn_back.UseVisualStyleBackColor = false;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.button8.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.operationalAssets__Custom___1_;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.Location = new System.Drawing.Point(14, 144);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(252, 48);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "Operational";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
             // btnConfig
             // 
-            this.btnConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.btnConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
             this.btnConfig.FlatAppearance.BorderSize = 0;
             this.btnConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfig.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfig.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnConfig.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.configAssets__Custom___3_;
             this.btnConfig.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnConfig.Location = new System.Drawing.Point(14, 77);
+            this.btnConfig.Location = new System.Drawing.Point(10, 85);
             this.btnConfig.Name = "btnConfig";
             this.btnConfig.Size = new System.Drawing.Size(253, 49);
             this.btnConfig.TabIndex = 0;
-            this.btnConfig.Text = "Configurational";
+            this.btnConfig.Text = "&View";
             this.btnConfig.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConfig.UseVisualStyleBackColor = false;
             this.btnConfig.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // btnAddItem
+            // 
+            this.btnAddItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.btnAddItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddItem.FlatAppearance.BorderSize = 0;
+            this.btnAddItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddItem.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnAddItem.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.addItem__Custom_;
+            this.btnAddItem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddItem.Location = new System.Drawing.Point(3, 562);
+            this.btnAddItem.Name = "btnAddItem";
+            this.btnAddItem.Size = new System.Drawing.Size(267, 40);
+            this.btnAddItem.TabIndex = 9;
+            this.btnAddItem.Text = "&Add item";
+            this.btnAddItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddItem.UseVisualStyleBackColor = false;
             // 
             // uc_assets_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
-            this.Controls.Add(this.button8);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.Controls.Add(this.btnAddItem);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btnConfig);
-            this.Controls.Add(this.groupBox2);
             this.Name = "uc_assets_1";
             this.Size = new System.Drawing.Size(273, 616);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button btnConfig;
         private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Button btnAddItem;
     }
 }

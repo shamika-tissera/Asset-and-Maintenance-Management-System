@@ -192,15 +192,15 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         }
 
         #endregion
-        private System.Windows.Forms.Label lbl_uname;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbl_date;
-        private System.Windows.Forms.Label lbl_time;
-        private System.Windows.Forms.Timer timer1;
+        protected System.Windows.Forms.Label lbl_uname;
+        protected System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        protected System.Windows.Forms.GroupBox groupBox1;
+        protected System.Windows.Forms.Panel panel2;
+        protected System.Windows.Forms.PictureBox pictureBox1;
+        protected System.Windows.Forms.Label label1;
+        protected System.Windows.Forms.Label lbl_date;
+        protected System.Windows.Forms.Label lbl_time;
+        protected System.Windows.Forms.Timer timer1;
         public System.Windows.Forms.Label lblNotif1;
         public System.Windows.Forms.Label lblNotif2;
         public System.Windows.Forms.Label lblNotif3;

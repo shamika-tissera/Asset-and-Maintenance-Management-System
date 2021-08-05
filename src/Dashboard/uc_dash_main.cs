@@ -54,6 +54,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             inst.clickedApproval();
         }
 
+        
         protected void button4_Click(object sender, EventArgs e)
         {
             DialogResult response = MessageBox.Show("Are you sure you want to logout?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);

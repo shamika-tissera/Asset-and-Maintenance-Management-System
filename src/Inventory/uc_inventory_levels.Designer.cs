@@ -57,7 +57,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.chartInventoryLevels);
             this.Name = "uc_inventory_levels";
             this.Size = new System.Drawing.Size(1356, 826);

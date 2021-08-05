@@ -37,7 +37,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Aqua;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.dataGridViewCorrectiveMaintenance);
             this.panel1.Location = new System.Drawing.Point(59, 60);
             this.panel1.Name = "panel1";

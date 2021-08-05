@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Org.BouncyCastle.Asn1.Crmf;
 
 namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets
 {
@@ -34,7 +35,36 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         }
         private void uc_asset_browse_Load(object sender, EventArgs e)
         {
+            DataTable data;
+            string value = txtSearch.Text.Trim();
+            string query =
+                "select assetType, lifetime, costOfPurchase, depreciationMethod, depreciationRate, purchaseDate, manufacturer, serviceInterval, warranty from NonCurrentAsset where asset_id like '%" + value + "%' OR plant like '%" + value + "%' OR depreciationMethod like '%" + value + "%' OR serialNumber like '%" + value + "%' or condition like '%" + value + "%' or state like '%" + value + "%' or assetType like '%" + value + "%' or warrantyCode like '%" + value + "%';";
+            using (SqlConnection connection = DBConnection.establishConnection())
+            {
+                using (SqlDataAdapter adapter = new SqlDataAdapter(query, connection))
+                {
+                    data = new DataTable();
+                    adapter.Fill(data);
+                }
+                data.Columns.Add("CarryingValue", typeof(string));
+                calculateCarryingValue(ref data);
 
+                //delete all unneccessary columns from the DataTable
+                data.Columns.Remove("costOfPurchase");
+                data.Columns.Remove("depreciationMethod");
+                data.Columns.Remove("depreciationRate");
+                data.Columns.Remove("purchaseDate");
+
+                //populate DataGridView
+                dataGridViewAssets.DataSource = data;
+
+                //resize DataGridView
+                for (int i = 0; i < data.Columns.Count; i++)
+                {
+                    dataGridViewAssets.Columns[i].Width = 171;
+                }
+            }
+            table = data;
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -34,7 +34,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.dataGridViewAssets = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtWarrantyCode = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.lbl_uname = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAssets)).BeginInit();
             this.panel1.SuspendLayout();
@@ -44,7 +44,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             this.dataGridViewAssets.AllowUserToAddRows = false;
             this.dataGridViewAssets.AllowUserToDeleteRows = false;
-            this.dataGridViewAssets.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
+            this.dataGridViewAssets.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
             this.dataGridViewAssets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
@@ -66,9 +66,9 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.txtWarrantyCode);
+            this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.lbl_uname);
             this.panel1.Location = new System.Drawing.Point(62, 79);
             this.panel1.Name = "panel1";
@@ -77,7 +77,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
@@ -88,20 +88,21 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txtWarrantyCode
+            // txtSearch
             // 
-            this.txtWarrantyCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWarrantyCode.Location = new System.Drawing.Point(738, 39);
-            this.txtWarrantyCode.MaxLength = 100;
-            this.txtWarrantyCode.Name = "txtWarrantyCode";
-            this.txtWarrantyCode.Size = new System.Drawing.Size(232, 30);
-            this.txtWarrantyCode.TabIndex = 4;
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(738, 39);
+            this.txtSearch.MaxLength = 100;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(232, 30);
+            this.txtSearch.TabIndex = 4;
+            this.txtSearch.TextChanged += new System.EventHandler(this.uc_asset_browse_Load);
             // 
             // lbl_uname
             // 
             this.lbl_uname.AutoSize = true;
             this.lbl_uname.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_uname.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_uname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
             this.lbl_uname.Location = new System.Drawing.Point(653, 37);
             this.lbl_uname.Name = "lbl_uname";
             this.lbl_uname.Size = new System.Drawing.Size(80, 28);
@@ -112,7 +113,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
             this.Controls.Add(this.dataGridViewAssets);
             this.Controls.Add(this.panel1);
             this.Name = "uc_asset_browse";
@@ -130,7 +131,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private System.Windows.Forms.DataGridView dataGridViewAssets;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_uname;
-        private System.Windows.Forms.TextBox txtWarrantyCode;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button button1;
     }
 }

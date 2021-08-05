@@ -38,6 +38,7 @@ F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Analytics.uc_profit_on_disposal.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Approval.StockRequest.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Approval.uc_approval_navi.resources
+F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Approval.uc_employee_requests.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Approval.uc_stock_reception.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Approval.uc_stock_requests.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.MainDashboard.resources
@@ -45,8 +46,10 @@ F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.uc_assets_operational.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.uc_calendar.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Dashboard.uc_dash_main.resources
+F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Inventory.inventory_low_navi.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_dash.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_levels.resources
+F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_low.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_navi.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_trends.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Login.Login.resources
@@ -89,6 +92,6 @@ F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.csproj.CopyComplete
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.exe
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.pdb
-F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Inventory.inventory_low_navi.resources
-F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_low.resources
-F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Approval.uc_employee_requests.resources
+F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.csproj.AssemblyReference.cache
+F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Accountant.Dashboard.uc_calendar_accountant.resources
+F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Inventory.AddInventoryItemType.resources

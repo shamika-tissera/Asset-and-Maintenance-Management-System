@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Asset_and_Maintenance_Management_System.src.Approval;
 
 namespace Asset_and_Maintenance_Management_System.src.Inventory
 {
@@ -16,6 +17,9 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
         public uc_inventory_navi()
         {
             InitializeComponent();
+            button1.BackColor = Color.FromArgb(231, 245, 254);
+            button2.BackColor = Color.FromArgb(231, 245, 254);
+            button6.BackColor = Color.FromArgb(231, 245, 254);
         }
         public void setDashboardInstance(Dashboard.MainDashboard inst)
         {
@@ -28,10 +32,9 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
         private bool isButtonEmphasized = false;
         public void resetBtnEmphasis()
         {
-            button1.BackColor = Color.FromArgb(31, 46, 76);
-            button2.BackColor = Color.FromArgb(31, 46, 76);
-            button3.BackColor = Color.FromArgb(31, 46, 76);
-            button6.BackColor = Color.FromArgb(31, 46, 76);
+            button1.BackColor = Color.FromArgb(231, 245, 254);
+            button2.BackColor = Color.FromArgb(231, 245, 254);
+            button6.BackColor = Color.FromArgb(231, 245, 254);
             isButtonEmphasized = false;
         }
         private void button1_Click(object sender, EventArgs e)
@@ -41,7 +44,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             {
                 resetBtnEmphasis();
             }
-            button1.BackColor = Color.FromArgb(61, 70, 89);
+            button1.BackColor = Color.FromArgb(183, 194, 201);
             isButtonEmphasized = true;
         }
 
@@ -51,7 +54,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             {
                 resetBtnEmphasis();
             }
-            button6.BackColor = Color.FromArgb(61, 70, 89);
+            button6.BackColor = Color.FromArgb(183, 194, 201);
             isButtonEmphasized = true;
             inst.clickedInventoryLevels();
         }
@@ -62,18 +65,21 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             {
                 resetBtnEmphasis();
             }
-            button2.BackColor = Color.FromArgb(61, 70, 89);
-            isButtonEmphasized = true;
+            //button2.BackColor = Color.FromArgb(61, 70, 89);
+            //isButtonEmphasized = true;
+
+            StockRequest request = new StockRequest();
+            request.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (isButtonEmphasized)
-            {
-                resetBtnEmphasis();
-            }
-            button3.BackColor = Color.FromArgb(61, 70, 89);
-            isButtonEmphasized = true;
-        }
+        //private void button3_Click(object sender, EventArgs e)
+        //{
+        //    if (isButtonEmphasized)
+        //    {
+        //        resetBtnEmphasis();
+        //    }
+        //    button3.BackColor = Color.FromArgb(61, 70, 89);
+        //    isButtonEmphasized = true;
+        //}
     }
 }

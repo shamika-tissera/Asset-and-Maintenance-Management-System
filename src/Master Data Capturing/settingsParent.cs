@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Asset_and_Maintenance_Management_System.src.Inventory;
 
 namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
 {
@@ -414,7 +415,10 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
 
         private void btn_backlog_Click(object sender, EventArgs e)
         {
-            
+            AddInventoryItemType inventory = new AddInventoryItemType();
+            inventory.MdiParent = this;
+            inventory.Show();
+            inventory.BringToFront();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

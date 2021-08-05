@@ -36,7 +36,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Aqua;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.dataGridViewPreventiveMaintenance);
             this.panel1.Location = new System.Drawing.Point(67, 66);
             this.panel1.Name = "panel1";

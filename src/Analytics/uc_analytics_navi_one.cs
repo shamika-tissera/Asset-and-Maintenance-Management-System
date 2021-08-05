@@ -38,9 +38,9 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
         }
         public void resetButtonHighlights()
         {
-            btn_warranty.BackColor = Color.FromArgb(31, 46, 76);
-            btn_disposal.BackColor = Color.FromArgb(31, 46, 76);
-            btn_utilization.BackColor = Color.FromArgb(31, 46, 76);
+            btn_warranty.BackColor = Color.FromArgb(231, 245, 254);
+            btn_disposal.BackColor = Color.FromArgb(231, 245, 254);
+            btn_utilization.BackColor = Color.FromArgb(231, 245, 254);
         }
 
         private void btn_disposal_Click(object sender, EventArgs e)
@@ -55,6 +55,11 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             resetButtonHighlights();
             btn_utilization.BackColor = Color.FromArgb(61, 70, 89);
             inst.clickedAnalyticsUtilization();
+        }
+
+        private void uc_analytics_navi_one_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

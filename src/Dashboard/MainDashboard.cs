@@ -98,14 +98,14 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         {
             this.analyticsNaviInstance = analyticsNaviInstance;
         }
-        public void clickedAssets()
+        public virtual void clickedAssets()
         {
             uc_assets_11.Visible = true;
             dashboard_info1.Visible = true;
             uc_calendar1.Visible = false;
         }
 
-        public void clickedAnalytics()
+        public virtual void clickedAnalytics()
         {
             //analyticsNaviInstance.resetButtonHighlights();
             uc_analytics_navi_one1.Visible = true;
@@ -160,15 +160,15 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             dashboard_info1.Visible = false;
             uc_dash_main1.Visible = true;
             uc_calendar1.Visible = true;
-            //uc_asset_browse1.Visible = true;
+            uc_asset_browse1.Visible = false;
         }
 
         public void clickedAssetsConfig()
         {
-            uc_assets_11.Visible = false;
+            uc_assets_11.Visible = true;
             dashboard_info1.Visible = false;
             uc_navPanel_assets1.resetBtnEmphasis();
-            uc_navPanel_assets1.Visible = true;
+            //uc_navPanel_assets1.Visible = true;
             uc_asset_browse1.Visible = true;
             uc_asset_browse1.setAssetCategory("config");
             //uc_navPanel_assets1.BringToFront();
@@ -182,7 +182,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_asset_browse1.Visible = false;
             dashboard_info1.Visible = true;
         }
-        public void clickedInventory()
+        public virtual void clickedInventory()
         {
             uc_calendar1.Visible = false;
             uc_inventory_dash1.Visible = true;
@@ -231,7 +231,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_inventory_low1.Visible = false;
             inventory_low_navi1.Visible = false;
         }
-        public void clickedMaintenance()
+        public virtual void clickedMaintenance()
         {
             uc_calendar1.Visible = false;
             uc_maintenance_dashboard_info1.Visible = true;
@@ -317,6 +317,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_dash_main1.Visible = false;
             uc_calendar1.Visible = false;
             uc_stock_requests1.Visible = true;
+            uc_employee_requests1.Visible = false;
+            uc_stock_requests1.clickedRequestSubmit();
         }
         public void clickedApprovalBack()
         {
@@ -325,21 +327,40 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_stock_requests1.Visible = false;
             uc_calendar1.Visible = true;
             uc_stock_reception1.Visible = false;
+            uc_employee_requests1.Visible = false;
         }
         public void clickedApprovalStockRequests()
         {
             uc_stock_requests1.refreshData();
             uc_stock_requests1.Visible = true;
             uc_stock_reception1.Visible = false;
+            uc_employee_requests1.Visible = false;
         }
         public void clickedApprovalStockReception()
         {
             uc_stock_reception1.Visible = true;
             uc_stock_requests1.Visible = false;
+            uc_employee_requests1.Visible = false;
+        }
+
+        public void clickedApprovalEmployeeRequests()
+        {
+            uc_stock_requests1.Visible = false;
+            uc_stock_reception1.Visible = false;
+            uc_employee_requests1.Visible = true;
+        }
+        private Login.Login login;
+
+        public void setLoginInstance(Login.Login login, string uname)
+        {
+            this.login = login;
+            lbl_uname.Text = uname;
         }
         public void logout()
         {
+            login.resetContent();
             this.Dispose();
+            login.Show();
         }
         public void exit()
         {

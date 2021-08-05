@@ -17,7 +17,8 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
         {
             InitializeComponent();
             uc_dash_main_accountant1.Visible = true;
-
+            uc_calendar1.Visible = false;
+            uc_calendar_accountant1.Visible = true;
             uc_dash_main_accountant1.setDashboardInstance(this);
         }
         public override void clickedAssetsBack()
@@ -25,7 +26,7 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
             uc_assets_11.Visible = false;
             dashboard_info1.Visible = false;
             uc_dash_main_accountant1.Visible = true;
-            uc_calendar1.Visible = true;
+            uc_calendar_accountant1.Visible = true;
             //uc_asset_browse1.Visible = true;
         }
         public override void clickedAnalyticsBack()
@@ -33,7 +34,7 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
             uc_analytics_navi_one1.Visible = false;
             uc_dash_main_accountant1.Visible = true;
             uc_analytics_intial_dash2.Visible = false;
-            uc_calendar1.Visible = true;
+            uc_calendar_accountant1.Visible = true;
             uc_analytics_warranty1.Visible = false;
             uc_profit_on_disposal1.Visible = false;
             uc_analytics_utilization1.Visible = false;
@@ -45,7 +46,7 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
             uc_maintenance_backlog1.Visible = false;
             uc_assets_11.Visible = false;
             uc_maintenance_reccomendations1.Visible = false;
-            uc_calendar1.Visible = true;
+            uc_calendar_accountant1.Visible = true;
             uc_dash_main_accountant1.Visible = true;
             uc_preventive_maintenance1.Visible = false;
             uc_corrective_maintenance1.Visible = false;
@@ -57,8 +58,44 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
             uc_assets_11.Visible = false;
             uc_inventory_trends1.Visible = false;
             uc_inventory_levels1.Visible = false;
-            uc_calendar1.Visible = true;
+            uc_calendar_accountant1.Visible = true;
             uc_dash_main_accountant1.Visible = true;
+        }
+
+        public override void clickedAssets()
+        {
+            uc_assets_11.Visible = true;
+            dashboard_info1.Visible = true;
+            uc_calendar_accountant1.Visible = false;
+        }
+
+        public override void clickedAnalytics()
+        {
+            //analyticsNaviInstance.resetButtonHighlights();
+            uc_analytics_navi_one1.Visible = true;
+            uc_dash_main1.Visible = false;
+            uc_analytics_intial_dash2.Visible = true;
+            uc_calendar_accountant1.Visible = false;
+            uc_analytics_utilization1.Visible = false;
+        }
+
+        public override void clickedInventory()
+        {
+            uc_calendar1.Visible = false;
+            uc_inventory_dash1.Visible = true;
+            uc_calendar_accountant1.Visible = false;
+            uc_dash_main1.Visible = false;
+            uc_inventory_navi1.resetBtnEmphasis();
+            uc_inventory_navi1.Visible = true;
+        }
+        public override void clickedMaintenance()
+        {
+            uc_calendar1.Visible = false;
+            uc_maintenance_dashboard_info1.Visible = true;
+            uc_maintenance_navi1.resetBtnEmphasis();
+            uc_maintenance_navi1.Visible = true;
+            uc_calendar_accountant1.Visible = false;
+            uc_dash_main1.Visible = false;
         }
     }
 }

@@ -58,10 +58,10 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
         private bool isButtonEmphasized = false;
         public void resetBtnEmphasis()
         {
-            btn_backlog.BackColor = Color.FromArgb(31, 46, 76);
-            btn_preventive.BackColor = Color.FromArgb(31, 46, 76);
-            btn_corrective.BackColor = Color.FromArgb(31, 46, 76);
-            btn_recommendations.BackColor = Color.FromArgb(31, 46, 76);
+            btn_backlog.BackColor = Color.FromArgb(231, 245, 254);
+            btn_preventive.BackColor = Color.FromArgb(231, 245, 254);
+            btn_corrective.BackColor = Color.FromArgb(231, 245, 254);
+            btn_recommendations.BackColor = Color.FromArgb(231, 245, 254);
             isButtonEmphasized = false;
         }
         private void btn_backlog_Click(object sender, EventArgs e)

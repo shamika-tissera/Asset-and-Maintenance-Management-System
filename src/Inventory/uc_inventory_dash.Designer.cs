@@ -29,10 +29,6 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,20 +44,18 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(218, 91);
+            this.panel1.Location = new System.Drawing.Point(218, 195);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(127, 101);
             this.panel1.TabIndex = 7;
@@ -81,8 +75,8 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(76, 125);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
+            this.label1.Location = new System.Drawing.Point(76, 229);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 32);
             this.label1.TabIndex = 5;
@@ -92,7 +86,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(591, 91);
+            this.panel2.Location = new System.Drawing.Point(591, 195);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(127, 101);
             this.panel2.TabIndex = 12;
@@ -112,8 +106,8 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(468, 125);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
+            this.label4.Location = new System.Drawing.Point(468, 229);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(117, 32);
             this.label4.TabIndex = 11;
@@ -134,7 +128,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(955, 91);
+            this.panel3.Location = new System.Drawing.Point(955, 195);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(127, 101);
             this.panel3.TabIndex = 14;
@@ -143,8 +137,8 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(877, 125);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
+            this.label6.Location = new System.Drawing.Point(877, 229);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 32);
             this.label6.TabIndex = 13;
@@ -154,7 +148,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
             this.panel4.Controls.Add(this.label7);
-            this.panel4.Location = new System.Drawing.Point(218, 269);
+            this.panel4.Location = new System.Drawing.Point(218, 509);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(127, 101);
             this.panel4.TabIndex = 16;
@@ -174,8 +168,8 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(83, 301);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
+            this.label8.Location = new System.Drawing.Point(83, 541);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(129, 32);
             this.label8.TabIndex = 15;
@@ -185,7 +179,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
             this.panel5.Controls.Add(this.label9);
-            this.panel5.Location = new System.Drawing.Point(591, 269);
+            this.panel5.Location = new System.Drawing.Point(591, 509);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(127, 101);
             this.panel5.TabIndex = 18;
@@ -205,42 +199,18 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(429, 303);
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
+            this.label10.Location = new System.Drawing.Point(429, 543);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(156, 32);
             this.label10.TabIndex = 17;
             this.label10.Text = "Out of Stock";
             // 
-            // chart
-            // 
-            this.chart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
-            chartArea1.Name = "ChartArea1";
-            this.chart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart.Legends.Add(legend1);
-            this.chart.Location = new System.Drawing.Point(18, 415);
-            this.chart.Name = "chart";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.Name = "Series2";
-            this.chart.Series.Add(series1);
-            this.chart.Series.Add(series2);
-            this.chart.Size = new System.Drawing.Size(1141, 380);
-            this.chart.TabIndex = 19;
-            this.chart.Text = "chart1";
-            // 
             // uc_inventory_dash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
-            this.Controls.Add(this.chart);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel4);
@@ -264,7 +234,6 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,6 +256,5 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart;
     }
 }

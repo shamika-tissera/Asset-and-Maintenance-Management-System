@@ -1,0 +1,13 @@
+[05-Aug-21 9:24:59 PM]:
+System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__Inventor__98CAD28D9AF15312'. Cannot insert duplicate key in object 'dbo.InventoryOrder'. The duplicate key value is (Aug  5 2021 12:00AM).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Asset_and_Maintenance_Management_System.src.Approval.StockRequest.button1_Click(Object sender, EventArgs e) in F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\src\Approval\StockRequest.cs:line 127
+ClientConnectionId:a65866ca-9c03-4b9c-acd0-5a83a7a8340b
+Error Number:2627,State:1,Class:14

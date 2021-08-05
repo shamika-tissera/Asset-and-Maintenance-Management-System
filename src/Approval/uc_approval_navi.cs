@@ -36,5 +36,10 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
         {
             inst.clickedApprovalStockReception();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            inst.clickedApprovalEmployeeRequests();
+        }
     }
 }

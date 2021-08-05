@@ -1,12 +1,6 @@
-[04-Aug-21 6:45:27 PM]:
-System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'managerResponded'.
-   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
-   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
-   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
-   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
-   at Asset_and_Maintenance_Management_System.src.Approval.uc_employee_requests.button1_Click(Object sender, EventArgs e) in F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\src\Approval\uc_employee_requests.cs:line 84
-ClientConnectionId:537cc04b-e26d-4369-8488-0b9973d986c1
-Error Number:207,State:1,Class:16
+[05-Aug-21 11:32:20 PM]:
+System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   at System.Windows.Forms.Control.Invoke(Delegate method)
+   at Asset_and_Maintenance_Management_System.src.Dashboard.uc_calendar.setTime(Object sender, ElapsedEventArgs e) in F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\src\Dashboard\uc_calendar.cs:line 34

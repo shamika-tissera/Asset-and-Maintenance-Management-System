@@ -18,6 +18,8 @@ namespace Asset_and_Maintenance_Management_System.src.Login
 {
     public partial class Login : Form
     {
+        private string username;
+        private string password;
         //use this function to make the edges of the form curved
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -47,11 +49,15 @@ namespace Asset_and_Maintenance_Management_System.src.Login
         //{
         //    this.inst = inst;
         //}
-
+        public void resetContent()
+        {
+            txtUsername.Text = "";
+            txtPassword.Text = "";
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text;
-            string password = txtPassword.Text;
+            username = txtUsername.Text;
+            password = txtPassword.Text;
             string empCat = null;
             string query = "SELECT empcategory FROM UserInfo WHERE username = '" + username + "' AND password = '" + password + "';";
 
@@ -84,6 +90,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
                         break;
                     case "man":
                         Dashboard.MainDashboard dashboard = new Dashboard.MainDashboard();
+                        dashboard.setLoginInstance(this, username);
                         dashboard.Show();
                         this.Visible = false;
                         break;
