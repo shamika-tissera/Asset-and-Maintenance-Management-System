@@ -52,7 +52,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
                 //resize DataGridView
                 for (int i = 0; i < data.Columns.Count; i++)
                 {
-                    dataGridViewProfitOnDisposal.Columns[i].Width = 171;
+                    dataGridViewProfitOnDisposal.Columns[i].Width = 194;
                 }
             }
         }

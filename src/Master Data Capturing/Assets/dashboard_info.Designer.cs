@@ -31,10 +31,10 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
             this.pnlTotAssets = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblAssetsInUse = new System.Windows.Forms.Label();
+            this.lblAssetsInStock = new System.Windows.Forms.Label();
+            this.lblAssetsTypes = new System.Windows.Forms.Label();
+            this.lblAssetsRecords = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,14 +42,14 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
+            this.lblAllLocationsSites = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lblNeedsAttentionLow = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lblNeedsAttentionModerate = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblNeedsAttentionCritical = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.pnlTotAssets.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -60,10 +60,10 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             this.pnlTotAssets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
             this.pnlTotAssets.Controls.Add(this.label17);
-            this.pnlTotAssets.Controls.Add(this.label19);
-            this.pnlTotAssets.Controls.Add(this.label18);
-            this.pnlTotAssets.Controls.Add(this.label7);
-            this.pnlTotAssets.Controls.Add(this.label6);
+            this.pnlTotAssets.Controls.Add(this.lblAssetsInUse);
+            this.pnlTotAssets.Controls.Add(this.lblAssetsInStock);
+            this.pnlTotAssets.Controls.Add(this.lblAssetsTypes);
+            this.pnlTotAssets.Controls.Add(this.lblAssetsRecords);
             this.pnlTotAssets.Controls.Add(this.label16);
             this.pnlTotAssets.Controls.Add(this.label5);
             this.pnlTotAssets.Controls.Add(this.label4);
@@ -84,49 +84,49 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label17.TabIndex = 10;
             this.label17.Text = "In Use:";
             // 
-            // label19
+            // lblAssetsInUse
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Silver;
-            this.label19.Location = new System.Drawing.Point(186, 163);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(43, 32);
-            this.label19.TabIndex = 9;
-            this.label19.Text = "93";
+            this.lblAssetsInUse.AutoSize = true;
+            this.lblAssetsInUse.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssetsInUse.ForeColor = System.Drawing.Color.Silver;
+            this.lblAssetsInUse.Location = new System.Drawing.Point(186, 163);
+            this.lblAssetsInUse.Name = "lblAssetsInUse";
+            this.lblAssetsInUse.Size = new System.Drawing.Size(43, 32);
+            this.lblAssetsInUse.TabIndex = 9;
+            this.lblAssetsInUse.Text = "93";
             // 
-            // label18
+            // lblAssetsInStock
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Silver;
-            this.label18.Location = new System.Drawing.Point(188, 129);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(29, 32);
-            this.label18.TabIndex = 9;
-            this.label18.Text = "8";
+            this.lblAssetsInStock.AutoSize = true;
+            this.lblAssetsInStock.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssetsInStock.ForeColor = System.Drawing.Color.Silver;
+            this.lblAssetsInStock.Location = new System.Drawing.Point(184, 129);
+            this.lblAssetsInStock.Name = "lblAssetsInStock";
+            this.lblAssetsInStock.Size = new System.Drawing.Size(29, 32);
+            this.lblAssetsInStock.TabIndex = 9;
+            this.lblAssetsInStock.Text = "8";
             // 
-            // label7
+            // lblAssetsTypes
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Location = new System.Drawing.Point(185, 94);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 32);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "12";
+            this.lblAssetsTypes.AutoSize = true;
+            this.lblAssetsTypes.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssetsTypes.ForeColor = System.Drawing.Color.Silver;
+            this.lblAssetsTypes.Location = new System.Drawing.Point(185, 94);
+            this.lblAssetsTypes.Name = "lblAssetsTypes";
+            this.lblAssetsTypes.Size = new System.Drawing.Size(41, 32);
+            this.lblAssetsTypes.TabIndex = 9;
+            this.lblAssetsTypes.Text = "12";
             // 
-            // label6
+            // lblAssetsRecords
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Silver;
-            this.label6.Location = new System.Drawing.Point(184, 56);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 32);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "101";
+            this.lblAssetsRecords.AutoSize = true;
+            this.lblAssetsRecords.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssetsRecords.ForeColor = System.Drawing.Color.Silver;
+            this.lblAssetsRecords.Location = new System.Drawing.Point(184, 56);
+            this.lblAssetsRecords.Name = "lblAssetsRecords";
+            this.lblAssetsRecords.Size = new System.Drawing.Size(53, 32);
+            this.lblAssetsRecords.TabIndex = 8;
+            this.lblAssetsRecords.Text = "101";
             // 
             // label16
             // 
@@ -199,7 +199,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
-            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.lblAllLocationsSites);
             this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(424, 114);
@@ -207,16 +207,16 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.panel1.Size = new System.Drawing.Size(329, 220);
             this.panel1.TabIndex = 6;
             // 
-            // label20
+            // lblAllLocationsSites
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Silver;
-            this.label20.Location = new System.Drawing.Point(174, 53);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(30, 32);
-            this.label20.TabIndex = 12;
-            this.label20.Text = "4";
+            this.lblAllLocationsSites.AutoSize = true;
+            this.lblAllLocationsSites.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAllLocationsSites.ForeColor = System.Drawing.Color.Silver;
+            this.lblAllLocationsSites.Location = new System.Drawing.Point(174, 53);
+            this.lblAllLocationsSites.Name = "lblAllLocationsSites";
+            this.lblAllLocationsSites.Size = new System.Drawing.Size(30, 32);
+            this.lblAllLocationsSites.TabIndex = 12;
+            this.lblAllLocationsSites.Text = "4";
             // 
             // label21
             // 
@@ -232,11 +232,11 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
-            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.lblNeedsAttentionLow);
             this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.lblNeedsAttentionModerate);
             this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.lblNeedsAttentionCritical);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(788, 114);
@@ -244,16 +244,16 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.panel2.Size = new System.Drawing.Size(329, 220);
             this.panel2.TabIndex = 7;
             // 
-            // label15
+            // lblNeedsAttentionLow
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label15.Location = new System.Drawing.Point(194, 136);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 32);
-            this.label15.TabIndex = 11;
-            this.label15.Text = "12";
+            this.lblNeedsAttentionLow.AutoSize = true;
+            this.lblNeedsAttentionLow.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNeedsAttentionLow.ForeColor = System.Drawing.Color.LawnGreen;
+            this.lblNeedsAttentionLow.Location = new System.Drawing.Point(194, 136);
+            this.lblNeedsAttentionLow.Name = "lblNeedsAttentionLow";
+            this.lblNeedsAttentionLow.Size = new System.Drawing.Size(41, 32);
+            this.lblNeedsAttentionLow.TabIndex = 11;
+            this.lblNeedsAttentionLow.Text = "12";
             // 
             // label13
             // 
@@ -266,16 +266,16 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label13.TabIndex = 11;
             this.label13.Text = "Low:";
             // 
-            // label14
+            // lblNeedsAttentionModerate
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.SandyBrown;
-            this.label14.Location = new System.Drawing.Point(194, 96);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(41, 32);
-            this.label14.TabIndex = 11;
-            this.label14.Text = "10";
+            this.lblNeedsAttentionModerate.AutoSize = true;
+            this.lblNeedsAttentionModerate.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNeedsAttentionModerate.ForeColor = System.Drawing.Color.SandyBrown;
+            this.lblNeedsAttentionModerate.Location = new System.Drawing.Point(194, 96);
+            this.lblNeedsAttentionModerate.Name = "lblNeedsAttentionModerate";
+            this.lblNeedsAttentionModerate.Size = new System.Drawing.Size(41, 32);
+            this.lblNeedsAttentionModerate.TabIndex = 11;
+            this.lblNeedsAttentionModerate.Text = "10";
             // 
             // label12
             // 
@@ -288,16 +288,16 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label12.TabIndex = 11;
             this.label12.Text = "Moderate:";
             // 
-            // label11
+            // lblNeedsAttentionCritical
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DarkRed;
-            this.label11.Location = new System.Drawing.Point(194, 55);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(29, 32);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "2";
+            this.lblNeedsAttentionCritical.AutoSize = true;
+            this.lblNeedsAttentionCritical.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNeedsAttentionCritical.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblNeedsAttentionCritical.Location = new System.Drawing.Point(194, 55);
+            this.lblNeedsAttentionCritical.Name = "lblNeedsAttentionCritical";
+            this.lblNeedsAttentionCritical.Size = new System.Drawing.Size(29, 32);
+            this.lblNeedsAttentionCritical.TabIndex = 12;
+            this.lblNeedsAttentionCritical.Text = "2";
             // 
             // label10
             // 
@@ -339,21 +339,21 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblAssetsTypes;
+        private System.Windows.Forms.Label lblAssetsRecords;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblNeedsAttentionCritical;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblNeedsAttentionLow;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblNeedsAttentionModerate;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblAssetsInUse;
+        private System.Windows.Forms.Label lblAssetsInStock;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lblAllLocationsSites;
         private System.Windows.Forms.Label label21;
     }
 }

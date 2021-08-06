@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AssetManagementSystemModelStoreContainer" CdmEntityContainer="AssetManagementSystemEntities">
+    <EntitySetMapping Name="NonCurrentAssets">
+      <EntityTypeMapping TypeName="AssetManagementSystemModel.NonCurrentAsset">
+        <MappingFragment StoreEntitySet="NonCurrentAsset">
+          <ScalarProperty Name="asset_id" ColumnName="asset_id" />
+          <ScalarProperty Name="lifetime" ColumnName="lifetime" />
+          <ScalarProperty Name="depreciationRate" ColumnName="depreciationRate" />
+          <ScalarProperty Name="condition" ColumnName="condition" />
+          <ScalarProperty Name="manufacturer" ColumnName="manufacturer" />
+          <ScalarProperty Name="plant" ColumnName="plant" />
+          <ScalarProperty Name="serialNumber" ColumnName="serialNumber" />
+          <ScalarProperty Name="depreciationMethod" ColumnName="depreciationMethod" />
+          <ScalarProperty Name="costOfPurchase" ColumnName="costOfPurchase" />
+          <ScalarProperty Name="serviceInterval" ColumnName="serviceInterval" />
+          <ScalarProperty Name="currentMarketValue" ColumnName="currentMarketValue" />
+          <ScalarProperty Name="warranty" ColumnName="warranty" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="disposalValue" ColumnName="disposalValue" />
+          <ScalarProperty Name="assetType" ColumnName="assetType" />
+          <ScalarProperty Name="purchaseDate" ColumnName="purchaseDate" />
+          <ScalarProperty Name="warrantyCode" ColumnName="warrantyCode" />
+          <ScalarProperty Name="serviceDue" ColumnName="serviceDue" />
+          <ScalarProperty Name="disposalDate" ColumnName="disposalDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserInfoes">
+      <EntityTypeMapping TypeName="AssetManagementSystemModel.UserInfo">
+        <MappingFragment StoreEntitySet="UserInfo">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="EmpCategory" ColumnName="EmpCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Warranties">
+      <EntityTypeMapping TypeName="AssetManagementSystemModel.Warranty">
+        <MappingFragment StoreEntitySet="Warranty">
+          <ScalarProperty Name="warrantyCode" ColumnName="warrantyCode" />
+          <ScalarProperty Name="invoiceNum" ColumnName="invoiceNum" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="startDate" ColumnName="startDate" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkerReports">
+      <EntityTypeMapping TypeName="AssetManagementSystemModel.WorkerReport">
+        <MappingFragment StoreEntitySet="WorkerReports">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="reported_date" ColumnName="reported_date" />
+          <ScalarProperty Name="asset_id" ColumnName="asset_id" />
+          <ScalarProperty Name="plant" ColumnName="plant" />
+          <ScalarProperty Name="criticality_machineOperations" ColumnName="criticality_machineOperations" />
+          <ScalarProperty Name="criticality_activityConstraints" ColumnName="criticality_activityConstraints" />
+          <ScalarProperty Name="managerRespoded" ColumnName="managerRespoded" />
+          <ScalarProperty Name="service_date_schedule" ColumnName="service_date_schedule" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Disposals">
+      <EntityTypeMapping TypeName="AssetManagementSystemModel.Disposal">
+        <MappingFragment StoreEntitySet="Disposal">
+          <ScalarProperty Name="disposedValue" ColumnName="disposedValue" />
+          <ScalarProperty Name="disposedDate" ColumnName="disposedDate" />
+          <ScalarProperty Name="asset_id" ColumnName="asset_id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -37,8 +37,11 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             // 
             // dataGridViewProfitOnDisposal
             // 
+            this.dataGridViewProfitOnDisposal.AllowUserToAddRows = false;
+            this.dataGridViewProfitOnDisposal.AllowUserToDeleteRows = false;
+            this.dataGridViewProfitOnDisposal.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
             this.dataGridViewProfitOnDisposal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProfitOnDisposal.Location = new System.Drawing.Point(58, 49);
+            this.dataGridViewProfitOnDisposal.Location = new System.Drawing.Point(41, 49);
             this.dataGridViewProfitOnDisposal.Name = "dataGridViewProfitOnDisposal";
             this.dataGridViewProfitOnDisposal.RowHeadersWidth = 51;
             this.dataGridViewProfitOnDisposal.RowTemplate.Height = 24;
@@ -47,20 +50,20 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.dataGridViewProfitOnDisposal);
             this.panel1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
-            this.panel1.Location = new System.Drawing.Point(107, 18);
+            this.panel1.Location = new System.Drawing.Point(56, 18);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1142, 791);
+            this.panel1.Size = new System.Drawing.Size(1123, 791);
             this.panel1.TabIndex = 4;
             // 
             // uc_profit_on_disposal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
             this.Controls.Add(this.panel1);
             this.Name = "uc_profit_on_disposal";
             this.Size = new System.Drawing.Size(1356, 826);

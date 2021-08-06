@@ -29,13 +29,12 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dataGridViewMain = new System.Windows.Forms.DataGridView();
             this.chartVarience = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.btn_print = new System.Windows.Forms.Button();
             this.btn_continue = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMain)).BeginInit();
@@ -45,6 +44,8 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             // 
             // dataGridViewMain
             // 
+            this.dataGridViewMain.AllowUserToAddRows = false;
+            this.dataGridViewMain.AllowUserToDeleteRows = false;
             this.dataGridViewMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewMain.Location = new System.Drawing.Point(20, 49);
             this.dataGridViewMain.Name = "dataGridViewMain";
@@ -55,16 +56,16 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             // 
             // chartVarience
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartVarience.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartVarience.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chartVarience.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartVarience.Legends.Add(legend2);
             this.chartVarience.Location = new System.Drawing.Point(455, 49);
             this.chartVarience.Name = "chartVarience";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Days";
-            this.chartVarience.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Days";
+            this.chartVarience.Series.Add(series2);
             this.chartVarience.Size = new System.Drawing.Size(688, 619);
             this.chartVarience.TabIndex = 1;
             this.chartVarience.Text = "Date Varience";
@@ -73,7 +74,6 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.chartVarience);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btn_print);
             this.panel1.Controls.Add(this.dataGridViewMain);
             this.panel1.Controls.Add(this.btn_continue);
@@ -82,30 +82,17 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.panel1.Size = new System.Drawing.Size(1162, 767);
             this.panel1.TabIndex = 2;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(872, 712);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 33);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "&Schedule...";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // btn_print
             // 
             this.btn_print.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
             this.btn_print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_print.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_print.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_print.Location = new System.Drawing.Point(1013, 712);
+            this.btn_print.Location = new System.Drawing.Point(989, 705);
             this.btn_print.Name = "btn_print";
             this.btn_print.Size = new System.Drawing.Size(123, 33);
             this.btn_print.TabIndex = 3;
-            this.btn_print.Text = "&Print...";
+            this.btn_print.Text = "&Print";
             this.btn_print.UseVisualStyleBackColor = false;
             // 
             // btn_continue
@@ -142,7 +129,6 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
         private System.Windows.Forms.DataGridView dataGridViewMain;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartVarience;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_print;
         private System.Windows.Forms.Button btn_continue;
     }

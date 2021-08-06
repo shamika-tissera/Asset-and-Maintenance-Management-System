@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Asset_and_Maintenance_Management_System.src.Master_Data_Capturing;
 
 namespace Asset_and_Maintenance_Management_System.src.Dashboard
 {
@@ -31,6 +32,11 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         private void button9_Click(object sender, EventArgs e)
         {
             inst.clickedAssetsConfig();
+        }
+
+        private void btnAddItem_Click(object sender, EventArgs e)
+        {
+            settingsParent settings = new settingsParent(true, inst);
         }
     }
 }

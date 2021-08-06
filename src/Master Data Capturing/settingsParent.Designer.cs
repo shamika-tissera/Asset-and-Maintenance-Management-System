@@ -69,7 +69,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             this.windowsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1517, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1517, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -113,7 +113,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             this.sinkToolStripMenuItem,
             this.lightingToolStripMenuItem});
             this.assetToolStripMenuItem.Name = "assetToolStripMenuItem";
-            this.assetToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
+            this.assetToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.assetToolStripMenuItem.Text = "A&sset";
             this.assetToolStripMenuItem.Click += new System.EventHandler(this.assetToolStripMenuItem_Click);
             // 
@@ -197,15 +197,16 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             // productToolStripMenuItem
             // 
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
+            this.productToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.productToolStripMenuItem.Text = "&Product";
             this.productToolStripMenuItem.Click += new System.EventHandler(this.productToolStripMenuItem_Click);
             // 
             // inventoryTypeToolStripMenuItem
             // 
             this.inventoryTypeToolStripMenuItem.Name = "inventoryTypeToolStripMenuItem";
-            this.inventoryTypeToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
+            this.inventoryTypeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.inventoryTypeToolStripMenuItem.Text = "&Inventory Type";
+            this.inventoryTypeToolStripMenuItem.Click += new System.EventHandler(this.inventoryTypeToolStripMenuItem_Click);
             // 
             // windowsToolStripMenuItem
             // 

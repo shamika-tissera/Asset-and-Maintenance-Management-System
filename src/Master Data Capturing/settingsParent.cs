@@ -29,6 +29,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
         private int Sink = 0;
         private int Lighting = 0;
         private int Product = 0;
+        private int inventoryType = 0;
 
         private DataTable childForms;
         private addItem_assetCategory assetCategory;
@@ -352,24 +353,33 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
 
 
                 clickedItem = items[i].Text;
-                items[i].Click += new EventHandler(MenuItemClickHandler);
+                stripItems[i].Click += new EventHandler(MenuItemClickHandler);
             }
 
             for(int i = winCount - 1; i < winCount; i++)
             {
-
                 windowsToolStripMenuItem.DropDownItems.Add(stripItems[i]);
             }
             
         }
+
+        private void populateNewWindowMenu()
+        {
+            windowsToolStripMenuItem.DropDownItems.Clear();
+            for (int i = 0; i < winCount; i++)
+            {
+                windowsToolStripMenuItem.DropDownItems.Add(stripItems[i]);
+            }
+        }
         private String clickedItem;
         private void MenuItemClickHandler(object sender, EventArgs e)
         {
+            
             int i, index = -1;
             ToolStripMenuItem clickedItem = (ToolStripMenuItem)sender;
             for(i = 0; i < winCount; i++)
             {
-                if(items[i].Text.Equals(clickedItem))
+                if(items[i].Text.Equals(clickedItem.Text))
                 {
                     index = i;
                 }
@@ -396,6 +406,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
         private void productToolStripMenuItem_Click(object sender, EventArgs e)
         {
             uc_addProduct_form addItem = new uc_addProduct_form();
+            addItem.FormClosing += product_formclosing;
             Product++;
             addItem.MdiParent = this;
             tblLayout_Options.Visible = false;
@@ -413,12 +424,46 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             populateWindowMenu(addItem.Text, addItem);
         }
 
+        private void product_formclosing(object sender, FormClosingEventArgs e)
+        {
+            Form form = (Form)sender;
+            string title = form.Text;
+
+            int i = 0;
+            foreach (ToolStripItem stripItem in stripItems)
+            {
+                if (stripItem.Text == title)
+                {
+                    break;
+                }
+
+                i++;
+            }
+
+            ToolStripItem[] temp = stripItems;
+            stripItems = new ToolStripItem[temp.Length - 1];
+            int index = 0;
+            foreach (ToolStripItem stripItem in temp)
+            {
+                if (stripItem.Text == title)
+                {
+                    index--;
+                }
+                else
+                {
+                    stripItems[index] = stripItem;
+                }
+                index++;
+            }
+            
+            winCount--;
+            Product--;
+            populateNewWindowMenu();
+        }
+
         private void btn_backlog_Click(object sender, EventArgs e)
         {
-            AddInventoryItemType inventory = new AddInventoryItemType();
-            inventory.MdiParent = this;
-            inventory.Show();
-            inventory.BringToFront();
+            inventoryTypeToolStripMenuItem_Click(sender, e);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -439,6 +484,28 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
         private void button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void inventoryTypeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddInventoryItemType inventory = new AddInventoryItemType();
+            inventory.MdiParent = this;
+            tblLayout_Options.Visible = false;
+            inventoryType++;
+            winCount++;
+            if (inventoryType == 1)
+            {
+                inventory.Text = "Add " + "Inventory Type";
+            }
+            else
+            {
+                inventory.Text = "Add " + "Inventory Type" + "(" + (inventoryType - 1) + ")";
+            }
+            panel1.SendToBack();
+            //populateWindowMenu("Inventory Item", inventory);
+            inventory.Show();
+            inventory.BringToFront();
+            populateWindowMenu(inventory.Text, inventory);
         }
     }
 }

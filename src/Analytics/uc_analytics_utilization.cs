@@ -43,7 +43,18 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
                 string percentage = ((usage / lifetime) * 100).ToString() + '%';
                 row["Percentage"] = percentage;
             }
+            //for (int i = 0; i < data.Columns.Count; i++)
+            //{
+            //    dataGridViewUtilization.Columns[i].Width = 171;
+            //}
+            
             dataGridViewUtilization.DataSource = table;
+            dataGridViewUtilization.Columns[0].Width = 130;
+            dataGridViewUtilization.Columns[1].Width = 70;
+            dataGridViewUtilization.Columns[2].Width = 70;
+            dataGridViewUtilization.Columns[3].Width = 70;
+            dataGridViewUtilization.Columns[4].Width = 70;
+            dataGridViewUtilization.Columns[5].Width = 90;
         }
         private void loadChart()
         {
@@ -56,5 +67,9 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             }
         }
 
+        private void chartUtilization_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

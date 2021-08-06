@@ -34,9 +34,11 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.comboCriticalOperational = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboPlant = new System.Windows.Forms.ComboBox();
+            this.comboAssetID = new System.Windows.Forms.ComboBox();
             this.comboType = new System.Windows.Forms.ComboBox();
             this.txtMessage = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.btn_previouslyReported = new System.Windows.Forms.Button();
             this.btn_reporting = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -49,7 +51,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboAssetID = new System.Windows.Forms.ComboBox();
+            this.uc_item_usage1 = new Asset_and_Maintenance_Management_System.src.Worker_Interface.uc_item_usage();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,6 +60,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+            this.panel1.Controls.Add(this.uc_item_usage1);
             this.panel1.Controls.Add(this.comboCriticalActivity);
             this.panel1.Controls.Add(this.comboCriticalOperational);
             this.panel1.Controls.Add(this.button1);
@@ -136,6 +139,29 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.comboPlant.Size = new System.Drawing.Size(406, 37);
             this.comboPlant.TabIndex = 7;
             // 
+            // comboAssetID
+            // 
+            this.comboAssetID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboAssetID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboAssetID.FormattingEnabled = true;
+            this.comboAssetID.Items.AddRange(new object[] {
+            "Production Machinery",
+            "Heater",
+            "Network Device",
+            "Sanitation Device",
+            "Printer/Scanner",
+            "Lift",
+            "Fire Extinguisher",
+            "Computer",
+            "Plumbing Device",
+            "Phone",
+            "Sink",
+            "Lighting"});
+            this.comboAssetID.Location = new System.Drawing.Point(702, 93);
+            this.comboAssetID.Name = "comboAssetID";
+            this.comboAssetID.Size = new System.Drawing.Size(406, 37);
+            this.comboAssetID.TabIndex = 7;
+            // 
             // comboType
             // 
             this.comboType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -173,6 +199,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
+            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.btn_previouslyReported);
             this.panel2.Controls.Add(this.btn_reporting);
             this.panel2.Controls.Add(this.button4);
@@ -182,6 +209,22 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(273, 724);
             this.panel2.TabIndex = 5;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.Location = new System.Drawing.Point(6, 379);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(264, 50);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "&Item Usage";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btn_previouslyReported
             // 
@@ -328,28 +371,12 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.label1.TabIndex = 4;
             this.label1.Text = "Equipment Error Reporting";
             // 
-            // comboAssetID
+            // uc_item_usage1
             // 
-            this.comboAssetID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboAssetID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboAssetID.FormattingEnabled = true;
-            this.comboAssetID.Items.AddRange(new object[] {
-            "Production Machinery",
-            "Heater",
-            "Network Device",
-            "Sanitation Device",
-            "Printer/Scanner",
-            "Lift",
-            "Fire Extinguisher",
-            "Computer",
-            "Plumbing Device",
-            "Phone",
-            "Sink",
-            "Lighting"});
-            this.comboAssetID.Location = new System.Drawing.Point(702, 93);
-            this.comboAssetID.Name = "comboAssetID";
-            this.comboAssetID.Size = new System.Drawing.Size(406, 37);
-            this.comboAssetID.TabIndex = 7;
+            this.uc_item_usage1.Location = new System.Drawing.Point(272, 0);
+            this.uc_item_usage1.Name = "uc_item_usage1";
+            this.uc_item_usage1.Size = new System.Drawing.Size(1144, 700);
+            this.uc_item_usage1.TabIndex = 8;
             // 
             // WorkerInterface
             // 
@@ -394,5 +421,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
         private System.Windows.Forms.TextBox txtMessage;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboAssetID;
+        private System.Windows.Forms.Button button2;
+        private uc_item_usage uc_item_usage1;
     }
 }

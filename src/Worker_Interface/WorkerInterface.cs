@@ -22,6 +22,8 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             comboPlant.SelectedIndex = 0;
             comboCriticalOperational.SelectedIndex = 0;
             comboCriticalActivity.SelectedIndex = 0;
+
+            uc_item_usage1.Visible = false;
             populateAssetIDCombo();
         }
 
@@ -60,12 +62,14 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
         {
             btn_previouslyReported.BackColor = Color.FromArgb(232, 234, 237);
             btn_reporting.BackColor = Color.FromArgb(255, 255, 255);
+            uc_item_usage1.Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             btn_reporting.BackColor = Color.FromArgb(232, 234, 237);
             btn_previouslyReported.BackColor = Color.FromArgb(255, 255, 255);
+            uc_item_usage1.Visible = true;
         }
 
         private void txtWarrantyCode_TextChanged(object sender, EventArgs e)

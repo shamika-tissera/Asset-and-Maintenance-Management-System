@@ -25,7 +25,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
         {
             resetButtonHighlights();
             inst.clickedAnalyticsWarranty();
-            btn_warranty.BackColor = Color.FromArgb(61, 70, 89);
+            btn_warranty.BackColor = Color.FromArgb(207, 220, 228);
         }
         public void setDashboardInstance(Dashboard.MainDashboard inst)
         {
@@ -46,14 +46,14 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
         private void btn_disposal_Click(object sender, EventArgs e)
         {
             resetButtonHighlights();
-            btn_disposal.BackColor = Color.FromArgb(61, 70, 89);
+            btn_disposal.BackColor = Color.FromArgb(207, 220, 228);
             inst.clickedAnalyticsDisposal();
         }
 
         private void btn_utilization_Click(object sender, EventArgs e)
         {
             resetButtonHighlights();
-            btn_utilization.BackColor = Color.FromArgb(61, 70, 89);
+            btn_utilization.BackColor = Color.FromArgb(207, 220, 228);
             inst.clickedAnalyticsUtilization();
         }
 

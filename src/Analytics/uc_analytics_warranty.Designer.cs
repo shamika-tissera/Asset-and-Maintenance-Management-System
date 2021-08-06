@@ -39,7 +39,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.btn_print);
             this.panel1.Controls.Add(this.lbl_uname);
             this.panel1.Controls.Add(this.dataGridViewWarranty);
@@ -68,7 +68,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             // 
             this.lbl_uname.AutoSize = true;
             this.lbl_uname.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_uname.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_uname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
             this.lbl_uname.Location = new System.Drawing.Point(519, 587);
             this.lbl_uname.Name = "lbl_uname";
             this.lbl_uname.Size = new System.Drawing.Size(564, 28);
@@ -77,6 +77,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             // 
             // dataGridViewWarranty
             // 
+            this.dataGridViewWarranty.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
             this.dataGridViewWarranty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewWarranty.Location = new System.Drawing.Point(58, 49);
             this.dataGridViewWarranty.Name = "dataGridViewWarranty";

@@ -86,6 +86,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.btnAddItem.Text = "&Add item";
             this.btnAddItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddItem.UseVisualStyleBackColor = false;
+            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
             // 
             // uc_assets_1
             // 

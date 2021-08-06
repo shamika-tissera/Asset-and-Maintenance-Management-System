@@ -36,17 +36,58 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
                     using (SqlDataAdapter adapter = new SqlDataAdapter(command))
                     {
                         adapter.Fill(table);
+                        table.Columns.Add("Performed", typeof(bool));
                         dataGridViewPreventiveMaintenance.DataSource = table;
-                        for(int i = 0; i < dataGridViewPreventiveMaintenance.Rows.Count; i++)
+                        for (int i = 0; i < dataGridViewPreventiveMaintenance.Columns.Count; i++)
                         {
-                            //if (Convert.ToDateTime(dataGridViewPreventiveMaintenance.Rows[i].Cells["Due by"].ToString()) < DateTime.Today)
-                            //{
-                            //    dataGridViewPreventiveMaintenance.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                            //}
+                            dataGridViewPreventiveMaintenance.Columns[i].Width = 207;
                         }
                     }
                 }
             }
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            bool isChecked = false;
+            foreach (DataGridViewRow row in dataGridViewPreventiveMaintenance.Rows)
+            {
+                string a = row.Cells["Performed"].Value.ToString();
+                int b = dataGridViewPreventiveMaintenance.Rows.Count;
+                if (row.Cells["Performed"].Value.ToString() == "True")
+                {
+                    string assetCode = row.Cells["Asset Code"].Value.ToString();
+                    
+                    string query =
+                        "UPDATE NonCurrentAsset SET serviceDue = DATEADD(month, NonCurrentAsset.serviceInterval*12, NonCurrentAsset.serviceDue) WHERE asset_id = '" + assetCode + "';";
+                    isChecked = true;
+                    using (SqlConnection connection = DBConnection.establishConnection())
+                    {
+                        using (SqlCommand command = new SqlCommand(query, connection))
+                        {
+                            try
+                            {
+                                command.ExecuteNonQuery();
+                            }
+                            catch (SqlException ex)
+                            {
+                                TextWriter.writeContent("logs.txt", ex.ToString());
+                            }
+                        }
+                    }
+                    dataGridViewPreventiveMaintenance.Rows.RemoveAt(row.Index);
+                }
+            }
+
+            if (!isChecked)
+            {
+                MessageBox.Show("Please select an item.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Successfully recorded!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
     }
 }

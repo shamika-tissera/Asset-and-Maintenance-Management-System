@@ -1,4 +1,4 @@
-[05-Aug-21 11:32:20 PM]:
+[06-Aug-21 12:56:43 PM]:
 System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
    at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
    at System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
