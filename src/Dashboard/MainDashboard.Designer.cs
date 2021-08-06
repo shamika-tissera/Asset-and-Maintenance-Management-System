@@ -76,7 +76,6 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             // navPanel
             // 
             this.navPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
-            this.navPanel.Controls.Add(this.inventory_low_navi1);
             this.navPanel.Controls.Add(this.uc_approval_navi1);
             this.navPanel.Controls.Add(this.pnl_highlight);
             this.navPanel.Controls.Add(this.elementHost1);
@@ -87,6 +86,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.navPanel.Controls.Add(this.uc_assets_11);
             this.navPanel.Controls.Add(this.uc_analytics_navi_one1);
             this.navPanel.Controls.Add(this.uc_inventory_navi1);
+            this.navPanel.Controls.Add(this.inventory_low_navi1);
             this.navPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.navPanel.Location = new System.Drawing.Point(0, 0);
             this.navPanel.Name = "navPanel";
@@ -104,7 +104,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             // 
             // uc_approval_navi1
             // 
-            this.uc_approval_navi1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(46)))), ((int)(((byte)(76)))));
+            this.uc_approval_navi1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
             this.uc_approval_navi1.Location = new System.Drawing.Point(17, 204);
             this.uc_approval_navi1.Name = "uc_approval_navi1";
             this.uc_approval_navi1.Size = new System.Drawing.Size(273, 616);

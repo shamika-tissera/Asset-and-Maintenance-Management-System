@@ -34,6 +34,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
 
         private void btn_back_Click(object sender, EventArgs e)
         {
+            resetButtonHighlights();
             inst.clickedAnalyticsBack();
         }
         public void resetButtonHighlights()

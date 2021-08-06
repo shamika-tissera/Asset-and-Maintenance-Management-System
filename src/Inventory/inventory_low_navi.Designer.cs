@@ -35,13 +35,13 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             // btn_back
             // 
             this.btn_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
-            this.btn_back.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_back.FlatAppearance.BorderSize = 0;
             this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_back.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(216)))), ((int)(((byte)(93)))));
             this.btn_back.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.backbutton__Custom___2_;
-            this.btn_back.Location = new System.Drawing.Point(0, 0);
+            this.btn_back.Location = new System.Drawing.Point(0, 84);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(273, 53);
             this.btn_back.TabIndex = 6;

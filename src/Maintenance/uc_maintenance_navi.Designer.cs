@@ -58,6 +58,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             // btn_backlog
             // 
             this.btn_backlog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.btn_backlog.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_backlog.FlatAppearance.BorderSize = 0;
             this.btn_backlog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_backlog.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -77,6 +78,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             // btn_preventive
             // 
             this.btn_preventive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.btn_preventive.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_preventive.FlatAppearance.BorderSize = 0;
             this.btn_preventive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_preventive.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -95,6 +97,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             // btn_corrective
             // 
             this.btn_corrective.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.btn_corrective.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_corrective.FlatAppearance.BorderSize = 0;
             this.btn_corrective.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_corrective.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -113,6 +116,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             // btn_recommendations
             // 
             this.btn_recommendations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.btn_recommendations.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_recommendations.FlatAppearance.BorderSize = 0;
             this.btn_recommendations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_recommendations.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -269,6 +269,12 @@
     <Compile Include="src\Inventory\uc_inventory_trends.Designer.cs">
       <DependentUpon>uc_inventory_trends.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Login\AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Login\AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -579,6 +585,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Inventory\uc_inventory_trends.resx">
       <DependentUpon>uc_inventory_trends.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Login\AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -38,7 +38,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.comboType = new System.Windows.Forms.ComboBox();
             this.txtMessage = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnPreviouslyReported = new System.Windows.Forms.Button();
             this.btn_previouslyReported = new System.Windows.Forms.Button();
             this.btn_reporting = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -52,6 +52,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.uc_item_usage1 = new Asset_and_Maintenance_Management_System.src.Worker_Interface.uc_item_usage();
+            this.uc_previously_reported1 = new Asset_and_Maintenance_Management_System.src.Worker_Interface.uc_previously_reported();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,7 +61,6 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.panel1.Controls.Add(this.uc_item_usage1);
             this.panel1.Controls.Add(this.comboCriticalActivity);
             this.panel1.Controls.Add(this.comboCriticalOperational);
             this.panel1.Controls.Add(this.button1);
@@ -76,6 +76,8 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.uc_item_usage1);
+            this.panel1.Controls.Add(this.uc_previously_reported1);
             this.panel1.Location = new System.Drawing.Point(43, 39);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1419, 700);
@@ -130,6 +132,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             // comboPlant
             // 
             this.comboPlant.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboPlant.Enabled = false;
             this.comboPlant.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboPlant.FormattingEnabled = true;
             this.comboPlant.Items.AddRange(new object[] {
@@ -161,10 +164,12 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.comboAssetID.Name = "comboAssetID";
             this.comboAssetID.Size = new System.Drawing.Size(406, 37);
             this.comboAssetID.TabIndex = 7;
+            this.comboAssetID.SelectedIndexChanged += new System.EventHandler(this.assetCode_SelectionChanged);
             // 
             // comboType
             // 
             this.comboType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboType.Enabled = false;
             this.comboType.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboType.FormattingEnabled = true;
             this.comboType.Items.AddRange(new object[] {
@@ -199,7 +204,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnPreviouslyReported);
             this.panel2.Controls.Add(this.btn_previouslyReported);
             this.panel2.Controls.Add(this.btn_reporting);
             this.panel2.Controls.Add(this.button4);
@@ -210,21 +215,21 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.panel2.Size = new System.Drawing.Size(273, 724);
             this.panel2.TabIndex = 5;
             // 
-            // button2
+            // btnPreviouslyReported
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(6, 379);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(264, 50);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "&Item Usage";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnPreviouslyReported.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
+            this.btnPreviouslyReported.FlatAppearance.BorderSize = 0;
+            this.btnPreviouslyReported.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPreviouslyReported.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreviouslyReported.ForeColor = System.Drawing.Color.Black;
+            this.btnPreviouslyReported.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPreviouslyReported.Location = new System.Drawing.Point(6, 379);
+            this.btnPreviouslyReported.Name = "btnPreviouslyReported";
+            this.btnPreviouslyReported.Size = new System.Drawing.Size(264, 50);
+            this.btnPreviouslyReported.TabIndex = 6;
+            this.btnPreviouslyReported.Text = "&Previously Reported";
+            this.btnPreviouslyReported.UseVisualStyleBackColor = false;
+            this.btnPreviouslyReported.Click += new System.EventHandler(this.click_previouslyReported);
             // 
             // btn_previouslyReported
             // 
@@ -238,7 +243,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.btn_previouslyReported.Name = "btn_previouslyReported";
             this.btn_previouslyReported.Size = new System.Drawing.Size(264, 50);
             this.btn_previouslyReported.TabIndex = 6;
-            this.btn_previouslyReported.Text = "&Previously Reported";
+            this.btn_previouslyReported.Text = "&Item Usage";
             this.btn_previouslyReported.UseVisualStyleBackColor = false;
             this.btn_previouslyReported.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -272,6 +277,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.button4.TabIndex = 6;
             this.button4.Text = "&Logout";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox1
             // 
@@ -345,9 +351,9 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(317, 94);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 32);
+            this.label5.Size = new System.Drawing.Size(139, 32);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Asset ID:";
+            this.label5.Text = "Asset Code:";
             // 
             // label2
             // 
@@ -377,6 +383,14 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.uc_item_usage1.Name = "uc_item_usage1";
             this.uc_item_usage1.Size = new System.Drawing.Size(1144, 700);
             this.uc_item_usage1.TabIndex = 8;
+            // 
+            // uc_previously_reported1
+            // 
+            this.uc_previously_reported1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+            this.uc_previously_reported1.Location = new System.Drawing.Point(272, 0);
+            this.uc_previously_reported1.Name = "uc_previously_reported1";
+            this.uc_previously_reported1.Size = new System.Drawing.Size(1144, 700);
+            this.uc_previously_reported1.TabIndex = 9;
             // 
             // WorkerInterface
             // 
@@ -421,7 +435,8 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
         private System.Windows.Forms.TextBox txtMessage;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboAssetID;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnPreviouslyReported;
         private uc_item_usage uc_item_usage1;
+        private uc_previously_reported uc_previously_reported1;
     }
 }

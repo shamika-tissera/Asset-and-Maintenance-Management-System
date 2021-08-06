@@ -40,7 +40,7 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btn_print);
             this.panel1.Controls.Add(this.dataGridViewMain);

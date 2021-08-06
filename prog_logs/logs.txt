@@ -1,6 +1,12 @@
-[06-Aug-21 12:56:43 PM]:
-System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
-   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
-   at System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
-   at System.Windows.Forms.Control.Invoke(Delegate method)
-   at Asset_and_Maintenance_Management_System.src.Dashboard.uc_calendar.setTime(Object sender, ElapsedEventArgs e) in F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\src\Dashboard\uc_calendar.cs:line 34
+[06-Aug-21 6:57:58 PM]:
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'draco_malfoy'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Asset_and_Maintenance_Management_System.src.Worker_Interface.WorkerInterface.button1_Click(Object sender, EventArgs e) in F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\src\Worker_Interface\WorkerInterface.cs:line 115
+ClientConnectionId:f0a17c9e-9966-4d9a-a5c3-5106ff1221f2
+Error Number:102,State:1,Class:15

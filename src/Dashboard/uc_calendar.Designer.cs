@@ -80,6 +80,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             // lblNotif3
             // 
             this.lblNotif3.AutoSize = true;
+            this.lblNotif3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblNotif3.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNotif3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.lblNotif3.Location = new System.Drawing.Point(11, 377);
@@ -91,6 +92,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             // lblNotif2
             // 
             this.lblNotif2.AutoSize = true;
+            this.lblNotif2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblNotif2.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNotif2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.lblNotif2.Location = new System.Drawing.Point(11, 211);
@@ -102,6 +104,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             // lblNotif1
             // 
             this.lblNotif1.AutoSize = true;
+            this.lblNotif1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblNotif1.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNotif1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.lblNotif1.Location = new System.Drawing.Point(11, 64);

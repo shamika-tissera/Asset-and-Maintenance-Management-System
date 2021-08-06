@@ -71,7 +71,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             {
                 resetBtnEmphasis();
             }
-            btn_backlog.BackColor = Color.FromArgb(61, 70, 89);
+            btn_backlog.BackColor = Color.FromArgb(207, 220, 228);
             isButtonEmphasized = true;
         }
 
@@ -82,7 +82,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             {
                 resetBtnEmphasis();
             }
-            btn_recommendations.BackColor = Color.FromArgb(61, 70, 89);
+            btn_recommendations.BackColor = Color.FromArgb(207, 220, 228);
             isButtonEmphasized = true;
         }
 
@@ -92,7 +92,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             {
                 resetBtnEmphasis();
             }
-            btn_preventive.BackColor = Color.FromArgb(61, 70, 89);
+            btn_preventive.BackColor = Color.FromArgb(207, 220, 228);
             isButtonEmphasized = true;
             inst.clickedMaintenancePreventive();
         }
@@ -103,7 +103,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             {
                 resetBtnEmphasis();
             }
-            btn_corrective.BackColor = Color.FromArgb(61, 70, 89);
+            btn_corrective.BackColor = Color.FromArgb(207, 220, 228);
             isButtonEmphasized = true;
             inst.clickedMaintenanceCorrective();
         }

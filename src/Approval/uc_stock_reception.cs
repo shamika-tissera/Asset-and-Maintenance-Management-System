@@ -37,7 +37,7 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
                             //dataGridViewMain.Columns.Add("Received", typeof(bool));
                             for (int i = 0; i < dataGridViewMain.Columns.Count; i++)
                             {
-                                dataGridViewMain.Columns[i].Width = 150;
+                                dataGridViewMain.Columns[i].Width = 173;
                             }
                         }
                     }

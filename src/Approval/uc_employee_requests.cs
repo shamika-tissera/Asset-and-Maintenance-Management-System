@@ -40,7 +40,7 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
                             //dataGridViewMain.Columns.Add("Received", typeof(bool));
                             for (int i = 0; i < dataGridViewEmployeeRequests.Columns.Count; i++)
                             {
-                                //dataGridViewEmployeeRequests.Columns[i].Width = 150;
+                                dataGridViewEmployeeRequests.Columns[i].Width = 115;
                             }
                         }
                     }
@@ -102,6 +102,11 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
             {
                 MessageBox.Show("Please select an item.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
+        }
+
+        private void btn_print_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

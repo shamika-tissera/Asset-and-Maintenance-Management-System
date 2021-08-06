@@ -22,8 +22,10 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             comboPlant.SelectedIndex = 0;
             comboCriticalOperational.SelectedIndex = 0;
             comboCriticalActivity.SelectedIndex = 0;
+            
 
             uc_item_usage1.Visible = false;
+            uc_previously_reported1.Visible = false;
             populateAssetIDCombo();
         }
 
@@ -63,6 +65,9 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             btn_previouslyReported.BackColor = Color.FromArgb(232, 234, 237);
             btn_reporting.BackColor = Color.FromArgb(255, 255, 255);
             uc_item_usage1.Visible = false;
+            uc_previously_reported1.Visible = false;
+            uc_previously_reported1.SendToBack();
+            uc_item_usage1.SendToBack();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -70,6 +75,16 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             btn_reporting.BackColor = Color.FromArgb(232, 234, 237);
             btn_previouslyReported.BackColor = Color.FromArgb(255, 255, 255);
             uc_item_usage1.Visible = true;
+            uc_previously_reported1.Visible = false;
+            uc_item_usage1.BringToFront();
+        }
+        private void click_previouslyReported(object sender, EventArgs e)
+        {
+            btnPreviouslyReported.BackColor = Color.FromArgb(232, 234, 237);
+            btnPreviouslyReported.BackColor = Color.FromArgb(255, 255, 255);
+            uc_previously_reported1.setUsername(lbl_uname.Text);
+            uc_previously_reported1.Visible = true;
+            uc_previously_reported1.BringToFront();
         }
 
         private void txtWarrantyCode_TextChanged(object sender, EventArgs e)
@@ -119,6 +134,45 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
                         MessageBox.Show("You have already submitted a report today on this asset!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+            }
+        }
+
+        private void assetCode_SelectionChanged(object sender, EventArgs e)
+        {
+            string assetID = comboAssetID.Text;
+            string query = "select assetType, plant from NonCurrentAsset where asset_id = '" + assetID + "';";
+            DataTable table = new DataTable();
+            using (SqlConnection connection = DBConnection.establishConnection())
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        adapter.Fill(table);
+                        string assetType = table.Rows[0]["assetType"].ToString();
+                        string plant = table.Rows[0]["plant"].ToString();
+                        comboType.Text = assetType;
+                        comboPlant.Text = plant;
+                    }
+                }
+            }
+        }
+
+        private Login.Login login;
+        public void setLoginInstance(Login.Login login, string uname)
+        {
+            this.login = login;
+            lbl_uname.Text = uname;
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            DialogResult result =  MessageBox.Show("Are you sure you want to logout?", "Confirmation", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                login.resetContent();
+                this.Dispose();
+                login.Show();
             }
         }
     }
