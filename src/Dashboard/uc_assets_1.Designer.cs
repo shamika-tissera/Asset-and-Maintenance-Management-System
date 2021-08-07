@@ -29,10 +29,48 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         /// </summary>
         private void InitializeComponent()
         {
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnAddItem = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.Button();
             this.btnConfig = new System.Windows.Forms.Button();
-            this.btnAddItem = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.button1.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.configAssets__Custom___3_;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(10, 140);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(253, 49);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "&Dispose";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnAddItem
+            // 
+            this.btnAddItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.btnAddItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddItem.FlatAppearance.BorderSize = 0;
+            this.btnAddItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddItem.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnAddItem.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.addItem__Custom_;
+            this.btnAddItem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddItem.Location = new System.Drawing.Point(3, 562);
+            this.btnAddItem.Name = "btnAddItem";
+            this.btnAddItem.Size = new System.Drawing.Size(267, 40);
+            this.btnAddItem.TabIndex = 9;
+            this.btnAddItem.Text = "&Add item";
+            this.btnAddItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddItem.UseVisualStyleBackColor = false;
+            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
             // 
             // btn_back
             // 
@@ -69,30 +107,12 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.btnConfig.UseVisualStyleBackColor = false;
             this.btnConfig.Click += new System.EventHandler(this.button9_Click);
             // 
-            // btnAddItem
-            // 
-            this.btnAddItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
-            this.btnAddItem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddItem.FlatAppearance.BorderSize = 0;
-            this.btnAddItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddItem.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnAddItem.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.addItem__Custom_;
-            this.btnAddItem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAddItem.Location = new System.Drawing.Point(3, 562);
-            this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.Size = new System.Drawing.Size(267, 40);
-            this.btnAddItem.TabIndex = 9;
-            this.btnAddItem.Text = "&Add item";
-            this.btnAddItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddItem.UseVisualStyleBackColor = false;
-            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
-            // 
             // uc_assets_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAddItem);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btnConfig);
@@ -103,8 +123,9 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         }
 
         #endregion
-        private System.Windows.Forms.Button btnConfig;
-        private System.Windows.Forms.Button btn_back;
-        private System.Windows.Forms.Button btnAddItem;
+        protected System.Windows.Forms.Button btnConfig;
+        protected System.Windows.Forms.Button btn_back;
+        protected System.Windows.Forms.Button btnAddItem;
+        protected System.Windows.Forms.Button button1;
     }
 }

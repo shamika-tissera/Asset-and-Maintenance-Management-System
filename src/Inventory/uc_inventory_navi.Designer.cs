@@ -124,9 +124,9 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
 
         #endregion
 
-        private System.Windows.Forms.Button btn_back;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        protected System.Windows.Forms.Button btn_back;
+        protected System.Windows.Forms.Button button6;
+        protected System.Windows.Forms.Button button1;
+        protected System.Windows.Forms.Button button2;
     }
 }

@@ -32,7 +32,7 @@ namespace Asset_and_Maintenance_Management_System.src
             {
                 try
                 {
-                    File.WriteAllText(fileRelPath + fileName, "[" + DateTime.Now.ToString() + "]:\n" + content);
+                    File.AppendAllText(fileRelPath + fileName, "[" + DateTime.Now.ToString() + "]:\n" + content);
                 }
                 catch(Exception)
                 {

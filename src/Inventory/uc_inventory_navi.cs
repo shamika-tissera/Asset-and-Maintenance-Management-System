@@ -25,11 +25,11 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
         {
             this.inst = inst;
         }
-        private void btn_back_Click(object sender, EventArgs e)
+        protected virtual void btn_back_Click(object sender, EventArgs e)
         {
             inst.clickedInventoryBack();
         }
-        private bool isButtonEmphasized = false;
+        protected bool isButtonEmphasized = false;
         public void resetBtnEmphasis()
         {
             button1.BackColor = Color.FromArgb(231, 245, 254);
@@ -37,7 +37,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             button6.BackColor = Color.FromArgb(231, 245, 254);
             isButtonEmphasized = false;
         }
-        private void button1_Click(object sender, EventArgs e)
+        protected virtual void button1_Click(object sender, EventArgs e)
         {
             inst.clickedInventoryTrends();
             if (isButtonEmphasized)
@@ -48,7 +48,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             isButtonEmphasized = true;
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        protected virtual void button6_Click(object sender, EventArgs e)
         {
             if (isButtonEmphasized)
             {

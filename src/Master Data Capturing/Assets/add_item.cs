@@ -90,7 +90,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
             string fileRelPath = "../../prog_logs/tracker/";
             int n = int.Parse(File.ReadAllText(fileRelPath + assetType + ".txt"));
-            txt_general_code.Text = "ASS-" + assetType.ToUpper() + "-" + n;
+            txt_general_code.Text = "ASS-" + assetType.Substring(0,9).ToUpper() + "-" + n;
             txt_general_code.Enabled = false;
             try
             {
@@ -147,9 +147,19 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         protected bool updateDatabase(string assetType)
         {
             bool success;
-            string updateWarranty = "insert into Warranty(warrantyCode, type, startDate, endDate) values ('" + warranty[0] + "', '" + warranty[1] + "', '" + warranty[2] + "', '" + warranty[3] + "');";
+            string warrantyEnd;
+            if (warranty[3] == "INF")
+            {
+                warrantyEnd = null;
+            }
+            else
+            {
+                warrantyEnd = Convert.ToDateTime(warranty[3]).ToString("yyyy-MM-dd");
+            }
+            
+            string updateWarranty = "insert into Warranty(warrantyCode, type, startDate, endDate) values ('" + warranty[0] + "', '" + warranty[1] + "', '" + Convert.ToDateTime(warranty[2]).ToString("yyyy-MM-dd") + "', '" + warrantyEnd + "');";
             string updateAsset = "insert into NonCurrentAsset(asset_id, assetType, serialNumber, manufacturer, state, plant, condition, criticality, warrantyCode, installationDate, purchaseDate, costOfPurchase, invoiceNumber, currentMarketValue, lifetime, depreciationMethod, depreciationRate, serviceInterval) values " +
-                "('" + general[0] + "', '" + assetType + "', '" + general[2] + "', '" + general[3] + "', '" + general[5] + "', '" + installation[2] + "', '" + maintenance[1] + "', '" + maintenance[2] + "', '" + warranty[0] + "', '" + installation[0] + "', '" + installation[1] + "', " + administrative[0] + ", '" + administrative[1] + "', " + administrative[2] + ", " + administrative[4] + ", '" + administrative[7] + "', " + administrative[8] + ", " + maintenance[4] + ");";
+                "('" + general[0] + "', '" + assetType + "', '" + general[2] + "', '" + general[3] + "', '" + general[5] + "', '" + installation[2] + "', '" + maintenance[1] + "', '" + maintenance[2] + "', '" + warranty[0] + "', '" + installation[0] + "', '" + Convert.ToDateTime(installation[1]).ToString("yyyy-MM-dd") + "', " + administrative[0] + ", '" + administrative[1] + "', " + administrative[2] + ", " + administrative[4] + ", '" + administrative[7] + "', " + administrative[8] + ", " + maintenance[4] + ");";
             using (SqlConnection connection = DBConnection.establishConnection())
             {
                 using (SqlCommand command = new SqlCommand(updateWarranty, connection))
@@ -177,6 +187,22 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
                     catch (Exception ex)
                     {
                         MessageBox.Show("Couldn't submit information.");
+                        TextWriter.writeContent("logs.txt", ex.ToString());
+                        success = false;
+                        return success;
+                    }
+                }
+
+                string queryProcedure = "exec SetIntitialServiceDueDate '" + txt_general_code.Text + "';";
+                using (SqlCommand command = new SqlCommand(queryProcedure, connection))
+                {
+                    try
+                    {
+                        command.ExecuteNonQuery();
+                        success = true;
+                    }
+                    catch (Exception ex)
+                    {
                         TextWriter.writeContent("logs.txt", ex.ToString());
                         success = false;
                         return success;

@@ -73,6 +73,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             inventory_low_navi1.Visible = false;
             uc_inventory_low1.Visible = false;
             uc_employee_requests1.Visible = false;
+            uc_dispose_asset1.Visible = false;
             uc_calendar1.BackColor = Color.FromArgb(231, 245, 254);
 
 
@@ -161,11 +162,20 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_dash_main1.Visible = true;
             uc_calendar1.Visible = true;
             uc_asset_browse1.Visible = false;
+            uc_dispose_asset1.Visible = false;
         }
 
-        public void clickedAssetsConfig()
+        public virtual void clickedAssetsDispose()
         {
             uc_assets_11.Visible = true;
+            dashboard_info1.Visible = false;
+            uc_asset_browse1.Visible = false;
+            uc_dispose_asset1.Visible = true;
+        }
+        public virtual void clickedAssetsConfig()
+        {
+            uc_assets_11.Visible = true;
+            uc_dispose_asset1.Visible = false;
             dashboard_info1.Visible = false;
             uc_navPanel_assets1.resetBtnEmphasis();
             //uc_navPanel_assets1.Visible = true;
@@ -201,14 +211,14 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_calendar1.Visible = true;
             uc_dash_main1.Visible = true;
         }
-        public void clickedInventoryLevels()
+        public virtual void clickedInventoryLevels()
         {
             uc_calendar1.Visible = false;
             uc_inventory_trends1.Visible = false;
             uc_inventory_levels1.Visible = true;
             uc_inventory_dash1.Visible = false;
         }
-        public void clickedInventoryTrends()
+        public virtual void clickedInventoryTrends()
         {
             uc_calendar1.Visible = false;
             uc_inventory_levels1.Visible = false;

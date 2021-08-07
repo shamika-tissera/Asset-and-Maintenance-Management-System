@@ -1,6 +1,56 @@
-[07-Aug-21 2:15:00 PM]:
-System.InvalidOperationException: Invoke or BeginInvoke cannot be called on a control until the window handle has been created.
-   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
-   at System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
-   at System.Windows.Forms.Control.Invoke(Delegate method)
-   at Asset_and_Maintenance_Management_System.src.Dashboard.uc_calendar.setTime(Object sender, ElapsedEventArgs e) in F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\src\Dashboard\uc_calendar.cs:line 34
+[07-Aug-21 9:09:05 PM]:
+System.InvalidOperationException: ExecuteNonQuery: CommandText property has not been initialized
+   at System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Asset_and_Maintenance_Management_System.src.Login.Login.button1_Click(Object sender, EventArgs e) in F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\src\Login\Login.cs:line 135[07-Aug-21 9:10:28 PM]:
+SQLi Detected![07-Aug-21 9:10:30 PM]:
+SQLi Detected![07-Aug-21 9:10:31 PM]:
+SQLi Detected![07-Aug-21 9:10:31 PM]:
+SQLi Detected![07-Aug-21 9:10:32 PM]:
+SQLi Detected![07-Aug-21 9:10:33 PM]:
+SQLi Detected![07-Aug-21 9:11:03 PM]:
+SQLi Detected![07-Aug-21 9:11:04 PM]:
+SQLi Detected![07-Aug-21 9:11:05 PM]:
+SQLi Detected![07-Aug-21 9:11:06 PM]:
+SQLi Detected![07-Aug-21 9:11:39 PM]:
+SQLi Detected![07-Aug-21 9:11:40 PM]:
+SQLi Detected![07-Aug-21 9:11:41 PM]:
+SQLi Detected![07-Aug-21 9:11:43 PM]:
+SQLi Detected![07-Aug-21 9:12:00 PM]:
+SQLi Detected![07-Aug-21 9:12:01 PM]:
+SQLi Detected![07-Aug-21 9:59:27 PM]:
+System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting date and/or time from character string.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.add_item.updateDatabase(String assetType) in F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\src\Master Data Capturing\Assets\add_item.cs:line 159
+ClientConnectionId:11daf9b0-9471-47d2-87f5-a77b6d4049f5
+Error Number:241,State:1,Class:16[07-Aug-21 9:59:45 PM]:
+System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting date and/or time from character string.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.add_item.updateDatabase(String assetType) in F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\src\Master Data Capturing\Assets\add_item.cs:line 159
+ClientConnectionId:11daf9b0-9471-47d2-87f5-a77b6d4049f5
+Error Number:241,State:1,Class:16[07-Aug-21 10:25:20 PM]:
+System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.add_item.updateDatabase(String assetType) in F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\src\Master Data Capturing\Assets\add_item.cs:line 184
+ClientConnectionId:aa9dc63a-af7b-46c4-9521-98a45ecbcec3
+Error Number:8152,State:14,Class:16

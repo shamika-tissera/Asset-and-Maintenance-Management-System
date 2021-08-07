@@ -38,9 +38,9 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             table.Columns.Add("Percentage", typeof(string));
             foreach (DataRow row in table.Rows)
             {
-                int usage = int.Parse(row["Actual Lifetime (months)"].ToString());
-                int lifetime = int.Parse(row["Lifetime (months)"].ToString());
-                string percentage = ((usage / lifetime) * 100).ToString() + '%';
+                double usage = double.Parse(row["Actual Lifetime (months)"].ToString());
+                double lifetime = double.Parse(row["Lifetime (months)"].ToString());
+                string percentage = ((int)((usage / lifetime) * 100)).ToString() + '%';
                 row["Percentage"] = percentage;
             }
             //for (int i = 0; i < data.Columns.Count; i++)
@@ -60,9 +60,9 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
         {
             foreach (DataRow row in table.Rows)
             {
-                int usage = int.Parse(row["Actual Lifetime (months)"].ToString());
-                int lifetime = int.Parse(row["Lifetime (months)"].ToString());
-                int percentage = (usage / lifetime) * 100;
+                double usage = double.Parse(row["Actual Lifetime (months)"].ToString());
+                double lifetime = double.Parse(row["Lifetime (months)"].ToString());
+                double percentage = (usage / lifetime) * 100;
                 chartUtilization.Series["%"].Points.AddXY(row["Asset Type"].ToString(), percentage);
             }
         }

@@ -95,3 +95,7 @@ F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Release\Asset-and-Maintenance-Management-System.csproj.CopyComplete
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Release\Asset-and-Maintenance-Management-System.exe
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Release\Asset-and-Maintenance-Management-System.pdb
+F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Release\Asset_and_Maintenance_Management_System.src.Login.AddUser.resources
+F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Release\Asset_and_Maintenance_Management_System.src.Login.Authentication_Logs.resources
+F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Release\Asset_and_Maintenance_Management_System.src.Worker_Interface.uc_item_usage.resources
+F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Release\Asset_and_Maintenance_Management_System.src.Dashboard.uc_dispose_asset.resources

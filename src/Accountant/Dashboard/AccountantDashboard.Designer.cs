@@ -29,9 +29,11 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
         /// </summary>
         private void InitializeComponent()
         {
-            this.initialInterfaceAsset1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.initialInterfaceAsset();
+            this.initialInterfaceAsset3 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.initialInterfaceAsset();
             this.uc_dash_main_accountant1 = new Asset_and_Maintenance_Management_System.src.Accountant.Navigation.uc_dash_main_accountant();
             this.uc_calendar_accountant1 = new Asset_and_Maintenance_Management_System.src.Accountant.Dashboard.uc_calendar_accountant();
+            this.uc_assets_accountant_11 = new Asset_and_Maintenance_Management_System.src.Accountant.Navigation.uc_assets_accountant_1();
+            this.uc_inventory_navi_accountant1 = new Asset_and_Maintenance_Management_System.src.Accountant.Navigation.uc_inventory_navi_accountant();
             this.navPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -41,28 +43,28 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
             // 
             // navPanel
             // 
+            this.navPanel.Controls.Add(this.uc_inventory_navi_accountant1);
+            this.navPanel.Controls.Add(this.uc_assets_accountant_11);
             this.navPanel.Controls.Add(this.uc_dash_main_accountant1);
+            this.navPanel.Controls.SetChildIndex(this.uc_navPanel_assets1, 0);
+            this.navPanel.Controls.SetChildIndex(this.uc_dash_main1, 0);
             this.navPanel.Controls.SetChildIndex(this.uc_dash_main_accountant1, 0);
             this.navPanel.Controls.SetChildIndex(this.uc_maintenance_navi1, 0);
             this.navPanel.Controls.SetChildIndex(this.uc_approval_navi1, 0);
             this.navPanel.Controls.SetChildIndex(this.uc_inventory_navi1, 0);
             this.navPanel.Controls.SetChildIndex(this.uc_analytics_navi_one1, 0);
             this.navPanel.Controls.SetChildIndex(this.uc_assets_11, 0);
-            this.navPanel.Controls.SetChildIndex(this.uc_navPanel_assets1, 0);
-            this.navPanel.Controls.SetChildIndex(this.uc_dash_main1, 0);
             this.navPanel.Controls.SetChildIndex(this.panel2, 0);
             this.navPanel.Controls.SetChildIndex(this.elementHost1, 0);
             this.navPanel.Controls.SetChildIndex(this.pnl_highlight, 0);
+            this.navPanel.Controls.SetChildIndex(this.uc_assets_accountant_11, 0);
+            this.navPanel.Controls.SetChildIndex(this.uc_inventory_navi_accountant1, 0);
             // 
             // uc_dash_main1
             // 
             this.uc_dash_main1.Location = new System.Drawing.Point(21, 204);
             this.uc_dash_main1.Visible = false;
-            this.elementHost1.Child = this.initialInterfaceAsset1;
-            // 
-            // uc_analytics_utilization1
-            // 
-            this.uc_analytics_utilization1.Location = new System.Drawing.Point(311, 0);
+            this.elementHost1.Child = this.initialInterfaceAsset3;
             // 
             // uc_dash_main_accountant1
             // 
@@ -79,6 +81,22 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
             this.uc_calendar_accountant1.Name = "uc_calendar_accountant1";
             this.uc_calendar_accountant1.Size = new System.Drawing.Size(1225, 901);
             this.uc_calendar_accountant1.TabIndex = 25;
+            // 
+            // uc_assets_accountant_11
+            // 
+            this.uc_assets_accountant_11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.uc_assets_accountant_11.Location = new System.Drawing.Point(17, 207);
+            this.uc_assets_accountant_11.Name = "uc_assets_accountant_11";
+            this.uc_assets_accountant_11.Size = new System.Drawing.Size(267, 616);
+            this.uc_assets_accountant_11.TabIndex = 17;
+            // 
+            // uc_inventory_navi_accountant1
+            // 
+            this.uc_inventory_navi_accountant1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.uc_inventory_navi_accountant1.Location = new System.Drawing.Point(17, 204);
+            this.uc_inventory_navi_accountant1.Name = "uc_inventory_navi_accountant1";
+            this.uc_inventory_navi_accountant1.Size = new System.Drawing.Size(273, 616);
+            this.uc_inventory_navi_accountant1.TabIndex = 18;
             // 
             // AccountantDashboard
             // 
@@ -125,5 +143,9 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
         protected Master_Data_Capturing.Assets.initialInterfaceAsset hostedComponent1;
         protected Master_Data_Capturing.Assets.initialInterfaceAsset initialInterfaceAsset1;
         private uc_calendar_accountant uc_calendar_accountant1;
+        protected Master_Data_Capturing.Assets.initialInterfaceAsset initialInterfaceAsset2;
+        private Navigation.uc_assets_accountant_1 uc_assets_accountant_11;
+        private Navigation.uc_inventory_navi_accountant uc_inventory_navi_accountant1;
+        protected Master_Data_Capturing.Assets.initialInterfaceAsset initialInterfaceAsset3;
     }
 }

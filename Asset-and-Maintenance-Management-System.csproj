@@ -129,11 +129,23 @@
     <Compile Include="src\Accountant\Dashboard\uc_calendar_accountant.Designer.cs">
       <DependentUpon>uc_calendar_accountant.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Accountant\Navigation\uc_assets_accountant_1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Accountant\Navigation\uc_assets_accountant_1.Designer.cs">
+      <DependentUpon>uc_assets_accountant_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Accountant\Navigation\uc_dash_main_accountant.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="src\Accountant\Navigation\uc_dash_main_accountant.Designer.cs">
       <DependentUpon>uc_dash_main_accountant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Accountant\Navigation\uc_inventory_navi_accountant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Accountant\Navigation\uc_inventory_navi_accountant.Designer.cs">
+      <DependentUpon>uc_inventory_navi_accountant.cs</DependentUpon>
     </Compile>
     <Compile Include="src\Analytics\uc_analytics_intial_dash.cs">
       <SubType>UserControl</SubType>
@@ -195,6 +207,12 @@
     <Compile Include="src\Approval\uc_stock_requests.Designer.cs">
       <DependentUpon>uc_stock_requests.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Dashboard\DisposeAsset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Dashboard\DisposeAsset.Designer.cs">
+      <DependentUpon>DisposeAsset.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Dashboard\MainDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +242,12 @@
     </Compile>
     <Compile Include="src\Dashboard\uc_dash_main.Designer.cs">
       <DependentUpon>uc_dash_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Dashboard\uc_dispose_asset.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Dashboard\uc_dispose_asset.Designer.cs">
+      <DependentUpon>uc_dispose_asset.cs</DependentUpon>
     </Compile>
     <Compile Include="src\DatabaseHandlers\DBConnection.cs" />
     <Compile Include="src\Email\Email.cs" />
@@ -523,8 +547,14 @@
     <EmbeddedResource Include="src\Accountant\Dashboard\uc_calendar_accountant.resx">
       <DependentUpon>uc_calendar_accountant.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\Accountant\Navigation\uc_assets_accountant_1.resx">
+      <DependentUpon>uc_assets_accountant_1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Accountant\Navigation\uc_dash_main_accountant.resx">
       <DependentUpon>uc_dash_main_accountant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Accountant\Navigation\uc_inventory_navi_accountant.resx">
+      <DependentUpon>uc_inventory_navi_accountant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Analytics\uc_analytics_intial_dash.resx">
       <DependentUpon>uc_analytics_intial_dash.cs</DependentUpon>
@@ -556,6 +586,9 @@
     <EmbeddedResource Include="src\Approval\uc_stock_requests.resx">
       <DependentUpon>uc_stock_requests.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\Dashboard\DisposeAsset.resx">
+      <DependentUpon>DisposeAsset.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\Dashboard\MainDashboard.resx">
       <DependentUpon>MainDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -570,6 +603,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Dashboard\uc_dash_main.resx">
       <DependentUpon>uc_dash_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Dashboard\uc_dispose_asset.resx">
+      <DependentUpon>uc_dispose_asset.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Inventory\AddInventoryItemType.resx">
       <DependentUpon>AddInventoryItemType.cs</DependentUpon>

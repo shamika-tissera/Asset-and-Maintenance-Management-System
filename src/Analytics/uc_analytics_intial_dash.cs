@@ -52,8 +52,8 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
         }
         private void fillAssetLifetimePieChart()
         {
-            string queryLowLifeAssets = "select COUNT(*) as COUNT from NonCurrentAsset WHERE DATEDIFF(year, getDate(), DATEADD(year, 5, purchaseDate)) > 5;";
-            string queryAllAssets = "SET NOCOUNT OFF SELECT COUNT(*) as 'COUNT' FROM dbo.NonCurrentAsset;";
+            string queryLowLifeAssets = "select COUNT(*) as COUNT from NonCurrentAsset WHERE DATEDIFF(year, getDate(), DATEADD(year, 5, purchaseDate)) < 5;";
+            string queryAllAssets = "SET NOCOUNT OFF SELECT COUNT(*) as 'COUNT' FROM dbo.NonCurrentAsset WHERE state != 'Disposed';";
             int countAllAssets, countLowLifeAssets, countHighLifeAssets;
             using(SqlConnection connection = DBConnection.establishConnection())
             {
@@ -68,8 +68,8 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
                 }
             }
             chart_lifetime.Titles.Add("Asset Lifetime");
-            chart_lifetime.Series["d1"].Points.AddXY("< 5 years", countLowLifeAssets);
-            chart_lifetime.Series["d1"].Points.AddXY("> 5 years", countHighLifeAssets);
+            chart_lifetime.Series["d1"].Points.AddXY("< 5 years", countHighLifeAssets);
+            chart_lifetime.Series["d1"].Points.AddXY("> 5 years", countLowLifeAssets);
         }
         private bool isWarrantyActive(string endDate)
         {

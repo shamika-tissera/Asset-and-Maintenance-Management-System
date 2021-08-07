@@ -31,7 +31,6 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainDashboard));
             this.navPanel = new System.Windows.Forms.Panel();
-            this.inventory_low_navi1 = new Asset_and_Maintenance_Management_System.src.Inventory.inventory_low_navi();
             this.uc_approval_navi1 = new Asset_and_Maintenance_Management_System.src.Approval.uc_approval_navi();
             this.pnl_highlight = new System.Windows.Forms.Panel();
             this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
@@ -45,6 +44,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.uc_assets_11 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_assets_1();
             this.uc_analytics_navi_one1 = new Asset_and_Maintenance_Management_System.src.Analytics.uc_analytics_navi_one();
             this.uc_inventory_navi1 = new Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_navi();
+            this.inventory_low_navi1 = new Asset_and_Maintenance_Management_System.src.Inventory.inventory_low_navi();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pic_close = new System.Windows.Forms.PictureBox();
             this.uc_analytics_utilization1 = new Asset_and_Maintenance_Management_System.src.Analytics.uc_analytics_utilization();
@@ -66,6 +66,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.uc_analytics_warranty1 = new Asset_and_Maintenance_Management_System.src.Analytics.uc_analytics_warranty();
             this.uc_asset_browse1 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.uc_asset_browse();
             this.uc_inventory_trends1 = new Asset_and_Maintenance_Management_System.src.Inventory.uc_inventory_trends();
+            this.uc_dispose_asset1 = new Asset_and_Maintenance_Management_System.src.Dashboard.uc_dispose_asset();
             this.navPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -93,14 +94,6 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.navPanel.Size = new System.Drawing.Size(311, 826);
             this.navPanel.TabIndex = 1;
             this.navPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.navPanel_Paint);
-            // 
-            // inventory_low_navi1
-            // 
-            this.inventory_low_navi1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
-            this.inventory_low_navi1.Location = new System.Drawing.Point(17, 204);
-            this.inventory_low_navi1.Name = "inventory_low_navi1";
-            this.inventory_low_navi1.Size = new System.Drawing.Size(273, 616);
-            this.inventory_low_navi1.TabIndex = 16;
             // 
             // uc_approval_navi1
             // 
@@ -209,6 +202,14 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.uc_inventory_navi1.Name = "uc_inventory_navi1";
             this.uc_inventory_navi1.Size = new System.Drawing.Size(273, 616);
             this.uc_inventory_navi1.TabIndex = 8;
+            // 
+            // inventory_low_navi1
+            // 
+            this.inventory_low_navi1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.inventory_low_navi1.Location = new System.Drawing.Point(17, 204);
+            this.inventory_low_navi1.Name = "inventory_low_navi1";
+            this.inventory_low_navi1.Size = new System.Drawing.Size(273, 616);
+            this.inventory_low_navi1.TabIndex = 16;
             // 
             // pictureBox2
             // 
@@ -389,12 +390,21 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.uc_inventory_trends1.Size = new System.Drawing.Size(1356, 826);
             this.uc_inventory_trends1.TabIndex = 14;
             // 
+            // uc_dispose_asset1
+            // 
+            this.uc_dispose_asset1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.uc_dispose_asset1.Location = new System.Drawing.Point(311, 0);
+            this.uc_dispose_asset1.Name = "uc_dispose_asset1";
+            this.uc_dispose_asset1.Size = new System.Drawing.Size(1313, 826);
+            this.uc_dispose_asset1.TabIndex = 25;
+            // 
             // MainDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(68)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1520, 826);
+            this.Controls.Add(this.uc_dispose_asset1);
             this.Controls.Add(this.pic_close);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.navPanel);
@@ -471,5 +481,6 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         private Inventory.inventory_low_navi inventory_low_navi1;
         private Inventory.uc_inventory_low uc_inventory_low1;
         private Approval.uc_employee_requests uc_employee_requests1;
+        private uc_dispose_asset uc_dispose_asset1;
     }
 }

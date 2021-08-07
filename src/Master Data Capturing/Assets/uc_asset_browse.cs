@@ -38,7 +38,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             DataTable data;
             string value = txtSearch.Text.Trim();
             string query =
-                "select assetType, lifetime, costOfPurchase, depreciationMethod, depreciationRate, purchaseDate, manufacturer, serviceInterval, warranty from NonCurrentAsset where asset_id like '%" + value + "%' OR plant like '%" + value + "%' OR depreciationMethod like '%" + value + "%' OR serialNumber like '%" + value + "%' or condition like '%" + value + "%' or state like '%" + value + "%' or assetType like '%" + value + "%' or warrantyCode like '%" + value + "%' or manufacturer like '%" + value + "%';";
+                "select asset_id, assetType, lifetime, costOfPurchase, depreciationMethod, depreciationRate, purchaseDate, manufacturer, serviceInterval, warranty from NonCurrentAsset where asset_id like '%" + value + "%' OR plant like '%" + value + "%' OR depreciationMethod like '%" + value + "%' OR serialNumber like '%" + value + "%' or condition like '%" + value + "%' or state like '%" + value + "%' or assetType like '%" + value + "%' or warrantyCode like '%" + value + "%' or manufacturer like '%" + value + "%';";
             using (SqlConnection connection = DBConnection.establishConnection())
             {
                 data = new DataTable();
@@ -90,7 +90,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private void populateAssetRecords()
         {
             DataTable data;
-            string query = "SELECT assetType, lifetime, costOfPurchase, depreciationMethod, depreciationRate, purchaseDate, manufacturer, serviceInterval, warranty FROM NonCurrentAsset;";
+            string query = "SELECT asset_id, assetType, lifetime, costOfPurchase, depreciationMethod, depreciationRate, purchaseDate, manufacturer, serviceInterval, warranty FROM NonCurrentAsset;";
             using(SqlConnection connection = DBConnection.establishConnection())
             {
                 using(SqlDataAdapter adapter = new SqlDataAdapter(query, connection))

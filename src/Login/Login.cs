@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Asset_and_Maintenance_Management_System.src.Accountant.Dashboard;
@@ -56,6 +57,8 @@ namespace Asset_and_Maintenance_Management_System.src.Login
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            var regexString1 = new Regex(@"[\t\r\n]|(--[^\r\n]*)|(/\*[\w\W]*?(?=\*/)\*/)");
+            var regexString2 = new Regex(@"('(''|[^'])*')|(;)|(\b(ALTER|CREATE|DELETE|DROP|EXEC|alter|create|delete|drop|exec(UTE){0,1}|INSERT( +INTO){0,1}|MERGE|SELECT|UPDATE|UNION( +ALL){0,1})\b)");
             username = txtUsername.Text;
             password = txtPassword.Text;
             string empCat = null;
@@ -69,6 +72,15 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             }
             else
             {
+                if (regexString1.IsMatch(txtUsername.Text) || regexString2.IsMatch(txtPassword.Text))
+                {
+                    TextWriter.writeContent("logs.txt", "SQLi Detected!");
+                    MessageBox.Show("Invalid username or password!\n" +
+                                    "If you are facing any difficulties logging in, " +
+                                    "please contact the system administrator.", "Login Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
                 string[] loginDetails= { txtUsername.Text, txtPassword.Text }; //loginDetails[0]:Username, loginDetails[1]:password
                 username = txtUsername.Text;
                 password = txtPassword.Text;

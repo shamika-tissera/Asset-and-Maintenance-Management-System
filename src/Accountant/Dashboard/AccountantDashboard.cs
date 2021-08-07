@@ -19,14 +19,19 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
             uc_dash_main_accountant1.Visible = true;
             uc_calendar1.Visible = false;
             uc_calendar_accountant1.Visible = true;
+            uc_assets_accountant_11.Visible = false;
+            uc_inventory_navi_accountant1.Visible = false;
             uc_dash_main_accountant1.setDashboardInstance(this);
+            uc_assets_accountant_11.setInst(this);
+            uc_inventory_navi_accountant1.setInst(this);
         }
         public override void clickedAssetsBack()
         {
-            uc_assets_11.Visible = false;
+            uc_assets_accountant_11.Visible = false;
             dashboard_info1.Visible = false;
             uc_dash_main_accountant1.Visible = true;
             uc_calendar_accountant1.Visible = true;
+            uc_assets_11.Visible = false;
             //uc_asset_browse1.Visible = true;
         }
         public override void clickedAnalyticsBack()
@@ -60,13 +65,25 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
             uc_inventory_levels1.Visible = false;
             uc_calendar_accountant1.Visible = true;
             uc_dash_main_accountant1.Visible = true;
+            uc_inventory_navi_accountant1.Visible = false;
         }
 
         public override void clickedAssets()
         {
-            uc_assets_11.Visible = true;
+            uc_assets_accountant_11.Visible = true;
             dashboard_info1.Visible = true;
             uc_calendar_accountant1.Visible = false;
+        }
+
+        public override void clickedAssetsConfig()
+        {
+            uc_assets_11.Visible = true;
+            dashboard_info1.Visible = false;
+            uc_navPanel_assets1.resetBtnEmphasis();
+            //uc_navPanel_assets1.Visible = true;
+            uc_asset_browse1.Visible = true;
+            uc_asset_browse1.setAssetCategory("config");
+            //uc_navPanel_assets1.BringToFront();
         }
 
         public override void clickedAnalytics()
@@ -86,7 +103,8 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
             uc_calendar_accountant1.Visible = false;
             uc_dash_main1.Visible = false;
             uc_inventory_navi1.resetBtnEmphasis();
-            uc_inventory_navi1.Visible = true;
+            uc_inventory_navi1.Visible = false;
+            uc_inventory_navi_accountant1.Visible = true;
         }
         public override void clickedMaintenance()
         {

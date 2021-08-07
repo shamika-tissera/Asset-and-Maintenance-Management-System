@@ -92,7 +92,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.btn_assets.Size = new System.Drawing.Size(267, 53);
             this.btn_assets.TabIndex = 1;
             this.btn_assets.Tag = "";
-            this.btn_assets.Text = "&Facilities and Assets  \r\n";
+            this.btn_assets.Text = "A&ssets\r\n";
             this.btn_assets.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_assets.UseVisualStyleBackColor = false;
             this.btn_assets.Click += new System.EventHandler(this.btn_assets_Click);
@@ -168,7 +168,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.btnApproval.Name = "btnApproval";
             this.btnApproval.Size = new System.Drawing.Size(267, 53);
             this.btnApproval.TabIndex = 4;
-            this.btnApproval.Text = "&Approvals";
+            this.btnApproval.Text = "A&pprovals";
             this.btnApproval.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnApproval.UseVisualStyleBackColor = false;
             this.btnApproval.Click += new System.EventHandler(this.approval_Click);

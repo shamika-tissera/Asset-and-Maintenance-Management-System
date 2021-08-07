@@ -35,6 +35,10 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             }
 
             dataGridViewLowInventory.DataSource = table;
+            for (int i = 0; i < dataGridViewLowInventory.Columns.Count; i++)
+            {
+                dataGridViewLowInventory.Columns[i].Width = 241;
+            }
             table.Dispose();
         }
     }
