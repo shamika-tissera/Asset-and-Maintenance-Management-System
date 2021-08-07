@@ -42,7 +42,6 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.btn_previouslyReported = new System.Windows.Forms.Button();
             this.btn_reporting = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_uname = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,7 +50,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.uc_item_usage1 = new Asset_and_Maintenance_Management_System.src.Worker_Interface.uc_item_usage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.uc_previously_reported1 = new Asset_and_Maintenance_Management_System.src.Worker_Interface.uc_previously_reported();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -76,7 +75,6 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.uc_item_usage1);
             this.panel1.Controls.Add(this.uc_previously_reported1);
             this.panel1.Location = new System.Drawing.Point(43, 39);
             this.panel1.Name = "panel1";
@@ -279,16 +277,6 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.User_with_smile_svg;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(264, 148);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // lbl_uname
             // 
             this.lbl_uname.AutoSize = true;
@@ -377,12 +365,15 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.label1.TabIndex = 4;
             this.label1.Text = "Equipment Error Reporting";
             // 
-            // uc_item_usage1
+            // pictureBox1
             // 
-            this.uc_item_usage1.Location = new System.Drawing.Point(272, 0);
-            this.uc_item_usage1.Name = "uc_item_usage1";
-            this.uc_item_usage1.Size = new System.Drawing.Size(1144, 700);
-            this.uc_item_usage1.TabIndex = 8;
+            this.pictureBox1.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.User_with_smile_svg;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(264, 148);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // uc_previously_reported1
             // 
@@ -436,7 +427,6 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboAssetID;
         private System.Windows.Forms.Button btnPreviouslyReported;
-        private uc_item_usage uc_item_usage1;
         private uc_previously_reported uc_previously_reported1;
     }
 }

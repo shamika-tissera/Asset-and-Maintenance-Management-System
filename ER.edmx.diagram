@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="28aaaeb7d7fd4b918082b6ae584ed7b9" Name="Diagram1">
+      <Diagram DiagramId="28aaaeb7d7fd4b918082b6ae584ed7b9" Name="Diagram1" ZoomLevel="64">
         <EntityTypeShape EntityType="AssetManagementSystemModel.NonCurrentAsset" Width="1.75" PointX="3.5" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="AssetManagementSystemModel.UserInfo" Width="1.5" PointX="6.75" PointY="7.5" IsExpanded="true" />
         <EntityTypeShape EntityType="AssetManagementSystemModel.Warranty" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />

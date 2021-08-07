@@ -530,5 +530,11 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             newUser.BringToFront();
             populateWindowMenu(newUser.Text, newUser);
         }
+
+        private void authenticationLogsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Authentication_Logs logs = new Authentication_Logs();
+            logs.Show();
+        }
     }
 }

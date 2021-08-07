@@ -26,7 +26,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
 	        Branch, Building, Floor, Room
 
         Maintenance
-	        Maintained by, Condition, Criticality, Last Checked Date
+	        Maintained by, Condition, Criticality, Last Checked Date, Service Interval
 	
         Warranty
 	        Warranty code, warranty type, warranty start, warranty end
@@ -59,6 +59,13 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         public add_item()
         {
             InitializeComponent();
+            dateAcceptance.MaxDate = DateTime.Today;
+            dateDepreciationStart.MaxDate = DateTime.Today;
+            dateStart.MaxDate = DateTime.Today;
+            dateInstallation.MaxDate = DateTime.Today;
+            dateLastChecked.MaxDate = DateTime.Today;
+            radBtn_reducingBalance.Select();
+
         }
         public add_item(settingsParent asset)
         {
@@ -141,8 +148,8 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
             bool success;
             string updateWarranty = "insert into Warranty(warrantyCode, type, startDate, endDate) values ('" + warranty[0] + "', '" + warranty[1] + "', '" + warranty[2] + "', '" + warranty[3] + "');";
-            string updateAsset = "insert into NonCurrentAsset(asset_id, assetType, serialNumber, manufacturer, state, plant, condition, criticality, warrantyCode, installationDate, purchaseDate, costOfPurchase, invoiceNumber, currentMarketValue, lifetime, depreciationMethod, depreciationRate) values " +
-                "('" + general[0] + "', '" + assetType + "', '" + general[2] + "', '" + general[3] + "', '" + general[5] + "', '" + installation[2] + "', '" + maintenance[1] + "', '" + maintenance[2] + "', '" + warranty[0] + "', '" + installation[0] + "', '" + installation[1] + "', " + administrative[0] + ", '" + administrative[1] + "', " + administrative[2] + ", " + administrative[4] + ", '" + administrative[7] + "', " + administrative[8] + ");";
+            string updateAsset = "insert into NonCurrentAsset(asset_id, assetType, serialNumber, manufacturer, state, plant, condition, criticality, warrantyCode, installationDate, purchaseDate, costOfPurchase, invoiceNumber, currentMarketValue, lifetime, depreciationMethod, depreciationRate, serviceInterval) values " +
+                "('" + general[0] + "', '" + assetType + "', '" + general[2] + "', '" + general[3] + "', '" + general[5] + "', '" + installation[2] + "', '" + maintenance[1] + "', '" + maintenance[2] + "', '" + warranty[0] + "', '" + installation[0] + "', '" + installation[1] + "', " + administrative[0] + ", '" + administrative[1] + "', " + administrative[2] + ", " + administrative[4] + ", '" + administrative[7] + "', " + administrative[8] + ", " + maintenance[4] + ");";
             using (SqlConnection connection = DBConnection.establishConnection())
             {
                 using (SqlCommand command = new SqlCommand(updateWarranty, connection))
@@ -252,13 +259,13 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             string[] info = new string[10];
             if (true)
             {
-                info[0] = txtPurchasedPrice.Text.ToString().Replace('.', ' ').Trim();
+                info[0] = txtPurchasedPrice.Text.ToString().Trim();
                 info[1] = txtInvoiceNumber.Text.ToString().Trim();
-                info[2] = txtCurrentVal.Text.ToString().Replace('.', ' ').Trim();
-                info[3] = dateDisposal.Text.ToString();
-                info[4] = txtYearsOfLife.Text.ToString().Replace('.', ' ').Trim();
+                info[2] = txtCurrentVal.Text.ToString().Trim();
+                info[3] = null;
+                info[4] = txtYearsOfLife.Text.ToString().Trim();
                 info[5] = dateDepreciationStart.Text.ToString();
-                info[6] = dateDepreciationEnd.Text.ToString();
+                info[6] = null;
                 if (radBtn_reducingBalance.Checked)
                 {
                     info[7] = "reducing-balance";
@@ -267,7 +274,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
                 {
                     info[7] = "straight-line";
                 }
-                info[8] = txtDepreciationRate.Text.ToString().Replace('.', ' ').Trim();
+                info[8] = txtDepreciationRate.Text.ToString().Trim();
                 info[9] = checkboxFullyDepreciated.Checked.ToString();
             }
             return info;
@@ -280,7 +287,15 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
                 info[0] = txtWarrantyCode.Text.ToString().Trim();
                 info[1] = comboType.Text.ToString();
                 info[2] = dateStart.Text.ToString();
-                info[3] = dateEnd.Text.ToString();
+                if (comboType.Text == "Life-time")
+                {
+                    info[3] = dateEnd.Text.ToString();
+                }
+                else
+                {
+                    info[3] = "INF";
+                }
+                
             }
             return info;
         }
@@ -294,11 +309,12 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         }
         public string[] getMaintenanceInformation()
         {
-            string[] info = new string[4];
+            string[] info = new string[5];
             info[0] = comboMaintainedBy.Text.ToString();
             info[1] = comboCondition.Text.ToString();
             info[2] = comboCriticality.Text.ToString();
             info[3] = dateLastChecked.Text.ToString();
+            info[4] = txtServiceInterval.Text.ToString().Trim();
             return info;
         }
         public string[] getLocationInformation()
@@ -313,6 +329,20 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private void btnCancel_Click(object sender, EventArgs e)
         {
             inst.clickedAddItemCancel();
+        }
+
+        private void changed_warrantyType(object sender, EventArgs e)
+        {
+            if (comboType.Text == "Life-time")
+            {
+                lblEnd.Visible = false;
+                dateEnd.Visible = false;
+            }
+            else
+            {
+                lblEnd.Visible = true;
+                dateEnd.Visible = true;
+            }
         }
     }
 }

@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets
 {
     partial class add_item
@@ -46,7 +48,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.dateEnd = new System.Windows.Forms.DateTimePicker();
             this.txtWarrantyCode = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lblEnd = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -55,19 +57,15 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.radBtn_straightLine = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.checkboxFullyDepreciated = new System.Windows.Forms.CheckBox();
-            this.dateDepreciationEnd = new System.Windows.Forms.DateTimePicker();
             this.dateDepreciationStart = new System.Windows.Forms.DateTimePicker();
-            this.dateDisposal = new System.Windows.Forms.DateTimePicker();
             this.txtInvoiceNumber = new System.Windows.Forms.TextBox();
             this.txtDepreciationRate = new System.Windows.Forms.MaskedTextBox();
             this.txtYearsOfLife = new System.Windows.Forms.MaskedTextBox();
             this.txtCurrentVal = new System.Windows.Forms.MaskedTextBox();
             this.txtPurchasedPrice = new System.Windows.Forms.MaskedTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -102,6 +100,8 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtServiceInterval = new System.Windows.Forms.MaskedTextBox();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -117,7 +117,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.btn_reset.Location = new System.Drawing.Point(722, 1402);
             this.btn_reset.Name = "btn_reset";
             this.btn_reset.Size = new System.Drawing.Size(95, 32);
-            this.btn_reset.TabIndex = 109;
+            this.btn_reset.TabIndex = 33;
             this.btn_reset.Text = "&Reset";
             this.btn_reset.UseVisualStyleBackColor = true;
             this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
@@ -128,7 +128,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.btnOK.Location = new System.Drawing.Point(850, 1402);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(99, 32);
-            this.btnOK.TabIndex = 107;
+            this.btnOK.TabIndex = 32;
             this.btnOK.Text = "&OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
@@ -139,7 +139,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.btnCancel.Location = new System.Drawing.Point(587, 1402);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(99, 32);
-            this.btnCancel.TabIndex = 108;
+            this.btnCancel.TabIndex = 34;
             this.btnCancel.Text = "&Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -160,7 +160,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.groupBox4.Controls.Add(this.label21);
             this.groupBox4.Controls.Add(this.label22);
             this.groupBox4.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(8, 798);
+            this.groupBox4.Location = new System.Drawing.Point(8, 775);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(941, 163);
             this.groupBox4.TabIndex = 113;
@@ -171,30 +171,31 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             this.comboPlant.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboPlant.FormattingEnabled = true;
+            this.comboPlant.ItemHeight = 23;
             this.comboPlant.Items.AddRange(new object[] {
             "Minuwangoda"});
             this.comboPlant.Location = new System.Drawing.Point(35, 115);
             this.comboPlant.Name = "comboPlant";
             this.comboPlant.Size = new System.Drawing.Size(406, 31);
-            this.comboPlant.TabIndex = 3;
+            this.comboPlant.TabIndex = 22;
             // 
             // dateInstallation
             // 
             this.dateInstallation.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateInstallation.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateInstallation.Location = new System.Drawing.Point(35, 50);
-            this.dateInstallation.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            this.dateInstallation.MaxDate = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
             this.dateInstallation.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateInstallation.Name = "dateInstallation";
             this.dateInstallation.Size = new System.Drawing.Size(406, 30);
-            this.dateInstallation.TabIndex = 1;
-            this.dateInstallation.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            this.dateInstallation.TabIndex = 20;
+            this.dateInstallation.Value = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(30, 93);
+            this.label20.Location = new System.Drawing.Point(37, 93);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(49, 23);
             this.label20.TabIndex = 1;
@@ -205,18 +206,18 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.dateAcceptance.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateAcceptance.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateAcceptance.Location = new System.Drawing.Point(494, 50);
-            this.dateAcceptance.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            this.dateAcceptance.MaxDate = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
             this.dateAcceptance.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateAcceptance.Name = "dateAcceptance";
             this.dateAcceptance.Size = new System.Drawing.Size(406, 30);
-            this.dateAcceptance.TabIndex = 2;
-            this.dateAcceptance.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            this.dateAcceptance.TabIndex = 21;
+            this.dateAcceptance.Value = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(489, 30);
+            this.label21.Location = new System.Drawing.Point(494, 30);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(139, 23);
             this.label21.TabIndex = 1;
@@ -239,11 +240,11 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.groupBox3.Controls.Add(this.dateEnd);
             this.groupBox3.Controls.Add(this.txtWarrantyCode);
             this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.label17);
+            this.groupBox3.Controls.Add(this.lblEnd);
             this.groupBox3.Controls.Add(this.label18);
             this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(8, 627);
+            this.groupBox3.Location = new System.Drawing.Point(8, 598);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(941, 165);
             this.groupBox3.TabIndex = 112;
@@ -262,31 +263,32 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.comboType.Location = new System.Drawing.Point(498, 54);
             this.comboType.Name = "comboType";
             this.comboType.Size = new System.Drawing.Size(406, 28);
-            this.comboType.TabIndex = 2;
+            this.comboType.TabIndex = 17;
+            this.comboType.SelectedValueChanged += new System.EventHandler(this.changed_warrantyType);
             // 
             // dateStart
             // 
             this.dateStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateStart.Location = new System.Drawing.Point(39, 122);
-            this.dateStart.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            this.dateStart.MaxDate = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
             this.dateStart.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateStart.Name = "dateStart";
             this.dateStart.Size = new System.Drawing.Size(406, 27);
-            this.dateStart.TabIndex = 3;
-            this.dateStart.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            this.dateStart.TabIndex = 18;
+            this.dateStart.Value = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
             // 
             // dateEnd
             // 
             this.dateEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateEnd.Location = new System.Drawing.Point(498, 122);
-            this.dateEnd.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            this.dateEnd.MaxDate = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
             this.dateEnd.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateEnd.Name = "dateEnd";
             this.dateEnd.Size = new System.Drawing.Size(406, 27);
-            this.dateEnd.TabIndex = 4;
-            this.dateEnd.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            this.dateEnd.TabIndex = 19;
+            this.dateEnd.Value = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
             // 
             // txtWarrantyCode
             // 
@@ -295,7 +297,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.txtWarrantyCode.MaxLength = 100;
             this.txtWarrantyCode.Name = "txtWarrantyCode";
             this.txtWarrantyCode.Size = new System.Drawing.Size(406, 27);
-            this.txtWarrantyCode.TabIndex = 1;
+            this.txtWarrantyCode.TabIndex = 16;
             // 
             // label16
             // 
@@ -307,15 +309,15 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label16.TabIndex = 1;
             this.label16.Text = "Warranty Type";
             // 
-            // label17
+            // lblEnd
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(495, 102);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(111, 20);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "Warranty End";
+            this.lblEnd.AutoSize = true;
+            this.lblEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnd.Location = new System.Drawing.Point(495, 102);
+            this.lblEnd.Name = "lblEnd";
+            this.lblEnd.Size = new System.Drawing.Size(111, 20);
+            this.lblEnd.TabIndex = 1;
+            this.lblEnd.Text = "Warranty End";
             // 
             // label18
             // 
@@ -341,26 +343,22 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             this.groupBox2.Controls.Add(this.groupDepreciationMethod);
             this.groupBox2.Controls.Add(this.checkboxFullyDepreciated);
-            this.groupBox2.Controls.Add(this.dateDepreciationEnd);
             this.groupBox2.Controls.Add(this.dateDepreciationStart);
-            this.groupBox2.Controls.Add(this.dateDisposal);
             this.groupBox2.Controls.Add(this.txtInvoiceNumber);
             this.groupBox2.Controls.Add(this.txtDepreciationRate);
             this.groupBox2.Controls.Add(this.txtYearsOfLife);
             this.groupBox2.Controls.Add(this.txtCurrentVal);
             this.groupBox2.Controls.Add(this.txtPurchasedPrice);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(9, 253);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(940, 368);
+            this.groupBox2.Size = new System.Drawing.Size(940, 337);
             this.groupBox2.TabIndex = 111;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Administrative";
@@ -371,7 +369,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.groupDepreciationMethod.Controls.Add(this.radBtn_straightLine);
             this.groupDepreciationMethod.Controls.Add(this.label8);
             this.groupDepreciationMethod.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupDepreciationMethod.Location = new System.Drawing.Point(491, 243);
+            this.groupDepreciationMethod.Location = new System.Drawing.Point(491, 173);
             this.groupDepreciationMethod.Name = "groupDepreciationMethod";
             this.groupDepreciationMethod.Size = new System.Drawing.Size(329, 66);
             this.groupDepreciationMethod.TabIndex = 13;
@@ -384,7 +382,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.radBtn_reducingBalance.Location = new System.Drawing.Point(142, 32);
             this.radBtn_reducingBalance.Name = "radBtn_reducingBalance";
             this.radBtn_reducingBalance.Size = new System.Drawing.Size(166, 24);
-            this.radBtn_reducingBalance.TabIndex = 12;
+            this.radBtn_reducingBalance.TabIndex = 15;
             this.radBtn_reducingBalance.TabStop = true;
             this.radBtn_reducingBalance.Text = "Reducing Balance";
             this.radBtn_reducingBalance.UseVisualStyleBackColor = true;
@@ -395,7 +393,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.radBtn_straightLine.Location = new System.Drawing.Point(8, 32);
             this.radBtn_straightLine.Name = "radBtn_straightLine";
             this.radBtn_straightLine.Size = new System.Drawing.Size(126, 24);
-            this.radBtn_straightLine.TabIndex = 11;
+            this.radBtn_straightLine.TabIndex = 14;
             this.radBtn_straightLine.TabStop = true;
             this.radBtn_straightLine.Text = "Straight-Line";
             this.radBtn_straightLine.UseVisualStyleBackColor = true;
@@ -412,48 +410,24 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             this.checkboxFullyDepreciated.AutoSize = true;
             this.checkboxFullyDepreciated.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkboxFullyDepreciated.Location = new System.Drawing.Point(498, 337);
+            this.checkboxFullyDepreciated.Location = new System.Drawing.Point(498, 267);
             this.checkboxFullyDepreciated.Name = "checkboxFullyDepreciated";
             this.checkboxFullyDepreciated.Size = new System.Drawing.Size(162, 24);
-            this.checkboxFullyDepreciated.TabIndex = 10;
+            this.checkboxFullyDepreciated.TabIndex = 13;
             this.checkboxFullyDepreciated.Text = "Fully Depreciated";
             this.checkboxFullyDepreciated.UseVisualStyleBackColor = true;
-            // 
-            // dateDepreciationEnd
-            // 
-            this.dateDepreciationEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateDepreciationEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateDepreciationEnd.Location = new System.Drawing.Point(39, 266);
-            this.dateDepreciationEnd.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
-            this.dateDepreciationEnd.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
-            this.dateDepreciationEnd.Name = "dateDepreciationEnd";
-            this.dateDepreciationEnd.Size = new System.Drawing.Size(406, 27);
-            this.dateDepreciationEnd.TabIndex = 7;
-            this.dateDepreciationEnd.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
             // 
             // dateDepreciationStart
             // 
             this.dateDepreciationStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateDepreciationStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateDepreciationStart.Location = new System.Drawing.Point(498, 192);
-            this.dateDepreciationStart.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            this.dateDepreciationStart.Location = new System.Drawing.Point(498, 122);
+            this.dateDepreciationStart.MaxDate = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
             this.dateDepreciationStart.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateDepreciationStart.Name = "dateDepreciationStart";
             this.dateDepreciationStart.Size = new System.Drawing.Size(406, 27);
-            this.dateDepreciationStart.TabIndex = 6;
-            this.dateDepreciationStart.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
-            // 
-            // dateDisposal
-            // 
-            this.dateDisposal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateDisposal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateDisposal.Location = new System.Drawing.Point(498, 122);
-            this.dateDisposal.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
-            this.dateDisposal.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
-            this.dateDisposal.Name = "dateDisposal";
-            this.dateDisposal.Size = new System.Drawing.Size(406, 27);
-            this.dateDisposal.TabIndex = 4;
-            this.dateDisposal.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            this.dateDepreciationStart.TabIndex = 10;
+            this.dateDepreciationStart.Value = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
             // 
             // txtInvoiceNumber
             // 
@@ -461,16 +435,16 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.txtInvoiceNumber.Location = new System.Drawing.Point(498, 54);
             this.txtInvoiceNumber.Name = "txtInvoiceNumber";
             this.txtInvoiceNumber.Size = new System.Drawing.Size(406, 27);
-            this.txtInvoiceNumber.TabIndex = 2;
+            this.txtInvoiceNumber.TabIndex = 8;
             // 
             // txtDepreciationRate
             // 
             this.txtDepreciationRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDepreciationRate.Location = new System.Drawing.Point(39, 335);
+            this.txtDepreciationRate.Location = new System.Drawing.Point(39, 265);
             this.txtDepreciationRate.Mask = "99.099";
             this.txtDepreciationRate.Name = "txtDepreciationRate";
             this.txtDepreciationRate.Size = new System.Drawing.Size(406, 27);
-            this.txtDepreciationRate.TabIndex = 9;
+            this.txtDepreciationRate.TabIndex = 12;
             // 
             // txtYearsOfLife
             // 
@@ -479,7 +453,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.txtYearsOfLife.Mask = "999.099";
             this.txtYearsOfLife.Name = "txtYearsOfLife";
             this.txtYearsOfLife.Size = new System.Drawing.Size(406, 27);
-            this.txtYearsOfLife.TabIndex = 5;
+            this.txtYearsOfLife.TabIndex = 11;
             // 
             // txtCurrentVal
             // 
@@ -488,7 +462,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.txtCurrentVal.Mask = "99999999990.99";
             this.txtCurrentVal.Name = "txtCurrentVal";
             this.txtCurrentVal.Size = new System.Drawing.Size(406, 27);
-            this.txtCurrentVal.TabIndex = 3;
+            this.txtCurrentVal.TabIndex = 9;
             // 
             // txtPurchasedPrice
             // 
@@ -497,7 +471,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.txtPurchasedPrice.Mask = "99999999990.99";
             this.txtPurchasedPrice.Name = "txtPurchasedPrice";
             this.txtPurchasedPrice.Size = new System.Drawing.Size(406, 27);
-            this.txtPurchasedPrice.TabIndex = 1;
+            this.txtPurchasedPrice.TabIndex = 7;
             // 
             // label7
             // 
@@ -509,21 +483,11 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label7.TabIndex = 1;
             this.label7.Text = "Invoice number";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(495, 102);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(116, 20);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Disposal Date";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(495, 172);
+            this.label10.Location = new System.Drawing.Point(495, 102);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(145, 20);
             this.label10.TabIndex = 1;
@@ -533,21 +497,11 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(40, 315);
+            this.label11.Location = new System.Drawing.Point(40, 245);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(144, 20);
             this.label11.TabIndex = 1;
             this.label11.Text = "Depreciation Rate";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(40, 243);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(138, 20);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Depreciation End";
             // 
             // label13
             // 
@@ -607,7 +561,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.txt_general_code.Location = new System.Drawing.Point(39, 50);
             this.txt_general_code.Name = "txt_general_code";
             this.txt_general_code.Size = new System.Drawing.Size(406, 30);
-            this.txt_general_code.TabIndex = 7;
+            this.txt_general_code.TabIndex = 1;
             // 
             // combo_general_supplier
             // 
@@ -615,7 +569,10 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.combo_general_supplier.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combo_general_supplier.FormattingEnabled = true;
             this.combo_general_supplier.Items.AddRange(new object[] {
-            "Blanco"});
+            "Metropolitan",
+            "Barclays Computers (Pvt) Ltd",
+            "Winsoft",
+            "Mega Mass"});
             this.combo_general_supplier.Location = new System.Drawing.Point(39, 173);
             this.combo_general_supplier.Name = "combo_general_supplier";
             this.combo_general_supplier.Size = new System.Drawing.Size(406, 31);
@@ -654,9 +611,9 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(495, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 23);
+            this.label2.Size = new System.Drawing.Size(58, 23);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Name";
+            this.label2.Text = "Model";
             // 
             // label6
             // 
@@ -728,6 +685,8 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.txtServiceInterval);
+            this.groupBox5.Controls.Add(this.label9);
             this.groupBox5.Controls.Add(this.dateLastChecked);
             this.groupBox5.Controls.Add(this.comboCriticality);
             this.groupBox5.Controls.Add(this.comboCondition);
@@ -737,9 +696,9 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.groupBox5.Controls.Add(this.label25);
             this.groupBox5.Controls.Add(this.label26);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(8, 967);
+            this.groupBox5.Location = new System.Drawing.Point(8, 954);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(941, 170);
+            this.groupBox5.Size = new System.Drawing.Size(941, 226);
             this.groupBox5.TabIndex = 114;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Maintenance";
@@ -748,18 +707,19 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             this.dateLastChecked.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateLastChecked.Location = new System.Drawing.Point(498, 124);
-            this.dateLastChecked.MaxDate = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            this.dateLastChecked.MaxDate = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
             this.dateLastChecked.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateLastChecked.Name = "dateLastChecked";
             this.dateLastChecked.Size = new System.Drawing.Size(406, 27);
-            this.dateLastChecked.TabIndex = 4;
-            this.dateLastChecked.Value = new System.DateTime(2021, 6, 6, 0, 0, 0, 0);
+            this.dateLastChecked.TabIndex = 26;
+            this.dateLastChecked.Value = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
             // 
             // comboCriticality
             // 
             this.comboCriticality.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboCriticality.FormattingEnabled = true;
             this.comboCriticality.Items.AddRange(new object[] {
+            "None",
             "Low",
             "Moderate",
             "High",
@@ -767,7 +727,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.comboCriticality.Location = new System.Drawing.Point(39, 122);
             this.comboCriticality.Name = "comboCriticality";
             this.comboCriticality.Size = new System.Drawing.Size(406, 28);
-            this.comboCriticality.TabIndex = 3;
+            this.comboCriticality.TabIndex = 25;
             // 
             // comboCondition
             // 
@@ -780,18 +740,22 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.comboCondition.Location = new System.Drawing.Point(498, 52);
             this.comboCondition.Name = "comboCondition";
             this.comboCondition.Size = new System.Drawing.Size(406, 28);
-            this.comboCondition.TabIndex = 2;
+            this.comboCondition.TabIndex = 24;
             // 
             // comboMaintainedBy
             // 
             this.comboMaintainedBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboMaintainedBy.FormattingEnabled = true;
+            this.comboMaintainedBy.ItemHeight = 20;
             this.comboMaintainedBy.Items.AddRange(new object[] {
-            "Blanco"});
+            "Metropolitan",
+            "Barclays Computers (Pvt) Ltd",
+            "Winsoft",
+            "Mega Mass"});
             this.comboMaintainedBy.Location = new System.Drawing.Point(39, 52);
             this.comboMaintainedBy.Name = "comboMaintainedBy";
             this.comboMaintainedBy.Size = new System.Drawing.Size(406, 28);
-            this.comboMaintainedBy.TabIndex = 1;
+            this.comboMaintainedBy.TabIndex = 23;
             // 
             // label23
             // 
@@ -840,7 +804,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.groupBox6.Controls.Add(this.label29);
             this.groupBox6.Controls.Add(this.label30);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(8, 1143);
+            this.groupBox6.Location = new System.Drawing.Point(8, 1196);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(941, 165);
             this.groupBox6.TabIndex = 115;
@@ -852,30 +816,43 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.comboFloor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboFloor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFloor.FormattingEnabled = true;
+            this.comboFloor.Items.AddRange(new object[] {
+            "Floor - 1",
+            "Floor - 2",
+            "Floor - 3"});
             this.comboFloor.Location = new System.Drawing.Point(39, 122);
             this.comboFloor.Name = "comboFloor";
             this.comboFloor.Size = new System.Drawing.Size(406, 28);
-            this.comboFloor.TabIndex = 3;
+            this.comboFloor.TabIndex = 30;
             // 
             // comboRoom
             // 
             this.comboRoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboRoom.FormattingEnabled = true;
+            this.comboRoom.Items.AddRange(new object[] {
+            "Room - 1",
+            "Room - 2",
+            "Room - 3",
+            "Room - 4"});
             this.comboRoom.Location = new System.Drawing.Point(498, 122);
             this.comboRoom.Name = "comboRoom";
             this.comboRoom.Size = new System.Drawing.Size(406, 28);
-            this.comboRoom.TabIndex = 4;
+            this.comboRoom.TabIndex = 31;
             // 
             // comboBuilding
             // 
             this.comboBuilding.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBuilding.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBuilding.FormattingEnabled = true;
+            this.comboBuilding.Items.AddRange(new object[] {
+            "Building - 1",
+            "Building - 2",
+            "Building - 3"});
             this.comboBuilding.Location = new System.Drawing.Point(498, 52);
             this.comboBuilding.Name = "comboBuilding";
             this.comboBuilding.Size = new System.Drawing.Size(406, 28);
-            this.comboBuilding.TabIndex = 2;
+            this.comboBuilding.TabIndex = 29;
             // 
             // comboBranch
             // 
@@ -887,7 +864,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.comboBranch.Location = new System.Drawing.Point(39, 52);
             this.comboBranch.Name = "comboBranch";
             this.comboBranch.Size = new System.Drawing.Size(406, 28);
-            this.comboBranch.TabIndex = 1;
+            this.comboBranch.TabIndex = 28;
             // 
             // label27
             // 
@@ -928,6 +905,25 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label30.Size = new System.Drawing.Size(63, 20);
             this.label30.TabIndex = 1;
             this.label30.Text = "Branch";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(41, 160);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(127, 23);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Service Interval";
+            // 
+            // txtServiceInterval
+            // 
+            this.txtServiceInterval.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtServiceInterval.Location = new System.Drawing.Point(38, 182);
+            this.txtServiceInterval.Mask = "999.099";
+            this.txtServiceInterval.Name = "txtServiceInterval";
+            this.txtServiceInterval.Size = new System.Drawing.Size(406, 27);
+            this.txtServiceInterval.TabIndex = 27;
             // 
             // add_item
             // 
@@ -985,7 +981,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private System.Windows.Forms.DateTimePicker dateEnd;
         private System.Windows.Forms.TextBox txtWarrantyCode;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lblEnd;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -994,19 +990,15 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private System.Windows.Forms.RadioButton radBtn_straightLine;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.CheckBox checkboxFullyDepreciated;
-        private System.Windows.Forms.DateTimePicker dateDepreciationEnd;
         private System.Windows.Forms.DateTimePicker dateDepreciationStart;
-        private System.Windows.Forms.DateTimePicker dateDisposal;
         private System.Windows.Forms.TextBox txtInvoiceNumber;
         private System.Windows.Forms.MaskedTextBox txtDepreciationRate;
         private System.Windows.Forms.MaskedTextBox txtYearsOfLife;
         private System.Windows.Forms.MaskedTextBox txtCurrentVal;
         private System.Windows.Forms.MaskedTextBox txtPurchasedPrice;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
@@ -1041,5 +1033,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.MaskedTextBox txtServiceInterval;
+        private System.Windows.Forms.Label label9;
     }
 }

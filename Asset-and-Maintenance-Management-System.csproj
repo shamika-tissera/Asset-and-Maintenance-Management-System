@@ -275,6 +275,12 @@
     <Compile Include="src\Login\AddUser.Designer.cs">
       <DependentUpon>AddUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Login\Authentication Logs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Login\Authentication Logs.Designer.cs">
+      <DependentUpon>Authentication Logs.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -588,6 +594,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Login\AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Login\Authentication Logs.resx">
+      <DependentUpon>Authentication Logs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

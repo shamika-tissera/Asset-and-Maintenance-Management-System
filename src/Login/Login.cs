@@ -61,7 +61,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             string empCat = null;
             string query = "SELECT empcategory FROM UserInfo WHERE username = '" + username + "' AND password = '" + password + "';";
 
-            
+            string logQuery = null;
 
             if (txtUsername.Text == "" || txtPassword.Text == "")
             {
@@ -87,17 +87,23 @@ namespace Asset_and_Maintenance_Management_System.src.Login
                         AccountantDashboard acc = new AccountantDashboard();
                         acc.Show();
                         this.Visible = false;
+                        logQuery = "INSERT INTO LoginLogs(loginTime, username, category) VALUES(GETDATE(), '" +
+                                   username + "', 'Accountant');";
                         break;
                     case "man":
                         Dashboard.MainDashboard dashboard = new Dashboard.MainDashboard();
                         dashboard.setLoginInstance(this, username);
                         dashboard.Show();
                         this.Visible = false;
+                        logQuery = "INSERT INTO LoginLogs(loginTime, username, category) VALUES(GETDATE(), '" +
+                                   username + "', 'Manager');";
                         break;
                     case "wor":
                         WorkerInterface interf = new WorkerInterface();
                         interf.setUsernameLabel(username);
                         interf.setLoginInstance(this, username);
+                        logQuery = "INSERT INTO LoginLogs(loginTime, username, category) VALUES(GETDATE(), '" +
+                                   username + "', 'Worker');";
                         interf.Show();
                         break;
                     default:
@@ -108,7 +114,20 @@ namespace Asset_and_Maintenance_Management_System.src.Login
                         break;
                 }
 
-                
+                using (SqlConnection connection = DBConnection.establishConnection())
+                {
+                    try
+                    {
+                        using (SqlCommand command = new SqlCommand(logQuery, connection))
+                        {
+                            command.ExecuteNonQuery();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        TextWriter.writeContent("logs.txt", ex.ToString());
+                    }
+                }
             }
         }
     }

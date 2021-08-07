@@ -297,6 +297,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_preventive_maintenance1.Visible = false;
             uc_maintenance_reccomendations1.Visible = false;
             uc_maintenance_backlog1.Visible = false;
+            uc_corrective_maintenance1.populateDataGridView();
         }
         public void clickedMaintenanceReccomendations()
         {

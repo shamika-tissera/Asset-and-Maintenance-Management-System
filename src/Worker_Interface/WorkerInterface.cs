@@ -24,7 +24,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             comboCriticalActivity.SelectedIndex = 0;
             
 
-            uc_item_usage1.Visible = false;
+            //uc_item_usage1.Visible = false;
             uc_previously_reported1.Visible = false;
             populateAssetIDCombo();
         }
@@ -64,19 +64,19 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
         {
             btn_previouslyReported.BackColor = Color.FromArgb(232, 234, 237);
             btn_reporting.BackColor = Color.FromArgb(255, 255, 255);
-            uc_item_usage1.Visible = false;
+            //uc_item_usage1.Visible = false;
             uc_previously_reported1.Visible = false;
             uc_previously_reported1.SendToBack();
-            uc_item_usage1.SendToBack();
+            //uc_item_usage1.SendToBack();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             btn_reporting.BackColor = Color.FromArgb(232, 234, 237);
             btn_previouslyReported.BackColor = Color.FromArgb(255, 255, 255);
-            uc_item_usage1.Visible = true;
+            //uc_item_usage1.Visible = true;
             uc_previously_reported1.Visible = false;
-            uc_item_usage1.BringToFront();
+            //uc_item_usage1.BringToFront();
         }
         private void click_previouslyReported(object sender, EventArgs e)
         {
