@@ -54,7 +54,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             this.txtFName.Location = new System.Drawing.Point(217, 140);
             this.txtFName.Name = "txtFName";
             this.txtFName.Size = new System.Drawing.Size(406, 30);
-            this.txtFName.TabIndex = 11;
+            this.txtFName.TabIndex = 2;
             // 
             // txtEmpID
             // 
@@ -62,7 +62,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             this.txtEmpID.Location = new System.Drawing.Point(217, 75);
             this.txtEmpID.Name = "txtEmpID";
             this.txtEmpID.Size = new System.Drawing.Size(406, 30);
-            this.txtEmpID.TabIndex = 10;
+            this.txtEmpID.TabIndex = 1;
             // 
             // comboType
             // 
@@ -76,7 +76,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             this.comboType.Location = new System.Drawing.Point(217, 438);
             this.comboType.Name = "comboType";
             this.comboType.Size = new System.Drawing.Size(406, 31);
-            this.comboType.TabIndex = 12;
+            this.comboType.TabIndex = 7;
             // 
             // label5
             // 
@@ -124,7 +124,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             this.txtLName.Location = new System.Drawing.Point(217, 203);
             this.txtLName.Name = "txtLName";
             this.txtLName.Size = new System.Drawing.Size(406, 30);
-            this.txtLName.TabIndex = 11;
+            this.txtLName.TabIndex = 3;
             // 
             // label4
             // 
@@ -142,7 +142,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             this.txtUsername.Location = new System.Drawing.Point(217, 263);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(406, 30);
-            this.txtUsername.TabIndex = 11;
+            this.txtUsername.TabIndex = 4;
             this.txtUsername.Leave += new System.EventHandler(this.leave_usernameField);
             // 
             // label6
@@ -162,7 +162,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(406, 30);
-            this.txtPassword.TabIndex = 11;
+            this.txtPassword.TabIndex = 5;
             // 
             // label7
             // 
@@ -181,15 +181,15 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.PasswordChar = '*';
             this.txtConfirmPassword.Size = new System.Drawing.Size(406, 30);
-            this.txtConfirmPassword.TabIndex = 11;
+            this.txtConfirmPassword.TabIndex = 6;
             // 
             // btn_reset
             // 
             this.btn_reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_reset.Location = new System.Drawing.Point(526, 562);
+            this.btn_reset.Location = new System.Drawing.Point(491, 524);
             this.btn_reset.Name = "btn_reset";
             this.btn_reset.Size = new System.Drawing.Size(95, 32);
-            this.btn_reset.TabIndex = 112;
+            this.btn_reset.TabIndex = 9;
             this.btn_reset.Text = "&Reset";
             this.btn_reset.UseVisualStyleBackColor = true;
             this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
@@ -197,10 +197,10 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             // btnOK
             // 
             this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(654, 562);
+            this.btnOK.Location = new System.Drawing.Point(619, 524);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(99, 32);
-            this.btnOK.TabIndex = 110;
+            this.btnOK.TabIndex = 8;
             this.btnOK.Text = "&OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
@@ -208,10 +208,10 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(391, 562);
+            this.btnCancel.Location = new System.Drawing.Point(356, 524);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(99, 32);
-            this.btnCancel.TabIndex = 111;
+            this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "&Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -220,7 +220,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(780, 615);
+            this.ClientSize = new System.Drawing.Size(742, 576);
             this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
@@ -239,7 +239,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AddUser";
-            this.Text = "AddUser";
+            this.Text = "Add User";
             this.ResumeLayout(false);
             this.PerformLayout();
 

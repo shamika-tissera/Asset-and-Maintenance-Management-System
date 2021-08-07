@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Asset_and_Maintenance_Management_System.src.Inventory;
+using Asset_and_Maintenance_Management_System.src.Login;
 
 namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
 {
@@ -30,6 +31,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
         private int Lighting = 0;
         private int Product = 0;
         private int inventoryType = 0;
+        private int user = 0;
 
         private DataTable childForms;
         private addItem_assetCategory assetCategory;
@@ -483,7 +485,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            assignUserToolStripMenuItem_Click(sender, e);
         }
 
         private void inventoryTypeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -506,6 +508,27 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             inventory.Show();
             inventory.BringToFront();
             populateWindowMenu(inventory.Text, inventory);
+        }
+
+        private void assignUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddUser newUser = new AddUser();
+            newUser.MdiParent = this;
+            tblLayout_Options.Visible = false;
+            winCount++;
+            user++;
+            if (user == 1)
+            {
+                newUser.Text = "Add " + "User";
+            }
+            else
+            {
+                newUser.Text = "Add " + "User" + "(" + (user - 1) + ")";
+            }
+            panel1.SendToBack();
+            newUser.Show();
+            newUser.BringToFront();
+            populateWindowMenu(newUser.Text, newUser);
         }
     }
 }

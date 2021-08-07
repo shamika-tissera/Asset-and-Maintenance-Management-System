@@ -33,6 +33,8 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.assignUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.authenticationLogsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.assetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.heaterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,13 +52,11 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             this.inventoryTypeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tblLayout_Options = new System.Windows.Forms.Panel();
-            this.assignUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btn_backlog = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tblLayout_Options = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
-            this.authenticationLogsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tblLayout_Options.SuspendLayout();
@@ -92,6 +92,19 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             this.closeToolStripMenuItem.Text = "&Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
+            // assignUserToolStripMenuItem
+            // 
+            this.assignUserToolStripMenuItem.Name = "assignUserToolStripMenuItem";
+            this.assignUserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.assignUserToolStripMenuItem.Text = "Assign user";
+            this.assignUserToolStripMenuItem.Click += new System.EventHandler(this.assignUserToolStripMenuItem_Click);
+            // 
+            // authenticationLogsToolStripMenuItem
+            // 
+            this.authenticationLogsToolStripMenuItem.Name = "authenticationLogsToolStripMenuItem";
+            this.authenticationLogsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.authenticationLogsToolStripMenuItem.Text = "Authentication Logs";
+            // 
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -117,7 +130,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             this.sinkToolStripMenuItem,
             this.lightingToolStripMenuItem});
             this.assetToolStripMenuItem.Name = "assetToolStripMenuItem";
-            this.assetToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
+            this.assetToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.assetToolStripMenuItem.Text = "A&sset";
             this.assetToolStripMenuItem.Click += new System.EventHandler(this.assetToolStripMenuItem_Click);
             // 
@@ -201,14 +214,14 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             // productToolStripMenuItem
             // 
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
+            this.productToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.productToolStripMenuItem.Text = "&Product";
             this.productToolStripMenuItem.Click += new System.EventHandler(this.productToolStripMenuItem_Click);
             // 
             // inventoryTypeToolStripMenuItem
             // 
             this.inventoryTypeToolStripMenuItem.Name = "inventoryTypeToolStripMenuItem";
-            this.inventoryTypeToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
+            this.inventoryTypeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.inventoryTypeToolStripMenuItem.Text = "&Inventory Type";
             this.inventoryTypeToolStripMenuItem.Click += new System.EventHandler(this.inventoryTypeToolStripMenuItem_Click);
             // 
@@ -230,40 +243,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             this.panel1.Size = new System.Drawing.Size(1517, 910);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // tblLayout_Options
-            // 
-            this.tblLayout_Options.Controls.Add(this.button3);
-            this.tblLayout_Options.Location = new System.Drawing.Point(741, 408);
-            this.tblLayout_Options.Name = "tblLayout_Options";
-            this.tblLayout_Options.Size = new System.Drawing.Size(441, 240);
-            this.tblLayout_Options.TabIndex = 10;
-            // 
-            // assignUserToolStripMenuItem
-            // 
-            this.assignUserToolStripMenuItem.Name = "assignUserToolStripMenuItem";
-            this.assignUserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.assignUserToolStripMenuItem.Text = "Assign user";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.LightGray;
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(748, 435);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 73);
-            this.button1.TabIndex = 8;
-            this.button1.Tag = "";
-            this.button1.Text = "Add A&sset";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -303,6 +282,34 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             this.btn_backlog.UseVisualStyleBackColor = false;
             this.btn_backlog.Click += new System.EventHandler(this.btn_backlog_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightGray;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(748, 435);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(194, 73);
+            this.button1.TabIndex = 8;
+            this.button1.Tag = "";
+            this.button1.Text = "Add A&sset";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // tblLayout_Options
+            // 
+            this.tblLayout_Options.Controls.Add(this.button3);
+            this.tblLayout_Options.Location = new System.Drawing.Point(741, 408);
+            this.tblLayout_Options.Name = "tblLayout_Options";
+            this.tblLayout_Options.Size = new System.Drawing.Size(441, 240);
+            this.tblLayout_Options.TabIndex = 10;
+            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.LightGray;
@@ -322,12 +329,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // authenticationLogsToolStripMenuItem
-            // 
-            this.authenticationLogsToolStripMenuItem.Name = "authenticationLogsToolStripMenuItem";
-            this.authenticationLogsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.authenticationLogsToolStripMenuItem.Text = "Authentication Logs";
-            // 
             // settingsParent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -340,7 +341,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "settingsParent";
-            this.Text = "settingsParent";
+            this.Text = "Settings";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.settingsParent_Load);
             this.menuStrip1.ResumeLayout(false);

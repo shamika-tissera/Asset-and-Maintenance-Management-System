@@ -22,6 +22,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             InitializeComponent();
             n = int.Parse(File.ReadAllText(fileRelPath));
             txtEmpID.Text = "E-" + n;
+            comboType.SelectedIndex = 1;
         }
 
         private void leave_usernameField(object sender, EventArgs e)
@@ -59,6 +60,24 @@ namespace Asset_and_Maintenance_Management_System.src.Login
                 }
                 else
                 {
+
+                    string user = txtUsername.Text;
+                    string query1 = "select count(*) from UserInfo where username = '" + user + "';";
+
+                    using (SqlConnection connection = DBConnection.establishConnection())
+                    {
+                        using (SqlCommand command = new SqlCommand(query1, connection))
+                        {
+                            int count = int.Parse(command.ExecuteScalar().ToString());
+                            if (count > 0)
+                            {
+                                MessageBox.Show("Username has been taken already. Please select another.", "Error",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            }
+                        }
+                    }
+
                     string type = null;
                     switch (comboType.Text)
                     {
@@ -93,6 +112,12 @@ namespace Asset_and_Maintenance_Management_System.src.Login
                             }
                         }
                     }
+                    txtUsername.Text = "";
+                    txtPassword.Text = "";
+                    txtEmpID.Text = "";
+                    txtConfirmPassword.Text = "";
+                    txtFName.Text = "";
+                    txtLName.Text = "";
                     File.WriteAllText(fileRelPath, (++n).ToString());
                 }
             }
