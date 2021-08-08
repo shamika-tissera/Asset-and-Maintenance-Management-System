@@ -33,6 +33,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             this.btn_print = new System.Windows.Forms.Button();
             this.lbl_uname = new System.Windows.Forms.Label();
             this.dataGridViewWarranty = new System.Windows.Forms.DataGridView();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewWarranty)).BeginInit();
             this.SuspendLayout();
@@ -77,14 +78,21 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             // 
             // dataGridViewWarranty
             // 
+            this.dataGridViewWarranty.AllowUserToAddRows = false;
+            this.dataGridViewWarranty.AllowUserToDeleteRows = false;
             this.dataGridViewWarranty.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
             this.dataGridViewWarranty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewWarranty.Location = new System.Drawing.Point(58, 49);
             this.dataGridViewWarranty.Name = "dataGridViewWarranty";
+            this.dataGridViewWarranty.ReadOnly = true;
             this.dataGridViewWarranty.RowHeadersWidth = 51;
             this.dataGridViewWarranty.RowTemplate.Height = 24;
             this.dataGridViewWarranty.Size = new System.Drawing.Size(1025, 535);
             this.dataGridViewWarranty.TabIndex = 0;
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
             // 
             // uc_analytics_warranty
             // 
@@ -107,5 +115,6 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
         private System.Windows.Forms.DataGridView dataGridViewWarranty;
         private System.Windows.Forms.Label lbl_uname;
         private System.Windows.Forms.Button btn_print;
+        private System.Windows.Forms.PrintDialog printDialog1;
     }
 }

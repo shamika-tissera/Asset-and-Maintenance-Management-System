@@ -60,7 +60,12 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
                     MessageBoxIcon.Error);
                 return;
             }
-
+            catch (FormatException)
+            {
+                MessageBox.Show("Please enter a valid value for 'disposed amount'.", "Error", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+                return;
+            }
             string storedProcedure = "exec DisposeAsset '" + assetCode + "', '" + dateDisposed + "', " + disposedAmount + ";";
             using (SqlConnection connection = DBConnection.establishConnection())
             {

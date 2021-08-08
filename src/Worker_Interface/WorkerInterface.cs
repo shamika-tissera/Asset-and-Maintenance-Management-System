@@ -24,7 +24,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             comboCriticalActivity.SelectedIndex = 0;
             
 
-            //uc_item_usage1.Visible = false;
+            uc_item_usage1.Visible = false;
             uc_previously_reported1.Visible = false;
             populateAssetIDCombo();
         }
@@ -37,7 +37,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
         //this method accesses the database and fetches all the asset ids and returns them as a list.
         private List<string> fetchAssetIDs()
         {
-            string query = "SELECT asset_id FROM NonCurrentAsset;";
+            string query = "SELECT asset_id FROM NonCurrentAsset where state != 'Disposed';";
             DataTable table = new DataTable();
             DataColumn column = new DataColumn();
             using(SqlConnection connection = DBConnection.establishConnection())
@@ -62,28 +62,32 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
 
         private void btn_reporting_Click(object sender, EventArgs e)
         {
-            btn_previouslyReported.BackColor = Color.FromArgb(232, 234, 237);
+            btnItemUsage.BackColor = Color.FromArgb(232, 234, 237);
             btn_reporting.BackColor = Color.FromArgb(255, 255, 255);
-            //uc_item_usage1.Visible = false;
+            btnPreviouslyReported.BackColor = Color.FromArgb(232, 234, 237);
+            uc_item_usage1.Visible = false;
             uc_previously_reported1.Visible = false;
             uc_previously_reported1.SendToBack();
-            //uc_item_usage1.SendToBack();
+            uc_item_usage1.SendToBack();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             btn_reporting.BackColor = Color.FromArgb(232, 234, 237);
-            btn_previouslyReported.BackColor = Color.FromArgb(255, 255, 255);
-            //uc_item_usage1.Visible = true;
+            btnItemUsage.BackColor = Color.FromArgb(255, 255, 255);
+            btnPreviouslyReported.BackColor = Color.FromArgb(232, 234, 237);
             uc_previously_reported1.Visible = false;
-            //uc_item_usage1.BringToFront();
+            uc_item_usage1.Visible = true;
+            uc_item_usage1.BringToFront();
         }
         private void click_previouslyReported(object sender, EventArgs e)
         {
-            btnPreviouslyReported.BackColor = Color.FromArgb(232, 234, 237);
+            btnItemUsage.BackColor = Color.FromArgb(232, 234, 237);
             btnPreviouslyReported.BackColor = Color.FromArgb(255, 255, 255);
+            btn_reporting.BackColor = Color.FromArgb(232, 234, 237);
             uc_previously_reported1.setUsername(lbl_uname.Text);
             uc_previously_reported1.Visible = true;
+            uc_previously_reported1.populateDataGridView();
             uc_previously_reported1.BringToFront();
         }
 

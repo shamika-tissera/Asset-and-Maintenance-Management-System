@@ -45,11 +45,6 @@ namespace Asset_and_Maintenance_Management_System.src.Login
 
         }
 
-        //private Dashboard inst;
-        //public setDashboardInst(Dashboard inst)
-        //{
-        //    this.inst = inst;
-        //}
         public void resetContent()
         {
             txtUsername.Text = "";

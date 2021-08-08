@@ -37,7 +37,18 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
                 data.Columns.Add("Profit", typeof(string));
                 for(int i = 0; i < data.Rows.Count; i++)
                 {
-                    data.Rows[i]["Profit"] = (int.Parse(data.Rows[i]["Disposal Value"].ToString()) - int.Parse(data.Rows[i]["CarryingValue"].ToString())).ToString();
+                    string a = data.Rows[i]["Disposal Value"].ToString();
+                    string b = data.Rows[i]["CarryingValue"].ToString();
+                    try
+                    {
+                        data.Rows[i]["Profit"] =
+                            (int.Parse(data.Rows[i]["Disposal Value"].ToString()) -
+                             int.Parse(data.Rows[i]["CarryingValue"].ToString())).ToString();
+                    }
+                    catch (FormatException ex)
+                    {
+                        TextWriter.writeContent("logs.txt", ex.ToString());
+                    }
                 }
 
                 //delete all unneccessary columns from the DataTable
@@ -73,7 +84,8 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
                         int carryingValue = yearDifference * (int)perYearDepreciation;
                         if (carryingValue > int.Parse(row["costOfPurchase"].ToString()))
                         {
-                            row["CarryingValue"] = "EOL";
+                            //row["CarryingValue"] = "EOL";
+                            row["CarryingValue"] = carryingValue;
                         }
                         else
                         {

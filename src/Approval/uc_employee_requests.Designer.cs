@@ -38,9 +38,13 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
             // 
             // dataGridViewEmployeeRequests
             // 
+            this.dataGridViewEmployeeRequests.AllowUserToAddRows = false;
+            this.dataGridViewEmployeeRequests.AllowUserToDeleteRows = false;
+            this.dataGridViewEmployeeRequests.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
             this.dataGridViewEmployeeRequests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewEmployeeRequests.Location = new System.Drawing.Point(75, 68);
             this.dataGridViewEmployeeRequests.Name = "dataGridViewEmployeeRequests";
+            this.dataGridViewEmployeeRequests.ReadOnly = true;
             this.dataGridViewEmployeeRequests.RowHeadersWidth = 51;
             this.dataGridViewEmployeeRequests.RowTemplate.Height = 24;
             this.dataGridViewEmployeeRequests.Size = new System.Drawing.Size(1085, 564);

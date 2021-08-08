@@ -20,8 +20,12 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             loadChart();
         }
 
-        private void loadChart()
+        public void loadChart()
         {
+            foreach (var series in chartInventoryLevels.Series)
+            {
+                series.Points.Clear();
+            }
             DataTable table;
             string query = "SELECT inventoryName AS 'Inventory Name', currentQuantity, threshold FROM InventoryItem;";
             using (SqlConnection connection = DBConnection.establishConnection())

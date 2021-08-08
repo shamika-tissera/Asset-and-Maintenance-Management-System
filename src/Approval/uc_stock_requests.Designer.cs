@@ -55,7 +55,7 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(872, 712);
+            this.button1.Location = new System.Drawing.Point(826, 712);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 33);
             this.button1.TabIndex = 3;
@@ -69,17 +69,19 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
             this.btn_print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_print.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_print.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_print.Location = new System.Drawing.Point(1013, 712);
+            this.btn_print.Location = new System.Drawing.Point(975, 712);
             this.btn_print.Name = "btn_print";
             this.btn_print.Size = new System.Drawing.Size(123, 33);
             this.btn_print.TabIndex = 3;
             this.btn_print.Text = "&Print...";
             this.btn_print.UseVisualStyleBackColor = false;
+            this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
             // 
             // dataGridViewMain
             // 
             this.dataGridViewMain.AllowUserToAddRows = false;
             this.dataGridViewMain.AllowUserToDeleteRows = false;
+            this.dataGridViewMain.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
             this.dataGridViewMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewMain.Location = new System.Drawing.Point(20, 49);
             this.dataGridViewMain.Name = "dataGridViewMain";

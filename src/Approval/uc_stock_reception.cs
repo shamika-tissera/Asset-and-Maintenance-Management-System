@@ -19,7 +19,7 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
             InitializeComponent();
             populateDataGridView();
         }
-        private void populateDataGridView()
+        public void populateDataGridView()
         {
             string query = "select InventoryOrder.inventoryCode as 'Stock Code', inventoryName as 'Stock Name', orderedQuantity as 'Ordered Quantity', supplierName as 'Supplier Name', (orderedQuantity * CurrentCost) as 'Estimated Cost (Rs.)' from InventoryOrder inner join Supplier on InventoryOrder.supplierID = Supplier.supplierID inner join InventoryItem on InventoryItem.inventoryCode = InventoryOrder.inventoryCode where received = 'false';";
             using (SqlConnection connection = DBConnection.establishConnection())
@@ -63,10 +63,23 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
                         orderedQuantity = int.Parse(row.Cells["Ordered Quantity"].Value.ToString());
                         //supplierName = row.Cells["Supplier Name"].Value.ToString().Replace("\r\n", " ").Trim();
                         string query = "UPDATE InventoryOrder SET received = 'TRUE' WHERE inventoryCode = '" + inventoryCode + "' AND orderedQuantity = '" + orderedQuantity + "'";
+                        string query1 = "update InventoryItem set currentQuantity = currentQuantity + " +
+                                        orderedQuantity + ";";
                         isChecked = true;
                         using (SqlConnection connection = DBConnection.establishConnection())
                         {
                             using (SqlCommand command = new SqlCommand(query, connection))
+                            {
+                                try
+                                {
+                                    command.ExecuteNonQuery();
+                                }
+                                catch (SqlException ex)
+                                {
+                                    TextWriter.writeContent("logs.txt", ex.ToString());
+                                }
+                            }
+                            using (SqlCommand command = new SqlCommand(query1, connection))
                             {
                                 try
                                 {
@@ -92,6 +105,11 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
             {
                 MessageBox.Show("Please select an item.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
+        }
+
+        private void btn_print_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

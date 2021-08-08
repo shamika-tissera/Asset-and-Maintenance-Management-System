@@ -83,6 +83,8 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.txt_general_name = new System.Windows.Forms.TextBox();
             this.txt_general_serial = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.txtServiceInterval = new System.Windows.Forms.MaskedTextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.dateLastChecked = new System.Windows.Forms.DateTimePicker();
             this.comboCriticality = new System.Windows.Forms.ComboBox();
             this.comboCondition = new System.Windows.Forms.ComboBox();
@@ -100,8 +102,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtServiceInterval = new System.Windows.Forms.MaskedTextBox();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -283,7 +283,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.dateEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateEnd.Location = new System.Drawing.Point(498, 122);
-            this.dateEnd.MaxDate = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
+            this.dateEnd.MaxDate = new System.DateTime(2050, 12, 31, 0, 0, 0, 0);
             this.dateEnd.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateEnd.Name = "dateEnd";
             this.dateEnd.Size = new System.Drawing.Size(406, 27);
@@ -703,6 +703,25 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Maintenance";
             // 
+            // txtServiceInterval
+            // 
+            this.txtServiceInterval.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtServiceInterval.Location = new System.Drawing.Point(38, 182);
+            this.txtServiceInterval.Mask = "999.099";
+            this.txtServiceInterval.Name = "txtServiceInterval";
+            this.txtServiceInterval.Size = new System.Drawing.Size(406, 27);
+            this.txtServiceInterval.TabIndex = 27;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(41, 160);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(127, 23);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Service Interval";
+            // 
             // dateLastChecked
             // 
             this.dateLastChecked.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -905,25 +924,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label30.Size = new System.Drawing.Size(63, 20);
             this.label30.TabIndex = 1;
             this.label30.Text = "Branch";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(41, 160);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(127, 23);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "Service Interval";
-            // 
-            // txtServiceInterval
-            // 
-            this.txtServiceInterval.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtServiceInterval.Location = new System.Drawing.Point(38, 182);
-            this.txtServiceInterval.Mask = "999.099";
-            this.txtServiceInterval.Name = "txtServiceInterval";
-            this.txtServiceInterval.Size = new System.Drawing.Size(406, 27);
-            this.txtServiceInterval.TabIndex = 27;
             // 
             // add_item
             // 

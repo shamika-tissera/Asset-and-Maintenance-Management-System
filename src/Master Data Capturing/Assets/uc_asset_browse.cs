@@ -38,7 +38,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             DataTable data;
             string value = txtSearch.Text.Trim();
             string query =
-                "select asset_id, assetType, lifetime, costOfPurchase, depreciationMethod, depreciationRate, purchaseDate, manufacturer, serviceInterval, warranty from NonCurrentAsset where asset_id like '%" + value + "%' OR plant like '%" + value + "%' OR depreciationMethod like '%" + value + "%' OR serialNumber like '%" + value + "%' or condition like '%" + value + "%' or state like '%" + value + "%' or assetType like '%" + value + "%' or warrantyCode like '%" + value + "%' or manufacturer like '%" + value + "%';";
+                "select asset_id, assetType, lifetime, costOfPurchase, depreciationMethod, depreciationRate, purchaseDate, manufacturer, serviceInterval, warranty from NonCurrentAsset where (asset_id like '%" + value + "%' OR plant like '%" + value + "%' OR depreciationMethod like '%" + value + "%' OR serialNumber like '%" + value + "%' or condition like '%" + value + "%' or state like '%" + value + "%' or assetType like '%" + value + "%' or warrantyCode like '%" + value + "%' or manufacturer like '%" + value + "%') and (state != 'Disposed');";
             using (SqlConnection connection = DBConnection.establishConnection())
             {
                 data = new DataTable();
@@ -87,10 +87,10 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
 
         }
-        private void populateAssetRecords()
+        public void populateAssetRecords()
         {
             DataTable data;
-            string query = "SELECT asset_id, assetType, lifetime, costOfPurchase, depreciationMethod, depreciationRate, purchaseDate, manufacturer, serviceInterval, warranty FROM NonCurrentAsset;";
+            string query = "SELECT asset_id, assetType, lifetime, costOfPurchase, depreciationMethod, depreciationRate, purchaseDate, manufacturer, serviceInterval, warranty FROM NonCurrentAsset where state != 'Disposed';";
             using(SqlConnection connection = DBConnection.establishConnection())
             {
                 using(SqlDataAdapter adapter = new SqlDataAdapter(query, connection))
@@ -106,6 +106,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
                 data.Columns.Remove("depreciationMethod");
                 data.Columns.Remove("depreciationRate");
                 data.Columns.Remove("purchaseDate");
+                data.Columns.Remove("warranty");
 
                 //populate DataGridView
                 dataGridViewAssets.DataSource = data;

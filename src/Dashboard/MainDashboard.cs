@@ -181,6 +181,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             //uc_navPanel_assets1.Visible = true;
             uc_asset_browse1.Visible = true;
             uc_asset_browse1.setAssetCategory("config");
+            uc_asset_browse1.populateAssetRecords();
             //uc_navPanel_assets1.BringToFront();
         }
 
@@ -200,6 +201,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_dash_main1.Visible = false;
             uc_inventory_navi1.resetBtnEmphasis();
             uc_inventory_navi1.Visible = true;
+            uc_inventory_dash1.setLabelData();
         }
         public virtual void clickedInventoryBack()
         {
@@ -217,6 +219,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_inventory_trends1.Visible = false;
             uc_inventory_levels1.Visible = true;
             uc_inventory_dash1.Visible = false;
+            uc_inventory_levels1.loadChart();
         }
         public virtual void clickedInventoryTrends()
         {
@@ -240,6 +243,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_dash_main1.Visible = true;
             uc_inventory_low1.Visible = false;
             inventory_low_navi1.Visible = false;
+            uc_inventory_low1.populateDataGridView();
         }
         public virtual void clickedMaintenance()
         {
@@ -249,6 +253,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_maintenance_navi1.Visible = true;
             uc_calendar1.Visible = false;
             uc_dash_main1.Visible = false;
+            uc_maintenance_dashboard_info1.setLabelData();
         }
         public virtual void clickedMaintenanceBack()
         {
@@ -271,6 +276,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_corrective_maintenance1.Visible = false;
             uc_preventive_maintenance1.Visible = false;
             uc_maintenance_reccomendations1.Visible = false;
+            uc_maintenance_backlog1.populateDataGridView();
+            uc_maintenance_backlog1.loadChart();
         }
         public void clickedMaintenanceBacklogBack()
         {
@@ -346,12 +353,14 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_stock_requests1.Visible = true;
             uc_stock_reception1.Visible = false;
             uc_employee_requests1.Visible = false;
+            
         }
         public void clickedApprovalStockReception()
         {
             uc_stock_reception1.Visible = true;
             uc_stock_requests1.Visible = false;
             uc_employee_requests1.Visible = false;
+            uc_stock_reception1.populateDataGridView();
         }
 
         public void clickedApprovalEmployeeRequests()
@@ -540,7 +549,16 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
                     uc_calendar1.lblNotif1.Text += "        ";
                     foreach (DataRow row in inventory.Rows)
                     {
-                        uc_calendar1.lblNotif1.Text += row["Inventory Name"].ToString() + ", ";
+                        if (i < n - 1)
+                        {
+                            uc_calendar1.lblNotif1.Text += row["Inventory Name"].ToString() + ", ";
+                        }
+                        else
+                        {
+                            uc_calendar1.lblNotif1.Text += row["Inventory Name"].ToString();
+                        }
+
+                        i++;
                     }
                 }
                 if(backlog.Rows.Count > 0)
@@ -554,7 +572,17 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
                         uc_calendar1.lblNotif1.Text += "        ";
                         foreach (DataRow row in backlog.Rows)
                         {
-                            uc_calendar1.lblNotif1.Text += row["Asset ID"].ToString() + ", ";
+                            if (i < n - 1)
+                            {
+                                uc_calendar1.lblNotif1.Text += row["Asset ID"].ToString() + ", ";
+                            }
+                            else
+                            {
+                                uc_calendar1.lblNotif1.Text += row["Asset ID"].ToString();
+                            }
+
+                            i++;
+                            
                         }
                     }
                     else
@@ -564,12 +592,24 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
                         uc_calendar1.lblNotif2.Text += "        ";
                         foreach (DataRow row in backlog.Rows)
                         {
-                            uc_calendar1.lblNotif2.Text += row["Asset ID"].ToString() + ", ";
+                            if (i < n - 1)
+                            {
+                                uc_calendar1.lblNotif2.Text += row["Asset ID"].ToString() + ", ";
+                            }
+                            else
+                            {
+                                uc_calendar1.lblNotif2.Text += row["Asset ID"].ToString();
+                            }
+
+                            i++;
+                            
                         }
                     }
                 }
                 if(serviceDue.Rows.Count > 0)
                 {
+                    int i = 0;
+                    int n = serviceDue.Rows.Count;
                     if (uc_calendar1.lblNotif1.Text == "")
                     {
                         label1Contents = "serviceDue";
@@ -577,7 +617,16 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
                         uc_calendar1.lblNotif1.Text += "        ";
                         foreach (DataRow row in serviceDue.Rows)
                         {
-                            uc_calendar1.lblNotif1.Text += row["Due by"].ToString() + ", ";
+                            if (i < n - 1)
+                            {
+                                uc_calendar1.lblNotif1.Text += row["Due by"].ToString() + ", ";
+                            }
+                            else
+                            {
+                                uc_calendar1.lblNotif1.Text += row["Due by"].ToString();
+                            }
+
+                            i++;
                         }
                     }
                     else if (uc_calendar1.lblNotif2.Text == "")
@@ -587,7 +636,16 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
                         uc_calendar1.lblNotif2.Text += "        ";
                         foreach (DataRow row in serviceDue.Rows)
                         {
-                            uc_calendar1.lblNotif2.Text += row["Due by"].ToString() + ", ";
+                            if (i < n - 1)
+                            {
+                                uc_calendar1.lblNotif2.Text += row["Due by"].ToString() + ", ";
+                            }
+                            else
+                            {
+                                uc_calendar1.lblNotif2.Text += row["Due by"].ToString();
+                            }
+
+                            i++;
                         }
                     }
                     else
@@ -597,7 +655,16 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
                         uc_calendar1.lblNotif3.Text += "        ";
                         foreach (DataRow row in serviceDue.Rows)
                         {
-                            uc_calendar1.lblNotif3.Text += row["Due by"].ToString() + ", ";
+                            if (i < n - 1)
+                            {
+                                uc_calendar1.lblNotif3.Text += row["Due by"].ToString() + ", ";
+                            }
+                            else
+                            {
+                                uc_calendar1.lblNotif3.Text += row["Due by"].ToString();
+                            }
+
+                            i++;
                         }
                     }
                 }

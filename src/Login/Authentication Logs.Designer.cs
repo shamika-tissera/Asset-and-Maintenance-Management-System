@@ -30,6 +30,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnDispose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,14 +41,29 @@ namespace Asset_and_Maintenance_Management_System.src.Login
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(790, 703);
+            this.dataGridView1.Size = new System.Drawing.Size(790, 656);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // btnDispose
+            // 
+            this.btnDispose.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDispose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDispose.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDispose.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnDispose.Location = new System.Drawing.Point(668, 702);
+            this.btnDispose.Name = "btnDispose";
+            this.btnDispose.Size = new System.Drawing.Size(123, 33);
+            this.btnDispose.TabIndex = 8;
+            this.btnDispose.Text = "&Print";
+            this.btnDispose.UseVisualStyleBackColor = false;
+            this.btnDispose.Click += new System.EventHandler(this.btnDispose_Click);
             // 
             // Authentication_Logs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(846, 756);
+            this.Controls.Add(this.btnDispose);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Authentication_Logs";
             this.Text = "Authentication Logs";
@@ -59,5 +75,6 @@ namespace Asset_and_Maintenance_Management_System.src.Login
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnDispose;
     }
 }

@@ -90,7 +90,15 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         {
             string fileRelPath = "../../prog_logs/tracker/";
             int n = int.Parse(File.ReadAllText(fileRelPath + assetType + ".txt"));
-            txt_general_code.Text = "ASS-" + assetType.Substring(0,9).ToUpper() + "-" + n;
+            try
+            {
+                txt_general_code.Text = "ASS-" + assetType.Substring(0, 9).ToUpper() + "-" + n;
+            }
+            catch (System.ArgumentOutOfRangeException ex)
+            {
+                txt_general_code.Text = "ASS-" + assetType.ToUpper() + "-" + n;
+                TextWriter.writeContent("logs.txt", ex.ToString() + "\nEXPECTED EXCEPTION\n");
+            }
             txt_general_code.Enabled = false;
             try
             {

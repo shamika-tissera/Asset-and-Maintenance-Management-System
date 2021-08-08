@@ -34,7 +34,6 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.btn_backlog = new System.Windows.Forms.Button();
             this.btn_preventive = new System.Windows.Forms.Button();
             this.btn_corrective = new System.Windows.Forms.Button();
-            this.btn_recommendations = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_back
@@ -113,25 +112,6 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.btn_corrective.UseVisualStyleBackColor = false;
             this.btn_corrective.Click += new System.EventHandler(this.btn_corrective_Click);
             // 
-            // btn_recommendations
-            // 
-            this.btn_recommendations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
-            this.btn_recommendations.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_recommendations.FlatAppearance.BorderSize = 0;
-            this.btn_recommendations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_recommendations.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_recommendations.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btn_recommendations.Image = ((System.Drawing.Image)(resources.GetObject("btn_recommendations.Image")));
-            this.btn_recommendations.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_recommendations.Location = new System.Drawing.Point(0, 261);
-            this.btn_recommendations.Name = "btn_recommendations";
-            this.btn_recommendations.Size = new System.Drawing.Size(267, 53);
-            this.btn_recommendations.TabIndex = 9;
-            this.btn_recommendations.Text = "Recommendations";
-            this.btn_recommendations.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_recommendations.UseVisualStyleBackColor = false;
-            this.btn_recommendations.Click += new System.EventHandler(this.btn_recommendations_Click);
-            // 
             // uc_maintenance_navi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -141,7 +121,6 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
             this.Controls.Add(this.btn_backlog);
             this.Controls.Add(this.btn_preventive);
             this.Controls.Add(this.btn_corrective);
-            this.Controls.Add(this.btn_recommendations);
             this.Name = "uc_maintenance_navi";
             this.Size = new System.Drawing.Size(267, 616);
             this.Load += new System.EventHandler(this.uc_maintenance_navi_Load);
@@ -153,7 +132,6 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
         private System.Windows.Forms.Button btn_backlog;
         private System.Windows.Forms.Button btn_preventive;
         private System.Windows.Forms.Button btn_corrective;
-        private System.Windows.Forms.Button btn_recommendations;
         private System.Windows.Forms.Button btn_back;
     }
 }

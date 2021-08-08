@@ -31,6 +31,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
         {
             this.dataGridViewProfitOnDisposal = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_uname = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProfitOnDisposal)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -51,6 +52,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(233)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.lbl_uname);
             this.panel1.Controls.Add(this.dataGridViewProfitOnDisposal);
             this.panel1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
@@ -58,6 +60,17 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1123, 791);
             this.panel1.TabIndex = 4;
+            // 
+            // lbl_uname
+            // 
+            this.lbl_uname.AutoSize = true;
+            this.lbl_uname.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_uname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
+            this.lbl_uname.Location = new System.Drawing.Point(564, 587);
+            this.lbl_uname.Name = "lbl_uname";
+            this.lbl_uname.Size = new System.Drawing.Size(502, 28);
+            this.lbl_uname.TabIndex = 4;
+            this.lbl_uname.Text = "Note: All assets which are disposed are shown here.";
             // 
             // uc_profit_on_disposal
             // 
@@ -69,6 +82,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             this.Size = new System.Drawing.Size(1356, 826);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProfitOnDisposal)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -77,5 +91,6 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
 
         private System.Windows.Forms.DataGridView dataGridViewProfitOnDisposal;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lbl_uname;
     }
 }

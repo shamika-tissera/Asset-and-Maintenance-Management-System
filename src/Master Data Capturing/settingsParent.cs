@@ -386,7 +386,16 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing
                     index = i;
                 }
             }
-            items[index].BringToFront();
+
+            try
+            {
+                items[index].BringToFront();
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                TextWriter.writeContent("logs.txt", ex.ToString());
+            }
+            
         }
         private void settingsParent_Load(object sender, EventArgs e)
         {

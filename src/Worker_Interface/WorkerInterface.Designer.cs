@@ -39,9 +39,10 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.txtMessage = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnPreviouslyReported = new System.Windows.Forms.Button();
-            this.btn_previouslyReported = new System.Windows.Forms.Button();
+            this.btnItemUsage = new System.Windows.Forms.Button();
             this.btn_reporting = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_uname = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,7 +51,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.uc_item_usage1 = new Asset_and_Maintenance_Management_System.src.Worker_Interface.uc_item_usage();
             this.uc_previously_reported1 = new Asset_and_Maintenance_Management_System.src.Worker_Interface.uc_previously_reported();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -60,6 +61,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
+            this.panel1.Controls.Add(this.uc_item_usage1);
             this.panel1.Controls.Add(this.comboCriticalActivity);
             this.panel1.Controls.Add(this.comboCriticalOperational);
             this.panel1.Controls.Add(this.button1);
@@ -203,7 +205,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
             this.panel2.Controls.Add(this.btnPreviouslyReported);
-            this.panel2.Controls.Add(this.btn_previouslyReported);
+            this.panel2.Controls.Add(this.btnItemUsage);
             this.panel2.Controls.Add(this.btn_reporting);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -229,21 +231,21 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.btnPreviouslyReported.UseVisualStyleBackColor = false;
             this.btnPreviouslyReported.Click += new System.EventHandler(this.click_previouslyReported);
             // 
-            // btn_previouslyReported
+            // btnItemUsage
             // 
-            this.btn_previouslyReported.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
-            this.btn_previouslyReported.FlatAppearance.BorderSize = 0;
-            this.btn_previouslyReported.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_previouslyReported.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_previouslyReported.ForeColor = System.Drawing.Color.Black;
-            this.btn_previouslyReported.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_previouslyReported.Location = new System.Drawing.Point(4, 323);
-            this.btn_previouslyReported.Name = "btn_previouslyReported";
-            this.btn_previouslyReported.Size = new System.Drawing.Size(264, 50);
-            this.btn_previouslyReported.TabIndex = 6;
-            this.btn_previouslyReported.Text = "&Item Usage";
-            this.btn_previouslyReported.UseVisualStyleBackColor = false;
-            this.btn_previouslyReported.Click += new System.EventHandler(this.button2_Click);
+            this.btnItemUsage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
+            this.btnItemUsage.FlatAppearance.BorderSize = 0;
+            this.btnItemUsage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnItemUsage.Font = new System.Drawing.Font("Nirmala UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemUsage.ForeColor = System.Drawing.Color.Black;
+            this.btnItemUsage.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnItemUsage.Location = new System.Drawing.Point(4, 323);
+            this.btnItemUsage.Name = "btnItemUsage";
+            this.btnItemUsage.Size = new System.Drawing.Size(264, 50);
+            this.btnItemUsage.TabIndex = 6;
+            this.btnItemUsage.Text = "&Item Usage";
+            this.btnItemUsage.UseVisualStyleBackColor = false;
+            this.btnItemUsage.Click += new System.EventHandler(this.button2_Click);
             // 
             // btn_reporting
             // 
@@ -276,6 +278,16 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.button4.Text = "&Logout";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.User_with_smile_svg;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(264, 148);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // lbl_uname
             // 
@@ -365,15 +377,12 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             this.label1.TabIndex = 4;
             this.label1.Text = "Equipment Error Reporting";
             // 
-            // pictureBox1
+            // uc_item_usage1
             // 
-            this.pictureBox1.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.User_with_smile_svg;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(264, 148);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.uc_item_usage1.Location = new System.Drawing.Point(281, 0);
+            this.uc_item_usage1.Name = "uc_item_usage1";
+            this.uc_item_usage1.Size = new System.Drawing.Size(1166, 700);
+            this.uc_item_usage1.TabIndex = 10;
             // 
             // uc_previously_reported1
             // 
@@ -420,7 +429,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
         private System.Windows.Forms.ComboBox comboCriticalOperational;
         private System.Windows.Forms.ComboBox comboPlant;
         private System.Windows.Forms.ComboBox comboType;
-        private System.Windows.Forms.Button btn_previouslyReported;
+        private System.Windows.Forms.Button btnItemUsage;
         private System.Windows.Forms.Button btn_reporting;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtMessage;
@@ -428,5 +437,6 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
         private System.Windows.Forms.ComboBox comboAssetID;
         private System.Windows.Forms.Button btnPreviouslyReported;
         private uc_previously_reported uc_previously_reported1;
+        private uc_item_usage uc_item_usage1;
     }
 }
