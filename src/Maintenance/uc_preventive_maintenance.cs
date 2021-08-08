@@ -25,7 +25,7 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
         {
 
         }
-        private void populateDataGridView()
+        public virtual void populateDataGridView()
         {
             string query = "select asset_id as 'Asset Code', assetType as 'Asset Name', plant as 'Plant', serviceDue as 'Due by' from NonCurrentAsset where serviceDue <= DATEADD(month, 2, GETDATE()) and serviceDue >= DATEADD(month, -3, GETDATE());";
             DataTable table = new DataTable();

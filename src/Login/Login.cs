@@ -92,6 +92,7 @@ namespace Asset_and_Maintenance_Management_System.src.Login
                 {
                     case "acc":
                         AccountantDashboard acc = new AccountantDashboard();
+                        acc.setLoginInstance(this, username);
                         acc.Show();
                         this.Visible = false;
                         logQuery = "INSERT INTO LoginLogs(loginTime, username, category) VALUES(GETDATE(), '" +

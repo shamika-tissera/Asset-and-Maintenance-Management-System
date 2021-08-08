@@ -33,6 +33,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         public MainDashboard()
         {
             InitializeComponent();
+            uc_calendar1.setUname(uname);
             //pic_close.BackColor = Color.Transparent;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             uc_dash_main1.setDashboardInstance(this);
@@ -134,6 +135,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_calendar1.Visible = false;
             uc_analytics_warranty1.Visible = true;
             uc_analytics_utilization1.Visible = false;
+            uc_analytics_warranty1.populateDataGridView();
         }
         public void clickedAnalyticsDisposal()
         {
@@ -144,6 +146,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_calendar1.Visible = false;
             uc_profit_on_disposal1.Visible = true;
             uc_analytics_utilization1.Visible = false;
+            uc_profit_on_disposal1.populateDataGridView();
         }
         public void clickedAnalyticsUtilization()
         {
@@ -154,6 +157,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_calendar1.Visible = false;
             uc_profit_on_disposal1.Visible = false;
             uc_analytics_utilization1.Visible = true;
+            uc_analytics_utilization1.loadChart();
+            uc_analytics_utilization1.populateDataGridView();
         }
         public virtual void clickedAssetsBack()
         {
@@ -171,6 +176,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             dashboard_info1.Visible = false;
             uc_asset_browse1.Visible = false;
             uc_dispose_asset1.Visible = true;
+            uc_dispose_asset1.populateAssetRecords();
         }
         public virtual void clickedAssetsConfig()
         {
@@ -227,6 +233,8 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_inventory_levels1.Visible = false;
             uc_inventory_trends1.Visible = true;
             uc_inventory_dash1.Visible = false;
+            uc_inventory_trends1.populateMostRequestedStocks();
+            uc_inventory_trends1.populateSupplierContacts();
         }
 
         public void clickedInventoryLowDashboard()
@@ -268,7 +276,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_corrective_maintenance1.Visible = false;
         }
 
-        public void clickedMaintenanceBacklog()
+        public virtual void clickedMaintenanceBacklog()
         {
             uc_calendar1.Visible = false;
             uc_maintenance_backlog1.Visible = true;
@@ -297,7 +305,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
 
             return null;
         }
-        public void clickedMaintenancePreventive()
+        public virtual void clickedMaintenancePreventive()
         {
             uc_maintenance_dashboard_info1.Visible = false;
             uc_calendar1.Visible = false;
@@ -305,8 +313,9 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_maintenance_reccomendations1.Visible = false;
             uc_corrective_maintenance1.Visible = false;
             uc_maintenance_backlog1.Visible = false;
+            uc_preventive_maintenance1.populateDataGridView();
         }
-        public void clickedMaintenanceCorrective()
+        public virtual void clickedMaintenanceCorrective()
         {
             uc_maintenance_dashboard_info1.Visible = false;
             uc_calendar1.Visible = false;
@@ -370,13 +379,14 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             uc_employee_requests1.Visible = true;
         }
         private Login.Login login;
-
+        private string uname;
         public void setLoginInstance(Login.Login login, string uname)
         {
             this.login = login;
             lbl_uname.Text = uname;
+            this.uname = uname;
         }
-        public void logout()
+        public virtual void logout()
         {
             login.resetContent();
             this.Dispose();

@@ -20,7 +20,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             InitializeComponent();
             populateDataGridView();
         }
-        private void populateDataGridView()
+        public void populateDataGridView()
         {
             DataTable data;
             string query = "select NonCurrentAsset.asset_id as 'Asset Code', assetType as 'Asset Type', disposedValue as 'Disposal Value', purchaseDate, costOfPurchase, depreciationMethod, depreciationRate from NonCurrentAsset inner join Disposal on NonCurrentAsset.asset_id = Disposal.asset_id;";

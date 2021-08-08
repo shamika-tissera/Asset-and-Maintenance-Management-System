@@ -93,28 +93,18 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.comboFloor = new System.Windows.Forms.ComboBox();
-            this.comboRoom = new System.Windows.Forms.ComboBox();
-            this.comboBuilding = new System.Windows.Forms.ComboBox();
-            this.comboBranch = new System.Windows.Forms.ComboBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupDepreciationMethod.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_reset
             // 
             this.btn_reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_reset.Location = new System.Drawing.Point(722, 1402);
+            this.btn_reset.Location = new System.Drawing.Point(705, 1211);
             this.btn_reset.Name = "btn_reset";
             this.btn_reset.Size = new System.Drawing.Size(95, 32);
             this.btn_reset.TabIndex = 33;
@@ -125,7 +115,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // btnOK
             // 
             this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(850, 1402);
+            this.btnOK.Location = new System.Drawing.Point(833, 1211);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(99, 32);
             this.btnOK.TabIndex = 32;
@@ -136,7 +126,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(587, 1402);
+            this.btnCancel.Location = new System.Drawing.Point(570, 1211);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(99, 32);
             this.btnCancel.TabIndex = 34;
@@ -146,7 +136,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(306, 1477);
+            this.panel1.Location = new System.Drawing.Point(309, 1294);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(392, 19);
             this.panel1.TabIndex = 106;
@@ -169,6 +159,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             // comboPlant
             // 
+            this.comboPlant.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboPlant.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboPlant.FormattingEnabled = true;
             this.comboPlant.ItemHeight = 23;
@@ -812,126 +803,12 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.label26.TabIndex = 1;
             this.label26.Text = "Maintained by";
             // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.comboFloor);
-            this.groupBox6.Controls.Add(this.comboRoom);
-            this.groupBox6.Controls.Add(this.comboBuilding);
-            this.groupBox6.Controls.Add(this.comboBranch);
-            this.groupBox6.Controls.Add(this.label27);
-            this.groupBox6.Controls.Add(this.label28);
-            this.groupBox6.Controls.Add(this.label29);
-            this.groupBox6.Controls.Add(this.label30);
-            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(8, 1196);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(941, 165);
-            this.groupBox6.TabIndex = 115;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Location";
-            // 
-            // comboFloor
-            // 
-            this.comboFloor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboFloor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboFloor.FormattingEnabled = true;
-            this.comboFloor.Items.AddRange(new object[] {
-            "Floor - 1",
-            "Floor - 2",
-            "Floor - 3"});
-            this.comboFloor.Location = new System.Drawing.Point(39, 122);
-            this.comboFloor.Name = "comboFloor";
-            this.comboFloor.Size = new System.Drawing.Size(406, 28);
-            this.comboFloor.TabIndex = 30;
-            // 
-            // comboRoom
-            // 
-            this.comboRoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboRoom.FormattingEnabled = true;
-            this.comboRoom.Items.AddRange(new object[] {
-            "Room - 1",
-            "Room - 2",
-            "Room - 3",
-            "Room - 4"});
-            this.comboRoom.Location = new System.Drawing.Point(498, 122);
-            this.comboRoom.Name = "comboRoom";
-            this.comboRoom.Size = new System.Drawing.Size(406, 28);
-            this.comboRoom.TabIndex = 31;
-            // 
-            // comboBuilding
-            // 
-            this.comboBuilding.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBuilding.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBuilding.FormattingEnabled = true;
-            this.comboBuilding.Items.AddRange(new object[] {
-            "Building - 1",
-            "Building - 2",
-            "Building - 3"});
-            this.comboBuilding.Location = new System.Drawing.Point(498, 52);
-            this.comboBuilding.Name = "comboBuilding";
-            this.comboBuilding.Size = new System.Drawing.Size(406, 28);
-            this.comboBuilding.TabIndex = 29;
-            // 
-            // comboBranch
-            // 
-            this.comboBranch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBranch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBranch.FormattingEnabled = true;
-            this.comboBranch.Items.AddRange(new object[] {
-            "Minuwangoda"});
-            this.comboBranch.Location = new System.Drawing.Point(39, 52);
-            this.comboBranch.Name = "comboBranch";
-            this.comboBranch.Size = new System.Drawing.Size(406, 28);
-            this.comboBranch.TabIndex = 28;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(495, 30);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(69, 20);
-            this.label27.TabIndex = 1;
-            this.label27.Text = "Building";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(495, 102);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(53, 20);
-            this.label28.TabIndex = 1;
-            this.label28.Text = "Room";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(40, 102);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(47, 20);
-            this.label29.TabIndex = 1;
-            this.label29.Text = "Floor";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(40, 30);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(63, 20);
-            this.label30.TabIndex = 1;
-            this.label30.Text = "Branch";
-            // 
             // add_item
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(989, 1055);
-            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -957,8 +834,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.groupBox1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1024,15 +899,6 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.ComboBox comboFloor;
-        private System.Windows.Forms.ComboBox comboRoom;
-        private System.Windows.Forms.ComboBox comboBuilding;
-        private System.Windows.Forms.ComboBox comboBranch;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
         private System.Windows.Forms.MaskedTextBox txtServiceInterval;
         private System.Windows.Forms.Label label9;
     }

@@ -26,7 +26,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             InitializeComponent();
             populateDataGridView();
         }
-        private void populateDataGridView()
+        public void populateDataGridView()
         {
             DataTable data;
             string query = "select asset_id as 'Asset Code', assetType as 'Asset Type', DATEDIFF(month, GETDATE(), endDate) as 'Months Remaining', purchaseDate, costOfPurchase, depreciationMethod, depreciationRate from NonCurrentAsset inner join Warranty on NonCurrentAsset.warrantyCode=Warranty.warrantyCode where endDate > GETDATE();";

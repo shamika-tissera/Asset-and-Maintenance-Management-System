@@ -29,11 +29,13 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
         /// </summary>
         private void InitializeComponent()
         {
-            this.initialInterfaceAsset3 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.initialInterfaceAsset();
+            this.initialInterfaceAsset4 = new Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Assets.initialInterfaceAsset();
             this.uc_dash_main_accountant1 = new Asset_and_Maintenance_Management_System.src.Accountant.Navigation.uc_dash_main_accountant();
             this.uc_calendar_accountant1 = new Asset_and_Maintenance_Management_System.src.Accountant.Dashboard.uc_calendar_accountant();
             this.uc_assets_accountant_11 = new Asset_and_Maintenance_Management_System.src.Accountant.Navigation.uc_assets_accountant_1();
             this.uc_inventory_navi_accountant1 = new Asset_and_Maintenance_Management_System.src.Accountant.Navigation.uc_inventory_navi_accountant();
+            this.uc_preventive_accountant1 = new Asset_and_Maintenance_Management_System.src.Accountant.Dashboard.uc_preventive_accountant();
+            this.uc_corrective_accountant1 = new Asset_and_Maintenance_Management_System.src.Accountant.Dashboard.uc_corrective_accountant();
             this.navPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,7 +66,7 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
             // 
             this.uc_dash_main1.Location = new System.Drawing.Point(21, 204);
             this.uc_dash_main1.Visible = false;
-            this.elementHost1.Child = this.initialInterfaceAsset3;
+            this.elementHost1.Child = this.initialInterfaceAsset4;
             // 
             // uc_dash_main_accountant1
             // 
@@ -98,11 +100,29 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
             this.uc_inventory_navi_accountant1.Size = new System.Drawing.Size(273, 616);
             this.uc_inventory_navi_accountant1.TabIndex = 18;
             // 
+            // uc_preventive_accountant1
+            // 
+            this.uc_preventive_accountant1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.uc_preventive_accountant1.Location = new System.Drawing.Point(311, 0);
+            this.uc_preventive_accountant1.Name = "uc_preventive_accountant1";
+            this.uc_preventive_accountant1.Size = new System.Drawing.Size(1356, 826);
+            this.uc_preventive_accountant1.TabIndex = 26;
+            // 
+            // uc_corrective_accountant1
+            // 
+            this.uc_corrective_accountant1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
+            this.uc_corrective_accountant1.Location = new System.Drawing.Point(311, 0);
+            this.uc_corrective_accountant1.Name = "uc_corrective_accountant1";
+            this.uc_corrective_accountant1.Size = new System.Drawing.Size(1356, 826);
+            this.uc_corrective_accountant1.TabIndex = 27;
+            // 
             // AccountantDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1520, 826);
+            this.Controls.Add(this.uc_corrective_accountant1);
+            this.Controls.Add(this.uc_preventive_accountant1);
             this.Controls.Add(this.uc_calendar_accountant1);
             this.Name = "AccountantDashboard";
             this.Text = "AccountantDashboard";
@@ -127,6 +147,8 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
             this.Controls.SetChildIndex(this.pictureBox2, 0);
             this.Controls.SetChildIndex(this.pic_close, 0);
             this.Controls.SetChildIndex(this.uc_calendar_accountant1, 0);
+            this.Controls.SetChildIndex(this.uc_preventive_accountant1, 0);
+            this.Controls.SetChildIndex(this.uc_corrective_accountant1, 0);
             this.navPanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -147,5 +169,8 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
         private Navigation.uc_assets_accountant_1 uc_assets_accountant_11;
         private Navigation.uc_inventory_navi_accountant uc_inventory_navi_accountant1;
         protected Master_Data_Capturing.Assets.initialInterfaceAsset initialInterfaceAsset3;
+        protected Master_Data_Capturing.Assets.initialInterfaceAsset initialInterfaceAsset4;
+        private uc_preventive_accountant uc_preventive_accountant1;
+        private uc_corrective_accountant uc_corrective_accountant1;
     }
 }

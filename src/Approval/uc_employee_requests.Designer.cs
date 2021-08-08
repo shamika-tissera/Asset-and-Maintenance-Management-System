@@ -44,7 +44,6 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
             this.dataGridViewEmployeeRequests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewEmployeeRequests.Location = new System.Drawing.Point(75, 68);
             this.dataGridViewEmployeeRequests.Name = "dataGridViewEmployeeRequests";
-            this.dataGridViewEmployeeRequests.ReadOnly = true;
             this.dataGridViewEmployeeRequests.RowHeadersWidth = 51;
             this.dataGridViewEmployeeRequests.RowTemplate.Height = 24;
             this.dataGridViewEmployeeRequests.Size = new System.Drawing.Size(1085, 564);

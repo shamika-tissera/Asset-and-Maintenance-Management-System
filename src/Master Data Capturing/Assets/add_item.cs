@@ -59,13 +59,13 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         public add_item()
         {
             InitializeComponent();
+            comboPlant.SelectedIndex = 1;
             dateAcceptance.MaxDate = DateTime.Today;
             dateDepreciationStart.MaxDate = DateTime.Today;
             dateStart.MaxDate = DateTime.Today;
             dateInstallation.MaxDate = DateTime.Today;
             dateLastChecked.MaxDate = DateTime.Today;
             radBtn_reducingBalance.Select();
-
         }
         public add_item(settingsParent asset)
         {
@@ -261,7 +261,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             warranty = getWarrantyInformation();
             installation = getInstallInformation();
             maintenance = getMaintenanceInformation();
-            location = getLocationInformation();
+            //location = getLocationInformation();
             bool success = updateDatabase(assetType);
             if (success)
             {
@@ -323,11 +323,11 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
                 info[2] = dateStart.Text.ToString();
                 if (comboType.Text == "Life-time")
                 {
-                    info[3] = dateEnd.Text.ToString();
+                    info[3] = "INF";
                 }
                 else
                 {
-                    info[3] = "INF";
+                    info[3] = dateEnd.Text.ToString();
                 }
                 
             }
@@ -354,10 +354,10 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
         public string[] getLocationInformation()
         {
             string[] info = new string[4];
-            info[0] = comboBranch.Text.ToString();
-            info[1] = comboBuilding.Text.ToString();
-            info[2] = comboFloor.Text.ToString();
-            info[3] = comboRoom.Text.ToString();
+            //info[0] = comboBranch.Text.ToString();
+            //info[1] = comboBuilding.Text.ToString();
+            //info[2] = comboFloor.Text.ToString();
+            //info[3] = comboRoom.Text.ToString();
             return info;
         }
         private void btnCancel_Click(object sender, EventArgs e)

@@ -22,8 +22,8 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
 
         private void setValues()
         {
-            string assetsRecordsQuery = "select count(*) from NonCurrentAsset;";
-            string assetsTypesQuery = "select count(distinct assetType) from NonCurrentAsset;";
+            string assetsRecordsQuery = "select count(*) from NonCurrentAsset where state != 'Disposed';";
+            string assetsTypesQuery = "select count(distinct assetType) from NonCurrentAsset where state != 'Disposed';";
             string assetsInStock = "select count(*) from NonCurrentAsset where state = 'In stock';";
             string assetsInUse = "select count(*) from NonCurrentAsset where state = 'In use';";
 

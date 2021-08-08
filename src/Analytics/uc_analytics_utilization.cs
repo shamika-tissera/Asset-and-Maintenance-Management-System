@@ -21,7 +21,7 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             populateDataGridView();
             loadChart();
         }
-        private void populateDataGridView()
+        public void populateDataGridView()
         {
             table = new DataTable();
             string query = "select NonCurrentAsset.asset_id as 'Asset ID', NonCurrentAsset.assetType as 'Asset Type', NonCurrentAsset.lifetime*12 as 'Lifetime (months)', DATEDIFF(month, purchaseDate, disposedDate) as 'Actual Lifetime (months)', (DATEDIFF(month, purchaseDate, disposedDate) - NonCurrentAsset.lifetime*12) as 'Varience' from NonCurrentAsset inner join Disposal on NonCurrentAsset.asset_id = Disposal.asset_id;";
@@ -56,14 +56,18 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             dataGridViewUtilization.Columns[4].Width = 70;
             dataGridViewUtilization.Columns[5].Width = 90;
         }
-        private void loadChart()
+        public void loadChart()
         {
+            foreach (var series in chartUtilization.Series)
+            {
+                series.Points.Clear();
+            }
             foreach (DataRow row in table.Rows)
             {
                 double usage = double.Parse(row["Actual Lifetime (months)"].ToString());
                 double lifetime = double.Parse(row["Lifetime (months)"].ToString());
                 double percentage = (usage / lifetime) * 100;
-                chartUtilization.Series["%"].Points.AddXY(row["Asset Type"].ToString(), percentage);
+                chartUtilization.Series["%"].Points.AddXY(row["Asset ID"].ToString(), percentage);
             }
         }
 

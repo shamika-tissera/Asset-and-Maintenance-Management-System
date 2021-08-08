@@ -40,6 +40,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
                 data.Columns.Remove("depreciationMethod");
                 data.Columns.Remove("depreciationRate");
                 data.Columns.Remove("purchaseDate");
+                data.Columns.Remove("warranty");
 
                 //populate DataGridView
                 dataGridViewAssets.DataSource = data;
@@ -47,7 +48,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
                 //resize DataGridView
                 for (int i = 0; i < data.Columns.Count; i++)
                 {
-                    dataGridViewAssets.Columns[i].Width = 125;
+                    dataGridViewAssets.Columns[i].Width = 148;
                 }
             }
             table = data;
@@ -125,6 +126,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
                     data.Columns.Remove("costOfPurchase");
                     data.Columns.Remove("depreciationMethod");
                     data.Columns.Remove("depreciationRate");
+                    data.Columns.Remove("warranty");
                     data.Columns.Remove("purchaseDate");
                     //populate DataGridView
                     dataGridViewAssets.DataSource = data;

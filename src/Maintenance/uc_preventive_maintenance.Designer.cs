@@ -105,9 +105,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridViewPreventiveMaintenance;
-        private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.Label lbl_uname;
+        protected System.Windows.Forms.Panel panel1;
+        protected System.Windows.Forms.DataGridView dataGridViewPreventiveMaintenance;
+        protected System.Windows.Forms.Button btnSubmit;
+        protected System.Windows.Forms.Label lbl_uname;
     }
 }

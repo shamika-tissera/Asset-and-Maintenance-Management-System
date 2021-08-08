@@ -64,6 +64,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
                     data.Columns.Remove("depreciationMethod");
                     data.Columns.Remove("depreciationRate");
                     data.Columns.Remove("purchaseDate");
+                    data.Columns.Remove("warranty");
                     //populate DataGridView
                     dataGridViewAssets.DataSource = data;
 

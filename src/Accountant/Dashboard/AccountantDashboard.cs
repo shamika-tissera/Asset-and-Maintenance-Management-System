@@ -21,6 +21,8 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
             uc_calendar_accountant1.Visible = true;
             uc_assets_accountant_11.Visible = false;
             uc_inventory_navi_accountant1.Visible = false;
+            uc_preventive_accountant1.Visible = false;
+            uc_corrective_accountant1.Visible = false;
             uc_dash_main_accountant1.setDashboardInstance(this);
             uc_assets_accountant_11.setInst(this);
             uc_inventory_navi_accountant1.setInst(this);
@@ -32,7 +34,7 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
             uc_dash_main_accountant1.Visible = true;
             uc_calendar_accountant1.Visible = true;
             uc_assets_11.Visible = false;
-            //uc_asset_browse1.Visible = true;
+            uc_asset_browse1.Visible = false;
         }
         public override void clickedAnalyticsBack()
         {
@@ -55,6 +57,8 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
             uc_dash_main_accountant1.Visible = true;
             uc_preventive_maintenance1.Visible = false;
             uc_corrective_maintenance1.Visible = false;
+            uc_preventive_accountant1.Visible = false;
+            uc_corrective_accountant1.Visible = false;
         }
         public override void clickedInventoryBack()
         {
@@ -114,6 +118,44 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
             uc_maintenance_navi1.Visible = true;
             uc_calendar_accountant1.Visible = false;
             uc_dash_main1.Visible = false;
+            uc_maintenance_dashboard_info1.setLabelData();
+        }
+        public override void clickedMaintenancePreventive()
+        {
+            uc_maintenance_dashboard_info1.Visible = false;
+            uc_calendar1.Visible = false;
+            uc_preventive_maintenance1.Visible = false;
+            uc_preventive_accountant1.Visible = true;
+            uc_maintenance_reccomendations1.Visible = false;
+            uc_corrective_maintenance1.Visible = false;
+            uc_corrective_accountant1.Visible = false;
+            uc_maintenance_backlog1.Visible = false;
+            uc_preventive_maintenance1.populateDataGridView();
+        }
+        public override void clickedMaintenanceCorrective()
+        {
+            uc_maintenance_dashboard_info1.Visible = false;
+            uc_calendar1.Visible = false;
+            uc_corrective_maintenance1.Visible = false;
+            uc_corrective_accountant1.Visible = true;
+            uc_preventive_maintenance1.Visible = false;
+            uc_preventive_accountant1.Visible = false;
+            uc_maintenance_reccomendations1.Visible = false;
+            uc_maintenance_backlog1.Visible = false;
+            uc_corrective_maintenance1.populateDataGridView();
+        }
+        public override void clickedMaintenanceBacklog()
+        {
+            uc_calendar1.Visible = false;
+            uc_maintenance_backlog1.Visible = true;
+            uc_maintenance_dashboard_info1.Visible = false;
+            uc_corrective_maintenance1.Visible = false;
+            uc_preventive_maintenance1.Visible = false;
+            uc_corrective_accountant1.Visible = false;
+            uc_preventive_accountant1.Visible = false;
+            uc_maintenance_reccomendations1.Visible = false;
+            uc_maintenance_backlog1.populateDataGridView();
+            uc_maintenance_backlog1.loadChart();
         }
     }
 }

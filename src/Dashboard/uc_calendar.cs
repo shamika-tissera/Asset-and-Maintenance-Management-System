@@ -13,10 +13,17 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
     public partial class uc_calendar : UserControl
     {
         private MainDashboard inst;
+        private string uname;
+
+        public void setUname(string uname)
+        {
+            this.uname = uname;
+        }
         public uc_calendar()
         {
             InitializeComponent();
             lbl_date.Text= DateTime.Now.ToString("dd/MMM/yyyy");
+            //lblGreetings.Text += uname + '!';
             System.Timers.Timer delay = new System.Timers.Timer();
             delay.Interval = 1000;
             delay.Elapsed += setTime;

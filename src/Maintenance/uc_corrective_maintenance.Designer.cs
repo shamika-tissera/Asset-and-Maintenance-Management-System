@@ -103,9 +103,9 @@ namespace Asset_and_Maintenance_Management_System.src.Maintenance
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridViewCorrectiveMaintenance;
-        private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.Label lbl_uname;
+        protected System.Windows.Forms.Panel panel1;
+        protected System.Windows.Forms.DataGridView dataGridViewCorrectiveMaintenance;
+        protected System.Windows.Forms.Button btnSubmit;
+        protected System.Windows.Forms.Label lbl_uname;
     }
 }

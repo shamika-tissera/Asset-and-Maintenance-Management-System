@@ -21,7 +21,7 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             populateSupplierContacts();
         }
 
-        private void populateMostRequestedStocks()
+        public void populateMostRequestedStocks()
         {
             DataTable table = new DataTable();
             string query = "select top 3 InventoryItem.inventoryName as 'Stock Name', count(InventoryItem.inventoryName) as 'Count' from InventoryOrder inner join InventoryItem on InventoryOrder.inventoryCode = InventoryItem.inventoryCode group by InventoryItem.inventoryName order by count(InventoryItem.inventoryName) desc";
@@ -59,12 +59,16 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
                 lblMostRequestedStocks2.Text = "";
                 lblMostRequestedStocks1.Text = "";
             }
+            foreach (var series in chartMostRequestedStocks.Series)
+            {
+                series.Points.Clear();
+            }
             foreach (DataRow row in table.Rows)
             {
                 chartMostRequestedStocks.Series["Times"].Points.AddXY(row["Stock Name"].ToString(), int.Parse(row["Count"].ToString()));
             }
         }
-        private void populateSupplierContacts()
+        public void populateSupplierContacts()
         {
             DataTable table = new DataTable();
             string query = "select top 3 Supplier.supplierName as 'Supplier Name', count(supplierName) as 'Count' from InventoryOrder inner join Supplier on InventoryOrder.supplierID = Supplier.supplierID group by supplierName order by count(supplierName) desc;";
@@ -80,27 +84,31 @@ namespace Asset_and_Maintenance_Management_System.src.Inventory
             }
             if (table.Rows.Count == 3)
             {
-                lblSupplierContacts3.Text = table.Rows[2]["Supplier Name"].ToString();
-                lblSupplierContacts2.Text = table.Rows[1]["Supplier Name"].ToString();
-                lblSupplierContacts1.Text = table.Rows[0]["Supplier Name"].ToString();
+                lblSupplierContacts3.Text = table.Rows[2]["Supplier Name"].ToString().Trim();
+                lblSupplierContacts2.Text = table.Rows[1]["Supplier Name"].ToString().Trim();
+                lblSupplierContacts1.Text = table.Rows[0]["Supplier Name"].ToString().Trim();
             }
             if (table.Rows.Count == 2)
             {
                 lblSupplierContacts3.Text = "";
-                lblSupplierContacts2.Text = table.Rows[1]["Supplier Name"].ToString();
-                lblSupplierContacts1.Text = table.Rows[0]["Supplier Name"].ToString();
+                lblSupplierContacts2.Text = table.Rows[1]["Supplier Name"].ToString().Trim();
+                lblSupplierContacts1.Text = table.Rows[0]["Supplier Name"].ToString().Trim();
             }
             if (table.Rows.Count == 1)
             {
                 lblSupplierContacts3.Text = "";
                 lblSupplierContacts2.Text = "";
-                lblSupplierContacts1.Text = table.Rows[0]["Supplier Name"].ToString();
+                lblSupplierContacts1.Text = table.Rows[0]["Supplier Name"].ToString().Trim();
             }
             if (table.Rows.Count == 0)
             {
                 lblSupplierContacts3.Text = "";
                 lblSupplierContacts2.Text = "";
                 lblSupplierContacts1.Text = "";
+            }
+            foreach (var series in chartSupplierContacts.Series)
+            {
+                series.Points.Clear();
             }
             foreach (DataRow row in table.Rows)
             {

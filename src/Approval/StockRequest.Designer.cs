@@ -55,6 +55,7 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
             // 
             // comboStockType
             // 
+            this.comboStockType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboStockType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboStockType.FormattingEnabled = true;
             this.comboStockType.Location = new System.Drawing.Point(159, 200);
@@ -75,6 +76,7 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
             // 
             // comboSupplier
             // 
+            this.comboSupplier.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboSupplier.FormattingEnabled = true;
             this.comboSupplier.Location = new System.Drawing.Point(159, 283);
@@ -132,8 +134,11 @@ namespace Asset_and_Maintenance_Management_System.src.Approval
             // 
             // comboPlant
             // 
+            this.comboPlant.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboPlant.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboPlant.FormattingEnabled = true;
+            this.comboPlant.Items.AddRange(new object[] {
+            "Minuwangoda"});
             this.comboPlant.Location = new System.Drawing.Point(159, 49);
             this.comboPlant.Name = "comboPlant";
             this.comboPlant.Size = new System.Drawing.Size(357, 30);

@@ -129,6 +129,18 @@
     <Compile Include="src\Accountant\Dashboard\uc_calendar_accountant.Designer.cs">
       <DependentUpon>uc_calendar_accountant.cs</DependentUpon>
     </Compile>
+    <Compile Include="src\Accountant\Dashboard\uc_corrective_accountant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Accountant\Dashboard\uc_corrective_accountant.Designer.cs">
+      <DependentUpon>uc_corrective_accountant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Accountant\Dashboard\uc_preventive_accountant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Accountant\Dashboard\uc_preventive_accountant.Designer.cs">
+      <DependentUpon>uc_preventive_accountant.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\Accountant\Navigation\uc_assets_accountant_1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -546,6 +558,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="src\Accountant\Dashboard\uc_calendar_accountant.resx">
       <DependentUpon>uc_calendar_accountant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Accountant\Dashboard\uc_corrective_accountant.resx">
+      <DependentUpon>uc_corrective_accountant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Accountant\Dashboard\uc_preventive_accountant.resx">
+      <DependentUpon>uc_preventive_accountant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="src\Accountant\Navigation\uc_assets_accountant_1.resx">
       <DependentUpon>uc_assets_accountant_1.cs</DependentUpon>
