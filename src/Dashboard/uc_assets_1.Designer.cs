@@ -29,6 +29,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_assets_1));
             this.button1 = new System.Windows.Forms.Button();
             this.btnAddItem = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.Button();
@@ -42,7 +43,7 @@ namespace Asset_and_Maintenance_Management_System.src.Dashboard
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.button1.Image = global::Asset_and_Maintenance_Management_System.Properties.Resources.configAssets__Custom___3_;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.Location = new System.Drawing.Point(10, 140);
             this.button1.Name = "button1";

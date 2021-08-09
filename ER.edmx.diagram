@@ -14,6 +14,13 @@
         <AssociationConnector Association="AssetManagementSystemModel.FK_WorkerReports_UserInfo" ManuallyRouted="false" />
         <EntityTypeShape EntityType="AssetManagementSystemModel.Disposal" Width="1.5" PointX="0.875" PointY="7.625" />
         <AssociationConnector Association="AssetManagementSystemModel.FK_Disposal_NonCurrentAsset" />
+        <EntityTypeShape EntityType="AssetManagementSystemModel.InventoryItem" Width="1.5" PointX="8.375" PointY="11.25" />
+        <EntityTypeShape EntityType="AssetManagementSystemModel.InventoryOrder" Width="1.5" PointX="10.625" PointY="1" />
+        <EntityTypeShape EntityType="AssetManagementSystemModel.LoginLog" Width="1.5" PointX="9" PointY="7.875" />
+        <EntityTypeShape EntityType="AssetManagementSystemModel.Supplier" Width="1.5" PointX="8.375" PointY="1.5" />
+        <AssociationConnector Association="AssetManagementSystemModel.FK_InventoryOrder_InventoryItem" />
+        <AssociationConnector Association="AssetManagementSystemModel.FK_InventoryOrder_Supplier" />
+        <AssociationConnector Association="AssetManagementSystemModel.FK_LoginLogs_ToTable" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

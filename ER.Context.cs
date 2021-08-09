@@ -12,6 +12,8 @@ namespace Asset_and_Maintenance_Management_System
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class AssetManagementSystemEntities : DbContext
     {
@@ -30,5 +32,48 @@ namespace Asset_and_Maintenance_Management_System
         public virtual DbSet<Warranty> Warranties { get; set; }
         public virtual DbSet<WorkerReport> WorkerReports { get; set; }
         public virtual DbSet<Disposal> Disposals { get; set; }
+        public virtual DbSet<InventoryItem> InventoryItems { get; set; }
+        public virtual DbSet<InventoryOrder> InventoryOrders { get; set; }
+        public virtual DbSet<LoginLog> LoginLogs { get; set; }
+        public virtual DbSet<Supplier> Suppliers { get; set; }
+    
+        public virtual int DisposeAsset(string assetID, Nullable<System.DateTime> disposedDate, Nullable<int> disposedValue)
+        {
+            var assetIDParameter = assetID != null ?
+                new ObjectParameter("assetID", assetID) :
+                new ObjectParameter("assetID", typeof(string));
+    
+            var disposedDateParameter = disposedDate.HasValue ?
+                new ObjectParameter("disposedDate", disposedDate) :
+                new ObjectParameter("disposedDate", typeof(System.DateTime));
+    
+            var disposedValueParameter = disposedValue.HasValue ?
+                new ObjectParameter("disposedValue", disposedValue) :
+                new ObjectParameter("disposedValue", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("DisposeAsset", assetIDParameter, disposedDateParameter, disposedValueParameter);
+        }
+    
+        public virtual int SetIntitialServiceDueDate(string assetID)
+        {
+            var assetIDParameter = assetID != null ?
+                new ObjectParameter("assetID", assetID) :
+                new ObjectParameter("assetID", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SetIntitialServiceDueDate", assetIDParameter);
+        }
+    
+        public virtual int UpdateCurrentStockLevelsAfterUsage(string type, Nullable<int> usage)
+        {
+            var typeParameter = type != null ?
+                new ObjectParameter("type", type) :
+                new ObjectParameter("type", typeof(string));
+    
+            var usageParameter = usage.HasValue ?
+                new ObjectParameter("usage", usage) :
+                new ObjectParameter("usage", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("UpdateCurrentStockLevelsAfterUsage", typeParameter, usageParameter);
+        }
     }
 }

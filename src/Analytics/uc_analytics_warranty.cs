@@ -150,9 +150,8 @@ namespace Asset_and_Maintenance_Management_System.src.Analytics
             printer.PageNumberInHeader = false;
             printer.PorportionalColumns = true;
             printer.HeaderCellAlignment = StringAlignment.Near;
-            printer.Footer = "AMMS";
+            printer.Footer = "~ AMMS ~";
             printer.FooterSpacing = 15;
-            //int a = dataGridViewWarranty.Rows.Count;
             printer.PrintDataGridView(copy);
         }
     }

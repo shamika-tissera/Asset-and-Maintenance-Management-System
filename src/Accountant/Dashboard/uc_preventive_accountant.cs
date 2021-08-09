@@ -34,7 +34,7 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Dashboard
                         dataGridViewPreventiveMaintenance.DataSource = table;
                         for (int i = 0; i < dataGridViewPreventiveMaintenance.Columns.Count; i++)
                         {
-                            dataGridViewPreventiveMaintenance.Columns[i].Width = 240;
+                            dataGridViewPreventiveMaintenance.Columns[i].Width = 243;
                         }
                     }
                 }

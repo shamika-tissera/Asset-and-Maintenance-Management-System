@@ -4,6 +4,11 @@
     <EntitySetMapping Name="NonCurrentAssets">
       <EntityTypeMapping TypeName="AssetManagementSystemModel.NonCurrentAsset">
         <MappingFragment StoreEntitySet="NonCurrentAsset">
+          <ScalarProperty Name="invoiceNumber" ColumnName="invoiceNumber" />
+          <ScalarProperty Name="installationDate" ColumnName="installationDate" />
+          <ScalarProperty Name="maintainedBy" ColumnName="maintainedBy" />
+          <ScalarProperty Name="supplier" ColumnName="supplier" />
+          <ScalarProperty Name="criticality" ColumnName="criticality" />
           <ScalarProperty Name="asset_id" ColumnName="asset_id" />
           <ScalarProperty Name="lifetime" ColumnName="lifetime" />
           <ScalarProperty Name="depreciationRate" ColumnName="depreciationRate" />
@@ -17,12 +22,10 @@
           <ScalarProperty Name="currentMarketValue" ColumnName="currentMarketValue" />
           <ScalarProperty Name="warranty" ColumnName="warranty" />
           <ScalarProperty Name="state" ColumnName="state" />
-          <ScalarProperty Name="disposalValue" ColumnName="disposalValue" />
           <ScalarProperty Name="assetType" ColumnName="assetType" />
           <ScalarProperty Name="purchaseDate" ColumnName="purchaseDate" />
           <ScalarProperty Name="warrantyCode" ColumnName="warrantyCode" />
           <ScalarProperty Name="serviceDue" ColumnName="serviceDue" />
-          <ScalarProperty Name="disposalDate" ColumnName="disposalDate" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -52,6 +55,7 @@
     <EntitySetMapping Name="WorkerReports">
       <EntityTypeMapping TypeName="AssetManagementSystemModel.WorkerReport">
         <MappingFragment StoreEntitySet="WorkerReports">
+          <ScalarProperty Name="performed" ColumnName="performed" />
           <ScalarProperty Name="username" ColumnName="username" />
           <ScalarProperty Name="reported_date" ColumnName="reported_date" />
           <ScalarProperty Name="asset_id" ColumnName="asset_id" />
@@ -74,5 +78,52 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="InventoryItems">
+      <EntityTypeMapping TypeName="AssetManagementSystemModel.InventoryItem">
+        <MappingFragment StoreEntitySet="InventoryItem">
+          <ScalarProperty Name="CurrentCost" ColumnName="CurrentCost" />
+          <ScalarProperty Name="currentQuantity" ColumnName="currentQuantity" />
+          <ScalarProperty Name="threshold" ColumnName="threshold" />
+          <ScalarProperty Name="inventoryType" ColumnName="inventoryType" />
+          <ScalarProperty Name="inventoryName" ColumnName="inventoryName" />
+          <ScalarProperty Name="inventoryCode" ColumnName="inventoryCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryOrders">
+      <EntityTypeMapping TypeName="AssetManagementSystemModel.InventoryOrder">
+        <MappingFragment StoreEntitySet="InventoryOrder">
+          <ScalarProperty Name="received" ColumnName="received" />
+          <ScalarProperty Name="responsiblePerson" ColumnName="responsiblePerson" />
+          <ScalarProperty Name="plant" ColumnName="plant" />
+          <ScalarProperty Name="supplierID" ColumnName="supplierID" />
+          <ScalarProperty Name="dueDate" ColumnName="dueDate" />
+          <ScalarProperty Name="orderedQuantity" ColumnName="orderedQuantity" />
+          <ScalarProperty Name="inventoryCode" ColumnName="inventoryCode" />
+          <ScalarProperty Name="orderTime" ColumnName="orderTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoginLogs">
+      <EntityTypeMapping TypeName="AssetManagementSystemModel.LoginLog">
+        <MappingFragment StoreEntitySet="LoginLogs">
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="loginTime" ColumnName="loginTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="AssetManagementSystemModel.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="supplierEmail" ColumnName="supplierEmail" />
+          <ScalarProperty Name="supplierName" ColumnName="supplierName" />
+          <ScalarProperty Name="supplierID" ColumnName="supplierID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="DisposeAsset" FunctionName="AssetManagementSystemModel.Store.DisposeAsset" />
+    <FunctionImportMapping FunctionImportName="SetIntitialServiceDueDate" FunctionName="AssetManagementSystemModel.Store.SetIntitialServiceDueDate" />
+    <FunctionImportMapping FunctionImportName="UpdateCurrentStockLevelsAfterUsage" FunctionName="AssetManagementSystemModel.Store.UpdateCurrentStockLevelsAfterUsage" />
   </EntityContainerMapping>
 </Mapping>

@@ -103,3 +103,4 @@ F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.pdb
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Accountant.Dashboard.uc_corrective_accountant.resources
 F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset_and_Maintenance_Management_System.src.Accountant.Dashboard.uc_preventive_accountant.resources
+F:\Programming Workspaces\C#\New folder\Asset-and-Maintenance-Management-System\obj\Debug\Asset-and-Maintenance-Management-System.csproj.AssemblyReference.cache

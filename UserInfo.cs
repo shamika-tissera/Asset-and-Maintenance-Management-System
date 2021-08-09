@@ -18,6 +18,7 @@ namespace Asset_and_Maintenance_Management_System
         public UserInfo()
         {
             this.WorkerReports = new HashSet<WorkerReport>();
+            this.LoginLogs = new HashSet<LoginLog>();
         }
     
         public string EmpID { get; set; }
@@ -29,5 +30,7 @@ namespace Asset_and_Maintenance_Management_System
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<WorkerReport> WorkerReports { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<LoginLog> LoginLogs { get; set; }
     }
 }

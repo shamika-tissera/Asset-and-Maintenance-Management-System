@@ -26,6 +26,11 @@
     <NavigationProperty Name="Warranty1" Relationship="Self.FK_NonCurrentAsset_Warranty" FromRole="NonCurrentAsset" ToRole="Warranty" />
     <NavigationProperty Name="WorkerReports" Relationship="Self.FK_WorkerReports_NonCurrentAsset" FromRole="NonCurrentAsset" ToRole="WorkerReports" />
     <NavigationProperty Name="Disposals" Relationship="AssetManagementSystemModel.FK_Disposal_NonCurrentAsset" FromRole="NonCurrentAsset" ToRole="Disposal" />
+    <Property Name="criticality" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="supplier" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="maintainedBy" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="installationDate" Type="DateTime" Precision="0" />
+    <Property Name="invoiceNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="UserInfo">
     <Key>
@@ -38,6 +43,7 @@
     <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="EmpCategory" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="WorkerReports" Relationship="Self.FK_WorkerReports_UserInfo" FromRole="UserInfo" ToRole="WorkerReports" />
+    <NavigationProperty Name="LoginLogs" Relationship="AssetManagementSystemModel.FK_LoginLogs_ToTable" FromRole="UserInfo" ToRole="LoginLog" />
   </EntityType>
   <EntityType Name="Warranty">
     <Key>
@@ -67,6 +73,7 @@
     <Property Name="message" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="NonCurrentAsset" Relationship="Self.FK_WorkerReports_NonCurrentAsset" FromRole="WorkerReports" ToRole="NonCurrentAsset" />
     <NavigationProperty Name="UserInfo" Relationship="Self.FK_WorkerReports_UserInfo" FromRole="WorkerReports" ToRole="UserInfo" />
+    <Property Name="performed" Type="Boolean" />
   </EntityType>
   <Association Name="FK_NonCurrentAsset_Warranty">
     <End Role="Warranty" Type="Self.Warranty" Multiplicity="0..1" />
@@ -126,6 +133,34 @@
       <End Role="NonCurrentAsset" EntitySet="NonCurrentAssets" />
       <End Role="Disposal" EntitySet="Disposals" />
     </AssociationSet>
+    <EntitySet Name="InventoryItems" EntityType="AssetManagementSystemModel.InventoryItem" />
+    <EntitySet Name="InventoryOrders" EntityType="AssetManagementSystemModel.InventoryOrder" />
+    <EntitySet Name="LoginLogs" EntityType="AssetManagementSystemModel.LoginLog" />
+    <EntitySet Name="Suppliers" EntityType="AssetManagementSystemModel.Supplier" />
+    <AssociationSet Name="FK_InventoryOrder_InventoryItem" Association="AssetManagementSystemModel.FK_InventoryOrder_InventoryItem">
+      <End Role="InventoryItem" EntitySet="InventoryItems" />
+      <End Role="InventoryOrder" EntitySet="InventoryOrders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InventoryOrder_Supplier" Association="AssetManagementSystemModel.FK_InventoryOrder_Supplier">
+      <End Role="Supplier" EntitySet="Suppliers" />
+      <End Role="InventoryOrder" EntitySet="InventoryOrders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LoginLogs_ToTable" Association="AssetManagementSystemModel.FK_LoginLogs_ToTable">
+      <End Role="UserInfo" EntitySet="UserInfoes" />
+      <End Role="LoginLog" EntitySet="LoginLogs" />
+    </AssociationSet>
+    <FunctionImport Name="DisposeAsset">
+      <Parameter Name="assetID" Mode="In" Type="String" />
+      <Parameter Name="disposedDate" Mode="In" Type="DateTime" />
+      <Parameter Name="disposedValue" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SetIntitialServiceDueDate">
+      <Parameter Name="assetID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UpdateCurrentStockLevelsAfterUsage">
+      <Parameter Name="type" Mode="In" Type="String" />
+      <Parameter Name="usage" Mode="In" Type="Int32" />
+    </FunctionImport>
   </EntityContainer>
   <EntityType Name="Disposal">
     <Key>
@@ -146,6 +181,87 @@
       </Principal>
       <Dependent Role="Disposal">
         <PropertyRef Name="asset_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="InventoryItem">
+    <Key>
+      <PropertyRef Name="inventoryCode" />
+    </Key>
+    <Property Name="inventoryCode" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="inventoryName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="inventoryType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="threshold" Type="Int32" Nullable="false" />
+    <Property Name="currentQuantity" Type="Int32" Nullable="false" />
+    <Property Name="CurrentCost" Type="Decimal" Precision="18" Scale="0" />
+    <NavigationProperty Name="InventoryOrders" Relationship="AssetManagementSystemModel.FK_InventoryOrder_InventoryItem" FromRole="InventoryItem" ToRole="InventoryOrder" />
+  </EntityType>
+  <EntityType Name="InventoryOrder">
+    <Key>
+      <PropertyRef Name="orderTime" />
+    </Key>
+    <Property Name="orderTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="inventoryCode" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="orderedQuantity" Type="Int64" Nullable="false" />
+    <Property Name="dueDate" Type="DateTime" Precision="0" />
+    <Property Name="supplierID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="plant" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="responsiblePerson" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="received" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="InventoryItem" Relationship="AssetManagementSystemModel.FK_InventoryOrder_InventoryItem" FromRole="InventoryOrder" ToRole="InventoryItem" />
+    <NavigationProperty Name="Supplier" Relationship="AssetManagementSystemModel.FK_InventoryOrder_Supplier" FromRole="InventoryOrder" ToRole="Supplier" />
+  </EntityType>
+  <EntityType Name="LoginLog">
+    <Key>
+      <PropertyRef Name="loginTime" />
+    </Key>
+    <Property Name="loginTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="username" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="category" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="UserInfo" Relationship="AssetManagementSystemModel.FK_LoginLogs_ToTable" FromRole="LoginLog" ToRole="UserInfo" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="supplierID" />
+    </Key>
+    <Property Name="supplierID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="supplierName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="supplierEmail" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="InventoryOrders" Relationship="AssetManagementSystemModel.FK_InventoryOrder_Supplier" FromRole="Supplier" ToRole="InventoryOrder" />
+  </EntityType>
+  <Association Name="FK_InventoryOrder_InventoryItem">
+    <End Type="AssetManagementSystemModel.InventoryItem" Role="InventoryItem" Multiplicity="1" />
+    <End Type="AssetManagementSystemModel.InventoryOrder" Role="InventoryOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InventoryItem">
+        <PropertyRef Name="inventoryCode" />
+      </Principal>
+      <Dependent Role="InventoryOrder">
+        <PropertyRef Name="inventoryCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InventoryOrder_Supplier">
+    <End Type="AssetManagementSystemModel.Supplier" Role="Supplier" Multiplicity="1" />
+    <End Type="AssetManagementSystemModel.InventoryOrder" Role="InventoryOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="supplierID" />
+      </Principal>
+      <Dependent Role="InventoryOrder">
+        <PropertyRef Name="supplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LoginLogs_ToTable">
+    <End Type="AssetManagementSystemModel.UserInfo" Role="UserInfo" Multiplicity="1" />
+    <End Type="AssetManagementSystemModel.LoginLog" Role="LoginLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserInfo">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="LoginLog">
+        <PropertyRef Name="username" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

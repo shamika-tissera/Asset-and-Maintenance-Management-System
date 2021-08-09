@@ -40,6 +40,11 @@ namespace Asset_and_Maintenance_Management_System
         public string warrantyCode { get; set; }
         public Nullable<System.DateTime> serviceDue { get; set; }
         public Nullable<System.DateTime> disposalDate { get; set; }
+        public string criticality { get; set; }
+        public string supplier { get; set; }
+        public string maintainedBy { get; set; }
+        public Nullable<System.DateTime> installationDate { get; set; }
+        public string invoiceNumber { get; set; }
     
         public virtual Warranty Warranty1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

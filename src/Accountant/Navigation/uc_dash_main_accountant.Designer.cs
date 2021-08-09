@@ -29,6 +29,7 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Navigation
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_dash_main_accountant));
             this.SuspendLayout();
             // 
             // btn_assets
@@ -60,6 +61,7 @@ namespace Asset_and_Maintenance_Management_System.src.Accountant.Navigation
             // btnApproval
             // 
             this.btnApproval.FlatAppearance.BorderSize = 0;
+            this.btnApproval.Image = ((System.Drawing.Image)(resources.GetObject("btnApproval.Image")));
             this.btnApproval.Visible = false;
             // 
             // uc_dash_main_accountant

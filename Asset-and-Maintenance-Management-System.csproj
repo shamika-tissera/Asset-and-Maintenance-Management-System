@@ -114,6 +114,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ER.edmx</DependentUpon>
     </Compile>
+    <Compile Include="InventoryItem.cs">
+      <DependentUpon>ER.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryOrder.cs">
+      <DependentUpon>ER.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoginLog.cs">
+      <DependentUpon>ER.tt</DependentUpon>
+    </Compile>
     <Compile Include="NonCurrentAsset.cs">
       <DependentUpon>ER.tt</DependentUpon>
     </Compile>
@@ -543,6 +552,9 @@
     </Compile>
     <Compile Include="src\Worker_Interface\WorkerInterface.Designer.cs">
       <DependentUpon>WorkerInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs">
+      <DependentUpon>ER.tt</DependentUpon>
     </Compile>
     <Compile Include="UserInfo.cs">
       <DependentUpon>ER.tt</DependentUpon>

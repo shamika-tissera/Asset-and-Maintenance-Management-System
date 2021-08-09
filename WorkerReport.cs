@@ -23,6 +23,7 @@ namespace Asset_and_Maintenance_Management_System
         public bool managerRespoded { get; set; }
         public Nullable<System.DateTime> service_date_schedule { get; set; }
         public string message { get; set; }
+        public Nullable<bool> performed { get; set; }
     
         public virtual NonCurrentAsset NonCurrentAsset { get; set; }
         public virtual UserInfo UserInfo { get; set; }
