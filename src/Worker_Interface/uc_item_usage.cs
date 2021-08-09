@@ -36,7 +36,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             }
         }
 
-        private void loadComboBoxes()
+        public void loadComboBoxes()
         {
             DataTable table = new DataTable();
             string[] items;
@@ -114,6 +114,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            loadComboBoxes();
         }
     }
 }

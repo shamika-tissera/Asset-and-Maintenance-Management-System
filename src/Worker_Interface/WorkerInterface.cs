@@ -78,6 +78,7 @@ namespace Asset_and_Maintenance_Management_System.src.Worker_Interface
             btnPreviouslyReported.BackColor = Color.FromArgb(232, 234, 237);
             uc_previously_reported1.Visible = false;
             uc_item_usage1.Visible = true;
+            uc_item_usage1.loadComboBoxes();
             uc_item_usage1.BringToFront();
         }
         private void click_previouslyReported(object sender, EventArgs e)

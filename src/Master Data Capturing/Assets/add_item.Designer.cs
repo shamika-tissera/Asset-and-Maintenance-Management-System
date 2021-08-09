@@ -175,12 +175,12 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.dateInstallation.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateInstallation.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateInstallation.Location = new System.Drawing.Point(35, 50);
-            this.dateInstallation.MaxDate = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
+            this.dateInstallation.MaxDate = new System.DateTime(2021, 8, 9, 13, 13, 2, 0);
             this.dateInstallation.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateInstallation.Name = "dateInstallation";
             this.dateInstallation.Size = new System.Drawing.Size(406, 30);
             this.dateInstallation.TabIndex = 20;
-            this.dateInstallation.Value = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
+            this.dateInstallation.Value = new System.DateTime(2021, 8, 9, 0, 0, 0, 0);
             // 
             // label20
             // 
@@ -197,12 +197,12 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.dateAcceptance.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateAcceptance.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateAcceptance.Location = new System.Drawing.Point(494, 50);
-            this.dateAcceptance.MaxDate = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
+            this.dateAcceptance.MaxDate = new System.DateTime(2021, 8, 9, 13, 13, 2, 0);
             this.dateAcceptance.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateAcceptance.Name = "dateAcceptance";
             this.dateAcceptance.Size = new System.Drawing.Size(406, 30);
             this.dateAcceptance.TabIndex = 21;
-            this.dateAcceptance.Value = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
+            this.dateAcceptance.Value = new System.DateTime(2021, 8, 9, 0, 0, 0, 0);
             // 
             // label21
             // 
@@ -262,12 +262,12 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.dateStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateStart.Location = new System.Drawing.Point(39, 122);
-            this.dateStart.MaxDate = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
+            this.dateStart.MaxDate = new System.DateTime(2021, 8, 9, 13, 13, 2, 0);
             this.dateStart.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateStart.Name = "dateStart";
             this.dateStart.Size = new System.Drawing.Size(406, 27);
             this.dateStart.TabIndex = 18;
-            this.dateStart.Value = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
+            this.dateStart.Value = new System.DateTime(2021, 8, 9, 0, 0, 0, 0);
             // 
             // dateEnd
             // 
@@ -279,7 +279,7 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.dateEnd.Name = "dateEnd";
             this.dateEnd.Size = new System.Drawing.Size(406, 27);
             this.dateEnd.TabIndex = 19;
-            this.dateEnd.Value = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
+            this.dateEnd.Value = new System.DateTime(2021, 8, 9, 0, 0, 0, 0);
             // 
             // txtWarrantyCode
             // 
@@ -413,12 +413,12 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             this.dateDepreciationStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateDepreciationStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateDepreciationStart.Location = new System.Drawing.Point(498, 122);
-            this.dateDepreciationStart.MaxDate = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
+            this.dateDepreciationStart.MaxDate = new System.DateTime(2021, 8, 9, 13, 13, 2, 0);
             this.dateDepreciationStart.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateDepreciationStart.Name = "dateDepreciationStart";
             this.dateDepreciationStart.Size = new System.Drawing.Size(406, 27);
             this.dateDepreciationStart.TabIndex = 10;
-            this.dateDepreciationStart.Value = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
+            this.dateDepreciationStart.Value = new System.DateTime(2021, 8, 9, 0, 0, 0, 0);
             // 
             // txtInvoiceNumber
             // 
@@ -717,12 +717,12 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // 
             this.dateLastChecked.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateLastChecked.Location = new System.Drawing.Point(498, 124);
-            this.dateLastChecked.MaxDate = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
+            this.dateLastChecked.MaxDate = new System.DateTime(2021, 8, 9, 13, 13, 2, 0);
             this.dateLastChecked.MinDate = new System.DateTime(1960, 1, 1, 0, 0, 0, 0);
             this.dateLastChecked.Name = "dateLastChecked";
             this.dateLastChecked.Size = new System.Drawing.Size(406, 27);
             this.dateLastChecked.TabIndex = 26;
-            this.dateLastChecked.Value = new System.DateTime(2021, 8, 7, 0, 0, 0, 0);
+            this.dateLastChecked.Value = new System.DateTime(2021, 8, 9, 0, 0, 0, 0);
             // 
             // comboCriticality
             // 

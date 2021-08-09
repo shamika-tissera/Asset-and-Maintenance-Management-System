@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_uname = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.dataGridViewPreventiveMaintenance = new System.Windows.Forms.DataGridView();
-            this.lbl_uname = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPreventiveMaintenance)).BeginInit();
             this.SuspendLayout();
@@ -46,6 +46,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1139, 735);
             this.panel1.TabIndex = 1;
+            // 
+            // lbl_uname
+            // 
+            this.lbl_uname.AutoSize = true;
+            this.lbl_uname.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_uname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
+            this.lbl_uname.Location = new System.Drawing.Point(109, 612);
+            this.lbl_uname.Name = "lbl_uname";
+            this.lbl_uname.Size = new System.Drawing.Size(1010, 28);
+            this.lbl_uname.TabIndex = 5;
+            this.lbl_uname.Text = "Note: Shows assets with service due within the next two months or past due in the" +
+    " previous two months.";
             // 
             // btnSubmit
             // 
@@ -69,23 +81,10 @@
             this.dataGridViewPreventiveMaintenance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPreventiveMaintenance.Location = new System.Drawing.Point(30, 46);
             this.dataGridViewPreventiveMaintenance.Name = "dataGridViewPreventiveMaintenance";
-            this.dataGridViewPreventiveMaintenance.ReadOnly = true;
             this.dataGridViewPreventiveMaintenance.RowHeadersWidth = 51;
             this.dataGridViewPreventiveMaintenance.RowTemplate.Height = 24;
             this.dataGridViewPreventiveMaintenance.Size = new System.Drawing.Size(1089, 563);
             this.dataGridViewPreventiveMaintenance.TabIndex = 0;
-            // 
-            // lbl_uname
-            // 
-            this.lbl_uname.AutoSize = true;
-            this.lbl_uname.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_uname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(251)))));
-            this.lbl_uname.Location = new System.Drawing.Point(109, 612);
-            this.lbl_uname.Name = "lbl_uname";
-            this.lbl_uname.Size = new System.Drawing.Size(1010, 28);
-            this.lbl_uname.TabIndex = 5;
-            this.lbl_uname.Text = "Note: Shows assets with service due within the next two months or past due in the" +
-    " previous two months.";
             // 
             // uc_preventive_maintenance
             // 

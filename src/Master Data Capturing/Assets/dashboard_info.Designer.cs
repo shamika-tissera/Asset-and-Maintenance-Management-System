@@ -76,88 +76,88 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Silver;
-            this.label17.Location = new System.Drawing.Point(97, 168);
+            this.label17.Location = new System.Drawing.Point(84, 165);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(62, 23);
+            this.label17.Size = new System.Drawing.Size(79, 30);
             this.label17.TabIndex = 10;
             this.label17.Text = "In Use:";
             // 
             // lblAssetsInUse
             // 
             this.lblAssetsInUse.AutoSize = true;
-            this.lblAssetsInUse.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssetsInUse.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAssetsInUse.ForeColor = System.Drawing.Color.Silver;
-            this.lblAssetsInUse.Location = new System.Drawing.Point(186, 163);
+            this.lblAssetsInUse.Location = new System.Drawing.Point(188, 159);
             this.lblAssetsInUse.Name = "lblAssetsInUse";
-            this.lblAssetsInUse.Size = new System.Drawing.Size(43, 32);
+            this.lblAssetsInUse.Size = new System.Drawing.Size(49, 37);
             this.lblAssetsInUse.TabIndex = 9;
             this.lblAssetsInUse.Text = "93";
             // 
             // lblAssetsInStock
             // 
             this.lblAssetsInStock.AutoSize = true;
-            this.lblAssetsInStock.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssetsInStock.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAssetsInStock.ForeColor = System.Drawing.Color.Silver;
-            this.lblAssetsInStock.Location = new System.Drawing.Point(184, 129);
+            this.lblAssetsInStock.Location = new System.Drawing.Point(188, 127);
             this.lblAssetsInStock.Name = "lblAssetsInStock";
-            this.lblAssetsInStock.Size = new System.Drawing.Size(29, 32);
+            this.lblAssetsInStock.Size = new System.Drawing.Size(33, 37);
             this.lblAssetsInStock.TabIndex = 9;
             this.lblAssetsInStock.Text = "8";
             // 
             // lblAssetsTypes
             // 
             this.lblAssetsTypes.AutoSize = true;
-            this.lblAssetsTypes.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssetsTypes.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAssetsTypes.ForeColor = System.Drawing.Color.Silver;
-            this.lblAssetsTypes.Location = new System.Drawing.Point(185, 94);
+            this.lblAssetsTypes.Location = new System.Drawing.Point(188, 90);
             this.lblAssetsTypes.Name = "lblAssetsTypes";
-            this.lblAssetsTypes.Size = new System.Drawing.Size(41, 32);
+            this.lblAssetsTypes.Size = new System.Drawing.Size(46, 37);
             this.lblAssetsTypes.TabIndex = 9;
             this.lblAssetsTypes.Text = "12";
             // 
             // lblAssetsRecords
             // 
             this.lblAssetsRecords.AutoSize = true;
-            this.lblAssetsRecords.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssetsRecords.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAssetsRecords.ForeColor = System.Drawing.Color.Silver;
-            this.lblAssetsRecords.Location = new System.Drawing.Point(184, 56);
+            this.lblAssetsRecords.Location = new System.Drawing.Point(185, 53);
             this.lblAssetsRecords.Name = "lblAssetsRecords";
-            this.lblAssetsRecords.Size = new System.Drawing.Size(53, 32);
+            this.lblAssetsRecords.Size = new System.Drawing.Size(59, 37);
             this.lblAssetsRecords.TabIndex = 8;
             this.lblAssetsRecords.Text = "101";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Silver;
-            this.label16.Location = new System.Drawing.Point(97, 133);
+            this.label16.Location = new System.Drawing.Point(84, 130);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(77, 23);
+            this.label16.Size = new System.Drawing.Size(98, 30);
             this.label16.TabIndex = 7;
             this.label16.Text = "In Stock:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(97, 97);
+            this.label5.Location = new System.Drawing.Point(84, 94);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 23);
+            this.label5.Size = new System.Drawing.Size(74, 30);
             this.label5.TabIndex = 7;
             this.label5.Text = "Types:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(97, 62);
+            this.label4.Location = new System.Drawing.Point(84, 59);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 23);
+            this.label4.Size = new System.Drawing.Size(96, 30);
             this.label4.TabIndex = 6;
             this.label4.Text = "Records:";
             // 
@@ -210,22 +210,22 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // lblAllLocationsSites
             // 
             this.lblAllLocationsSites.AutoSize = true;
-            this.lblAllLocationsSites.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAllLocationsSites.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAllLocationsSites.ForeColor = System.Drawing.Color.Silver;
             this.lblAllLocationsSites.Location = new System.Drawing.Point(174, 53);
             this.lblAllLocationsSites.Name = "lblAllLocationsSites";
-            this.lblAllLocationsSites.Size = new System.Drawing.Size(30, 32);
+            this.lblAllLocationsSites.Size = new System.Drawing.Size(34, 37);
             this.lblAllLocationsSites.TabIndex = 12;
             this.lblAllLocationsSites.Text = "4";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Silver;
             this.label21.Location = new System.Drawing.Point(106, 58);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(49, 23);
+            this.label21.Size = new System.Drawing.Size(65, 30);
             this.label21.TabIndex = 11;
             this.label21.Text = "Sites:";
             // 
@@ -247,66 +247,66 @@ namespace Asset_and_Maintenance_Management_System.src.Master_Data_Capturing.Asse
             // lblNeedsAttentionLow
             // 
             this.lblNeedsAttentionLow.AutoSize = true;
-            this.lblNeedsAttentionLow.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNeedsAttentionLow.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNeedsAttentionLow.ForeColor = System.Drawing.Color.LawnGreen;
-            this.lblNeedsAttentionLow.Location = new System.Drawing.Point(194, 136);
+            this.lblNeedsAttentionLow.Location = new System.Drawing.Point(207, 145);
             this.lblNeedsAttentionLow.Name = "lblNeedsAttentionLow";
-            this.lblNeedsAttentionLow.Size = new System.Drawing.Size(41, 32);
+            this.lblNeedsAttentionLow.Size = new System.Drawing.Size(46, 37);
             this.lblNeedsAttentionLow.TabIndex = 11;
             this.lblNeedsAttentionLow.Text = "12";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.LawnGreen;
             this.label13.Location = new System.Drawing.Point(86, 145);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(45, 23);
+            this.label13.Size = new System.Drawing.Size(59, 30);
             this.label13.TabIndex = 11;
             this.label13.Text = "Low:";
             // 
             // lblNeedsAttentionModerate
             // 
             this.lblNeedsAttentionModerate.AutoSize = true;
-            this.lblNeedsAttentionModerate.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNeedsAttentionModerate.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNeedsAttentionModerate.ForeColor = System.Drawing.Color.SandyBrown;
-            this.lblNeedsAttentionModerate.Location = new System.Drawing.Point(194, 96);
+            this.lblNeedsAttentionModerate.Location = new System.Drawing.Point(207, 100);
             this.lblNeedsAttentionModerate.Name = "lblNeedsAttentionModerate";
-            this.lblNeedsAttentionModerate.Size = new System.Drawing.Size(41, 32);
+            this.lblNeedsAttentionModerate.Size = new System.Drawing.Size(46, 37);
             this.lblNeedsAttentionModerate.TabIndex = 11;
             this.lblNeedsAttentionModerate.Text = "10";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.SandyBrown;
             this.label12.Location = new System.Drawing.Point(86, 103);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(89, 23);
+            this.label12.Size = new System.Drawing.Size(115, 30);
             this.label12.TabIndex = 11;
             this.label12.Text = "Moderate:";
             // 
             // lblNeedsAttentionCritical
             // 
             this.lblNeedsAttentionCritical.AutoSize = true;
-            this.lblNeedsAttentionCritical.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNeedsAttentionCritical.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNeedsAttentionCritical.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblNeedsAttentionCritical.Location = new System.Drawing.Point(194, 55);
+            this.lblNeedsAttentionCritical.Location = new System.Drawing.Point(207, 58);
             this.lblNeedsAttentionCritical.Name = "lblNeedsAttentionCritical";
-            this.lblNeedsAttentionCritical.Size = new System.Drawing.Size(29, 32);
+            this.lblNeedsAttentionCritical.Size = new System.Drawing.Size(33, 37);
             this.lblNeedsAttentionCritical.TabIndex = 12;
             this.lblNeedsAttentionCritical.Text = "2";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.DarkRed;
             this.label10.Location = new System.Drawing.Point(86, 60);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 23);
+            this.label10.Size = new System.Drawing.Size(87, 30);
             this.label10.TabIndex = 11;
             this.label10.Text = "Critical:";
             // 
